@@ -1,0 +1,1753 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2018-09-24 15:13+02:00\n"
+"PO-Revision-Date: 2018-09-24 15:13+02:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: i18n.POTGenerator\n"
+
+#: Views\ProductionUnits\Update.cshtml:263
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Update.cshtml:257
+msgid "${array[i].name}"
+msgstr ""
+
+#: Migrations\Configuration.cs:137
+msgid "11 towers"
+msgstr "11 tours"
+
+#: Migrations\Configuration.cs:138
+msgid "18 towers"
+msgstr "18 tours"
+
+#: Migrations\Configuration.cs:139
+msgid "24 towers"
+msgstr "24 tours"
+
+#: Migrations\Configuration.cs:140
+msgid "36 towers"
+msgstr "36 tours"
+
+#: Views\About\Index.cshtml:8
+#: Views\Shared\_Layout.cshtml:193
+#: Views\Shared\_RedesignLayout.cshtml:209
+#: obj\Release\Package\PackageTmp\Views\About\Index.cshtml:8
+#: obj\Release\Package\PackageTmp\Views\Shared\_Layout.cshtml:175
+#: obj\Release\Package\PackageTmp\Views\Shared\_RedesignLayout.cshtml:209
+msgid "About"
+msgstr "A propos"
+
+#: Migrations\Configuration.cs:116
+msgid "Action"
+msgstr "Action"
+
+#: Views\ProductionUnits\Details.cshtml:895
+#: Views\ProductionUnits\Details.cshtml:983
+#: Views\ProductionUnits\UserUnit.cshtml:878
+#: Views\ProductionUnits\UserUnit.cshtml:966
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:895
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:983
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:878
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:966
+msgid "Add Event"
+msgstr "Ajout Evénement"
+
+#: Migrations\Configuration.cs:235
+msgid "Add iron"
+msgstr "Ajout fer"
+
+#: Migrations\Configuration.cs:236
+msgid "Add magnesium"
+msgstr "Ajout magnésium"
+
+#: Migrations\Configuration.cs:237
+msgid "Add potassium"
+msgstr "Ajout potassium"
+
+#: Migrations\Configuration.cs:233
+msgid "Add rain water"
+msgstr "Ajout eau de pluie"
+
+#: Migrations\Configuration.cs:234
+msgid "Add tape water"
+msgstr "Ajouter eau du robinet"
+
+#: Migrations\Configuration.cs:239
+msgid "Add white on roof"
+msgstr "Ajout blanc de Meudon"
+
+#: Migrations\Configuration.cs:145
+msgid "Advanced monitoring"
+msgstr "Capteurs avancés"
+
+#: Migrations\Configuration.cs:121
+msgid "Advices"
+msgstr "Conseil"
+
+#: Migrations\Configuration.cs:84
+msgid "Aerospring"
+msgstr "Aerospring"
+
+#: Migrations\Configuration.cs:168
+msgid "Afternoon"
+msgstr "Après-midi"
+
+#: Views\ProductionUnits\UserUnit.cshtml:261
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:261
+msgid "Air Temp"
+msgstr "Temp. Air"
+
+#: Views\Home\Index.cshtml:200
+#: Views\ProductionUnits\Details.cshtml:839
+#: Views\ProductionUnits\UserUnit.cshtml:822
+#: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:200
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:839
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:822
+msgid "Air Temperature (°C)"
+msgstr "Température Air (°C)"
+
+#: Migrations\Configuration.cs:159
+#: Views\Events\Index.cshtml:33
+#: Views\Measures\Index.cshtml:92
+#: Views\Messages\Index.cshtml:96
+#: obj\Release\Package\PackageTmp\Views\Events\Index.cshtml:33
+#: obj\Release\Package\PackageTmp\Views\Measures\Index.cshtml:92
+#: obj\Release\Package\PackageTmp\Views\Messages\Index.cshtml:96
+msgid "All"
+msgstr "Tout"
+
+#: Migrations\Configuration.cs:265
+msgid "Anxious"
+msgstr "Anxieux"
+
+#: Views\Log\Index.cshtml:9
+#: obj\Release\Package\PackageTmp\Views\Log\Index.cshtml:9
+msgid "Application Logs"
+msgstr "Messages Applicatifs"
+
+#: Migrations\Configuration.cs:183
+msgid "April"
+msgstr "Avril"
+
+#: Migrations\Configuration.cs:99
+msgid "Aquaponics - Carp"
+msgstr "Aquaponie - Carpe"
+
+#: Migrations\Configuration.cs:102
+msgid "Aquaponics - Crayfish"
+msgstr "Aquaponie - Ecrevisse"
+
+#: Migrations\Configuration.cs:103
+msgid "Aquaponics - Oth. Cold Fish"
+msgstr "Aquaponie - Autre Poisson Eau Froide"
+
+#: Migrations\Configuration.cs:104
+msgid "Aquaponics - Oth. Warm Fish"
+msgstr "Aquaponie - Autre Poisson Eau Chaude"
+
+#: Migrations\Configuration.cs:100
+msgid "Aquaponics - Tilapia"
+msgstr "Aquaponie - Tilapia"
+
+#: Migrations\Configuration.cs:101
+msgid "Aquaponics - Trout"
+msgstr "Aquaponie - Truite"
+
+#: Views\Events\Index.cshtml:39
+#: obj\Release\Package\PackageTmp\Views\Events\Index.cshtml:39
+msgid "Asc"
+msgstr "Asc"
+
+#: Migrations\Configuration.cs:187
+msgid "August"
+msgstr "Août"
+
+#: Migrations\Configuration.cs:154
+msgid "Autumn"
+msgstr "Automne"
+
+#: Migrations\Configuration.cs:126
+#: Migrations\Configuration.cs:256
+#: Migrations\Configuration.cs:260
+msgid "Average"
+msgstr "Moyenne"
+
+#: Views\Home\Index.cshtml:165
+#: Views\Home\Index.cshtml:170
+#: Views\Home\Index.cshtml:187
+#: Views\Home\Index.cshtml:192
+#: Views\Home\Index.cshtml:209
+#: Views\Home\Index.cshtml:214
+#: Views\Home\Index.cshtml:231
+#: Views\Home\Index.cshtml:236
+#: Views\InteractiveMap\Index.cshtml:366
+#: Views\InteractiveMap\Index.cshtml:371
+#: Views\InteractiveMap\Index.cshtml:390
+#: Views\InteractiveMap\Index.cshtml:395
+#: Views\ProductionUnits\Details.cshtml:788
+#: Views\ProductionUnits\Details.cshtml:793
+#: Views\ProductionUnits\Details.cshtml:817
+#: Views\ProductionUnits\Details.cshtml:822
+#: Views\ProductionUnits\Details.cshtml:848
+#: Views\ProductionUnits\Details.cshtml:853
+#: Views\ProductionUnits\Details.cshtml:878
+#: Views\ProductionUnits\Details.cshtml:883
+#: Views\ProductionUnits\UserUnit.cshtml:771
+#: Views\ProductionUnits\UserUnit.cshtml:776
+#: Views\ProductionUnits\UserUnit.cshtml:800
+#: Views\ProductionUnits\UserUnit.cshtml:805
+#: Views\ProductionUnits\UserUnit.cshtml:831
+#: Views\ProductionUnits\UserUnit.cshtml:836
+#: Views\ProductionUnits\UserUnit.cshtml:861
+#: Views\ProductionUnits\UserUnit.cshtml:866
+#: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:165
+#: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:170
+#: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:187
+#: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:192
+#: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:209
+#: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:214
+#: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:231
+#: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:236
+#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:366
+#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:371
+#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:390
+#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:395
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:788
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:793
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:817
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:822
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:848
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:853
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:878
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:883
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:771
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:776
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:800
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:805
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:831
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:836
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:861
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:866
+msgid "AVERAGE"
+msgstr "MOYENNE"
+
+#: Migrations\Configuration.cs:134
+msgid "Awesome"
+msgstr "Incroyable"
+
+#: Views\Events\Index.cshtml:44
+#: Views\Events\Manage.cshtml:37
+#: Views\ProductionUnitOwner\Index.cshtml:30
+#: Views\ProductionUnits\Update.cshtml:55
+#: obj\Release\Package\PackageTmp\Views\Events\Index.cshtml:44
+#: obj\Release\Package\PackageTmp\Views\Events\Manage.cshtml:37
+#: obj\Release\Package\PackageTmp\Views\ProductionUnitOwner\Index.cshtml:30
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Update.cshtml:55
+msgid "Back to Details"
+msgstr "Retour aux Détails"
+
+#: Views\Admin\Index.cshtml:41
+#: obj\Release\Package\PackageTmp\Views\Admin\Index.cshtml:41
+msgid "Back to Production Units"
+msgstr "Retour à Unités de Production"
+
+#: Views\Admin\CreateUser.cshtml:27
+#: Views\Admin\EditRoles.cshtml:27
+#: Views\Admin\EditUser.cshtml:27
+#: obj\Release\Package\PackageTmp\Views\Admin\CreateUser.cshtml:27
+#: obj\Release\Package\PackageTmp\Views\Admin\EditRoles.cshtml:27
+#: obj\Release\Package\PackageTmp\Views\Admin\EditUser.cshtml:27
+msgid "Back to User List"
+msgstr "Retour à Utilisateur"
+
+#: Migrations\Configuration.cs:257
+#: Migrations\Configuration.cs:261
+msgid "Bad"
+msgstr "Mauvais"
+
+#: Migrations\Configuration.cs:209
+msgid "Bad looking vegetables"
+msgstr "Végétaux peu en forme"
+
+#: Views\ProductionUnits\Details.cshtml:938
+#: Views\ProductionUnits\UserUnit.cshtml:921
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:938
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:921
+msgid "Best to contact:"
+msgstr "Meilleur moment :"
+
+#: Migrations\Configuration.cs:98
+msgid "Bioponics"
+msgstr "Bioponie"
+
+#: Migrations\Configuration.cs:216
+msgid "Broken pump"
+msgstr "Pompe cassée"
+
+#: Migrations\Configuration.cs:244
+msgid "Call Pioneer"
+msgstr "Appel Pionnier"
+
+#: Views\Recipes\Index.cshtml:81
+#: obj\Release\Package\PackageTmp\Views\Recipes\Index.cshtml:81
+msgid "Can be planted in:"
+msgstr "Peut être planté dans :"
+
+#: Views\Events\Index.cshtml:131
+#: Views\ProductionUnits\Details.cshtml:1012
+#: Views\ProductionUnits\UserUnit.cshtml:995
+#: obj\Release\Package\PackageTmp\Views\Events\Index.cshtml:131
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:1012
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:995
+msgid "Cancel"
+msgstr "Annuler"
+
+#: Views\ProductionUnits\Update.cshtml:105
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Update.cshtml:105
+msgid "Change image"
+msgstr "Change l'image"
+
+#: Views\MyInfo\Update.cshtml:110
+#: obj\Release\Package\PackageTmp\Views\MyInfo\Update.cshtml:110
+msgid "Choose the application default language"
+msgstr "Choisissez la langue par défaut"
+
+#: Views\Recipes\Index.cshtml:22
+#: obj\Release\Package\PackageTmp\Views\Recipes\Index.cshtml:22
+msgid "Choose the suitable recipes for your greenhouse"
+msgstr "Choisissez la meilleur recette pour votre serre"
+
+#: Migrations\Configuration.cs:85
+msgid "City - Original"
+msgstr ""
+
+#: Migrations\Configuration.cs:86
+msgid "City - Signature"
+msgstr ""
+
+#: Migrations\Configuration.cs:214
+msgid "Clogged sprinkler"
+msgstr "Emetteur bouché"
+
+#: Migrations\Configuration.cs:215
+msgid "Clogged tubes"
+msgstr "Tuyau bouché"
+
+#: Views\ProductionUnits\Details.cshtml:956
+#: Views\ProductionUnits\UserUnit.cshtml:939
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:956
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:939
+msgid "CO2 SAVED"
+msgstr "CO2 ECO."
+
+#: Views\Account\Login.cshtml:559
+#: obj\Release\Package\PackageTmp\Views\Account\Login.cshtml:559
+msgid "Connect with your Smart Greenhouse"
+msgstr "Connectez-vous à votre Serre"
+
+#: Views\Account\Login.cshtml:590
+#: obj\Release\Package\PackageTmp\Views\Account\Login.cshtml:590
+msgid "Contact Us"
+msgstr "Nous Contacter"
+
+#: Views\Messages\Index.cshtml:108
+#: obj\Release\Package\PackageTmp\Views\Messages\Index.cshtml:108
+msgid "content from Sigfox backend"
+msgstr "contenu reçu par Sigfox"
+
+#: Migrations\Configuration.cs:213
+msgid "Cracked tank"
+msgstr "Bassin fendu"
+
+#: Views\Admin\Index.cshtml:33
+#: obj\Release\Package\PackageTmp\Views\Admin\Index.cshtml:33
+msgid "Create new User"
+msgstr "Créer nouveau Utilisateur"
+
+#: Views\Admin\CreateUser.cshtml:18
+#: obj\Release\Package\PackageTmp\Views\Admin\CreateUser.cshtml:18
+msgid "Create Users"
+msgstr "Créer Utilisateur"
+
+#: Views\Events\Manage.cshtml:64
+#: obj\Release\Package\PackageTmp\Views\Events\Manage.cshtml:64
+msgid "created by"
+msgstr "crée par"
+
+#: Views\Events\Index.cshtml:65
+#: obj\Release\Package\PackageTmp\Views\Events\Index.cshtml:65
+msgid "Created by"
+msgstr "Créé par"
+
+#: Views\Home\Index.cshtml:160
+#: Views\Home\Index.cshtml:182
+#: Views\Home\Index.cshtml:204
+#: Views\Home\Index.cshtml:226
+#: Views\InteractiveMap\Index.cshtml:361
+#: Views\InteractiveMap\Index.cshtml:385
+#: Views\ProductionUnits\Details.cshtml:783
+#: Views\ProductionUnits\Details.cshtml:812
+#: Views\ProductionUnits\Details.cshtml:843
+#: Views\ProductionUnits\Details.cshtml:873
+#: Views\ProductionUnits\UserUnit.cshtml:766
+#: Views\ProductionUnits\UserUnit.cshtml:795
+#: Views\ProductionUnits\UserUnit.cshtml:826
+#: Views\ProductionUnits\UserUnit.cshtml:856
+#: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:160
+#: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:182
+#: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:204
+#: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:226
+#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:361
+#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:385
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:783
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:812
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:843
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:873
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:766
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:795
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:826
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:856
+msgid "CURRENT"
+msgstr "ACTUEL"
+
+#: Migrations\Configuration.cs:95
+msgid "Custom Lab"
+msgstr "Config. Perso"
+
+#: Views\PerformanceHealth\Index.cshtml:28
+#: obj\Release\Package\PackageTmp\Views\PerformanceHealth\Index.cshtml:28
+msgid "daily production"
+msgstr "prod. journalière"
+
+#: Migrations\Configuration.cs:212
+msgid "Damaged sensor"
+msgstr "Capteur endommagé"
+
+#: Views\PerformanceHealth\Index.cshtml:25
+#: obj\Release\Package\PackageTmp\Views\PerformanceHealth\Index.cshtml:25
+msgid "date"
+msgstr "date"
+
+#: Views\Events\Index.cshtml:62
+#: Views\Events\Index.cshtml:103
+#: obj\Release\Package\PackageTmp\Views\Events\Index.cshtml:62
+#: obj\Release\Package\PackageTmp\Views\Events\Index.cshtml:103
+msgid "Date"
+msgstr "Date"
+
+#: Views\Recipes\Index.cshtml:78
+#: obj\Release\Package\PackageTmp\Views\Recipes\Index.cshtml:78
+msgid "DAY OF GERMINATION<br />FROM SEED"
+msgstr "JOUR DE GERMINATION<br /> DEPUIS GRAINE"
+
+#: Views\Recipes\Index.cshtml:78
+#: obj\Release\Package\PackageTmp\Views\Recipes\Index.cshtml:78
+msgid "DAY OF HARVEST<br />FROM SOW."
+msgstr "JOUR DE RECOLTE <br /> DEPUIS SEMIS"
+
+#: Migrations\Configuration.cs:207
+msgid "Dead fish"
+msgstr "Poisson mort"
+
+#: Migrations\Configuration.cs:191
+msgid "December"
+msgstr "Décembre"
+
+#: Views\Events\Index.cshtml:40
+#: obj\Release\Package\PackageTmp\Views\Events\Index.cshtml:40
+msgid "Desc"
+msgstr "Desc"
+
+#: Views\Events\Index.cshtml:63
+#: obj\Release\Package\PackageTmp\Views\Events\Index.cshtml:63
+msgid "Description"
+msgstr "Description"
+
+#: Views\ProductionUnits\Index.cshtml:91
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Index.cshtml:91
+msgid "Details"
+msgstr "Détails"
+
+#: Migrations\Configuration.cs:94
+msgid "Development Kit"
+msgstr "Kit de Dev."
+
+#: Views\Recipes\Index.cshtml:78
+#: obj\Release\Package\PackageTmp\Views\Recipes\Index.cshtml:78
+msgid "DISTANCE BETWEEN<br />PLANTS (CM)"
+msgstr "DISTANCE ENTRE<br />PLANTES (CM)"
+
+#: Views\Events\Index.cshtml:99
+#: obj\Release\Package\PackageTmp\Views\Events\Index.cshtml:99
+msgid "Edit"
+msgstr "Modifier"
+
+#: Views\Admin\CreateUser.cshtml:12
+#: Views\Admin\EditRoles.cshtml:12
+#: obj\Release\Package\PackageTmp\Views\Admin\CreateUser.cshtml:12
+#: obj\Release\Package\PackageTmp\Views\Admin\EditRoles.cshtml:12
+msgid "Edit Roles"
+msgstr "Editer les Roles"
+
+#: Views\Admin\EditUser.cshtml:12
+#: obj\Release\Package\PackageTmp\Views\Admin\EditUser.cshtml:12
+msgid "Edit Users"
+msgstr "Editer les Utilisateurs"
+
+#: Viewmodels\AccountViewModels.cs:8
+#: Viewmodels\AccountViewModels.cs:32
+#: Views\MyInfo\Update.cshtml:98
+#: obj\Release\Package\PackageTmp\Views\MyInfo\Update.cshtml:98
+msgid "Email"
+msgstr "Email"
+
+#: Views\ProductionUnits\Details.cshtml:936
+#: Views\ProductionUnits\UserUnit.cshtml:919
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:936
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:919
+msgid "Email:"
+msgstr "Email:"
+
+#: Migrations\Configuration.cs:278
+msgid "Equipment"
+msgstr "Equipement"
+
+#: Views\ProductionUnits\Details.cshtml:951
+#: Views\ProductionUnits\UserUnit.cshtml:934
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:951
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:934
+msgid "EST. PROD."
+msgstr "EST. PROD."
+
+#: Views\Events\Manage.cshtml:48
+#: Views\ProductionUnits\Details.cshtml:898
+#: Views\ProductionUnits\Details.cshtml:901
+#: Views\ProductionUnits\UserUnit.cshtml:881
+#: Views\ProductionUnits\UserUnit.cshtml:884
+#: obj\Release\Package\PackageTmp\Views\Events\Manage.cshtml:48
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:898
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:901
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:881
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:884
+msgid "Export CSV"
+msgstr "Exporter CSV"
+
+#: Views\ProductionUnits\Details.cshtml:270
+#: Views\ProductionUnits\UserUnit.cshtml:270
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:270
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:270
+msgid "External Air Temp"
+msgstr "Temp. Air Ext."
+
+#: Views\ProductionUnits\Details.cshtml:362
+#: Views\ProductionUnits\UserUnit.cshtml:361
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:362
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:361
+msgid "External Humidity"
+msgstr "Humidité Ext."
+
+#: Migrations\Configuration.cs:87
+msgid "Family14 - Original"
+msgstr ""
+
+#: Migrations\Configuration.cs:90
+msgid "Family22 - 4 Seasons"
+msgstr ""
+
+#: Migrations\Configuration.cs:91
+msgid "Family22 - Autonomy"
+msgstr ""
+
+#: Migrations\Configuration.cs:88
+msgid "Family22 - Original"
+msgstr ""
+
+#: Migrations\Configuration.cs:89
+msgid "Family22 - Production"
+msgstr ""
+
+#: Migrations\Configuration.cs:92
+msgid "Family22 - Signature"
+msgstr ""
+
+#: Migrations\Configuration.cs:93
+msgid "Farm"
+msgstr "Farm"
+
+#: Migrations\Configuration.cs:181
+msgid "February"
+msgstr "Février"
+
+#: Migrations\Configuration.cs:230
+msgid "Feed fish"
+msgstr "Nourrir poisson"
+
+#: Migrations\Configuration.cs:119
+msgid "Feeling"
+msgstr "Sentiment"
+
+#: Migrations\Configuration.cs:224
+msgid "Filter cleaning"
+msgstr "Nettoyer le filtre"
+
+#: Migrations\Configuration.cs:221
+msgid "Filter issue"
+msgstr "Problème de filtre"
+
+#: Migrations\Configuration.cs:275
+msgid "Fish"
+msgstr "Poissons"
+
+#: Migrations\Configuration.cs:118
+msgid "Fish Health"
+msgstr "Santé des Poissons"
+
+#: Migrations\Configuration.cs:160
+msgid "Fish Tank"
+msgstr "Bassin"
+
+#: Views\Messages\Index.cshtml:88
+#: obj\Release\Package\PackageTmp\Views\Messages\Index.cshtml:88
+msgid "Follow Messages sent by Sigfox from Production Units"
+msgstr "Suivez les Messages Sigfox envoyés par les Unités de Production"
+
+#: Views\Account\Login.cshtml:593
+#: obj\Release\Package\PackageTmp\Views\Account\Login.cshtml:593
+msgid "For any informations or suggestions"
+msgstr "Pour plus d'informations ou suggestions"
+
+#: Migrations\Configuration.cs:231
+msgid "Gather vegetables"
+msgstr "Ramasser Végétaux"
+
+#: Migrations\Configuration.cs:222
+msgid "Glass broken"
+msgstr "Vitre cassée"
+
+#: Migrations\Configuration.cs:227
+msgid "Glass cleaning"
+msgstr "Nettoyage des vitres"
+
+#: Migrations\Configuration.cs:127
+#: Migrations\Configuration.cs:255
+#: Migrations\Configuration.cs:259
+msgid "Good"
+msgstr "Bon"
+
+#: Migrations\Configuration.cs:263
+msgid "Happy"
+msgstr "Heureux"
+
+#: Migrations\Configuration.cs:123
+msgid "Harvest"
+msgstr "Récolte"
+
+#: Views\PerformanceHealth\Index.cshtml:29
+#: obj\Release\Package\PackageTmp\Views\PerformanceHealth\Index.cshtml:29
+msgid "health. lvl"
+msgstr "niveau santé"
+
+#: Migrations\Configuration.cs:133
+msgid "High"
+msgstr "Elevé"
+
+#: Views\ProductionUnits\Details.cshtml:354
+#: Views\ProductionUnits\UserUnit.cshtml:353
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:354
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:353
+msgid "Humidity"
+msgstr "Humidité"
+
+#: Views\Home\Index.cshtml:222
+#: Views\ProductionUnits\Details.cshtml:869
+#: Views\ProductionUnits\UserUnit.cshtml:852
+#: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:222
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:869
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:852
+msgid "Humidity (%)"
+msgstr "Humidité (%)"
+
+#: Views\ProductionUnits\Update.cshtml:95
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Update.cshtml:95
+msgid "Hydroponic Type"
+msgstr "Type Hydroponie"
+
+#: Viewmodels\ProductionUnitViewModel.cs:20
+msgid "hydroponicType"
+msgstr "Type d'hydro"
+
+#: Migrations\Configuration.cs:219
+msgid "Ice into towers"
+msgstr "Glace dans les tours"
+
+#: Migrations\Configuration.cs:122
+msgid "Improvement"
+msgstr "Amélioration"
+
+#: Migrations\Configuration.cs:109
+msgid "In Maintenance"
+msgstr "En Maintenance"
+
+#: Viewmodels\ProductionUnitViewModel.cs:27
+#: Views\Events\Manage.cshtml:63
+#: obj\Release\Package\PackageTmp\Views\Events\Manage.cshtml:63
+msgid "info"
+msgstr "info"
+
+#: Migrations\Configuration.cs:120
+#: Views\ProductionUnits\Update.cshtml:86
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Update.cshtml:86
+msgid "Info"
+msgstr "Info"
+
+#: Migrations\Configuration.cs:210
+msgid "Insect pest"
+msgstr "Invasion nuisibles"
+
+#: Migrations\Configuration.cs:252
+msgid "Install auto feeder"
+msgstr "Installer distributeur"
+
+#: Migrations\Configuration.cs:248
+msgid "Install double door back"
+msgstr "Installer double porte arrière"
+
+#: Migrations\Configuration.cs:247
+msgid "Install double door front"
+msgstr "Installer double porte avant"
+
+#: Migrations\Configuration.cs:251
+msgid "Install extra tanks"
+msgstr "Installer bassin supplémentaire"
+
+#: Migrations\Configuration.cs:246
+msgid "Install extra towers"
+msgstr "Installer tours suppl."
+
+#: Migrations\Configuration.cs:250
+msgid "Install shadow cloth"
+msgstr "Installer toile d'ombrage"
+
+#: Migrations\Configuration.cs:253
+msgid "Install solar panels"
+msgstr "Installer panneaux solaires"
+
+#: Migrations\Configuration.cs:249
+msgid "Install UV filter"
+msgstr "Installer filtre UV"
+
+#: Views\Events\Index.cshtml:64
+#: Views\Events\Index.cshtml:117
+#: Views\Events\Manage.cshtml:62
+#: obj\Release\Package\PackageTmp\Views\Events\Index.cshtml:64
+#: obj\Release\Package\PackageTmp\Views\Events\Index.cshtml:117
+#: obj\Release\Package\PackageTmp\Views\Events\Manage.cshtml:62
+msgid "isOpen"
+msgstr "ouvert"
+
+#: Migrations\Configuration.cs:114
+msgid "Issue"
+msgstr "Incident"
+
+#: Migrations\Configuration.cs:180
+msgid "January"
+msgstr "Janvier"
+
+#: Migrations\Configuration.cs:186
+msgid "July"
+msgstr "Juillet"
+
+#: Migrations\Configuration.cs:185
+msgid "June"
+msgstr "Juin"
+
+#: Views\ProductionUnitOwner\Index.cshtml:46
+#: obj\Release\Package\PackageTmp\Views\ProductionUnitOwner\Index.cshtml:46
+msgid "lang"
+msgstr "lang"
+
+#: Views\ProductionUnits\Index.cshtml:89
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Index.cshtml:89
+msgid "last measure"
+msgstr "dernière mesure"
+
+#: Views\Measures\Index.cshtml:89
+#: Views\Messages\Index.cshtml:93
+#: obj\Release\Package\PackageTmp\Views\Measures\Index.cshtml:89
+#: obj\Release\Package\PackageTmp\Views\Messages\Index.cshtml:93
+msgid "Last Month"
+msgstr "Mois Dernier"
+
+#: Views\ProductionUnits\UserUnit.cshtml:750
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:750
+msgid "Last Three Months"
+msgstr "Trois Dern. Mois"
+
+#: Views\ProductionUnits\UserUnit.cshtml:749
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:749
+msgid "Last Week"
+msgstr "Semaine Dern."
+
+#: Migrations\Configuration.cs:269
+msgid "Leaf vegetables - less than 200gr"
+msgstr "Légumes feuilles - moins de 200gr"
+
+#: Migrations\Configuration.cs:270
+msgid "Leaf vegetables - more than 200gr"
+msgstr "Légumes feuilles - plus de 200gr"
+
+#: Migrations\Configuration.cs:162
+msgid "Light"
+msgstr "Lumière"
+
+#: Views\ProductionUnits\Details.cshtml:939
+#: Views\ProductionUnits\UserUnit.cshtml:922
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:939
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:922
+msgid "Location:"
+msgstr "Location:"
+
+#: Views\Account\Login.cshtml:695
+#: obj\Release\Package\PackageTmp\Views\Account\Login.cshtml:695
+msgid "Log in"
+msgstr "Se Connecter"
+
+#: Views\Shared\_Layout.cshtml:216
+#: Views\Shared\_RedesignLayout.cshtml:231
+#: obj\Release\Package\PackageTmp\Views\Shared\_Layout.cshtml:198
+#: obj\Release\Package\PackageTmp\Views\Shared\_RedesignLayout.cshtml:231
+msgid "Log off"
+msgstr "Déconnexion"
+
+#: Views\ProductionUnits\Details.cshtml:986
+#: Views\ProductionUnits\UserUnit.cshtml:969
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:986
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:969
+msgid "Log your Actions / Events here"
+msgstr "Saisir vos Actions / Evénements ici"
+
+#: Views\Shared\_Layout.cshtml:235
+#: Views\Shared\_RedesignLayout.cshtml:249
+#: obj\Release\Package\PackageTmp\Views\Shared\_Layout.cshtml:217
+#: obj\Release\Package\PackageTmp\Views\Shared\_RedesignLayout.cshtml:249
+msgid "Login"
+msgstr "Connexion"
+
+#: Migrations\Configuration.cs:131
+msgid "Low"
+msgstr "Bas"
+
+#: Migrations\Configuration.cs:115
+msgid "Maintenance"
+msgstr "Maintenance"
+
+#: Views\Log\Index.cshtml:15
+#: obj\Release\Package\PackageTmp\Views\Log\Index.cshtml:15
+msgid "Manage Application Logs"
+msgstr "Gérer les Messages Applicatifs"
+
+#: Views\Measures\Index.cshtml:84
+#: obj\Release\Package\PackageTmp\Views\Measures\Index.cshtml:84
+msgid "Manage Measures from sensors"
+msgstr "Gérez les Mesures provenant des capteurs"
+
+#: Views\ProductionUnits\Index.cshtml:57
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Index.cshtml:57
+msgid "Manage Production Unit Owners"
+msgstr "Gérer Propriétaires des Unit. de Prod."
+
+#: Views\Events\Manage.cshtml:30
+#: Views\ProductionUnits\Index.cshtml:49
+#: obj\Release\Package\PackageTmp\Views\Events\Manage.cshtml:30
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Index.cshtml:49
+msgid "Manage Production Units Events"
+msgstr "Gérez les événements de l'Unité de Production"
+
+#: Views\ProductionUnits\Index.cshtml:40
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Index.cshtml:40
+msgid "Manage Production Units from Pioneer Citizen Network"
+msgstr "Gérez les Unités de Production du Réseau des Citoyens Pionniers"
+
+#: Views\ProductionUnitOwner\Index.cshtml:21
+#: obj\Release\Package\PackageTmp\Views\ProductionUnitOwner\Index.cshtml:21
+msgid "Manage Production Units Owners from Pioneer Citizen Network"
+msgstr "Gérer les Propriétaires des Unit. de Prod. du Réseau des Citoyens Pionniers"
+
+#: Views\PerformanceHealth\Index.cshtml:18
+#: obj\Release\Package\PackageTmp\Views\PerformanceHealth\Index.cshtml:18
+msgid "Manage Recognition Records from your Production Units"
+msgstr "Gérez les Enregistrement de Reconnaissance de vos Unités de Production"
+
+#: Views\ProductionUnits\Details.cshtml:897
+#: Views\ProductionUnits\UserUnit.cshtml:880
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:897
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:880
+msgid "Manage Unit"
+msgstr "Gérer Unité"
+
+#: Views\Admin\EditRoles.cshtml:18
+#: Views\Admin\EditUser.cshtml:18
+#: Views\Admin\Index.cshtml:24
+#: Views\ProductionUnits\Index.cshtml:65
+#: obj\Release\Package\PackageTmp\Views\Admin\EditRoles.cshtml:18
+#: obj\Release\Package\PackageTmp\Views\Admin\EditUser.cshtml:18
+#: obj\Release\Package\PackageTmp\Views\Admin\Index.cshtml:24
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Index.cshtml:65
+msgid "Manage Users"
+msgstr "Gérer Utilisateurs"
+
+#: Migrations\Configuration.cs:182
+msgid "March"
+msgstr "Mars"
+
+#: Migrations\Configuration.cs:165
+msgid "Maximum"
+msgstr "Maximum"
+
+#: Migrations\Configuration.cs:184
+msgid "May"
+msgstr "May"
+
+#: Views\Shared\_Layout.cshtml:108
+#: Views\Shared\_RedesignLayout.cshtml:108
+#: obj\Release\Package\PackageTmp\Views\Shared\_Layout.cshtml:95
+#: obj\Release\Package\PackageTmp\Views\Shared\_RedesignLayout.cshtml:108
+msgid "Measures"
+msgstr "Mesures"
+
+#: Views\Measures\Index.cshtml:78
+#: obj\Release\Package\PackageTmp\Views\Measures\Index.cshtml:78
+msgid "Measures Monitoring"
+msgstr "Visualisation des Mesures"
+
+#: Migrations\Configuration.cs:132
+msgid "Medium"
+msgstr "Moyen"
+
+#: Views\Messages\Index.cshtml:109
+#: obj\Release\Package\PackageTmp\Views\Messages\Index.cshtml:109
+msgid "message type"
+msgstr "type message"
+
+#: Views\Shared\_Layout.cshtml:91
+#: Views\Shared\_RedesignLayout.cshtml:80
+#: obj\Release\Package\PackageTmp\Views\Shared\_Layout.cshtml:78
+#: obj\Release\Package\PackageTmp\Views\Shared\_RedesignLayout.cshtml:80
+msgid "Messages"
+msgstr "Messages"
+
+#: Views\Messages\Index.cshtml:81
+#: obj\Release\Package\PackageTmp\Views\Messages\Index.cshtml:81
+msgid "Messages Monitoring"
+msgstr "Visualisation des Messages"
+
+#: Migrations\Configuration.cs:163
+msgid "Moderate"
+msgstr "Moyen"
+
+#: Migrations\Configuration.cs:220
+msgid "Moisissure"
+msgstr "Moisissure"
+
+#: Migrations\Configuration.cs:143
+msgid "Monitoring kit v.1"
+msgstr "Kit mesure v.1"
+
+#: Migrations\Configuration.cs:144
+msgid "Monitoring kit v.2"
+msgstr "Kit mesure v.2"
+
+#: Migrations\Configuration.cs:167
+msgid "Morning"
+msgstr "Matin"
+
+#: Views\MyInfo\Update.cshtml:84
+#: Views\Shared\_Layout.cshtml:170
+#: Views\Shared\_RedesignLayout.cshtml:186
+#: obj\Release\Package\PackageTmp\Views\MyInfo\Update.cshtml:84
+#: obj\Release\Package\PackageTmp\Views\Shared\_Layout.cshtml:152
+#: obj\Release\Package\PackageTmp\Views\Shared\_RedesignLayout.cshtml:186
+msgid "My Information"
+msgstr "Mes Informations"
+
+#: Views\Account\Login.cshtml:565
+#: obj\Release\Package\PackageTmp\Views\Account\Login.cshtml:565
+msgid "myfoodhub is licensed under a GPLv3"
+msgstr "myfoodhub est publié sous une licence GPLv3"
+
+#: Viewmodels\AccountViewModels.cs:23
+msgid "Name"
+msgstr "Nom"
+
+#: Migrations\Configuration.cs:267
+msgid "Need support"
+msgstr "Besoin d'aide"
+
+#: Views\Account\Login.cshtml:577
+#: obj\Release\Package\PackageTmp\Views\Account\Login.cshtml:577
+msgid "Need Support?"
+msgstr "Besoin d'aide ?"
+
+#: Views\Home\Index.cshtml:282
+#: Views\InteractiveMap\Index.cshtml:344
+#: Views\InteractiveMap\Index.cshtml:406
+#: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:282
+#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:344
+#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:406
+msgid "Network Info"
+msgstr "Info du Réseau"
+
+#: Views\Home\Index.cshtml:247
+#: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:247
+msgid "Network Status"
+msgstr "Etat du Réseau"
+
+#: Viewmodels\AccountViewModels.cs:41
+#: Views\MyInfo\Update.cshtml:106
+#: obj\Release\Package\PackageTmp\Views\MyInfo\Update.cshtml:106
+msgid "New Password"
+msgstr "Nouveau Mot de Passe"
+
+#: Migrations\Configuration.cs:169
+msgid "Night"
+msgstr "Nuit"
+
+#: Views\Events\Manage.cshtml:62
+#: obj\Release\Package\PackageTmp\Views\Events\Manage.cshtml:62
+msgid "No"
+msgstr "Non"
+
+#: Migrations\Configuration.cs:211
+msgid "No/Bad data received"
+msgstr "Pas/Mauvais données reçues"
+
+#: Migrations\Configuration.cs:217
+msgid "Noisy pump"
+msgstr "Pompe bruyante"
+
+#: Migrations\Configuration.cs:164
+msgid "Normal"
+msgstr "Normal"
+
+#: Migrations\Configuration.cs:97
+msgid "Not applicable"
+msgstr "Pas applicable"
+
+#: Views\Events\Index.cshtml:110
+#: obj\Release\Package\PackageTmp\Views\Events\Index.cshtml:110
+msgid "Note"
+msgstr "Note"
+
+#: Migrations\Configuration.cs:190
+msgid "November"
+msgstr "Novembre"
+
+#: Migrations\Configuration.cs:189
+msgid "October"
+msgstr "Octobre"
+
+#: Controllers\HomeController.cs:254
+#: Controllers\InteractiveMapController.cs:247
+#: Migrations\Configuration.cs:111
+msgid "Offline"
+msgstr "Hors-ligne"
+
+#: Views\ProductionUnits\Details.cshtml:1013
+#: Views\ProductionUnits\UserUnit.cshtml:996
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:1013
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:996
+msgid "OK"
+msgstr "OK"
+
+#: Viewmodels\AccountViewModels.cs:37
+#: Views\MyInfo\Update.cshtml:102
+#: obj\Release\Package\PackageTmp\Views\MyInfo\Update.cshtml:102
+msgid "Old Password"
+msgstr "Ancien Mot de Passe"
+
+#: Controllers\HomeController.cs:252
+#: Controllers\InteractiveMapController.cs:245
+msgid "On Maintenance"
+msgstr "En Maintenance"
+
+#: Migrations\Configuration.cs:146
+msgid "Onboard touchscreen"
+msgstr "Ecran Tactile"
+
+#: Migrations\Configuration.cs:240
+msgid "Open doors"
+msgstr "Ouverture des portes"
+
+#: Views\Events\Index.cshtml:37
+#: obj\Release\Package\PackageTmp\Views\Events\Index.cshtml:37
+msgid "Order By Date"
+msgstr "Trier Par Date"
+
+#: Viewmodels\ProductionUnitViewModel.cs:33
+#: Views\ProductionUnits\Index.cshtml:83
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Index.cshtml:83
+msgid "owner"
+msgstr "respo."
+
+#: Views\ProductionUnits\Update.cshtml:90
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Update.cshtml:90
+msgid "Owner"
+msgstr "Propriétaire"
+
+#: Viewmodels\AccountViewModels.cs:14
+msgid "Password"
+msgstr "Mot de Passe"
+
+#: Views\Home\Index.cshtml:167
+#: Views\Home\Index.cshtml:189
+#: Views\Home\Index.cshtml:211
+#: Views\Home\Index.cshtml:233
+#: Views\InteractiveMap\Index.cshtml:368
+#: Views\InteractiveMap\Index.cshtml:392
+#: Views\ProductionUnits\Details.cshtml:790
+#: Views\ProductionUnits\Details.cshtml:819
+#: Views\ProductionUnits\Details.cshtml:850
+#: Views\ProductionUnits\UserUnit.cshtml:773
+#: Views\ProductionUnits\UserUnit.cshtml:802
+#: Views\ProductionUnits\UserUnit.cshtml:833
+#: Views\ProductionUnits\UserUnit.cshtml:863
+#: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:167
+#: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:189
+#: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:211
+#: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:233
+#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:368
+#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:392
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:790
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:819
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:850
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:773
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:802
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:833
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:863
+msgid "PAST HOUR"
+msgstr "DERNIERE HEURE"
+
+#: Migrations\Configuration.cs:142
+msgid "Pellet stove"
+msgstr "Poêle à granulés"
+
+#: Views\ProductionUnits\Details.cshtml:953
+#: Views\ProductionUnits\Details.cshtml:958
+#: Views\ProductionUnits\UserUnit.cshtml:936
+#: Views\ProductionUnits\UserUnit.cshtml:941
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:953
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:958
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:936
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:941
+msgid "PER MONTH"
+msgstr "PAR MOIS"
+
+#: Views\InteractiveMap\Index.cshtml:191
+#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:191
+msgid "Percentage"
+msgstr "Pourcentage"
+
+#: Migrations\Configuration.cs:128
+msgid "Perfect"
+msgstr "Parfait"
+
+#: Migrations\Configuration.cs:242
+msgid "Perform agro analysis"
+msgstr "Effectuer analyse agro."
+
+#: Migrations\Configuration.cs:241
+msgid "Perform pH calib."
+msgstr "Calibrer sonde pH"
+
+#: Migrations\Configuration.cs:276
+msgid "Performance"
+msgstr "Performance"
+
+#: Views\ProductionUnits\Details.cshtml:946
+#: Views\ProductionUnits\UserUnit.cshtml:929
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:946
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:929
+msgid "PERFORMANCE"
+msgstr "PERFORMANCE"
+
+#: Views\Shared\_Layout.cshtml:141
+#: Views\Shared\_RedesignLayout.cshtml:146
+#: obj\Release\Package\PackageTmp\Views\Shared\_Layout.cshtml:123
+#: obj\Release\Package\PackageTmp\Views\Shared\_RedesignLayout.cshtml:146
+msgid "Performance &amp; Health"
+msgstr "Performances &amp; Santé"
+
+#: Views\PerformanceHealth\Index.cshtml:12
+#: obj\Release\Package\PackageTmp\Views\PerformanceHealth\Index.cshtml:12
+msgid "Performance &amp; Health (Preview)"
+msgstr "Performances &amp; Santé (Démo)"
+
+#: Migrations\Configuration.cs:156
+msgid "Permaculture Bed"
+msgstr "Butte de Permaculture"
+
+#: Migrations\Configuration.cs:148
+msgid "Permaculture beds"
+msgstr "Buttes de Permaculture"
+
+#: Migrations\Configuration.cs:149
+msgid "Permaculture beds and biochar"
+msgstr "Buttes de Permaculture et Biochar"
+
+#: Migrations\Configuration.cs:277
+msgid "Pest"
+msgstr "Insectes"
+
+#: Views\InteractiveMap\Index.cshtml:357
+#: Views\ProductionUnits\Details.cshtml:779
+#: Views\ProductionUnits\UserUnit.cshtml:762
+#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:357
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:779
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:762
+msgid "pH"
+msgstr "pH"
+
+#: Views\ProductionUnits\Details.cshtml:937
+#: Views\ProductionUnits\UserUnit.cshtml:920
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:937
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:920
+msgid "Phone:"
+msgstr "Tel:"
+
+#: Views\InteractiveMap\Index.cshtml:337
+#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:337
+msgid "Pioneer Citizen Map"
+msgstr "Carte des Citoyens Pionniers"
+
+#: Views\Home\Index.cshtml:130
+#: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:130
+msgid "Pioneer Citizen Network"
+msgstr "RESEAU DES CITOYENS PIONNIERS"
+
+#: Migrations\Configuration.cs:117
+msgid "Plant Health"
+msgstr "Santé des Végétaux"
+
+#: Migrations\Configuration.cs:232
+msgid "Plant seedlings"
+msgstr "Planter les semis"
+
+#: Migrations\Configuration.cs:274
+msgid "Plants"
+msgstr "Plantes"
+
+#: Views\ProductionUnits\UserUnit.cshtml:974
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:974
+msgid "Please select more detailed option"
+msgstr "Choisir une Option"
+
+#: Views\ProductionUnits\Details.cshtml:991
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:991
+msgid "Please select More detailed Option"
+msgstr "Choisir une Option"
+
+#: Views\Account\Login.cshtml:679
+#: obj\Release\Package\PackageTmp\Views\Account\Login.cshtml:679
+msgid "Please Sign In"
+msgstr "Connectez-vous"
+
+#: Migrations\Configuration.cs:125
+msgid "Poor"
+msgstr "Faible"
+
+#: Views\PerformanceHealth\Index.cshtml:27
+#: obj\Release\Package\PackageTmp\Views\PerformanceHealth\Index.cshtml:27
+msgid "prod. lvl"
+msgstr "niveau de prod."
+
+#: Views\ProductionUnits\Index.cshtml:86
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Index.cshtml:86
+msgid "prod. type"
+msgstr "type de prod."
+
+#: Views\Measures\Index.cshtml:102
+#: obj\Release\Package\PackageTmp\Views\Measures\Index.cshtml:102
+msgid "prod. unit"
+msgstr "unité de prod."
+
+#: Controllers\ProductionUnitsController.cs:234
+msgid "Production Unit already in use"
+msgstr "Unité de Prod. déjà en cours d'utilisation"
+
+#: Views\ProductionUnits\Details.cshtml:751
+#: Views\ProductionUnits\UserUnit.cshtml:744
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:751
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:744
+msgid "Production Unit Details"
+msgstr "Détails Unité de Production"
+
+#: Controllers\ProductionUnitOwnerController.cs:166
+msgid "Production Unit Owner already in use"
+msgstr "Propriétaire déjà en cours d'utilisation"
+
+#: Views\Shared\_Layout.cshtml:124
+#: Views\Shared\_RedesignLayout.cshtml:127
+#: obj\Release\Package\PackageTmp\Views\Shared\_Layout.cshtml:109
+#: obj\Release\Package\PackageTmp\Views\Shared\_RedesignLayout.cshtml:127
+msgid "Production Units"
+msgstr "Unités de Prod."
+
+#: Views\ProductionUnitOwner\Index.cshtml:15
+#: Views\ProductionUnits\Index.cshtml:34
+#: obj\Release\Package\PackageTmp\Views\ProductionUnitOwner\Index.cshtml:15
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Index.cshtml:34
+msgid "Production Units List"
+msgstr "Liste des Unités de Production"
+
+#: Views\Events\Index.cshtml:26
+#: Views\Events\Manage.cshtml:24
+#: Views\ProductionUnits\Update.cshtml:50
+#: obj\Release\Package\PackageTmp\Views\Events\Index.cshtml:26
+#: obj\Release\Package\PackageTmp\Views\Events\Manage.cshtml:24
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Update.cshtml:50
+msgid "Production Units Management"
+msgstr "Gestion Unité de Production"
+
+#: Views\Recipes\Index.cshtml:15
+#: Views\Shared\_Layout.cshtml:156
+#: Views\Shared\_RedesignLayout.cshtml:166
+#: obj\Release\Package\PackageTmp\Views\Recipes\Index.cshtml:15
+#: obj\Release\Package\PackageTmp\Views\Shared\_Layout.cshtml:138
+#: obj\Release\Package\PackageTmp\Views\Shared\_RedesignLayout.cshtml:166
+msgid "Recipes"
+msgstr "Recettes"
+
+#: Viewmodels\AccountViewModels.cs:17
+msgid "Remember me?"
+msgstr "Se souvenir de moi?"
+
+#: Migrations\Configuration.cs:271
+msgid "Root vegetables - less than 200gr"
+msgstr "Légumes racines - moins de 200gr"
+
+#: Migrations\Configuration.cs:272
+msgid "Root vegetables - more than 200gr"
+msgstr "Légumes racines - plus de 200gr"
+
+#: Migrations\Configuration.cs:264
+msgid "Satify"
+msgstr "Satisfait"
+
+#: Views\MyInfo\Update.cshtml:114
+#: obj\Release\Package\PackageTmp\Views\MyInfo\Update.cshtml:114
+msgid "Save"
+msgstr "Enregistrer"
+
+#: Views\ProductionUnits\Update.cshtml:119
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Update.cshtml:119
+msgid "Save and Close"
+msgstr "Sauver et Fermer"
+
+#: Views\ProductionUnits\Index.cshtml:73
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Index.cshtml:73
+msgid "Send Feeling Request"
+msgstr "Envoyer Demande d'Info"
+
+#: Migrations\Configuration.cs:243
+msgid "Send Mail"
+msgstr "Envoyer Mail"
+
+#: Views\Measures\Index.cshtml:103
+#: obj\Release\Package\PackageTmp\Views\Measures\Index.cshtml:103
+msgid "sensor type"
+msgstr "type capteur"
+
+#: Migrations\Configuration.cs:188
+msgid "September"
+msgstr "Septembre"
+
+#: Controllers\HomeController.cs:250
+#: Controllers\InteractiveMapController.cs:243
+#: Migrations\Configuration.cs:107
+msgid "Setup Planned"
+msgstr "Instal. Planifiée"
+
+#: Migrations\Configuration.cs:147
+msgid "Sigfox connectivity kit"
+msgstr "Kit connectivité Sigfox"
+
+#: Views\ProductionUnits\Details.cshtml:961
+#: Views\ProductionUnits\UserUnit.cshtml:944
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:961
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:944
+msgid "SINCE"
+msgstr "DEPUIS"
+
+#: Migrations\Configuration.cs:141
+msgid "Solar panels"
+msgstr "Panneaux solaires"
+
+#: Migrations\Configuration.cs:152
+msgid "Spring"
+msgstr "Printemps"
+
+#: Migrations\Configuration.cs:225
+msgid "Sprinkler cleaning"
+msgstr "Nettoyer les émetteurs"
+
+#: Views\ProductionUnits\Index.cshtml:87
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Index.cshtml:87
+msgid "status"
+msgstr "status"
+
+#: Controllers\HomeController.cs:253
+#: Controllers\InteractiveMapController.cs:246
+#: Migrations\Configuration.cs:110
+msgid "Stopped"
+msgstr "Arrêté"
+
+#: Migrations\Configuration.cs:153
+msgid "Summer"
+msgstr "Eté"
+
+#: Viewmodels\AccountViewModels.cs:27
+msgid "Surname"
+msgstr "Nom"
+
+#: Views\ProductionUnits\UserUnit.cshtml:748
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:748
+msgid "This Last Day"
+msgstr "Ces Derniers jours"
+
+#: Views\Measures\Index.cshtml:86
+#: Views\Messages\Index.cshtml:90
+#: obj\Release\Package\PackageTmp\Views\Measures\Index.cshtml:86
+#: obj\Release\Package\PackageTmp\Views\Messages\Index.cshtml:90
+msgid "This Week"
+msgstr "Cette Semaine"
+
+#: Migrations\Configuration.cs:208
+msgid "Too much algeas"
+msgstr "Trop d'algues"
+
+#: Views\Home\Index.cshtml:293
+#: Views\InteractiveMap\Index.cshtml:417
+#: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:293
+#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:417
+msgid "TOTAL<br />CO2 SAVED<br />PER MONTH"
+msgstr "TOTAL<br />CO2 ECO.<br />PAR MOIS"
+
+#: Views\Home\Index.cshtml:285
+#: Views\InteractiveMap\Index.cshtml:409
+#: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:285
+#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:409
+msgid "TOTAL<br />CONNECTED <br />PROD. UNITS"
+msgstr "TOTAL<br />UNITES <br />CONNECTEES"
+
+#: Views\Home\Index.cshtml:289
+#: Views\InteractiveMap\Index.cshtml:413
+#: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:289
+#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:413
+msgid "TOTAL<br />EST. PROD. <br />PER MONTH"
+msgstr "TOTAL<br />EST. PROD. <br />PAR MOIS"
+
+#: Migrations\Configuration.cs:158
+msgid "Tower Garden"
+msgstr "Tower Garden"
+
+#: Views\Events\Manage.cshtml:59
+#: obj\Release\Package\PackageTmp\Views\Events\Manage.cshtml:59
+msgid "type"
+msgstr "type"
+
+#: Views\Events\Index.cshtml:31
+#: Views\Events\Index.cshtml:61
+#: obj\Release\Package\PackageTmp\Views\Events\Index.cshtml:31
+#: obj\Release\Package\PackageTmp\Views\Events\Index.cshtml:61
+msgid "Type"
+msgstr "Type"
+
+#: Migrations\Configuration.cs:129
+#: Migrations\Configuration.cs:135
+msgid "Unknown"
+msgstr "Inconnu"
+
+#: Controllers\InteractiveMapController.cs:244
+msgid "Up & Running"
+msgstr "En Marche"
+
+#: Controllers\HomeController.cs:251
+#: Migrations\Configuration.cs:108
+msgid "Up and Running"
+msgstr "En Marche"
+
+#: Views\Events\Index.cshtml:132
+#: obj\Release\Package\PackageTmp\Views\Events\Index.cshtml:132
+msgid "Update"
+msgstr "Mise à jour"
+
+#: Migrations\Configuration.cs:238
+msgid "Use UV filter"
+msgstr "Utiliser filtre UV"
+
+#: Views\ProductionUnitOwner\Index.cshtml:42
+#: obj\Release\Package\PackageTmp\Views\ProductionUnitOwner\Index.cshtml:42
+msgid "user"
+msgstr "utilisateur"
+
+#: Views\Admin\Index.cshtml:18
+#: obj\Release\Package\PackageTmp\Views\Admin\Index.cshtml:18
+msgid "Users List"
+msgstr "Liste des Utilisateurs"
+
+#: Migrations\Configuration.cs:228
+msgid "Vegetable management"
+msgstr "Gestion des Végétaux"
+
+#: Views\ProductionUnits\Details.cshtml:896
+#: Views\ProductionUnits\UserUnit.cshtml:879
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:896
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:879
+msgid "View Events"
+msgstr "Voir Evénements"
+
+#: Views\ProductionUnits\UserUnit.cshtml:752
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:752
+msgid "View Info"
+msgstr "Plus d'info"
+
+#: Views\About\Index.cshtml:21
+#: obj\Release\Package\PackageTmp\Views\About\Index.cshtml:21
+msgid "View Logs"
+msgstr "Voir Infos"
+
+#: Controllers\HomeController.cs:249
+#: Controllers\InteractiveMapController.cs:242
+#: Migrations\Configuration.cs:106
+msgid "Wait Confirm."
+msgstr "Attente Conf."
+
+#: Migrations\Configuration.cs:266
+msgid "Want more"
+msgstr "Désir plus"
+
+#: Migrations\Configuration.cs:113
+msgid "Warning"
+msgstr "Attention"
+
+#: Migrations\Configuration.cs:218
+msgid "Water loss"
+msgstr "Perte d'eau"
+
+#: Migrations\Configuration.cs:226
+msgid "Water purge"
+msgstr "Purge de l'eau"
+
+#: Views\ProductionUnits\Details.cshtml:183
+#: Views\ProductionUnits\UserUnit.cshtml:183
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:183
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:183
+msgid "Water Temp"
+msgstr "Temp. Eau"
+
+#: Views\Home\Index.cshtml:178
+#: Views\InteractiveMap\Index.cshtml:381
+#: Views\ProductionUnits\Details.cshtml:808
+#: Views\ProductionUnits\UserUnit.cshtml:791
+#: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:178
+#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:381
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:808
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:791
+msgid "Water Temperature (°C)"
+msgstr "Température Eau (°C)"
+
+#: Views\Recipes\Index.cshtml:82
+#: obj\Release\Package\PackageTmp\Views\Recipes\Index.cshtml:82
+msgid "Watering Level:"
+msgstr "Niveau Irrigation:"
+
+#: Migrations\Configuration.cs:170
+msgid "Weekend"
+msgstr "Weekend"
+
+#: Views\ProductionUnits\Details.cshtml:963
+#: Views\ProductionUnits\UserUnit.cshtml:946
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:963
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:946
+msgid "WEEKS"
+msgstr "SEMAINES"
+
+#: Migrations\Configuration.cs:151
+msgid "Winter"
+msgstr "Hiver"
+
+#: Views\Events\Manage.cshtml:62
+#: obj\Release\Package\PackageTmp\Views\Events\Manage.cshtml:62
+msgid "Yes"
+msgstr "Oui"
+
+#: Migrations\Configuration.cs:157
+msgid "Zipgrow Tower"
+msgstr "Tour Zipgrow"
+
+#~ msgid "Add peat"
+#~ msgstr "Ajout tourbe"
+
+#~ msgid "Add Production Unit"
+#~ msgstr "Ajouter Unité de Prod."
+
+#~ msgid "Air Humidity value is out of range : {0}"
+#~ msgstr "Humidité de l'air est hors limite : {0}"
+
+#~ msgid "Balcony"
+#~ msgstr "Balcony"
+
+#~ msgid "Change Production Units Settings"
+#~ msgstr "Changez les Paramètres de l'Unité de Production"
+
+#~ msgid "Change User Settings"
+#~ msgstr "Changez les Paramètres Utlisateurs"
+
+#~ msgid "City"
+#~ msgstr "City"
+
+#~ msgid "Click to see your production unit's status"
+#~ msgstr "Cliquez pour voir le status de l'unité de production"
+
+#~ msgid "CLOSE"
+#~ msgstr "FERMER"
+
+#~ msgid "Copyright &copy; 2017, myfood and/or its subsidiaries or affiliates. All Rights Reserved."
+#~ msgstr "Copyright &copy; 2017, myfood et / ou ses filiales ou sociétés affiliées. Tous les droits réservés."
+
+#~ msgid "createdBy"
+#~ msgstr "créé par"
+
+#~ msgid "Daily Events on your myfood Unit {0}"
+#~ msgstr "Evénements du Jour de votre Unité myfood"
+
+#~ msgid "DAY OF<br />GERMINATION<br />FROM SEED"
+#~ msgstr "DUREE DE<br />GERMINATION<br />DE LA GRAINE"
+
+#~ msgid "DAY OF<br />HARVEST<br />FROM SOW."
+#~ msgstr "DUREE DE<br />CULT. DEPUIS<br />REPIQUAGE"
+
+#~ msgid "Delete Production Unit"
+#~ msgstr "Supprimer Unité de Prod."
+
+#~ msgid "Detailed event description"
+#~ msgstr "Description détaillée"
+
+#~ msgid "Detailed information"
+#~ msgstr "Informations détaillée"
+
+#~ msgid "DISTANCE<br />BETWEEN<br />PLANTS (CM)"
+#~ msgstr "DISTANCE<br />ENTRE<br />PLANTS (CM)"
+
+#~ msgid "EST. PROD. "
+#~ msgstr "PROD. EST."
+
+#~ msgid "Family14"
+#~ msgstr "Family14"
+
+#~ msgid "Family22"
+#~ msgstr "Family22"
+
+#~ msgid "Fish and vegetable won't appreciate - pH value is out of range : max last 24h {0}"
+#~ msgstr "Les poissons ne vont pas apprécier - La valeur du pH est hors limite : max dern. 24h {0}"
+
+#~ msgid "Fish and vegetable won't appreciate - pH value is out of range : min last 24h {0}"
+#~ msgstr "Les poissons ne vont pas apprécier - La valeur du pH est hors limite : min dern. 24h {0}"
+
+#~ msgid "High pH fluctuation : mean delta last 3 days {0} - Watch for algeas"
+#~ msgstr "Grande variation de pH : delta moy. 3 dern. jours {0} - Vérifier les algues"
+
+#~ msgid "High pH level : mean last week {0} - Performances can be improved"
+#~ msgstr "pH élevé : moyenne semaine dern. {0} - Les performances peuvent être améliorées"
+
+#~ msgid "High pH variation : delta last 24h {0}"
+#~ msgstr "Grande variation de pH : delta dern. 24h {0}"
+
+#~ msgid "Indoor"
+#~ msgstr "Intérieur"
+
+#~ msgid "Installed Options"
+#~ msgstr "Options Installées"
+
+#~ msgid "It's cold inside ({0}°C) - Add greenhouse insulation"
+#~ msgstr "Il fait froid à l'intérieur ({0}°C) - Isoler votre serre"
+
+#~ msgid "It's too hot inside ({0}°C) : {0} - Open the doors and add a shadows cloths"
+#~ msgstr "Il fait trop chaud à l'intérieur ({0}°C) : {0} - Ouvrir les portes et ajouter une toile d'ombrage"
+
+#~ msgid "Manage Production Unit Events"
+#~ msgstr "Gérer les Evénements de l'Unité de Prod."
+
+#~ msgid "Manage Production Unit Owner"
+#~ msgstr "Gérer les Gestionnaires de Sites de Production"
+
+#~ msgid "ONLINE SINCE"
+#~ msgstr "CONNECTE DEPUIS"
+
+#~ msgid "open"
+#~ msgstr "ouvert"
+
+#~ msgid "Option List"
+#~ msgstr "List des Options"
+
+#~ msgid "Outdoor"
+#~ msgstr "Extérieur"
+
+#~ msgid "PERFOMANCE"
+#~ msgstr "PERFOMANCE"
+
+#~ msgid "Permaculture beds & biochar"
+#~ msgstr "Buttes de Permaculture avec Biochar"
+
+#~ msgid "Picture"
+#~ msgstr "Photo"
+
+#~ msgid "resolved"
+#~ msgstr "résolu"
+
+#~ msgid "Save & Close"
+#~ msgstr "Enregistrer et Fermer"
+
+#~ msgid "See Recommandations for my Production Unit:"
+#~ msgstr "Voir les Recommandations pour mon Unité de Production"
+
+#~ msgid "This Last Days"
+#~ msgstr "Ces Derniers Jours"
+
+#~ msgid "User Management"
+#~ msgstr "Gestion des Utilisateurs"
+
+#~ msgid "Water is cold there ({0}°C) - Add water heater on tanks"
+#~ msgstr "L'eau est un peu froide ({0}°C) - Ajouter une résistance thermique"
+
+#~ msgid "Water Temperature value is out of range for Carps: max {0}°C"
+#~ msgstr "La température de l'eau est hors limite pour les carpes : max {0}°C"
+
+#~ msgid "Water Temperature value is out of range for Carps: min {0}°C"
+#~ msgstr "La température de l'eau est hors limite pour les carpes : min {0}°C"
+
+#~ msgid "Water Temperature value is out of range for Cold Water Fish: max {0}°C"
+#~ msgstr "La température de l'eau est hors limite pour les poissons d'eau froides : max {0}°C"
+
+#~ msgid "Water Temperature value is out of range for Cold Water Fish: min {0}°C"
+#~ msgstr "La température de l'eau est hors limite pour les poissons d'eau froides : min {0}°C"
+
+#~ msgid "Water Temperature value is out of range for Crayfish: max {0}°C"
+#~ msgstr "La température de l'eau est hors limite pour les écrevisses : max {0}°C"
+
+#~ msgid "Water Temperature value is out of range for Crayfish: min {0}°C"
+#~ msgstr "La température de l'eau est hors limite pour les écrevisses : max {0}°C"
+
+#~ msgid "Water Temperature value is out of range for Tilapias:  max {0}°C"
+#~ msgstr "La température de l'eau est hors limite pour les tilapias : max {0}°C"
+
+#~ msgid "Water Temperature value is out of range for Tilapias:  min {0}°C}"
+#~ msgstr "La température de l'eau est hors limite pour les tilapias : min {0}°C"
+
+#~ msgid "Water Temperature value is out of range for Trouts : max {0}°C"
+#~ msgstr "La température de l'eau est hors limite pour les truites : max {0}°C"
+
+#~ msgid "Water Temperature value is out of range for Trouts : min {0}°C"
+#~ msgstr "La température de l'eau est hors limite pour les truites : min {0}°C"
+

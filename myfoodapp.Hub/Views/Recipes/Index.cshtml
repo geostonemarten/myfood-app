@@ -1,0 +1,463 @@
+﻿@model IEnumerable<myfoodapp.Hub.Models.Recipes>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<script>
+    function onSelect(e) {
+        var dataItem = this.dataItem(e.item);
+    }
+</script>
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+<div id="main-section-header" class="row">
+    <h2 id="title" class="col-md-3">[[[Recipes]]]</h2>
+    <div style="clear:both;"></div>
+</div>
+
+
+<div id="recipes-list" class="main-section-content row">
+    <div id="recipes-list-details" class="col-md-3">
+        <h3 class="dropdown-caption">[[[Choose the suitable recipes for your greenhouse]]]</h3>
+
+        <select id="unit-type" class="form-control btn-success">
+            <option>All</option>
+        </select>
+    </div>
+    <div id="grid-container" class="col-md-9">
+        <div class="grid-sizer"></div>
+        
+    </div>
+    <br />
+    <br />
+</div>
+<script>
+    $(window).load(function() {
+        ProductUnitTypeList();
+        LoadGallery($('#unit-type').val());
+    })
+
+    function ProductUnitTypeList() {
+        $.ajax({
+            url: "@Url.Action("ProductionUnits_Read", "Recipes")",
+            dataType: "json",
+            data: null,
+            type: "POST",
+            success: function (response) {
+                response.forEach(function (item, i, response) {
+                    $('#unit-type').append('<option>'+ item.info +'</option>');
+                });
+
+
+            }
+        });
+    }
+
+    function LoadGallery(info = 'All') {
+        $.ajax({
+            url: "@Url.Action("Gallery", "Recipes")",
+            dataType: "json",
+            data: null,
+            type: "POST",
+            success: function (response) {
+                console.log(response);
+                response.forEach(function (item, i, response) {
+                    var rec = item.isRecommended ? "recommandated" : "";
+                    var rec_img = item.isRecommended ? "<img class='rec-img' src='/Content/Pictures/Recipes/recommended.png'/>" : "";
+                    var gardeningType;
+                    if (item.gardeningType.name == "All") {
+						gardeningType = "<img class=gardeningType src=/Content/Pictures/GardeningType/aerospring.svg />" +
+							"<img class=gardeningType src=/Content/Pictures/GardeningType/zipgrow.svg />" +
+							"<img class=gardeningType src=/Content/Pictures/GardeningType/perma.svg />";
+                    }
+                    else {
+                        gardeningType = "<img class=gardeningType src=/Content/Pictures/GardeningType/" + item.gardeningType.imagePath + " />";
+                    }
+					var context = "<div class=col-md-1></div><div class=col-md-3><div class=captionTypeName>" + item.name + " - " + item.reference + "</div>" +
+                        "<table class=table-pop><tr><td>[[[DAY OF GERMINATION<br />FROM SEED]]]</td><td>[[[DAY OF HARVEST<br />FROM SOW.]]]</td><td>[[[DISTANCE BETWEEN<br />PLANTS (CM)]]]</td></tr>" +
+                        "<tr><td>" + item.daysOfGermination + "</td><td>" + item.daysOfHarvestFromSowing + "</td><td>" + item.minimumSpaceBetweenPlantInTower + "</td></tr>" +
+                        "</table></div>" +
+                        "<div class=col-md-1></div><div class=col-md-3><div class=captionType>[[[Can be planted in:]]]</div><div>" + gardeningType + "</div></div>" +
+                        "<div class=col-md-1></div><div class=col-md-3><div class=captionType>[[[Watering Level:]]]</div><div class=waterlevel>"+item.wateringLevel.name+"</div></div>";
+
+
+                    var $grid_item = $("<div class='grid-item " + rec + "'>" + rec_img +
+                        "<a data-fancybox='gallery' data-caption='" + context + "' href='/Content/Pictures/Recipes/" + item.picturePath + "'>" +
+                        "<figure><img src='/Content/Pictures/Recipes/" + item.picturePath + "'/>" +
+                        "<figcaption><p>" + item.name + "<br><span class=reference> " + item.reference + "</span></p></figcaption>" +
+                        "</figure></a></div>");
+
+                    $('#grid-container').masonry({
+                        itemSelector: '.grid-item',
+                        columnWidth: '.grid-sizer',
+                        percentPosition: true,
+                        gutter: 20,
+                    }).append($grid_item).masonry('appended', $grid_item);
+                });
+
+                setTimeout(function () {
+                    $('#grid-container').masonry({
+                        itemSelector: '.grid-item',
+                        columnWidth: '.grid-sizer',
+                        percentPosition: true,
+                        gutter: 20,
+                    }
+
+                    )
+                }, 600);
+
+
+            }
+        });
+    }
+
+
+
+</script>
+<style>
+	
+	.reference {
+		font-size: 0.9rem;
+		margin: 0;
+	}
+    .waterlevel {
+        font-weight: 400;
+        font-size: 1.5rem;
+        margin-left: 15px;
+        margin-top: 30px;
+        text-transform: uppercase;
+    }
+    .captionType{
+        font-weight: bold;
+        font-size: 1rem;
+        margin-left: 15px;
+		margin-bottom: 15px;
+    }
+	.captionTypeName {
+		font-size: 1.1rem;
+		margin-left: 15px;
+		margin-bottom: 15px;
+		font-weight: bold;
+	}
+    .fancybox-caption {
+        padding: 15px 0;
+    }
+    .gardeningType{
+        width: 13%;
+        height: auto;
+        border-radius: 50%;
+        margin: 15px;
+    }
+
+	.table-pop {
+		text-align: center;
+		border: 1px solid #d9d9d9;
+		margin-bottom: 25px;
+		margin-left: 15px;
+		/*margin-top: 15px;*/
+		width: 100%;
+	}
+
+    .table-pop tr {
+        height: 25px;
+    }
+
+    .table-pop tr:first-child td {
+        padding-top: 10px;
+    }
+    .table-pop tr:last-child td {
+        padding-bottom: 10px;
+    }
+
+    .table-pop tr:last-child{
+        font-size: 1.5rem;
+    }
+
+    .btn-success, .btn-success:hover, .btn-success:focus {
+        background-color: #7CB342;
+        border-color: #7CB342;
+    }
+
+    .dropdown-caption{
+        font-weight: bold;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #unit-type{
+        width: 80%;
+    }
+
+    .rec-img{
+        position: absolute;
+        width: 25%;
+        height: auto;
+        bottom: 3%;
+        right: 3%;
+        z-index: 1;
+    }
+    #recipes-list-details h3 {
+        font-size: 14px;
+    }
+
+
+
+    .main-section-content {
+        margin: 2%;
+    }
+
+    .grid-item.recommandated {
+        width: 45%;
+    }
+
+    .grid-container {
+        margin: 50px;
+    }
+
+    .grid-sizer,
+    .grid-item {
+        width: 22%;
+    }
+
+    .grid-item {
+        float: left;
+        overflow: hidden;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        box-shadow: 1px 0 10px 2px rgba(194,205,216,.5)
+    }
+    /*.width { width: 49.5%;height: 200px}*/
+    .long {
+        height: 410px;
+    }
+
+    .grid-item img:not(.rec-img), figure img {
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    .grid-item a {
+        width: 100%;
+        height: 100%;
+        display: block;
+    }
+
+        .grid-item a figure {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+    .grid-item figure:before {
+        content: '';
+        position: absolute;
+        z-index: 2;
+        bottom: 0px;
+        height: 0px;
+        width: 100%;
+        background-color: rgba(70, 137, 102, 0.8);
+        transition-duration: .5s;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+    }
+
+
+
+    .grid-item figure:hover:after {
+        opacity: 1;
+        z-index: 10
+    }
+
+    .grid-item figure figcaption {
+        position: absolute;
+        z-index: 3;
+        font-weight: bold;
+        font-size: 1.3rem;
+        top: 0px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        color: #fff;
+		text-align: center;
+    }
+
+    .grid-item:hover figure:before, .grid-item figure:hover figcaption {
+        opacity: 1;
+    }
+
+    .grid-item.none {
+        display: none
+    }
+
+    @@media (max-width: 990px)
+    {
+        .fancybox-caption .col-md-3:last-child, .col-md-3:nth-child(4) {
+            display: none;
+        }
+        #recipes-list-details {
+            text-align: center;
+        }
+        #recipes-list-details .form-control {
+            margin: auto;
+        }
+        #grid-container {
+            margin-top: 30px;
+        }
+        .grid-sizer,
+        .grid-item {
+            width: 30%;
+        }
+
+        .grid-item.recommandated {
+            width: 62%;
+        }
+    }
+
+    @@media (max-width: 435px) {
+        .grid-sizer,
+        .grid-item {
+            width: 45%;
+        }
+
+        .grid-item.recommandated {
+            width: 92%;
+        }
+
+        
+    }
+        /*#listView {
+        padding: 10px;
+        margin-bottom: -1px;
+        min-height: 700px;
+    }
+
+    .recipes .gardeningType {
+        width: 50px;
+        height: 50px;
+    }
+
+    .recipes .thumbs div {
+        width: 60px;
+        margin-top: 50px;
+        margin-left: 15px;
+        display: inline-block;
+    }
+
+    .recipes .thumbs {
+        width: 300px;
+    }
+
+    .recipes .stretch {
+        width: 100%;
+        display: inline-block;
+        font-size: 0;
+        line-height: 0
+    }
+
+    .recipes .widget-text {
+        margin: 7px;
+    }
+
+    .recipes div .column-left {
+        float: left;
+        width: 33%;
+    }
+
+    .recipes div .column-right {
+        float: right;
+        width: 33%;
+    }
+
+    .recipes div .column-center {
+        display: inline-block;
+        width: 33%;
+    }
+
+    .recipes {
+        float: left;
+        position: relative;
+        width: 300px;
+        height: 300px;
+        margin: 5px;
+        padding: 0;
+    }
+
+        .recipes img {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+        }
+
+        .recipes div .info {
+            visibility: hidden;
+        }
+
+        .recipes div .title {
+            visibility: hidden;
+        }
+
+        .recipes div .inner {
+            visibility: hidden;
+        }
+
+        .recipes:hover .title {
+            visibility: visible;
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            top: 0;
+            font-size: x-large;
+            font-weight: bold;
+            margin: 5px;
+            padding: 0px 0px 20px 0px;
+            vertical-align: top;
+            text-align: left;
+        }
+
+        .recipes:hover .info {
+            visibility: visible;
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            top: 0;
+            margin: 0;
+            padding: 20px 0px 20px 0px;
+            vertical-align: top;
+            text-align: left;
+        }
+
+        .recipes:hover .inner {
+            visibility: visible;
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            top: 0;
+            margin: 0;
+            vertical-align: top;
+            text-align: left;
+            color: #fff;
+            background-color: rgba(0,0,0,0.75);
+            transition: background .2s linear, color .2s linear;
+            -moz-transition: background .2s linear, color .2s linear;
+            -webkit-transition: background .2s linear, color .2s linear;
+            -o-transition: background .2s linear, color .2s linear;
+        }
+
+    .k-listview:after {
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    }*/
+</style>
