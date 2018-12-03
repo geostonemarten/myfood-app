@@ -1,0 +1,535 @@
+﻿{
+  "modelName": "Family22 Annual Planning v.1",
+  "type": "Family22",
+  "options": "36 Zipgrow Towers | 5 x Perma Beds",
+  "productionMonths": [
+    {
+      "months": 1,
+      "productionAreas": [
+        {
+          "name": "Indoor",
+          "productionTypes": [
+            {
+              "name": "Aquaponics",
+              "slots": [
+                {
+                  "id": "Perma Bed #3 Slot #2",
+                  "position": 3,
+                  "number": 3,
+                  "vegetable": {
+                    "name": "Cabbage Rave",
+                    "cropPerSlot": 5,
+                    "growingState": 2,
+                    "productionQuantity": 250.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  }
+                },
+                {
+                  "id": "Perma Bed #3 Slot #3",
+                  "position": 3,
+                  "number": 3,
+                  "vegetable": {
+                    "name": "Cauliflower",
+                    "cropPerSlot": 3,
+                    "growingState": 2,
+                    "productionQuantity": 1000.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  }
+                },
+                {
+                  "id": "Perma Bed #4 Slot #2",
+                  "position": 4,
+                  "number": 3,
+                  "vegetable": {
+                    "name": "White Onion",
+                    "cropPerSlot": 15,
+                    "growingState": 2,
+                    "productionQuantity": 10.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  }
+                },
+                {
+                  "id": "Perma Bed #4 Slot #3",
+                  "position": 2,
+                  "number": 3,
+                  "vegetable": {
+                    "name": "White Onion",
+                    "cropPerSlot": 15,
+                    "growingState": 2,
+                    "productionQuantity": 10.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  }
+                },
+                {
+                  "id": "Perma Bed #5 Slot #1",
+                  "position": 3,
+                  "number": 3,
+                  "vegetable": {
+                    "name": "Chard",
+                    "cropPerSlot": 5,
+                    "growingState": 2,
+                    "productionQuantity": 25.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  }
+                },
+                {
+                  "id": "Perma Bed #5 Slot #2",
+                  "position": 4,
+                  "number": 3,
+                  "vegetable": {
+                    "name": "Fennel",
+                    "cropPerSlot": 4,
+                    "growingState": 2,
+                    "productionQuantity": 150.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  }
+                },
+                {
+                  "id": "Perma Bed #5 Slot #3",
+                  "position": 4,
+                  "number": 3,
+                  "vegetable": {
+                    "name": "Zucchini",
+                    "cropPerSlot": 2,
+                    "growingState": 2,
+                    "productionQuantity": 500.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Perma Beds",
+              "slots": [
+                {
+                  "id": "Perma Bed #3 Slot #2",
+                  "position": 3,
+                  "number": 3,
+                  "vegetable": {
+                    "name": "Cabbage Rave",
+                    "cropPerSlot": 5,
+                    "growingState": 2,
+                    "productionQuantity": 250.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  }
+                },
+                {
+                  "id": "Perma Bed #3 Slot #3",
+                  "position": 3,
+                  "number": 3,
+                  "vegetable": {
+                    "name": "Cauliflower",
+                    "cropPerSlot": 3,
+                    "growingState": 2,
+                    "productionQuantity": 1000.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  }
+                },
+                {
+                  "id": "Perma Bed #4 Slot #2",
+                  "position": 4,
+                  "number": 3,
+                  "vegetable": {
+                    "name": "White Onion",
+                    "cropPerSlot": 15,
+                    "growingState": 2,
+                    "productionQuantity": 10.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  }
+                },
+                {
+                  "id": "Perma Bed #4 Slot #3",
+                  "position": 2,
+                  "number": 3,
+                  "vegetable": {
+                    "name": "White Onion",
+                    "cropPerSlot": 15,
+                    "growingState": 2,
+                    "productionQuantity": 10.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  }
+                },
+                {
+                  "id": "Perma Bed #5 Slot #1",
+                  "position": 3,
+                  "number": 3,
+                  "vegetable": {
+                    "name": "Chard",
+                    "cropPerSlot": 5,
+                    "growingState": 2,
+                    "productionQuantity": 25.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  }
+                },
+                {
+                  "id": "Perma Bed #5 Slot #2",
+                  "position": 4,
+                  "number": 3,
+                  "vegetable": {
+                    "name": "Fennel",
+                    "cropPerSlot": 4,
+                    "growingState": 2,
+                    "productionQuantity": 150.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  }
+                },
+                {
+                  "id": "Perma Bed #5 Slot #3",
+                  "position": 4,
+                  "number": 3,
+                  "vegetable": {
+                    "name": "Zucchini",
+                    "cropPerSlot": 2,
+                    "growingState": 2,
+                    "productionQuantity": 500.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "months": 2,
+      "productionAreas": [
+        {
+          "name": "Indoor",
+          "productionTypes": [
+            {
+              "name": "Aquaponics",
+              "slots": [
+                {
+                  "id": "Perma Bed #3 Slot #1",
+                  "position": 2,
+                  "number": 3,
+                  "vegetable": {
+                    "name": "Tomato",
+                    "cropPerSlot": 3,
+                    "growingState": 1,
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  }
+                },
+                {
+                  "id": "Perma Bed #3 Slot #2",
+                  "position": 3,
+                  "number": 3,
+                  "vegetable": {
+                    "name": "Cabbage Rave",
+                    "cropPerSlot": 5,
+                    "growingState": 2,
+                    "productionQuantity": 250.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  }
+                },
+                {
+                  "id": "Perma Bed #4 Slot #2",
+                  "position": 4,
+                  "number": 3,
+                  "vegetable": {
+                    "name": "White Onion",
+                    "cropPerSlot": 15,
+                    "growingState": 2,
+                    "productionQuantity": 10.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  }
+                },
+                {
+                  "id": "Perma Bed #4 Slot #3",
+                  "position": 2,
+                  "number": 3,
+                  "vegetable": {
+                    "name": "White Onion",
+                    "cropPerSlot": 15,
+                    "growingState": 2,
+                    "productionQuantity": 10.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  }
+                },
+                {
+                  "id": "Perma Bed #5 Slot #1",
+                  "position": 3,
+                  "number": 3,
+                  "vegetable": {
+                    "name": "Chard",
+                    "cropPerSlot": 5,
+                    "growingState": 2,
+                    "productionQuantity": 25.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  }
+                },
+                {
+                  "id": "Perma Bed #5 Slot #2",
+                  "position": 4,
+                  "number": 3,
+                  "vegetable": {
+                    "name": "Fennel",
+                    "cropPerSlot": 4,
+                    "growingState": 2,
+                    "productionQuantity": 150.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  }
+                },
+                {
+                  "id": "Perma Bed #5 Slot #3",
+                  "position": 4,
+                  "number": 3,
+                  "vegetable": {
+                    "name": "Zucchini",
+                    "cropPerSlot": 2,
+                    "growingState": 2,
+                    "productionQuantity": 500.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Perma Beds",
+              "slots": [
+                {
+                  "id": "Perma Bed #3 Slot #1",
+                  "position": 2,
+                  "number": 3,
+                  "vegetable": {
+                    "name": "Tomato",
+                    "cropPerSlot": 3,
+                    "growingState": 1,
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  }
+                },
+                {
+                  "id": "Perma Bed #3 Slot #2",
+                  "position": 3,
+                  "number": 3,
+                  "vegetable": {
+                    "name": "Cabbage Rave",
+                    "cropPerSlot": 5,
+                    "growingState": 2,
+                    "productionQuantity": 250.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  }
+                },
+                {
+                  "id": "Perma Bed #4 Slot #2",
+                  "position": 4,
+                  "number": 3,
+                  "vegetable": {
+                    "name": "White Onion",
+                    "cropPerSlot": 15,
+                    "growingState": 2,
+                    "productionQuantity": 10.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  }
+                },
+                {
+                  "id": "Perma Bed #4 Slot #3",
+                  "position": 2,
+                  "number": 3,
+                  "vegetable": {
+                    "name": "White Onion",
+                    "cropPerSlot": 15,
+                    "growingState": 2,
+                    "productionQuantity": 10.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  }
+                },
+                {
+                  "id": "Perma Bed #5 Slot #1",
+                  "position": 3,
+                  "number": 3,
+                  "vegetable": {
+                    "name": "Chard",
+                    "cropPerSlot": 5,
+                    "growingState": 2,
+                    "productionQuantity": 25.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  }
+                },
+                {
+                  "id": "Perma Bed #5 Slot #2",
+                  "position": 4,
+                  "number": 3,
+                  "vegetable": {
+                    "name": "Fennel",
+                    "cropPerSlot": 4,
+                    "growingState": 2,
+                    "productionQuantity": 150.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  }
+                },
+                {
+                  "id": "Perma Bed #5 Slot #3",
+                  "position": 4,
+                  "number": 3,
+                  "vegetable": {
+                    "name": "Zucchini",
+                    "cropPerSlot": 2,
+                    "growingState": 2,
+                    "productionQuantity": 500.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "months": 3,
+      "productionAreas": [
+        {
+          "name": "Indoor",
+          "productionTypes": [
+            {
+              "name": "Aquaponics",
+              "slots": [
+                {
+                  "id": "Perma Bed #3 Slot #1",
+                  "position": 2,
+                  "number": 3,
+                  "vegetable": {
+                    "name": "Tomato",
+                    "cropPerSlot": 3,
+                    "growingState": 1,
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  }
+                },
+                {
+                  "id": "Perma Bed #3 Slot #2",
+                  "position": 3,
+                  "number": 3,
+                  "vegetable": {
+                    "name": "Cabbage Rave",
+                    "cropPerSlot": 5,
+                    "growingState": 2,
+                    "productionQuantity": 250.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  }
+                },
+                {
+                  "id": "Perma Bed #4 Slot #1",
+                  "position": 4,
+                  "number": 3,
+                  "vegetable": {
+                    "name": "Broad Bean",
+                    "cropPerSlot": 10,
+                    "growingState": 0,
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  }
+                },
+                {
+                  "id": "Perma Bed #5 Slot #3",
+                  "position": 4,
+                  "number": 3,
+                  "vegetable": {
+                    "name": "Zucchini",
+                    "cropPerSlot": 2,
+                    "growingState": 2,
+                    "productionQuantity": 500.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  }
+                }
+              ]
+            },
+            {
+              "name": "Perma Beds",
+              "slots": [
+                {
+                  "id": "Perma Bed #3 Slot #1",
+                  "position": 2,
+                  "number": 3,
+                  "vegetable": {
+                    "name": "Tomato",
+                    "cropPerSlot": 3,
+                    "growingState": 1,
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  }
+                },
+                {
+                  "id": "Perma Bed #3 Slot #2",
+                  "position": 3,
+                  "number": 3,
+                  "vegetable": {
+                    "name": "Cabbage Rave",
+                    "cropPerSlot": 5,
+                    "growingState": 2,
+                    "productionQuantity": 250.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  }
+                },
+                {
+                  "id": "Perma Bed #4 Slot #1",
+                  "position": 4,
+                  "number": 3,
+                  "vegetable": {
+                    "name": "Broad Bean",
+                    "cropPerSlot": 10,
+                    "growingState": 0,
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  }
+                },
+                {
+                  "id": "Perma Bed #5 Slot #3",
+                  "position": 4,
+                  "number": 3,
+                  "vegetable": {
+                    "name": "Zucchini",
+                    "cropPerSlot": 2,
+                    "growingState": 2,
+                    "productionQuantity": 500.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

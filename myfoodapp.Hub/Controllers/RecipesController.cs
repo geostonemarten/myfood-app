@@ -2,15 +2,16 @@
 using Kendo.Mvc.UI;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
+using myfoodapp.Hub.Business;
 using myfoodapp.Hub.Models;
-using myfoodapp.Hub.Services;
+using Newtonsoft.Json;
 using System;
-using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Web;
+using System.Web.Hosting;
 using System.Web.Mvc;
 
 namespace myfoodapp.Hub.Controllers
@@ -72,6 +73,20 @@ namespace myfoodapp.Hub.Controllers
             if (currentProductionUnits != null)
             {
                 return Json(currentProductionUnits, JsonRequestBehavior.AllowGet);
+            }
+
+            return null;
+        }
+
+        [Authorize]
+        public ActionResult GetModel([DataSourceRequest] DataSourceRequest request)
+        {
+            var data = System.IO.File.ReadAllText(HostingEnvironment.MapPath("~/Content/GrowingModelv1.json"));
+            var model = JsonConvert.DeserializeObject<GrowingModel>(data);
+
+            if (model != null)
+            {
+                return Json(model, JsonRequestBehavior.AllowGet);
             }
 
             return null;

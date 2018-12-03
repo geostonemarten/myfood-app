@@ -345,6 +345,7 @@
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Business\AquaponicsRulesManager.cs" />
     <Compile Include="Business\ExternalAirHumidityManager.cs" />
+    <Compile Include="Business\GrowingModel.cs" />
     <Compile Include="Business\SensorValueSet.cs" />
     <Compile Include="Business\PerformanceManager.cs" />
     <Compile Include="Common\AuthorizationHeaderHandler.cs" />
@@ -1559,6 +1560,7 @@
     <Content Include="fonts\Roboto-Bold.ttf" />
     <Content Include="fonts\AktivGroteskBold.ttf" />
     <Content Include="fonts\Roboto-Regular.ttf" />
+    <Content Include="Content\GrowingModelv1.json" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\myfoodapphub - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
