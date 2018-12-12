@@ -46,7 +46,6 @@
             type: "POST",
 			success: function (response) {
 				$.each(response, function (index, item) {
-                    
                     if (item.PreferedMoment != "" && item.Location != "") {
                         var context = '<div class=col-md-6><div class=description><p class=table-name><strong>' + item.PioneerCitizenName + ' #' + item.PioneerCitizenNumber + '</strong></p><br>' +
                             '<div class=col-md-12><span>Email: <a href=mailto:' + item.ContactMail + '>' + item.ContactMail + '</a></span></div>' +

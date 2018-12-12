@@ -139,7 +139,7 @@ namespace myfoodapp.Hub.Controllers
         {
             var db = new ApplicationDbContext();
 
-            var prodUnitListCount = db.ProductionUnits.Where(p => p.lastMeasureReceived != null).Count();
+			var prodUnitListCount = db.ProductionUnits.Where(p => p.lastMeasureReceived != null).Count();
 
             if (prodUnitListCount == 0)
                 return null;

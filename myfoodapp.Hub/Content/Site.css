@@ -467,7 +467,7 @@ a.k-grid-filter {
 }
 
 /*max-width: 768px -> .col-xs- */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767.1px) {
     .column {
         height: auto;
     }
@@ -568,7 +568,7 @@ a.k-grid-filter {
 /* End - custom */
 
 /*min-width: 768px -> .col-sm- */
-@media screen and (min-width: 768px) and (max-width:992px)  { 
+@media screen and (min-width: 767.2px) and (max-width:992px)  { 
     #EmployeeQuarterSalesLabel,
     #EmployeeAverageSalesLabel {
         font-size: 24px;
@@ -579,7 +579,7 @@ a.k-grid-filter {
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767.3px) {
 
 	#nav-section ul {
 		margin-top: 0;
@@ -798,7 +798,7 @@ li.active [class*="cls"] {
 	margin: auto;
 
 }
-@media (max-width: 768px) {
+@media (max-width: 767.4px) {
 	#performanceModal .company-logo .img-responsive {
 		max-width: 30%;
 		margin: auto;
@@ -1266,7 +1266,7 @@ li.active [class*="cls"] {
 	border: 2px solid #2EA636;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 767.5px) {
 	#add-event .modal-dialog {
 		width: auto;
 	}
@@ -1615,8 +1615,8 @@ li.active [class*="cls"] {
 	}
 }
 
-@media (max-width: 992px) {
-	#main-section-header {
+@media (max-width: 1200px) {
+	#main-section-header.big-section {
 		height: auto;
 		padding: 20px 0;
 	}
@@ -2031,7 +2031,7 @@ li.active [class*="cls"] {
 	border: 2px solid #2EA636;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 767.7px) {
 	#edit .modal-dialog {
 		width: auto;
 	}

@@ -490,7 +490,9 @@
     <Content Include="Content\Datepicker\datepicker.en.js" />
     <Content Include="Content\Datepicker\datepicker.min.css" />
     <Content Include="Content\Datepicker\datepicker.min.js" />
+    <Content Include="Content\images\arrow.svg" />
     <Content Include="Content\images\close-white.svg" />
+    <Content Include="Content\images\recipes_test_image.png" />
     <Content Include="Scripts\Grid\jquery-paginate.min.js" />
     <Content Include="Content\images\background-hub.jpg" />
     <Content Include="Content\images\close.png" />

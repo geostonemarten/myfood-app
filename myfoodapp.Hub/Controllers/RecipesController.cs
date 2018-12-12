@@ -34,7 +34,12 @@ namespace myfoodapp.Hub.Controllers
         [Authorize]
         public ActionResult Index()
         {
-            return View();
+
+	        var data = System.IO.File.ReadAllText(HostingEnvironment.MapPath("~/Content/GrowingModelv1.json"));
+	        var model = JsonConvert.DeserializeObject<GrowingModel>(data);
+
+	        //return model != null ? Json(model, JsonRequestBehavior.AllowGet) : null;
+			return View(model);
         }
 
         [Authorize]
@@ -80,16 +85,11 @@ namespace myfoodapp.Hub.Controllers
 
         [Authorize]
         public ActionResult GetModel([DataSourceRequest] DataSourceRequest request)
-        {
+      {
             var data = System.IO.File.ReadAllText(HostingEnvironment.MapPath("~/Content/GrowingModelv1.json"));
             var model = JsonConvert.DeserializeObject<GrowingModel>(data);
 
-            if (model != null)
-            {
-                return Json(model, JsonRequestBehavior.AllowGet);
-            }
-
-            return null;
+            return model != null ? Json(model, JsonRequestBehavior.AllowGet) : null;
         }
     }
 }
