@@ -8,6 +8,11 @@ article, aside, canvas, details, footer, header, section {
   font-size: 100%;
   font: inherit;
 }
+@media (max-width: 767.92px) and (min-width:450px) {
+	.col-sm-6 {
+		width: 50%;
+	}
+}
 
 .loaderArea {
 	display: none;
