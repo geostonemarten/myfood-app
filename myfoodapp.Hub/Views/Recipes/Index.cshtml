@@ -10,10 +10,6 @@
 <link rel="stylesheet" href="~/Content/slick-theme.css" />
 <script src="~/Scripts/slick.min.js"></script>
 
-
-
-
-
 <script>
 	function onSelect(e) {
 		var dataItem = this.dataItem(e.item);
@@ -30,7 +26,7 @@
 		<div class="months-carousel__navigation">
 			@foreach (var productionMonths in @Model.productionMonths)
 			{
-				<div>@((Months)productionMonths.months)</div>
+				<div>@(productionMonths.month.name)</div>
 			}
 		</div>
 	</div>
@@ -62,16 +58,23 @@
 								<div class="col-md-6 col-lg-3 col-sm-6 col-xs-12" style="display: @(productionType.i != 0 ? "none" : "block")" data-type="@productionType.value.name">
 									<div class="card-block">
 										<div class="card-block__haeder">
-											<img class="card-block-image" src="/Content/Pictures/Recipes/@slot.imagePath" alt="" />
+											<img class="card-block-image" src="/Content/Pictures/Recipes/@slot.vegetable.imagePath" alt="" />
 										</div>
 										<div class="card-block__body">
 											<div class="card-block__body_content">
 												<p class="card-block__body__title  --green-paly">@(slot.number)X @slot.id</p>
 												<p class="card-block__body__title  --green --md">@slot.vegetable.name</p>
-												<p class="card-block__body__title  --red">@slot.vegetable.cropPerSlot crops per slot</p>
+                                                @if (slot.oneCropPerSlot == false)
+                                                {
+                                                    <p class="card-block__body__title  --red">@slot.vegetable.cropPerSlot [[[crops per slot]]]</p>
+                                                }
+                                                else
+                                                {
+                                                    <p class="card-block__body__title  --red">1 [[[crop per slot]]]</p>
+                                                }
 											</div>
 											<div class="card-block__body_content">
-												<p class="card-block__body__title --green-paly ">@((GrowingState)slot.vegetable.growingState)</p>
+												<p class="card-block__body__title --green-paly ">@(slot.vegetable.growingState.name)</p>
 												<p class="card-block__body__title --green --md">@Convert.ToInt32(slot.vegetable.productionQuantity) gr</p>
 											</div>
 										</div>
@@ -99,7 +102,7 @@
 	function startSlick() {
 		var monthNow = new Date().getUTCMonth();
 		$('.months-carousel__navigation').slick({
-			slidesToShow: @(Model.productionMonths.Count<5 ? Model.productionMonths.Count-1 : 5),
+			slidesToShow: @(Model.productionMonths.Count < 5 ? Model.productionMonths.Count-1 : 5),
 			slidesToScroll: 1,
 			initialSlide: monthNow,
 			centerMode: true,
@@ -152,11 +155,9 @@
 
 		})
 
-
-		$('.months-carousel__navigation').on('beforeChange', function (e, slick, prevSlide, currentSlide) {
-			$('.months-carousel__content').slick('slickGoTo', currentSlide);
-		});
-
+        $('.months-carousel__navigation').on('beforeChange', function (e, slick, prevSlide, currentSlide) {
+            $('.months-carousel__content').slick('slickGoTo', currentSlide);
+        });
 
 	});
 </script>

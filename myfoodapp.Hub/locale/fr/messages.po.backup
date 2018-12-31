@@ -1,12 +1,15 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2018-09-24 16:24+02:00\n"
-"PO-Revision-Date: 2018-09-24 16:24+02:00\n"
+"POT-Creation-Date: 2018-12-31 17:25+01:00\n"
+"PO-Revision-Date: 2018-12-31 17:35+0100\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: i18n.POTGenerator\n"
+"X-Generator: Poedit 2.0.1\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr\n"
 
 #: Views\ProductionUnits\Update.cshtml:263
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\Update.cshtml:263
@@ -29,8 +32,7 @@ msgstr "24 tours"
 msgid "36 towers"
 msgstr "36 tours"
 
-#: Views\About\Index.cshtml:8
-#: Views\Shared\_Layout.cshtml:193
+#: Views\About\Index.cshtml:8 Views\Shared\_Layout.cshtml:193
 #: Views\Shared\_RedesignLayout.cshtml:209
 #: obj\Release\Package\PackageTmp\Views\About\Index.cshtml:8
 #: obj\Release\Package\PackageTmp\Views\Shared\_Layout.cshtml:193
@@ -85,6 +87,24 @@ msgstr "Capteurs avancés"
 msgid "Advices"
 msgstr "Conseil"
 
+#: Content\GrowingModelv1.json:320 Content\GrowingModelv1.json:323
+#: Content\GrowingModelv1.json:344 Content\GrowingModelv1.json:365
+#: Content\GrowingModelv1.json:386 Content\GrowingModelv1.json:407
+#: Content\GrowingModelv1.json:428 Content\GrowingModelv1.json:449
+#: Content\GrowingModelv1.json:470 Content\GrowingModelv1.json:491
+#: Content\GrowingModelv1.json:512 Content\GrowingModelv1.json:533
+#: Content\GrowingModelv1.json:873 Content\GrowingModelv1.json:876
+#: Content\GrowingModelv1.json:897 Content\GrowingModelv1.json:918
+#: Content\GrowingModelv1.json:939 Content\GrowingModelv1.json:960
+#: Content\GrowingModelv1.json:981 Content\GrowingModelv1.json:1002
+#: Content\GrowingModelv1.json:1023 Content\GrowingModelv1.json:1044
+#: Content\GrowingModelv1.json:1065 Content\GrowingModelv1.json:1086
+#: Content\GrowingModelv1.json:1363 Content\GrowingModelv1.json:1366
+#: Content\GrowingModelv1.json:1387 Content\GrowingModelv1.json:1408
+#: Content\GrowingModelv1.json:1429 Content\GrowingModelv1.json:1450
+#: Content\GrowingModelv1.json:1471 Content\GrowingModelv1.json:1492
+#: Content\GrowingModelv1.json:1513 Content\GrowingModelv1.json:1534
+#: Content\GrowingModelv1.json:1555 Content\GrowingModelv1.json:1576
 #: Migrations\Configuration.cs:84
 msgid "Aerospring"
 msgstr "Aerospring"
@@ -98,8 +118,7 @@ msgstr "Après-midi"
 msgid "Air Temp"
 msgstr "Temp. Air"
 
-#: Views\Home\Index.cshtml:200
-#: Views\ProductionUnits\Details.cshtml:839
+#: Views\Home\Index.cshtml:200 Views\ProductionUnits\Details.cshtml:839
 #: Views\ProductionUnits\UserUnit.cshtml:822
 #: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:200
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:839
@@ -107,10 +126,8 @@ msgstr "Temp. Air"
 msgid "Air Temperature (°C)"
 msgstr "Température Air (°C)"
 
-#: Migrations\Configuration.cs:159
-#: Views\Events\Index.cshtml:33
-#: Views\Measures\Index.cshtml:92
-#: Views\Messages\Index.cshtml:96
+#: Migrations\Configuration.cs:159 Views\Events\Index.cshtml:33
+#: Views\Measures\Index.cshtml:92 Views\Messages\Index.cshtml:96
 #: obj\Release\Package\PackageTmp\Views\Events\Index.cshtml:33
 #: obj\Release\Package\PackageTmp\Views\Measures\Index.cshtml:92
 #: obj\Release\Package\PackageTmp\Views\Messages\Index.cshtml:96
@@ -126,9 +143,14 @@ msgstr "Anxieux"
 msgid "Application Logs"
 msgstr "Messages Applicatifs"
 
-#: Migrations\Configuration.cs:183
+#: Content\GrowingModelv1.json:1114 Migrations\Configuration.cs:183
 msgid "April"
 msgstr "Avril"
+
+#: Content\GrowingModelv1.json:16 Content\GrowingModelv1.json:569
+#: Content\GrowingModelv1.json:1122
+msgid "Aquaponics"
+msgstr "Aquaponie"
 
 #: Migrations\Configuration.cs:99
 msgid "Aquaponics - Carp"
@@ -167,24 +189,17 @@ msgstr "Août"
 msgid "Autumn"
 msgstr "Automne"
 
-#: Migrations\Configuration.cs:126
-#: Migrations\Configuration.cs:256
+#: Migrations\Configuration.cs:126 Migrations\Configuration.cs:256
 #: Migrations\Configuration.cs:260
 msgid "Average"
 msgstr "Moyenne"
 
-#: Views\Home\Index.cshtml:165
-#: Views\Home\Index.cshtml:170
-#: Views\Home\Index.cshtml:187
-#: Views\Home\Index.cshtml:192
-#: Views\Home\Index.cshtml:209
-#: Views\Home\Index.cshtml:214
-#: Views\Home\Index.cshtml:231
-#: Views\Home\Index.cshtml:236
-#: Views\InteractiveMap\Index.cshtml:366
-#: Views\InteractiveMap\Index.cshtml:371
-#: Views\InteractiveMap\Index.cshtml:390
-#: Views\InteractiveMap\Index.cshtml:395
+#: Views\Home\Index.cshtml:165 Views\Home\Index.cshtml:170
+#: Views\Home\Index.cshtml:187 Views\Home\Index.cshtml:192
+#: Views\Home\Index.cshtml:209 Views\Home\Index.cshtml:214
+#: Views\Home\Index.cshtml:231 Views\Home\Index.cshtml:236
+#: Views\InteractiveMap\Index.cshtml:365 Views\InteractiveMap\Index.cshtml:370
+#: Views\InteractiveMap\Index.cshtml:389 Views\InteractiveMap\Index.cshtml:394
 #: Views\ProductionUnits\Details.cshtml:788
 #: Views\ProductionUnits\Details.cshtml:793
 #: Views\ProductionUnits\Details.cshtml:817
@@ -209,10 +224,10 @@ msgstr "Moyenne"
 #: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:214
 #: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:231
 #: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:236
-#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:366
-#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:371
-#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:390
-#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:395
+#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:365
+#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:370
+#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:389
+#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:394
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:788
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:793
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:817
@@ -236,8 +251,7 @@ msgstr "MOYENNE"
 msgid "Awesome"
 msgstr "Incroyable"
 
-#: Views\Events\Index.cshtml:44
-#: Views\Events\Manage.cshtml:37
+#: Views\Events\Index.cshtml:44 Views\Events\Manage.cshtml:37
 #: Views\ProductionUnitOwner\Index.cshtml:30
 #: Views\ProductionUnits\Update.cshtml:55
 #: obj\Release\Package\PackageTmp\Views\Events\Index.cshtml:44
@@ -252,8 +266,7 @@ msgstr "Retour aux Détails"
 msgid "Back to Production Units"
 msgstr "Retour à Unités de Production"
 
-#: Views\Admin\CreateUser.cshtml:27
-#: Views\Admin\EditRoles.cshtml:27
+#: Views\Admin\CreateUser.cshtml:27 Views\Admin\EditRoles.cshtml:27
 #: Views\Admin\EditUser.cshtml:27
 #: obj\Release\Package\PackageTmp\Views\Admin\CreateUser.cshtml:27
 #: obj\Release\Package\PackageTmp\Views\Admin\EditRoles.cshtml:27
@@ -261,8 +274,7 @@ msgstr "Retour à Unités de Production"
 msgid "Back to User List"
 msgstr "Retour à Utilisateur"
 
-#: Migrations\Configuration.cs:257
-#: Migrations\Configuration.cs:261
+#: Migrations\Configuration.cs:257 Migrations\Configuration.cs:261
 msgid "Bad"
 msgstr "Mauvais"
 
@@ -281,21 +293,29 @@ msgstr "Meilleur moment :"
 msgid "Bioponics"
 msgstr "Bioponie"
 
+#: Content\GrowingModelv1.json:1326
+msgid "Broad Bean"
+msgstr "Petit Pois"
+
 #: Migrations\Configuration.cs:216
 msgid "Broken pump"
 msgstr "Pompe cassée"
+
+#: Content\GrowingModelv1.json:178 Content\GrowingModelv1.json:351
+#: Content\GrowingModelv1.json:752 Content\GrowingModelv1.json:904
+#: Content\GrowingModelv1.json:1305 Content\GrowingModelv1.json:1394
+msgid "Cabbage Rave"
+msgstr "Chou Rave"
+
+#: Views\Shared\_Layout.cshtml:156 Views\Shared\_RedesignLayout.cshtml:166
+msgid "Calendar"
+msgstr "Calendrier"
 
 #: Migrations\Configuration.cs:244
 msgid "Call Pioneer"
 msgstr "Appel Pionnier"
 
-#: Views\Recipes\Index.cshtml:81
-#: obj\Release\Package\PackageTmp\Views\Recipes\Index.cshtml:81
-msgid "Can be planted in:"
-msgstr "Peut être planté dans :"
-
-#: Views\Events\Index.cshtml:131
-#: Views\ProductionUnits\Details.cshtml:1012
+#: Views\Events\Index.cshtml:131 Views\ProductionUnits\Details.cshtml:1012
 #: Views\ProductionUnits\UserUnit.cshtml:995
 #: obj\Release\Package\PackageTmp\Views\Events\Index.cshtml:131
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:1012
@@ -303,20 +323,23 @@ msgstr "Peut être planté dans :"
 msgid "Cancel"
 msgstr "Annuler"
 
+#: Content\GrowingModelv1.json:199
+msgid "Cauliflower"
+msgstr "Chou Fleur"
+
 #: Views\ProductionUnits\Update.cshtml:105
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\Update.cshtml:105
 msgid "Change image"
 msgstr "Change l'image"
 
+#: Content\GrowingModelv1.json:262 Content\GrowingModelv1.json:815
+msgid "Chard"
+msgstr "Bettes"
+
 #: Views\MyInfo\Update.cshtml:110
 #: obj\Release\Package\PackageTmp\Views\MyInfo\Update.cshtml:110
 msgid "Choose the application default language"
 msgstr "Choisissez la langue par défaut"
-
-#: Views\Recipes\Index.cshtml:22
-#: obj\Release\Package\PackageTmp\Views\Recipes\Index.cshtml:22
-msgid "Choose the suitable recipes for your greenhouse"
-msgstr "Choisissez la meilleur recette pour votre serre"
 
 #: Migrations\Configuration.cs:85
 msgid "City - Original"
@@ -380,12 +403,21 @@ msgstr "crée par"
 msgid "Created by"
 msgstr "Créé par"
 
-#: Views\Home\Index.cshtml:160
-#: Views\Home\Index.cshtml:182
-#: Views\Home\Index.cshtml:204
-#: Views\Home\Index.cshtml:226
-#: Views\InteractiveMap\Index.cshtml:361
-#: Views\InteractiveMap\Index.cshtml:385
+#: Views\Recipes\Index.cshtml:73
+msgid "crop per slot"
+msgstr "graine par empl."
+
+#: Views\Recipes\Index.cshtml:69
+msgid "crops per slot"
+msgstr "graines par empl."
+
+#: Content\GrowingModelv1.json:642 Content\GrowingModelv1.json:1195
+msgid "Cucumber"
+msgstr "Concombre"
+
+#: Views\Home\Index.cshtml:160 Views\Home\Index.cshtml:182
+#: Views\Home\Index.cshtml:204 Views\Home\Index.cshtml:226
+#: Views\InteractiveMap\Index.cshtml:360 Views\InteractiveMap\Index.cshtml:384
 #: Views\ProductionUnits\Details.cshtml:783
 #: Views\ProductionUnits\Details.cshtml:812
 #: Views\ProductionUnits\Details.cshtml:843
@@ -398,8 +430,8 @@ msgstr "Créé par"
 #: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:182
 #: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:204
 #: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:226
-#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:361
-#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:385
+#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:360
+#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:384
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:783
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:812
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:843
@@ -429,22 +461,11 @@ msgstr "Capteur endommagé"
 msgid "date"
 msgstr "date"
 
-#: Views\Events\Index.cshtml:62
-#: Views\Events\Index.cshtml:103
+#: Views\Events\Index.cshtml:62 Views\Events\Index.cshtml:103
 #: obj\Release\Package\PackageTmp\Views\Events\Index.cshtml:62
 #: obj\Release\Package\PackageTmp\Views\Events\Index.cshtml:103
 msgid "Date"
 msgstr "Date"
-
-#: Views\Recipes\Index.cshtml:78
-#: obj\Release\Package\PackageTmp\Views\Recipes\Index.cshtml:78
-msgid "DAY OF GERMINATION<br />FROM SEED"
-msgstr "JOUR DE GERMINATION<br /> DEPUIS GRAINE"
-
-#: Views\Recipes\Index.cshtml:78
-#: obj\Release\Package\PackageTmp\Views\Recipes\Index.cshtml:78
-msgid "DAY OF HARVEST<br />FROM SOW."
-msgstr "JOUR DE RECOLTE <br /> DEPUIS SEMIS"
 
 #: Migrations\Configuration.cs:207
 msgid "Dead fish"
@@ -473,18 +494,24 @@ msgstr "Détails"
 msgid "Development Kit"
 msgstr "Kit de Dev."
 
-#: Views\Recipes\Index.cshtml:78
-#: obj\Release\Package\PackageTmp\Views\Recipes\Index.cshtml:78
-msgid "DISTANCE BETWEEN<br />PLANTS (CM)"
-msgstr "DISTANCE ENTRE<br />PLANTES (CM)"
+#: Content\GrowingModelv1.json:194 Content\GrowingModelv1.json:236
+#: Content\GrowingModelv1.json:299 Content\GrowingModelv1.json:325
+#: Content\GrowingModelv1.json:789 Content\GrowingModelv1.json:852
+#: Content\GrowingModelv1.json:878 Content\GrowingModelv1.json:1342
+#: Content\GrowingModelv1.json:1368
+msgid "Down"
+msgstr "Bas"
+
+#: Content\GrowingModelv1.json:663 Content\GrowingModelv1.json:1216
+msgid "Edible Flower"
+msgstr "Fleurs Comestibles"
 
 #: Views\Events\Index.cshtml:99
 #: obj\Release\Package\PackageTmp\Views\Events\Index.cshtml:99
 msgid "Edit"
 msgstr "Modifier"
 
-#: Views\Admin\CreateUser.cshtml:12
-#: Views\Admin\EditRoles.cshtml:12
+#: Views\Admin\CreateUser.cshtml:12 Views\Admin\EditRoles.cshtml:12
 #: obj\Release\Package\PackageTmp\Views\Admin\CreateUser.cshtml:12
 #: obj\Release\Package\PackageTmp\Views\Admin\EditRoles.cshtml:12
 msgid "Edit Roles"
@@ -495,8 +522,11 @@ msgstr "Editer les Roles"
 msgid "Edit Users"
 msgstr "Editer les Utilisateurs"
 
-#: Viewmodels\AccountViewModels.cs:8
-#: Viewmodels\AccountViewModels.cs:32
+#: Content\GrowingModelv1.json:621 Content\GrowingModelv1.json:1174
+msgid "Eggplant"
+msgstr "Aubergines"
+
+#: Viewmodels\AccountViewModels.cs:8 Viewmodels\AccountViewModels.cs:32
 #: Views\MyInfo\Update.cshtml:98
 #: obj\Release\Package\PackageTmp\Views\MyInfo\Update.cshtml:98
 msgid "Email"
@@ -520,8 +550,7 @@ msgstr "Equipement"
 msgid "EST. PROD."
 msgstr "EST. PROD."
 
-#: Views\Events\Manage.cshtml:48
-#: Views\ProductionUnits\Details.cshtml:898
+#: Views\Events\Manage.cshtml:48 Views\ProductionUnits\Details.cshtml:898
 #: Views\ProductionUnits\Details.cshtml:901
 #: Views\ProductionUnits\UserUnit.cshtml:881
 #: Views\ProductionUnits\UserUnit.cshtml:884
@@ -575,7 +604,7 @@ msgstr ""
 msgid "Farm"
 msgstr "Farm"
 
-#: Migrations\Configuration.cs:181
+#: Content\GrowingModelv1.json:8 Migrations\Configuration.cs:181
 msgid "February"
 msgstr "Février"
 
@@ -586,6 +615,10 @@ msgstr "Nourrir poisson"
 #: Migrations\Configuration.cs:119
 msgid "Feeling"
 msgstr "Sentiment"
+
+#: Content\GrowingModelv1.json:283 Content\GrowingModelv1.json:836
+msgid "Fennel"
+msgstr "Fenouil"
 
 #: Migrations\Configuration.cs:224
 msgid "Filter cleaning"
@@ -629,17 +662,54 @@ msgstr "Vitre cassée"
 msgid "Glass cleaning"
 msgstr "Nettoyage des vitres"
 
-#: Migrations\Configuration.cs:127
-#: Migrations\Configuration.cs:255
+#: Migrations\Configuration.cs:127 Migrations\Configuration.cs:255
 #: Migrations\Configuration.cs:259
 msgid "Good"
 msgstr "Bon"
+
+#: Content\GrowingModelv1.json:583 Content\GrowingModelv1.json:604
+#: Content\GrowingModelv1.json:625 Content\GrowingModelv1.json:646
+#: Content\GrowingModelv1.json:667 Content\GrowingModelv1.json:688
+#: Content\GrowingModelv1.json:709 Content\GrowingModelv1.json:735
+#: Content\GrowingModelv1.json:1136 Content\GrowingModelv1.json:1157
+#: Content\GrowingModelv1.json:1178 Content\GrowingModelv1.json:1199
+#: Content\GrowingModelv1.json:1220 Content\GrowingModelv1.json:1241
+#: Content\GrowingModelv1.json:1262 Content\GrowingModelv1.json:1288
+msgid "Grow"
+msgstr "Pousse"
 
 #: Migrations\Configuration.cs:263
 msgid "Happy"
 msgstr "Heureux"
 
-#: Migrations\Configuration.cs:123
+#: Content\GrowingModelv1.json:30 Content\GrowingModelv1.json:51
+#: Content\GrowingModelv1.json:72 Content\GrowingModelv1.json:93
+#: Content\GrowingModelv1.json:114 Content\GrowingModelv1.json:135
+#: Content\GrowingModelv1.json:156 Content\GrowingModelv1.json:182
+#: Content\GrowingModelv1.json:203 Content\GrowingModelv1.json:224
+#: Content\GrowingModelv1.json:245 Content\GrowingModelv1.json:266
+#: Content\GrowingModelv1.json:287 Content\GrowingModelv1.json:308
+#: Content\GrowingModelv1.json:334 Content\GrowingModelv1.json:355
+#: Content\GrowingModelv1.json:376 Content\GrowingModelv1.json:397
+#: Content\GrowingModelv1.json:418 Content\GrowingModelv1.json:439
+#: Content\GrowingModelv1.json:460 Content\GrowingModelv1.json:481
+#: Content\GrowingModelv1.json:502 Content\GrowingModelv1.json:523
+#: Content\GrowingModelv1.json:544 Content\GrowingModelv1.json:756
+#: Content\GrowingModelv1.json:777 Content\GrowingModelv1.json:798
+#: Content\GrowingModelv1.json:819 Content\GrowingModelv1.json:840
+#: Content\GrowingModelv1.json:861 Content\GrowingModelv1.json:887
+#: Content\GrowingModelv1.json:908 Content\GrowingModelv1.json:929
+#: Content\GrowingModelv1.json:950 Content\GrowingModelv1.json:971
+#: Content\GrowingModelv1.json:992 Content\GrowingModelv1.json:1013
+#: Content\GrowingModelv1.json:1034 Content\GrowingModelv1.json:1055
+#: Content\GrowingModelv1.json:1076 Content\GrowingModelv1.json:1097
+#: Content\GrowingModelv1.json:1309 Content\GrowingModelv1.json:1351
+#: Content\GrowingModelv1.json:1377 Content\GrowingModelv1.json:1398
+#: Content\GrowingModelv1.json:1419 Content\GrowingModelv1.json:1440
+#: Content\GrowingModelv1.json:1461 Content\GrowingModelv1.json:1482
+#: Content\GrowingModelv1.json:1503 Content\GrowingModelv1.json:1524
+#: Content\GrowingModelv1.json:1545 Content\GrowingModelv1.json:1566
+#: Content\GrowingModelv1.json:1587 Migrations\Configuration.cs:123
 msgid "Harvest"
 msgstr "Récolte"
 
@@ -659,8 +729,7 @@ msgstr "Elevé"
 msgid "Humidity"
 msgstr "Humidité"
 
-#: Views\Home\Index.cshtml:222
-#: Views\ProductionUnits\Details.cshtml:869
+#: Views\Home\Index.cshtml:222 Views\ProductionUnits\Details.cshtml:869
 #: Views\ProductionUnits\UserUnit.cshtml:852
 #: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:222
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:869
@@ -689,14 +758,17 @@ msgstr "Amélioration"
 msgid "In Maintenance"
 msgstr "En Maintenance"
 
-#: Viewmodels\ProductionUnitViewModel.cs:27
-#: Views\Events\Manage.cshtml:63
+#: Content\GrowingModelv1.json:13 Content\GrowingModelv1.json:566
+#: Content\GrowingModelv1.json:1119
+msgid "Indoor"
+msgstr "Intérieur"
+
+#: Viewmodels\ProductionUnitViewModel.cs:27 Views\Events\Manage.cshtml:63
 #: obj\Release\Package\PackageTmp\Views\Events\Manage.cshtml:63
 msgid "info"
 msgstr "info"
 
-#: Migrations\Configuration.cs:120
-#: Views\ProductionUnits\Update.cshtml:86
+#: Migrations\Configuration.cs:120 Views\ProductionUnits\Update.cshtml:86
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\Update.cshtml:86
 msgid "Info"
 msgstr "Info"
@@ -737,8 +809,7 @@ msgstr "Installer panneaux solaires"
 msgid "Install UV filter"
 msgstr "Installer filtre UV"
 
-#: Views\Events\Index.cshtml:64
-#: Views\Events\Index.cshtml:117
+#: Views\Events\Index.cshtml:64 Views\Events\Index.cshtml:117
 #: Views\Events\Manage.cshtml:62
 #: obj\Release\Package\PackageTmp\Views\Events\Index.cshtml:64
 #: obj\Release\Package\PackageTmp\Views\Events\Index.cshtml:117
@@ -762,6 +833,13 @@ msgstr "Juillet"
 msgid "June"
 msgstr "Juin"
 
+#: Content\GrowingModelv1.json:89 Content\GrowingModelv1.json:393
+#: Content\GrowingModelv1.json:477 Content\GrowingModelv1.json:946
+#: Content\GrowingModelv1.json:1030 Content\GrowingModelv1.json:1436
+#: Content\GrowingModelv1.json:1520
+msgid "Kale"
+msgstr "Chou Kale"
+
 #: Views\ProductionUnitOwner\Index.cshtml:46
 #: obj\Release\Package\PackageTmp\Views\ProductionUnitOwner\Index.cshtml:46
 msgid "lang"
@@ -772,8 +850,7 @@ msgstr "lang"
 msgid "last measure"
 msgstr "dernière mesure"
 
-#: Views\Measures\Index.cshtml:89
-#: Views\Messages\Index.cshtml:93
+#: Views\Measures\Index.cshtml:89 Views\Messages\Index.cshtml:93
 #: obj\Release\Package\PackageTmp\Views\Measures\Index.cshtml:89
 #: obj\Release\Package\PackageTmp\Views\Messages\Index.cshtml:93
 msgid "Last Month"
@@ -797,6 +874,12 @@ msgstr "Légumes feuilles - moins de 200gr"
 msgid "Leaf vegetables - more than 200gr"
 msgstr "Légumes feuilles - plus de 200gr"
 
+#: Content\GrowingModelv1.json:26 Content\GrowingModelv1.json:47
+#: Content\GrowingModelv1.json:68 Content\GrowingModelv1.json:330
+#: Content\GrowingModelv1.json:883 Content\GrowingModelv1.json:1373
+msgid "Lettuce"
+msgstr "Laitue"
+
 #: Migrations\Configuration.cs:162
 msgid "Light"
 msgstr "Lumière"
@@ -813,8 +896,7 @@ msgstr "Location:"
 msgid "Log in"
 msgstr "Se Connecter"
 
-#: Views\Shared\_Layout.cshtml:216
-#: Views\Shared\_RedesignLayout.cshtml:231
+#: Views\Shared\_Layout.cshtml:216 Views\Shared\_RedesignLayout.cshtml:231
 #: obj\Release\Package\PackageTmp\Views\Shared\_Layout.cshtml:216
 #: obj\Release\Package\PackageTmp\Views\Shared\_RedesignLayout.cshtml:231
 msgid "Log off"
@@ -827,8 +909,7 @@ msgstr "Déconnexion"
 msgid "Log your Actions / Events here"
 msgstr "Saisir vos Actions / Evénements ici"
 
-#: Views\Shared\_Layout.cshtml:235
-#: Views\Shared\_RedesignLayout.cshtml:249
+#: Views\Shared\_Layout.cshtml:235 Views\Shared\_RedesignLayout.cshtml:249
 #: obj\Release\Package\PackageTmp\Views\Shared\_Layout.cshtml:235
 #: obj\Release\Package\PackageTmp\Views\Shared\_RedesignLayout.cshtml:249
 msgid "Login"
@@ -857,8 +938,7 @@ msgstr "Gérez les Mesures provenant des capteurs"
 msgid "Manage Production Unit Owners"
 msgstr "Gérer Propriétaires des Unit. de Prod."
 
-#: Views\Events\Manage.cshtml:30
-#: Views\ProductionUnits\Index.cshtml:49
+#: Views\Events\Manage.cshtml:30 Views\ProductionUnits\Index.cshtml:49
 #: obj\Release\Package\PackageTmp\Views\Events\Manage.cshtml:30
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\Index.cshtml:49
 msgid "Manage Production Units Events"
@@ -886,10 +966,8 @@ msgstr "Gérez les Enregistrement de Reconnaissance de vos Unités de Production
 msgid "Manage Unit"
 msgstr "Gérer Unité"
 
-#: Views\Admin\EditRoles.cshtml:18
-#: Views\Admin\EditUser.cshtml:18
-#: Views\Admin\Index.cshtml:24
-#: Views\ProductionUnits\Index.cshtml:65
+#: Views\Admin\EditRoles.cshtml:18 Views\Admin\EditUser.cshtml:18
+#: Views\Admin\Index.cshtml:24 Views\ProductionUnits\Index.cshtml:65
 #: obj\Release\Package\PackageTmp\Views\Admin\EditRoles.cshtml:18
 #: obj\Release\Package\PackageTmp\Views\Admin\EditUser.cshtml:18
 #: obj\Release\Package\PackageTmp\Views\Admin\Index.cshtml:24
@@ -897,7 +975,7 @@ msgstr "Gérer Unité"
 msgid "Manage Users"
 msgstr "Gérer Utilisateurs"
 
-#: Migrations\Configuration.cs:182
+#: Content\GrowingModelv1.json:561 Migrations\Configuration.cs:182
 msgid "March"
 msgstr "Mars"
 
@@ -909,8 +987,7 @@ msgstr "Maximum"
 msgid "May"
 msgstr "May"
 
-#: Views\Shared\_Layout.cshtml:108
-#: Views\Shared\_RedesignLayout.cshtml:108
+#: Views\Shared\_Layout.cshtml:108 Views\Shared\_RedesignLayout.cshtml:108
 #: obj\Release\Package\PackageTmp\Views\Shared\_Layout.cshtml:108
 #: obj\Release\Package\PackageTmp\Views\Shared\_RedesignLayout.cshtml:108
 msgid "Measures"
@@ -921,17 +998,26 @@ msgstr "Mesures"
 msgid "Measures Monitoring"
 msgstr "Visualisation des Mesures"
 
-#: Migrations\Configuration.cs:132
+#: Content\GrowingModelv1.json:173 Content\GrowingModelv1.json:215
+#: Content\GrowingModelv1.json:278 Content\GrowingModelv1.json:747
+#: Content\GrowingModelv1.json:768 Content\GrowingModelv1.json:831
+#: Content\GrowingModelv1.json:1300 Migrations\Configuration.cs:132
 msgid "Medium"
 msgstr "Moyen"
+
+#: Content\GrowingModelv1.json:110 Content\GrowingModelv1.json:414
+#: Content\GrowingModelv1.json:498 Content\GrowingModelv1.json:967
+#: Content\GrowingModelv1.json:1051 Content\GrowingModelv1.json:1457
+#: Content\GrowingModelv1.json:1541
+msgid "Mesclun"
+msgstr "Mesclun"
 
 #: Views\Messages\Index.cshtml:109
 #: obj\Release\Package\PackageTmp\Views\Messages\Index.cshtml:109
 msgid "message type"
 msgstr "type message"
 
-#: Views\Shared\_Layout.cshtml:91
-#: Views\Shared\_RedesignLayout.cshtml:80
+#: Views\Shared\_Layout.cshtml:91 Views\Shared\_RedesignLayout.cshtml:80
 #: obj\Release\Package\PackageTmp\Views\Shared\_Layout.cshtml:91
 #: obj\Release\Package\PackageTmp\Views\Shared\_RedesignLayout.cshtml:80
 msgid "Messages"
@@ -962,8 +1048,7 @@ msgstr "Kit mesure v.2"
 msgid "Morning"
 msgstr "Matin"
 
-#: Views\MyInfo\Update.cshtml:84
-#: Views\Shared\_Layout.cshtml:170
+#: Views\MyInfo\Update.cshtml:84 Views\Shared\_Layout.cshtml:170
 #: Views\Shared\_RedesignLayout.cshtml:186
 #: obj\Release\Package\PackageTmp\Views\MyInfo\Update.cshtml:84
 #: obj\Release\Package\PackageTmp\Views\Shared\_Layout.cshtml:170
@@ -989,12 +1074,11 @@ msgstr "Besoin d'aide"
 msgid "Need Support?"
 msgstr "Besoin d'aide ?"
 
-#: Views\Home\Index.cshtml:282
-#: Views\InteractiveMap\Index.cshtml:344
-#: Views\InteractiveMap\Index.cshtml:406
+#: Views\Home\Index.cshtml:282 Views\InteractiveMap\Index.cshtml:343
+#: Views\InteractiveMap\Index.cshtml:405
 #: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:282
-#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:344
-#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:406
+#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:343
+#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:405
 msgid "Network Info"
 msgstr "Info du Réseau"
 
@@ -1003,8 +1087,7 @@ msgstr "Info du Réseau"
 msgid "Network Status"
 msgstr "Etat du Réseau"
 
-#: Viewmodels\AccountViewModels.cs:41
-#: Views\MyInfo\Update.cshtml:106
+#: Viewmodels\AccountViewModels.cs:41 Views\MyInfo\Update.cshtml:106
 #: obj\Release\Package\PackageTmp\Views\MyInfo\Update.cshtml:106
 msgid "New Password"
 msgstr "Nouveau Mot de Passe"
@@ -1030,6 +1113,30 @@ msgstr "Pompe bruyante"
 msgid "Normal"
 msgstr "Normal"
 
+#: Content\GrowingModelv1.json:63 Content\GrowingModelv1.json:84
+#: Content\GrowingModelv1.json:105 Content\GrowingModelv1.json:126
+#: Content\GrowingModelv1.json:147 Content\GrowingModelv1.json:367
+#: Content\GrowingModelv1.json:388 Content\GrowingModelv1.json:409
+#: Content\GrowingModelv1.json:430 Content\GrowingModelv1.json:451
+#: Content\GrowingModelv1.json:472 Content\GrowingModelv1.json:493
+#: Content\GrowingModelv1.json:514 Content\GrowingModelv1.json:535
+#: Content\GrowingModelv1.json:616 Content\GrowingModelv1.json:637
+#: Content\GrowingModelv1.json:658 Content\GrowingModelv1.json:679
+#: Content\GrowingModelv1.json:700 Content\GrowingModelv1.json:920
+#: Content\GrowingModelv1.json:941 Content\GrowingModelv1.json:962
+#: Content\GrowingModelv1.json:983 Content\GrowingModelv1.json:1004
+#: Content\GrowingModelv1.json:1025 Content\GrowingModelv1.json:1046
+#: Content\GrowingModelv1.json:1067 Content\GrowingModelv1.json:1088
+#: Content\GrowingModelv1.json:1169 Content\GrowingModelv1.json:1190
+#: Content\GrowingModelv1.json:1211 Content\GrowingModelv1.json:1232
+#: Content\GrowingModelv1.json:1253 Content\GrowingModelv1.json:1410
+#: Content\GrowingModelv1.json:1431 Content\GrowingModelv1.json:1452
+#: Content\GrowingModelv1.json:1473 Content\GrowingModelv1.json:1494
+#: Content\GrowingModelv1.json:1515 Content\GrowingModelv1.json:1536
+#: Content\GrowingModelv1.json:1557 Content\GrowingModelv1.json:1578
+msgid "North"
+msgstr "Nord"
+
 #: Migrations\Configuration.cs:97
 msgid "Not applicable"
 msgstr "Pas applicable"
@@ -1048,8 +1155,7 @@ msgid "October"
 msgstr "Octobre"
 
 #: Controllers\HomeController.cs:254
-#: Controllers\InteractiveMapController.cs:247
-#: Migrations\Configuration.cs:111
+#: Controllers\InteractiveMapController.cs:247 Migrations\Configuration.cs:111
 msgid "Offline"
 msgstr "Hors-ligne"
 
@@ -1060,8 +1166,7 @@ msgstr "Hors-ligne"
 msgid "OK"
 msgstr "OK"
 
-#: Viewmodels\AccountViewModels.cs:37
-#: Views\MyInfo\Update.cshtml:102
+#: Viewmodels\AccountViewModels.cs:37 Views\MyInfo\Update.cshtml:102
 #: obj\Release\Package\PackageTmp\Views\MyInfo\Update.cshtml:102
 msgid "Old Password"
 msgstr "Ancien Mot de Passe"
@@ -1099,12 +1204,9 @@ msgstr "Propriétaire"
 msgid "Password"
 msgstr "Mot de Passe"
 
-#: Views\Home\Index.cshtml:167
-#: Views\Home\Index.cshtml:189
-#: Views\Home\Index.cshtml:211
-#: Views\Home\Index.cshtml:233
-#: Views\InteractiveMap\Index.cshtml:368
-#: Views\InteractiveMap\Index.cshtml:392
+#: Views\Home\Index.cshtml:167 Views\Home\Index.cshtml:189
+#: Views\Home\Index.cshtml:211 Views\Home\Index.cshtml:233
+#: Views\InteractiveMap\Index.cshtml:367 Views\InteractiveMap\Index.cshtml:391
 #: Views\ProductionUnits\Details.cshtml:790
 #: Views\ProductionUnits\Details.cshtml:819
 #: Views\ProductionUnits\Details.cshtml:850
@@ -1116,8 +1218,8 @@ msgstr "Mot de Passe"
 #: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:189
 #: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:211
 #: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:233
-#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:368
-#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:392
+#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:367
+#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:391
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:790
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:819
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:850
@@ -1132,6 +1234,10 @@ msgstr "DERNIERE HEURE"
 msgid "Pellet stove"
 msgstr "Poêle à granulés"
 
+#: Content\GrowingModelv1.json:600 Content\GrowingModelv1.json:1153
+msgid "Pepper"
+msgstr "Piment"
+
 #: Views\ProductionUnits\Details.cshtml:953
 #: Views\ProductionUnits\Details.cshtml:958
 #: Views\ProductionUnits\UserUnit.cshtml:936
@@ -1143,8 +1249,8 @@ msgstr "Poêle à granulés"
 msgid "PER MONTH"
 msgstr "PAR MOIS"
 
-#: Views\InteractiveMap\Index.cshtml:191
-#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:191
+#: Views\InteractiveMap\Index.cshtml:190
+#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:190
 msgid "Percentage"
 msgstr "Pourcentage"
 
@@ -1171,8 +1277,7 @@ msgstr "Performance"
 msgid "PERFORMANCE"
 msgstr "PERFORMANCE"
 
-#: Views\Shared\_Layout.cshtml:141
-#: Views\Shared\_RedesignLayout.cshtml:146
+#: Views\Shared\_Layout.cshtml:141 Views\Shared\_RedesignLayout.cshtml:146
 #: obj\Release\Package\PackageTmp\Views\Shared\_Layout.cshtml:141
 #: obj\Release\Package\PackageTmp\Views\Shared\_RedesignLayout.cshtml:146
 msgid "Performance &amp; Health"
@@ -1182,6 +1287,23 @@ msgstr "Performances &amp; Santé"
 #: obj\Release\Package\PackageTmp\Views\PerformanceHealth\Index.cshtml:12
 msgid "Performance &amp; Health (Preview)"
 msgstr "Performances &amp; Santé (Démo)"
+
+#: Content\GrowingModelv1.json:171 Content\GrowingModelv1.json:192
+#: Content\GrowingModelv1.json:213 Content\GrowingModelv1.json:234
+#: Content\GrowingModelv1.json:255 Content\GrowingModelv1.json:276
+#: Content\GrowingModelv1.json:297 Content\GrowingModelv1.json:724
+#: Content\GrowingModelv1.json:745 Content\GrowingModelv1.json:766
+#: Content\GrowingModelv1.json:787 Content\GrowingModelv1.json:808
+#: Content\GrowingModelv1.json:829 Content\GrowingModelv1.json:850
+#: Content\GrowingModelv1.json:1277 Content\GrowingModelv1.json:1298
+#: Content\GrowingModelv1.json:1319 Content\GrowingModelv1.json:1340
+msgid "Perma Bed"
+msgstr "Butte de Perma"
+
+#: Content\GrowingModelv1.json:168 Content\GrowingModelv1.json:721
+#: Content\GrowingModelv1.json:1274
+msgid "Perma Beds"
+msgstr "Buttes de Perma"
 
 #: Migrations\Configuration.cs:156
 msgid "Permaculture Bed"
@@ -1199,10 +1321,10 @@ msgstr "Buttes de Permaculture et Biochar"
 msgid "Pest"
 msgstr "Insectes"
 
-#: Views\InteractiveMap\Index.cshtml:357
+#: Views\InteractiveMap\Index.cshtml:356
 #: Views\ProductionUnits\Details.cshtml:779
 #: Views\ProductionUnits\UserUnit.cshtml:762
-#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:357
+#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:356
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:779
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:762
 msgid "pH"
@@ -1215,8 +1337,8 @@ msgstr "pH"
 msgid "Phone:"
 msgstr "Tel:"
 
-#: Views\InteractiveMap\Index.cshtml:337
-#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:337
+#: Views\InteractiveMap\Index.cshtml:336
+#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:336
 msgid "Pioneer Citizen Map"
 msgstr "Carte des Citoyens Pionniers"
 
@@ -1286,8 +1408,7 @@ msgstr "Détails Unité de Production"
 msgid "Production Unit Owner already in use"
 msgstr "Propriétaire déjà en cours d'utilisation"
 
-#: Views\Shared\_Layout.cshtml:124
-#: Views\Shared\_RedesignLayout.cshtml:127
+#: Views\Shared\_Layout.cshtml:124 Views\Shared\_RedesignLayout.cshtml:127
 #: obj\Release\Package\PackageTmp\Views\Shared\_Layout.cshtml:124
 #: obj\Release\Package\PackageTmp\Views\Shared\_RedesignLayout.cshtml:127
 msgid "Production Units"
@@ -1300,8 +1421,7 @@ msgstr "Unités de Prod."
 msgid "Production Units List"
 msgstr "Liste des Unités de Production"
 
-#: Views\Events\Index.cshtml:26
-#: Views\Events\Manage.cshtml:24
+#: Views\Events\Index.cshtml:26 Views\Events\Manage.cshtml:24
 #: Views\ProductionUnits\Update.cshtml:50
 #: obj\Release\Package\PackageTmp\Views\Events\Index.cshtml:26
 #: obj\Release\Package\PackageTmp\Views\Events\Manage.cshtml:24
@@ -1309,10 +1429,16 @@ msgstr "Liste des Unités de Production"
 msgid "Production Units Management"
 msgstr "Gestion Unité de Production"
 
-#: Views\Recipes\Index.cshtml:15
-#: Views\Shared\_Layout.cshtml:156
-#: Views\Shared\_RedesignLayout.cshtml:166
-#: obj\Release\Package\PackageTmp\Views\Recipes\Index.cshtml:15
+#: Content\GrowingModelv1.json:131 Content\GrowingModelv1.json:372
+#: Content\GrowingModelv1.json:435 Content\GrowingModelv1.json:519
+#: Content\GrowingModelv1.json:925 Content\GrowingModelv1.json:988
+#: Content\GrowingModelv1.json:1072 Content\GrowingModelv1.json:1415
+#: Content\GrowingModelv1.json:1478 Content\GrowingModelv1.json:1562
+msgid "Purslane"
+msgstr "Pourpier"
+
+#: Views\Recipes\Index.cshtml:20
+#: obj\Release\Package\PackageTmp\Views\Recipes\Index.cshtml:24
 #: obj\Release\Package\PackageTmp\Views\Shared\_Layout.cshtml:156
 #: obj\Release\Package\PackageTmp\Views\Shared\_RedesignLayout.cshtml:166
 msgid "Recipes"
@@ -1344,6 +1470,10 @@ msgstr "Enregistrer"
 msgid "Save and Close"
 msgstr "Sauver et Fermer"
 
+#: Content\GrowingModelv1.json:1330
+msgid "Seed"
+msgstr "Semis"
+
 #: Views\ProductionUnits\Index.cshtml:73
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\Index.cshtml:73
 msgid "Send Feeling Request"
@@ -1363,8 +1493,7 @@ msgid "September"
 msgstr "Septembre"
 
 #: Controllers\HomeController.cs:250
-#: Controllers\InteractiveMapController.cs:243
-#: Migrations\Configuration.cs:107
+#: Controllers\InteractiveMapController.cs:243 Migrations\Configuration.cs:107
 msgid "Setup Planned"
 msgstr "Instal. Planifiée"
 
@@ -1379,9 +1508,29 @@ msgstr "Kit connectivité Sigfox"
 msgid "SINCE"
 msgstr "DEPUIS"
 
+#: Content\GrowingModelv1.json:171 Content\GrowingModelv1.json:192
+#: Content\GrowingModelv1.json:213 Content\GrowingModelv1.json:234
+#: Content\GrowingModelv1.json:255 Content\GrowingModelv1.json:276
+#: Content\GrowingModelv1.json:297 Content\GrowingModelv1.json:724
+#: Content\GrowingModelv1.json:745 Content\GrowingModelv1.json:766
+#: Content\GrowingModelv1.json:787 Content\GrowingModelv1.json:808
+#: Content\GrowingModelv1.json:829 Content\GrowingModelv1.json:850
+#: Content\GrowingModelv1.json:1277 Content\GrowingModelv1.json:1298
+#: Content\GrowingModelv1.json:1319 Content\GrowingModelv1.json:1340
+msgid "Slot"
+msgstr "Empl."
+
 #: Migrations\Configuration.cs:141
 msgid "Solar panels"
 msgstr "Panneaux solaires"
+
+#: Content\GrowingModelv1.json:21 Content\GrowingModelv1.json:42
+#: Content\GrowingModelv1.json:346 Content\GrowingModelv1.json:574
+#: Content\GrowingModelv1.json:595 Content\GrowingModelv1.json:899
+#: Content\GrowingModelv1.json:1127 Content\GrowingModelv1.json:1148
+#: Content\GrowingModelv1.json:1389
+msgid "South"
+msgstr "Sud"
 
 #: Migrations\Configuration.cs:152
 msgid "Spring"
@@ -1397,10 +1546,14 @@ msgid "status"
 msgstr "status"
 
 #: Controllers\HomeController.cs:253
-#: Controllers\InteractiveMapController.cs:246
-#: Migrations\Configuration.cs:110
+#: Controllers\InteractiveMapController.cs:246 Migrations\Configuration.cs:110
 msgid "Stopped"
 msgstr "Arrêté"
+
+#: Content\GrowingModelv1.json:684 Content\GrowingModelv1.json:705
+#: Content\GrowingModelv1.json:1237 Content\GrowingModelv1.json:1258
+msgid "Strawberry"
+msgstr "Fraises"
 
 #: Migrations\Configuration.cs:153
 msgid "Summer"
@@ -1415,35 +1568,42 @@ msgstr "Nom"
 msgid "This Last Day"
 msgstr "Ces Derniers jours"
 
-#: Views\Measures\Index.cshtml:86
-#: Views\Messages\Index.cshtml:90
+#: Views\Measures\Index.cshtml:86 Views\Messages\Index.cshtml:90
 #: obj\Release\Package\PackageTmp\Views\Measures\Index.cshtml:86
 #: obj\Release\Package\PackageTmp\Views\Messages\Index.cshtml:90
 msgid "This Week"
 msgstr "Cette Semaine"
 
+#: Content\GrowingModelv1.json:579 Content\GrowingModelv1.json:731
+#: Content\GrowingModelv1.json:1132 Content\GrowingModelv1.json:1284
+msgid "Tomato"
+msgstr "Tomates"
+
 #: Migrations\Configuration.cs:208
 msgid "Too much algeas"
 msgstr "Trop d'algues"
 
-#: Views\Home\Index.cshtml:293
-#: Views\InteractiveMap\Index.cshtml:417
+#: Content\GrowingModelv1.json:257 Content\GrowingModelv1.json:726
+#: Content\GrowingModelv1.json:810 Content\GrowingModelv1.json:1279
+#: Content\GrowingModelv1.json:1321
+msgid "Top"
+msgstr "Haut"
+
+#: Views\Home\Index.cshtml:293 Views\InteractiveMap\Index.cshtml:416
 #: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:293
-#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:417
+#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:416
 msgid "TOTAL<br />CO2 SAVED<br />PER MONTH"
 msgstr "TOTAL<br />CO2 ECO.<br />PAR MOIS"
 
-#: Views\Home\Index.cshtml:285
-#: Views\InteractiveMap\Index.cshtml:409
+#: Views\Home\Index.cshtml:285 Views\InteractiveMap\Index.cshtml:408
 #: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:285
-#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:409
+#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:408
 msgid "TOTAL<br />CONNECTED <br />PROD. UNITS"
 msgstr "TOTAL<br />UNITES <br />CONNECTEES"
 
-#: Views\Home\Index.cshtml:289
-#: Views\InteractiveMap\Index.cshtml:413
+#: Views\Home\Index.cshtml:289 Views\InteractiveMap\Index.cshtml:412
 #: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:289
-#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:413
+#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:412
 msgid "TOTAL<br />EST. PROD. <br />PER MONTH"
 msgstr "TOTAL<br />EST. PROD. <br />PAR MOIS"
 
@@ -1456,15 +1616,13 @@ msgstr "Tower Garden"
 msgid "type"
 msgstr "type"
 
-#: Views\Events\Index.cshtml:31
-#: Views\Events\Index.cshtml:61
+#: Views\Events\Index.cshtml:31 Views\Events\Index.cshtml:61
 #: obj\Release\Package\PackageTmp\Views\Events\Index.cshtml:31
 #: obj\Release\Package\PackageTmp\Views\Events\Index.cshtml:61
 msgid "Type"
 msgstr "Type"
 
-#: Migrations\Configuration.cs:129
-#: Migrations\Configuration.cs:135
+#: Migrations\Configuration.cs:129 Migrations\Configuration.cs:135
 msgid "Unknown"
 msgstr "Inconnu"
 
@@ -1472,8 +1630,7 @@ msgstr "Inconnu"
 msgid "Up & Running"
 msgstr "En Marche"
 
-#: Controllers\HomeController.cs:251
-#: Migrations\Configuration.cs:108
+#: Controllers\HomeController.cs:251 Migrations\Configuration.cs:108
 msgid "Up and Running"
 msgstr "En Marche"
 
@@ -1518,8 +1675,7 @@ msgid "View Logs"
 msgstr "Voir Infos"
 
 #: Controllers\HomeController.cs:249
-#: Controllers\InteractiveMapController.cs:242
-#: Migrations\Configuration.cs:106
+#: Controllers\InteractiveMapController.cs:242 Migrations\Configuration.cs:106
 msgid "Wait Confirm."
 msgstr "Attente Conf."
 
@@ -1546,21 +1702,15 @@ msgstr "Purge de l'eau"
 msgid "Water Temp"
 msgstr "Temp. Eau"
 
-#: Views\Home\Index.cshtml:178
-#: Views\InteractiveMap\Index.cshtml:381
+#: Views\Home\Index.cshtml:178 Views\InteractiveMap\Index.cshtml:380
 #: Views\ProductionUnits\Details.cshtml:808
 #: Views\ProductionUnits\UserUnit.cshtml:791
 #: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:178
-#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:381
+#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:380
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:808
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:791
 msgid "Water Temperature (°C)"
 msgstr "Température Eau (°C)"
-
-#: Views\Recipes\Index.cshtml:82
-#: obj\Release\Package\PackageTmp\Views\Recipes\Index.cshtml:82
-msgid "Watering Level:"
-msgstr "Niveau Irrigation:"
 
 #: Migrations\Configuration.cs:170
 msgid "Weekend"
@@ -1573,6 +1723,15 @@ msgstr "Weekend"
 msgid "WEEKS"
 msgstr "SEMAINES"
 
+#: Content\GrowingModelv1.json:152 Content\GrowingModelv1.json:220
+#: Content\GrowingModelv1.json:241 Content\GrowingModelv1.json:456
+#: Content\GrowingModelv1.json:540 Content\GrowingModelv1.json:773
+#: Content\GrowingModelv1.json:794 Content\GrowingModelv1.json:1009
+#: Content\GrowingModelv1.json:1093 Content\GrowingModelv1.json:1499
+#: Content\GrowingModelv1.json:1583
+msgid "White Onion"
+msgstr "Oignon Blanc "
+
 #: Migrations\Configuration.cs:151
 msgid "Winter"
 msgstr "Hiver"
@@ -1582,9 +1741,24 @@ msgstr "Hiver"
 msgid "Yes"
 msgstr "Oui"
 
-#: Migrations\Configuration.cs:157
+#: Content\GrowingModelv1.json:19 Content\GrowingModelv1.json:40
+#: Content\GrowingModelv1.json:61 Content\GrowingModelv1.json:82
+#: Content\GrowingModelv1.json:103 Content\GrowingModelv1.json:124
+#: Content\GrowingModelv1.json:145 Content\GrowingModelv1.json:572
+#: Content\GrowingModelv1.json:593 Content\GrowingModelv1.json:614
+#: Content\GrowingModelv1.json:635 Content\GrowingModelv1.json:656
+#: Content\GrowingModelv1.json:677 Content\GrowingModelv1.json:698
+#: Content\GrowingModelv1.json:1125 Content\GrowingModelv1.json:1146
+#: Content\GrowingModelv1.json:1167 Content\GrowingModelv1.json:1188
+#: Content\GrowingModelv1.json:1209 Content\GrowingModelv1.json:1230
+#: Content\GrowingModelv1.json:1251 Migrations\Configuration.cs:157
 msgid "Zipgrow Tower"
 msgstr "Tour Zipgrow"
+
+#: Content\GrowingModelv1.json:304 Content\GrowingModelv1.json:857
+#: Content\GrowingModelv1.json:1347
+msgid "Zucchini"
+msgstr "Courgette"
 
 #~ msgid "Add peat"
 #~ msgstr "Ajout tourbe"
@@ -1598,11 +1772,17 @@ msgstr "Tour Zipgrow"
 #~ msgid "Balcony"
 #~ msgstr "Balcony"
 
+#~ msgid "Can be planted in:"
+#~ msgstr "Peut être planté dans :"
+
 #~ msgid "Change Production Units Settings"
 #~ msgstr "Changez les Paramètres de l'Unité de Production"
 
 #~ msgid "Change User Settings"
 #~ msgstr "Changez les Paramètres Utlisateurs"
+
+#~ msgid "Choose the suitable recipes for your greenhouse"
+#~ msgstr "Choisissez la meilleur recette pour votre serre"
 
 #~ msgid "City"
 #~ msgstr "City"
@@ -1622,6 +1802,12 @@ msgstr "Tour Zipgrow"
 #~ msgid "Daily Events on your myfood Unit {0}"
 #~ msgstr "Evénements du Jour de votre Unité myfood"
 
+#~ msgid "DAY OF GERMINATION<br />FROM SEED"
+#~ msgstr "JOUR DE GERMINATION<br /> DEPUIS GRAINE"
+
+#~ msgid "DAY OF HARVEST<br />FROM SOW."
+#~ msgstr "JOUR DE RECOLTE <br /> DEPUIS SEMIS"
+
 #~ msgid "DAY OF<br />GERMINATION<br />FROM SEED"
 #~ msgstr "DUREE DE<br />GERMINATION<br />DE LA GRAINE"
 
@@ -1636,6 +1822,9 @@ msgstr "Tour Zipgrow"
 
 #~ msgid "Detailed information"
 #~ msgstr "Informations détaillée"
+
+#~ msgid "DISTANCE BETWEEN<br />PLANTS (CM)"
+#~ msgstr "DISTANCE ENTRE<br />PLANTES (CM)"
 
 #~ msgid "DISTANCE<br />BETWEEN<br />PLANTS (CM)"
 #~ msgstr "DISTANCE<br />ENTRE<br />PLANTS (CM)"
@@ -1663,9 +1852,6 @@ msgstr "Tour Zipgrow"
 
 #~ msgid "High pH variation : delta last 24h {0}"
 #~ msgstr "Grande variation de pH : delta dern. 24h {0}"
-
-#~ msgid "Indoor"
-#~ msgstr "Intérieur"
 
 #~ msgid "Installed Options"
 #~ msgstr "Options Installées"
@@ -1751,3 +1937,5 @@ msgstr "Tour Zipgrow"
 #~ msgid "Water Temperature value is out of range for Trouts : min {0}°C"
 #~ msgstr "La température de l'eau est hors limite pour les truites : min {0}°C"
 
+#~ msgid "Watering Level:"
+#~ msgstr "Niveau Irrigation:"

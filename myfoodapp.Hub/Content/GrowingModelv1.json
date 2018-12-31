@@ -1,2355 +1,1603 @@
 ﻿{
   "modelName": "Family22 Annual Planning v.1",
   "type": "Family22",
-  "options": "36 Zipgrow Towers | 5 x Perma Beds",
-	"productionMonths": [
-		{
-			"months": 1,
-			"productionAreas": [
-				{
-					"name": "Indoor",
-					"productionTypes": [
-						{
-							"name": "Aquaponics",
-							"slots": [
-								{
-									"id": "Perma Bed #3 Slot #2",
-									"position": 3,
-									"number": 3,
-									"vegetable": {
-										"name": "Cabbage Rave",
-										"cropPerSlot": 5,
-										"growingState": 2,
-										"productionQuantity": 250.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #3 Slot #3",
-									"position": 3,
-									"number": 3,
-									"vegetable": {
-										"name": "Cauliflower",
-										"cropPerSlot": 3,
-										"growingState": 2,
-										"productionQuantity": 1000.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #4 Slot #2",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "White Onion",
-										"cropPerSlot": 15,
-										"growingState": 2,
-										"productionQuantity": 10.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #4 Slot #3",
-									"position": 2,
-									"number": 3,
-									"vegetable": {
-										"name": "White Onion",
-										"cropPerSlot": 15,
-										"growingState": 2,
-										"productionQuantity": 10.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #1",
-									"position": 3,
-									"number": 3,
-									"vegetable": {
-										"name": "Chard",
-										"cropPerSlot": 5,
-										"growingState": 2,
-										"productionQuantity": 25.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #2",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "Fennel",
-										"cropPerSlot": 4,
-										"growingState": 2,
-										"productionQuantity": 150.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #3",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "Zucchini",
-										"cropPerSlot": 2,
-										"growingState": 2,
-										"productionQuantity": 500.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								}
-							]
-						},
-						{
-							"name": "Perma Beds",
-							"slots": [
-								{
-									"id": "Perma Bed #3 Slot #2",
-									"position": 3,
-									"number": 3,
-									"vegetable": {
-										"name": "Cabbage Rave",
-										"cropPerSlot": 5,
-										"growingState": 2,
-										"productionQuantity": 250.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #3 Slot #3",
-									"position": 3,
-									"number": 3,
-									"vegetable": {
-										"name": "Cauliflower",
-										"cropPerSlot": 3,
-										"growingState": 2,
-										"productionQuantity": 1000.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #4 Slot #2",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "White Onion",
-										"cropPerSlot": 15,
-										"growingState": 2,
-										"productionQuantity": 10.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #4 Slot #3",
-									"position": 2,
-									"number": 3,
-									"vegetable": {
-										"name": "White Onion",
-										"cropPerSlot": 15,
-										"growingState": 2,
-										"productionQuantity": 10.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #1",
-									"position": 3,
-									"number": 3,
-									"vegetable": {
-										"name": "Chard",
-										"cropPerSlot": 5,
-										"growingState": 2,
-										"productionQuantity": 25.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #2",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "Fennel",
-										"cropPerSlot": 4,
-										"growingState": 2,
-										"productionQuantity": 150.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #3",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "Zucchini",
-										"cropPerSlot": 2,
-										"growingState": 2,
-										"productionQuantity": 500.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								}
-							]
-						}
-					]
-				}
-			]
-		},
-		{
-			"months": 2,
-			"productionAreas": [
-				{
-					"name": "Indoor",
-					"productionTypes": [
-						{
-							"name": "Aquaponics",
-							"slots": [
-								{
-									"id": "Perma Bed #3 Slot #1",
-									"position": 2,
-									"number": 3,
-									"vegetable": {
-										"name": "Tomato",
-										"cropPerSlot": 3,
-										"growingState": 1,
-										"productionQuantity": 0.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #3 Slot #2",
-									"position": 3,
-									"number": 3,
-									"vegetable": {
-										"name": "Cabbage Rave",
-										"cropPerSlot": 5,
-										"growingState": 2,
-										"productionQuantity": 250.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #4 Slot #2",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "White Onion",
-										"cropPerSlot": 15,
-										"growingState": 2,
-										"productionQuantity": 10.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #4 Slot #3",
-									"position": 2,
-									"number": 3,
-									"vegetable": {
-										"name": "White Onion",
-										"cropPerSlot": 15,
-										"growingState": 2,
-										"productionQuantity": 10.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #1",
-									"position": 3,
-									"number": 3,
-									"vegetable": {
-										"name": "Chard",
-										"cropPerSlot": 5,
-										"growingState": 2,
-										"productionQuantity": 25.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #2",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "Fennel",
-										"cropPerSlot": 4,
-										"growingState": 2,
-										"productionQuantity": 150.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #3",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "Zucchini",
-										"cropPerSlot": 2,
-										"growingState": 2,
-										"productionQuantity": 500.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								}
-							]
-						},
-						{
-							"name": "Perma Beds",
-							"slots": [
-								{
-									"id": "Perma Bed #3 Slot #1",
-									"position": 2,
-									"number": 3,
-									"vegetable": {
-										"name": "Test",
-										"cropPerSlot": 3,
-										"growingState": 1,
-										"productionQuantity": 0.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #3 Slot #2",
-									"position": 3,
-									"number": 3,
-									"vegetable": {
-										"name": "Cabbage Rave",
-										"cropPerSlot": 5,
-										"growingState": 2,
-										"productionQuantity": 250.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #4 Slot #2",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "White Onion",
-										"cropPerSlot": 15,
-										"growingState": 2,
-										"productionQuantity": 10.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #4 Slot #3",
-									"position": 2,
-									"number": 3,
-									"vegetable": {
-										"name": "White Onion",
-										"cropPerSlot": 15,
-										"growingState": 2,
-										"productionQuantity": 10.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #1",
-									"position": 3,
-									"number": 3,
-									"vegetable": {
-										"name": "Chard",
-										"cropPerSlot": 5,
-										"growingState": 2,
-										"productionQuantity": 25.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #2",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "Fennel",
-										"cropPerSlot": 4,
-										"growingState": 2,
-										"productionQuantity": 150.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #3",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "Zucchini",
-										"cropPerSlot": 2,
-										"growingState": 2,
-										"productionQuantity": 500.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								}
-							]
-						}
-					]
-				}
-			]
-		},
-		{
-			"months": 3,
-			"productionAreas": [
-				{
-					"name": "Indoor",
-					"productionTypes": [
-						{
-							"name": "Aquaponics",
-							"slots": [
-								{
-									"id": "Perma Bed #3 Slot #1",
-									"position": 2,
-									"number": 3,
-									"vegetable": {
-										"name": "Tomato",
-										"cropPerSlot": 3,
-										"growingState": 1,
-										"productionQuantity": 0.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #3 Slot #2",
-									"position": 3,
-									"number": 3,
-									"vegetable": {
-										"name": "Cabbage Rave",
-										"cropPerSlot": 5,
-										"growingState": 2,
-										"productionQuantity": 250.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #4 Slot #1",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "Broad Bean",
-										"cropPerSlot": 10,
-										"growingState": 0,
-										"productionQuantity": 0.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #3",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "Zucchini",
-										"cropPerSlot": 2,
-										"growingState": 2,
-										"productionQuantity": 500.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								}
-							]
-						},
-						{
-							"name": "Perma Beds",
-							"slots": [
-								{
-									"id": "Perma Bed #3 Slot #1",
-									"position": 2,
-									"number": 3,
-									"vegetable": {
-										"name": "Tomato",
-										"cropPerSlot": 3,
-										"growingState": 1,
-										"productionQuantity": 0.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #3 Slot #2",
-									"position": 3,
-									"number": 3,
-									"vegetable": {
-										"name": "Cabbage Rave",
-										"cropPerSlot": 5,
-										"growingState": 2,
-										"productionQuantity": 250.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #4 Slot #1",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "Broad Bean",
-										"cropPerSlot": 10,
-										"growingState": 0,
-										"productionQuantity": 0.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #3",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "Zucchini",
-										"cropPerSlot": 2,
-										"growingState": 2,
-										"productionQuantity": 500.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								}
-							]
-						}
-					]
-				}
-			]
-		},
-
-		{
-			"months": 4,
-			"productionAreas": [
-				{
-					"name": "Indoor",
-					"productionTypes": [
-						{
-							"name": "Aquaponics",
-							"slots": [
-								{
-									"id": "Perma Bed #3 Slot #1",
-									"position": 2,
-									"number": 3,
-									"vegetable": {
-										"name": "Tomato",
-										"cropPerSlot": 3,
-										"growingState": 1,
-										"productionQuantity": 0.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #3 Slot #2",
-									"position": 3,
-									"number": 3,
-									"vegetable": {
-										"name": "Cabbage Rave",
-										"cropPerSlot": 5,
-										"growingState": 2,
-										"productionQuantity": 250.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #4 Slot #2",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "White Onion",
-										"cropPerSlot": 15,
-										"growingState": 2,
-										"productionQuantity": 10.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #4 Slot #3",
-									"position": 2,
-									"number": 3,
-									"vegetable": {
-										"name": "White Onion",
-										"cropPerSlot": 15,
-										"growingState": 2,
-										"productionQuantity": 10.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #1",
-									"position": 3,
-									"number": 3,
-									"vegetable": {
-										"name": "Chard",
-										"cropPerSlot": 5,
-										"growingState": 2,
-										"productionQuantity": 25.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #2",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "Fennel",
-										"cropPerSlot": 4,
-										"growingState": 2,
-										"productionQuantity": 150.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #3",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "Zucchini",
-										"cropPerSlot": 2,
-										"growingState": 2,
-										"productionQuantity": 500.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								}
-							]
-						},
-						{
-							"name": "Perma Beds",
-							"slots": [
-								{
-									"id": "Perma Bed #3 Slot #1",
-									"position": 2,
-									"number": 3,
-									"vegetable": {
-										"name": "Test",
-										"cropPerSlot": 3,
-										"growingState": 1,
-										"productionQuantity": 0.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #3 Slot #2",
-									"position": 3,
-									"number": 3,
-									"vegetable": {
-										"name": "Cabbage Rave",
-										"cropPerSlot": 5,
-										"growingState": 2,
-										"productionQuantity": 250.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #4 Slot #2",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "White Onion",
-										"cropPerSlot": 15,
-										"growingState": 2,
-										"productionQuantity": 10.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #4 Slot #3",
-									"position": 2,
-									"number": 3,
-									"vegetable": {
-										"name": "White Onion",
-										"cropPerSlot": 15,
-										"growingState": 2,
-										"productionQuantity": 10.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #1",
-									"position": 3,
-									"number": 3,
-									"vegetable": {
-										"name": "Chard",
-										"cropPerSlot": 5,
-										"growingState": 2,
-										"productionQuantity": 25.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #2",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "Fennel",
-										"cropPerSlot": 4,
-										"growingState": 2,
-										"productionQuantity": 150.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #3",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "Zucchini",
-										"cropPerSlot": 2,
-										"growingState": 2,
-										"productionQuantity": 500.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								}
-							]
-						}
-					]
-				}
-			]
-		},
-		{
-			"months": 5,
-			"productionAreas": [
-				{
-					"name": "Indoor",
-					"productionTypes": [
-						{
-							"name": "Aquaponics",
-							"slots": [
-								{
-									"id": "Perma Bed #3 Slot #1",
-									"position": 2,
-									"number": 3,
-									"vegetable": {
-										"name": "Tomato",
-										"cropPerSlot": 3,
-										"growingState": 1,
-										"productionQuantity": 0.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #3 Slot #2",
-									"position": 3,
-									"number": 3,
-									"vegetable": {
-										"name": "Cabbage Rave",
-										"cropPerSlot": 5,
-										"growingState": 2,
-										"productionQuantity": 250.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #4 Slot #2",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "White Onion",
-										"cropPerSlot": 15,
-										"growingState": 2,
-										"productionQuantity": 10.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #4 Slot #3",
-									"position": 2,
-									"number": 3,
-									"vegetable": {
-										"name": "White Onion",
-										"cropPerSlot": 15,
-										"growingState": 2,
-										"productionQuantity": 10.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #1",
-									"position": 3,
-									"number": 3,
-									"vegetable": {
-										"name": "Chard",
-										"cropPerSlot": 5,
-										"growingState": 2,
-										"productionQuantity": 25.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #2",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "Fennel",
-										"cropPerSlot": 4,
-										"growingState": 2,
-										"productionQuantity": 150.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #3",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "Zucchini",
-										"cropPerSlot": 2,
-										"growingState": 2,
-										"productionQuantity": 500.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								}
-							]
-						},
-						{
-							"name": "Perma Beds",
-							"slots": [
-								{
-									"id": "Perma Bed #3 Slot #1",
-									"position": 2,
-									"number": 3,
-									"vegetable": {
-										"name": "Test",
-										"cropPerSlot": 3,
-										"growingState": 1,
-										"productionQuantity": 0.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #3 Slot #2",
-									"position": 3,
-									"number": 3,
-									"vegetable": {
-										"name": "Cabbage Rave",
-										"cropPerSlot": 5,
-										"growingState": 2,
-										"productionQuantity": 250.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #4 Slot #2",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "White Onion",
-										"cropPerSlot": 15,
-										"growingState": 2,
-										"productionQuantity": 10.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #4 Slot #3",
-									"position": 2,
-									"number": 3,
-									"vegetable": {
-										"name": "White Onion",
-										"cropPerSlot": 15,
-										"growingState": 2,
-										"productionQuantity": 10.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #1",
-									"position": 3,
-									"number": 3,
-									"vegetable": {
-										"name": "Chard",
-										"cropPerSlot": 5,
-										"growingState": 2,
-										"productionQuantity": 25.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #2",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "Fennel",
-										"cropPerSlot": 4,
-										"growingState": 2,
-										"productionQuantity": 150.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #3",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "Zucchini",
-										"cropPerSlot": 2,
-										"growingState": 2,
-										"productionQuantity": 500.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								}
-							]
-						}
-					]
-				}
-			]
-		},
-		{
-			"months": 6,
-			"productionAreas": [
-				{
-					"name": "Indoor",
-					"productionTypes": [
-						{
-							"name": "Aquaponics",
-							"slots": [
-								{
-									"id": "Perma Bed #3 Slot #1",
-									"position": 2,
-									"number": 3,
-									"vegetable": {
-										"name": "Tomato",
-										"cropPerSlot": 3,
-										"growingState": 1,
-										"productionQuantity": 0.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #3 Slot #2",
-									"position": 3,
-									"number": 3,
-									"vegetable": {
-										"name": "Cabbage Rave",
-										"cropPerSlot": 5,
-										"growingState": 2,
-										"productionQuantity": 250.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #4 Slot #2",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "White Onion",
-										"cropPerSlot": 15,
-										"growingState": 2,
-										"productionQuantity": 10.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #4 Slot #3",
-									"position": 2,
-									"number": 3,
-									"vegetable": {
-										"name": "White Onion",
-										"cropPerSlot": 15,
-										"growingState": 2,
-										"productionQuantity": 10.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #1",
-									"position": 3,
-									"number": 3,
-									"vegetable": {
-										"name": "Chard",
-										"cropPerSlot": 5,
-										"growingState": 2,
-										"productionQuantity": 25.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #2",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "Fennel",
-										"cropPerSlot": 4,
-										"growingState": 2,
-										"productionQuantity": 150.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #3",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "Zucchini",
-										"cropPerSlot": 2,
-										"growingState": 2,
-										"productionQuantity": 500.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								}
-							]
-						},
-						{
-							"name": "Perma Beds",
-							"slots": [
-								{
-									"id": "Perma Bed #3 Slot #1",
-									"position": 2,
-									"number": 3,
-									"vegetable": {
-										"name": "Test",
-										"cropPerSlot": 3,
-										"growingState": 1,
-										"productionQuantity": 0.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #3 Slot #2",
-									"position": 3,
-									"number": 3,
-									"vegetable": {
-										"name": "Cabbage Rave",
-										"cropPerSlot": 5,
-										"growingState": 2,
-										"productionQuantity": 250.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #4 Slot #2",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "White Onion",
-										"cropPerSlot": 15,
-										"growingState": 2,
-										"productionQuantity": 10.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #4 Slot #3",
-									"position": 2,
-									"number": 3,
-									"vegetable": {
-										"name": "White Onion",
-										"cropPerSlot": 15,
-										"growingState": 2,
-										"productionQuantity": 10.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #1",
-									"position": 3,
-									"number": 3,
-									"vegetable": {
-										"name": "Chard",
-										"cropPerSlot": 5,
-										"growingState": 2,
-										"productionQuantity": 25.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #2",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "Fennel",
-										"cropPerSlot": 4,
-										"growingState": 2,
-										"productionQuantity": 150.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #3",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "Zucchini",
-										"cropPerSlot": 2,
-										"growingState": 2,
-										"productionQuantity": 500.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								}
-							]
-						}
-					]
-				}
-			]
-		},
-		{
-			"months": 7,
-			"productionAreas": [
-				{
-					"name": "Indoor",
-					"productionTypes": [
-						{
-							"name": "Aquaponics",
-							"slots": [
-								{
-									"id": "Perma Bed #3 Slot #1",
-									"position": 2,
-									"number": 3,
-									"vegetable": {
-										"name": "Tomato",
-										"cropPerSlot": 3,
-										"growingState": 1,
-										"productionQuantity": 0.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #3 Slot #2",
-									"position": 3,
-									"number": 3,
-									"vegetable": {
-										"name": "Cabbage Rave",
-										"cropPerSlot": 5,
-										"growingState": 2,
-										"productionQuantity": 250.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #4 Slot #2",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "White Onion",
-										"cropPerSlot": 15,
-										"growingState": 2,
-										"productionQuantity": 10.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #4 Slot #3",
-									"position": 2,
-									"number": 3,
-									"vegetable": {
-										"name": "White Onion",
-										"cropPerSlot": 15,
-										"growingState": 2,
-										"productionQuantity": 10.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #1",
-									"position": 3,
-									"number": 3,
-									"vegetable": {
-										"name": "Chard",
-										"cropPerSlot": 5,
-										"growingState": 2,
-										"productionQuantity": 25.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #2",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "Fennel",
-										"cropPerSlot": 4,
-										"growingState": 2,
-										"productionQuantity": 150.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #3",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "Zucchini",
-										"cropPerSlot": 2,
-										"growingState": 2,
-										"productionQuantity": 500.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								}
-							]
-						},
-						{
-							"name": "Perma Beds",
-							"slots": [
-								{
-									"id": "Perma Bed #3 Slot #1",
-									"position": 2,
-									"number": 3,
-									"vegetable": {
-										"name": "Test",
-										"cropPerSlot": 3,
-										"growingState": 1,
-										"productionQuantity": 0.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #3 Slot #2",
-									"position": 3,
-									"number": 3,
-									"vegetable": {
-										"name": "Cabbage Rave",
-										"cropPerSlot": 5,
-										"growingState": 2,
-										"productionQuantity": 250.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #4 Slot #2",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "White Onion",
-										"cropPerSlot": 15,
-										"growingState": 2,
-										"productionQuantity": 10.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #4 Slot #3",
-									"position": 2,
-									"number": 3,
-									"vegetable": {
-										"name": "White Onion",
-										"cropPerSlot": 15,
-										"growingState": 2,
-										"productionQuantity": 10.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #1",
-									"position": 3,
-									"number": 3,
-									"vegetable": {
-										"name": "Chard",
-										"cropPerSlot": 5,
-										"growingState": 2,
-										"productionQuantity": 25.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #2",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "Fennel",
-										"cropPerSlot": 4,
-										"growingState": 2,
-										"productionQuantity": 150.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #3",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "Zucchini",
-										"cropPerSlot": 2,
-										"growingState": 2,
-										"productionQuantity": 500.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								}
-							]
-						}
-					]
-				}
-			]
-		},
-		{
-			"months": 8,
-			"productionAreas": [
-				{
-					"name": "Indoor",
-					"productionTypes": [
-						{
-							"name": "Aquaponics",
-							"slots": [
-								{
-									"id": "Perma Bed #3 Slot #1",
-									"position": 2,
-									"number": 3,
-									"vegetable": {
-										"name": "Tomato",
-										"cropPerSlot": 3,
-										"growingState": 1,
-										"productionQuantity": 0.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #3 Slot #2",
-									"position": 3,
-									"number": 3,
-									"vegetable": {
-										"name": "Cabbage Rave",
-										"cropPerSlot": 5,
-										"growingState": 2,
-										"productionQuantity": 250.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #4 Slot #2",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "White Onion",
-										"cropPerSlot": 15,
-										"growingState": 2,
-										"productionQuantity": 10.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #4 Slot #3",
-									"position": 2,
-									"number": 3,
-									"vegetable": {
-										"name": "White Onion",
-										"cropPerSlot": 15,
-										"growingState": 2,
-										"productionQuantity": 10.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #1",
-									"position": 3,
-									"number": 3,
-									"vegetable": {
-										"name": "Chard",
-										"cropPerSlot": 5,
-										"growingState": 2,
-										"productionQuantity": 25.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #2",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "Fennel",
-										"cropPerSlot": 4,
-										"growingState": 2,
-										"productionQuantity": 150.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #3",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "Zucchini",
-										"cropPerSlot": 2,
-										"growingState": 2,
-										"productionQuantity": 500.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								}
-							]
-						},
-						{
-							"name": "Perma Beds",
-							"slots": [
-								{
-									"id": "Perma Bed #3 Slot #1",
-									"position": 2,
-									"number": 3,
-									"vegetable": {
-										"name": "Test",
-										"cropPerSlot": 3,
-										"growingState": 1,
-										"productionQuantity": 0.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #3 Slot #2",
-									"position": 3,
-									"number": 3,
-									"vegetable": {
-										"name": "Cabbage Rave",
-										"cropPerSlot": 5,
-										"growingState": 2,
-										"productionQuantity": 250.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #4 Slot #2",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "White Onion",
-										"cropPerSlot": 15,
-										"growingState": 2,
-										"productionQuantity": 10.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #4 Slot #3",
-									"position": 2,
-									"number": 3,
-									"vegetable": {
-										"name": "White Onion",
-										"cropPerSlot": 15,
-										"growingState": 2,
-										"productionQuantity": 10.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #1",
-									"position": 3,
-									"number": 3,
-									"vegetable": {
-										"name": "Chard",
-										"cropPerSlot": 5,
-										"growingState": 2,
-										"productionQuantity": 25.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #2",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "Fennel",
-										"cropPerSlot": 4,
-										"growingState": 2,
-										"productionQuantity": 150.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #3",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "Zucchini",
-										"cropPerSlot": 2,
-										"growingState": 2,
-										"productionQuantity": 500.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								}
-							]
-						}
-					]
-				}
-			]
-		},
-		{
-			"months": 9,
-			"productionAreas": [
-				{
-					"name": "Indoor",
-					"productionTypes": [
-						{
-							"name": "Aquaponics",
-							"slots": [
-								{
-									"id": "Perma Bed #3 Slot #1",
-									"position": 2,
-									"number": 3,
-									"vegetable": {
-										"name": "Tomato",
-										"cropPerSlot": 3,
-										"growingState": 1,
-										"productionQuantity": 0.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #3 Slot #2",
-									"position": 3,
-									"number": 3,
-									"vegetable": {
-										"name": "Cabbage Rave",
-										"cropPerSlot": 5,
-										"growingState": 2,
-										"productionQuantity": 250.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #4 Slot #2",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "White Onion",
-										"cropPerSlot": 15,
-										"growingState": 2,
-										"productionQuantity": 10.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #4 Slot #3",
-									"position": 2,
-									"number": 3,
-									"vegetable": {
-										"name": "White Onion",
-										"cropPerSlot": 15,
-										"growingState": 2,
-										"productionQuantity": 10.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #1",
-									"position": 3,
-									"number": 3,
-									"vegetable": {
-										"name": "Chard",
-										"cropPerSlot": 5,
-										"growingState": 2,
-										"productionQuantity": 25.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #2",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "Fennel",
-										"cropPerSlot": 4,
-										"growingState": 2,
-										"productionQuantity": 150.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #3",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "Zucchini",
-										"cropPerSlot": 2,
-										"growingState": 2,
-										"productionQuantity": 500.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								}
-							]
-						},
-						{
-							"name": "Perma Beds",
-							"slots": [
-								{
-									"id": "Perma Bed #3 Slot #1",
-									"position": 2,
-									"number": 3,
-									"vegetable": {
-										"name": "Test",
-										"cropPerSlot": 3,
-										"growingState": 1,
-										"productionQuantity": 0.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #3 Slot #2",
-									"position": 3,
-									"number": 3,
-									"vegetable": {
-										"name": "Cabbage Rave",
-										"cropPerSlot": 5,
-										"growingState": 2,
-										"productionQuantity": 250.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #4 Slot #2",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "White Onion",
-										"cropPerSlot": 15,
-										"growingState": 2,
-										"productionQuantity": 10.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #4 Slot #3",
-									"position": 2,
-									"number": 3,
-									"vegetable": {
-										"name": "White Onion",
-										"cropPerSlot": 15,
-										"growingState": 2,
-										"productionQuantity": 10.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #1",
-									"position": 3,
-									"number": 3,
-									"vegetable": {
-										"name": "Chard",
-										"cropPerSlot": 5,
-										"growingState": 2,
-										"productionQuantity": 25.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #2",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "Fennel",
-										"cropPerSlot": 4,
-										"growingState": 2,
-										"productionQuantity": 150.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #3",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "Zucchini",
-										"cropPerSlot": 2,
-										"growingState": 2,
-										"productionQuantity": 500.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								}
-							]
-						}
-					]
-				}
-			]
-		},
-		{
-			"months": 10,
-			"productionAreas": [
-				{
-					"name": "Indoor",
-					"productionTypes": [
-						{
-							"name": "Aquaponics",
-							"slots": [
-								{
-									"id": "Perma Bed #3 Slot #1",
-									"position": 2,
-									"number": 3,
-									"vegetable": {
-										"name": "Tomato",
-										"cropPerSlot": 3,
-										"growingState": 1,
-										"productionQuantity": 0.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #3 Slot #2",
-									"position": 3,
-									"number": 3,
-									"vegetable": {
-										"name": "Cabbage Rave",
-										"cropPerSlot": 5,
-										"growingState": 2,
-										"productionQuantity": 250.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #4 Slot #2",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "White Onion",
-										"cropPerSlot": 15,
-										"growingState": 2,
-										"productionQuantity": 10.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #4 Slot #3",
-									"position": 2,
-									"number": 3,
-									"vegetable": {
-										"name": "White Onion",
-										"cropPerSlot": 15,
-										"growingState": 2,
-										"productionQuantity": 10.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #1",
-									"position": 3,
-									"number": 3,
-									"vegetable": {
-										"name": "Chard",
-										"cropPerSlot": 5,
-										"growingState": 2,
-										"productionQuantity": 25.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #2",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "Fennel",
-										"cropPerSlot": 4,
-										"growingState": 2,
-										"productionQuantity": 150.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #3",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "Zucchini",
-										"cropPerSlot": 2,
-										"growingState": 2,
-										"productionQuantity": 500.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								}
-							]
-						},
-						{
-							"name": "Perma Beds",
-							"slots": [
-								{
-									"id": "Perma Bed #3 Slot #1",
-									"position": 2,
-									"number": 3,
-									"vegetable": {
-										"name": "Test",
-										"cropPerSlot": 3,
-										"growingState": 1,
-										"productionQuantity": 0.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #3 Slot #2",
-									"position": 3,
-									"number": 3,
-									"vegetable": {
-										"name": "Cabbage Rave",
-										"cropPerSlot": 5,
-										"growingState": 2,
-										"productionQuantity": 250.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #4 Slot #2",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "White Onion",
-										"cropPerSlot": 15,
-										"growingState": 2,
-										"productionQuantity": 10.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #4 Slot #3",
-									"position": 2,
-									"number": 3,
-									"vegetable": {
-										"name": "White Onion",
-										"cropPerSlot": 15,
-										"growingState": 2,
-										"productionQuantity": 10.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #1",
-									"position": 3,
-									"number": 3,
-									"vegetable": {
-										"name": "Chard",
-										"cropPerSlot": 5,
-										"growingState": 2,
-										"productionQuantity": 25.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #2",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "Fennel",
-										"cropPerSlot": 4,
-										"growingState": 2,
-										"productionQuantity": 150.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #3",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "Zucchini",
-										"cropPerSlot": 2,
-										"growingState": 2,
-										"productionQuantity": 500.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								}
-							]
-						}
-					]
-				}
-			]
-		},
-		{
-			"months": 11,
-			"productionAreas": [
-				{
-					"name": "Indoor",
-					"productionTypes": [
-						{
-							"name": "Aquaponics",
-							"slots": [
-								{
-									"id": "Perma Bed #3 Slot #1",
-									"position": 2,
-									"number": 3,
-									"vegetable": {
-										"name": "Tomato",
-										"cropPerSlot": 3,
-										"growingState": 1,
-										"productionQuantity": 0.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #3 Slot #2",
-									"position": 3,
-									"number": 3,
-									"vegetable": {
-										"name": "Cabbage Rave",
-										"cropPerSlot": 5,
-										"growingState": 2,
-										"productionQuantity": 250.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #4 Slot #2",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "White Onion",
-										"cropPerSlot": 15,
-										"growingState": 2,
-										"productionQuantity": 10.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #4 Slot #3",
-									"position": 2,
-									"number": 3,
-									"vegetable": {
-										"name": "White Onion",
-										"cropPerSlot": 15,
-										"growingState": 2,
-										"productionQuantity": 10.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #1",
-									"position": 3,
-									"number": 3,
-									"vegetable": {
-										"name": "Chard",
-										"cropPerSlot": 5,
-										"growingState": 2,
-										"productionQuantity": 25.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #2",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "Fennel",
-										"cropPerSlot": 4,
-										"growingState": 2,
-										"productionQuantity": 150.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #3",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "Zucchini",
-										"cropPerSlot": 2,
-										"growingState": 2,
-										"productionQuantity": 500.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								}
-							]
-						},
-						{
-							"name": "Perma Beds",
-							"slots": [
-								{
-									"id": "Perma Bed #3 Slot #1",
-									"position": 2,
-									"number": 3,
-									"vegetable": {
-										"name": "Test",
-										"cropPerSlot": 3,
-										"growingState": 1,
-										"productionQuantity": 0.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #3 Slot #2",
-									"position": 3,
-									"number": 3,
-									"vegetable": {
-										"name": "Cabbage Rave",
-										"cropPerSlot": 5,
-										"growingState": 2,
-										"productionQuantity": 250.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #4 Slot #2",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "White Onion",
-										"cropPerSlot": 15,
-										"growingState": 2,
-										"productionQuantity": 10.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #4 Slot #3",
-									"position": 2,
-									"number": 3,
-									"vegetable": {
-										"name": "White Onion",
-										"cropPerSlot": 15,
-										"growingState": 2,
-										"productionQuantity": 10.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #1",
-									"position": 3,
-									"number": 3,
-									"vegetable": {
-										"name": "Chard",
-										"cropPerSlot": 5,
-										"growingState": 2,
-										"productionQuantity": 25.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #2",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "Fennel",
-										"cropPerSlot": 4,
-										"growingState": 2,
-										"productionQuantity": 150.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #3",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "Zucchini",
-										"cropPerSlot": 2,
-										"growingState": 2,
-										"productionQuantity": 500.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								}
-							]
-						}
-					]
-				}
-			]
-		},
-		{
-			"months": 12,
-			"productionAreas": [
-				{
-					"name": "Indoor",
-					"productionTypes": [
-						{
-							"name": "Aquaponics",
-							"slots": [
-								{
-									"id": "Perma Bed #3 Slot #1",
-									"position": 2,
-									"imagePath": "basil.jpg",
-									"number": 3,
-									"vegetable": {
-										"name": "Tomato",
-										"cropPerSlot": 3,
-										"growingState": 1,
-										"productionQuantity": 0.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #3 Slot #2",
-									"position": 3,
-									"number": 3,
-									"vegetable": {
-										"name": "Cabbage Rave",
-										"cropPerSlot": 5,
-										"growingState": 2,
-										"productionQuantity": 250.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #4 Slot #2",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "White Onion",
-										"cropPerSlot": 15,
-										"growingState": 2,
-										"productionQuantity": 10.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #4 Slot #3",
-									"position": 2,
-									"number": 3,
-									"vegetable": {
-										"name": "White Onion",
-										"cropPerSlot": 15,
-										"growingState": 2,
-										"productionQuantity": 10.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #1",
-									"position": 3,
-									"number": 3,
-									"vegetable": {
-										"name": "Chard",
-										"cropPerSlot": 5,
-										"growingState": 2,
-										"productionQuantity": 25.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #2",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "Fennel",
-										"cropPerSlot": 4,
-										"growingState": 2,
-										"productionQuantity": 150.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #3",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "Zucchini",
-										"cropPerSlot": 2,
-										"growingState": 2,
-										"productionQuantity": 500.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								}
-							]
-						},
-						{
-							"name": "Perma Beds",
-							"slots": [
-								{
-									"id": "Perma Bed #3 Slot #1",
-									"position": 2,
-									"number": 3,
-									"vegetable": {
-										"name": "Test",
-										"cropPerSlot": 3,
-										"growingState": 1,
-										"productionQuantity": 0.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #3 Slot #2",
-									"position": 3,
-									"number": 3,
-									"vegetable": {
-										"name": "Cabbage Rave",
-										"cropPerSlot": 5,
-										"growingState": 2,
-										"productionQuantity": 250.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #4 Slot #2",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "White Onion",
-										"cropPerSlot": 15,
-										"growingState": 2,
-										"productionQuantity": 10.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #4 Slot #3",
-									"position": 2,
-									"number": 3,
-									"vegetable": {
-										"name": "White Onion",
-										"cropPerSlot": 15,
-										"growingState": 2,
-										"productionQuantity": 10.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #1",
-									"position": 3,
-									"number": 3,
-									"vegetable": {
-										"name": "Chard",
-										"cropPerSlot": 5,
-										"growingState": 2,
-										"productionQuantity": 25.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #2",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "Fennel",
-										"cropPerSlot": 4,
-										"growingState": 2,
-										"productionQuantity": 150.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								},
-								{
-									"id": "Perma Bed #5 Slot #3",
-									"position": 4,
-									"number": 3,
-									"vegetable": {
-										"name": "Zucchini",
-										"cropPerSlot": 2,
-										"growingState": 2,
-										"productionQuantity": 500.0,
-										"temperatureMin": 0.0,
-										"temperatureMax": 0.0
-									}
-								}
-							]
-						}
-					]
-				}
-			]
-		}
-	]
+  "options": "36 x Zipgrow Towers | 5 x Perma Beds | 1 x Aerospring",
+  "productionMonths": [
+    {
+      "month": {
+        "name": "[[[February]]]",
+        "Id": 1
+      },
+      "productionAreas": [
+        {
+          "name": "[[[Indoor]]]",
+          "productionTypes": [
+            {
+              "name": "[[[Aquaponics]]]",
+              "slots": [
+                {
+                  "id": "[[[Zipgrow Tower]]] #1",
+                  "position": {
+                    "name": "[[[South]]]",
+                    "Id": 0
+                  },
+                  "number": 6,
+                  "vegetable": {
+                    "name": "[[[Lettuce]]]",
+                    "imagePath": "lettice.jpg",
+                    "cropPerSlot": 8,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 180.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Zipgrow Tower]]] #2",
+                  "position": {
+                    "name": "[[[South]]]",
+                    "Id": 0
+                  },
+                  "number": 3,
+                  "vegetable": {
+                    "name": "[[[Lettuce]]]",
+                    "imagePath": "lettice.jpg",
+                    "cropPerSlot": 8,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 180.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Zipgrow Tower]]] #3",
+                  "position": {
+                    "name": "[[[North]]]",
+                    "Id": 1
+                  },
+                  "number": 3,
+                  "vegetable": {
+                    "name": "[[[Lettuce]]]",
+                    "imagePath": "lettice.jpg",
+                    "cropPerSlot": 8,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 180.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Zipgrow Tower]]] #4",
+                  "position": {
+                    "name": "[[[North]]]",
+                    "Id": 1
+                  },
+                  "number": 3,
+                  "vegetable": {
+                    "name": "[[[Kale]]]",
+                    "imagePath": "kale.jpg",
+                    "cropPerSlot": 4,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 180.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Zipgrow Tower]]] #5",
+                  "position": {
+                    "name": "[[[North]]]",
+                    "Id": 1
+                  },
+                  "number": 3,
+                  "vegetable": {
+                    "name": "[[[Mesclun]]]",
+                    "imagePath": "mesclun.jpg",
+                    "cropPerSlot": 4,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 180.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Zipgrow Tower]]] #6",
+                  "position": {
+                    "name": "[[[North]]]",
+                    "Id": 1
+                  },
+                  "number": 3,
+                  "vegetable": {
+                    "name": "[[[Purslane]]]",
+                    "imagePath": "purslane.jpg",
+                    "cropPerSlot": 8,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 100.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Zipgrow Tower]]] #7",
+                  "position": {
+                    "name": "[[[North]]]",
+                    "Id": 1
+                  },
+                  "number": 3,
+                  "vegetable": {
+                    "name": "[[[White Onion]]]",
+                    "imagePath": "white-onion.jpg",
+                    "cropPerSlot": 15,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 10.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                }
+              ]
+            },
+            {
+              "name": "[[[Perma Beds]]]",
+              "slots": [
+                {
+                  "id": "[[[Perma Bed]]] #3 [[[Slot]]] #2",
+                  "position": {
+                    "name": "[[[Medium]]]",
+                    "Id": 2
+                  },
+                  "number": 3,
+                  "vegetable": {
+                    "name": "[[[Cabbage Rave]]]",
+                    "imagePath": "cabbage-rave.jpg",
+                    "cropPerSlot": 5,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 250.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #3 [[[Slot]]] #3",
+                  "position": {
+                    "name": "[[[Down]]]",
+                    "Id": 3
+                  },
+                  "number": 3,
+                  "vegetable": {
+                    "name": "[[[Cauliflower]]]",
+                    "imagePath": "cauliflower.jpg",
+                    "cropPerSlot": 3,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 1000.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #4 [[[Slot]]] #2",
+                  "position": {
+                    "name": "[[[Medium]]]",
+                    "Id": 2
+                  },
+                  "number": 3,
+                  "vegetable": {
+                    "name": "[[[White Onion]]]",
+                    "imagePath": "white-onion.jpg",
+                    "cropPerSlot": 15,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 10.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #4 [[[Slot]]] #3",
+                  "position": {
+                    "name": "[[[Down]]]",
+                    "Id": 3
+                  },
+                  "number": 3,
+                  "vegetable": {
+                    "name": "[[[White Onion]]]",
+                    "imagePath": "white-onion.jpg",
+                    "cropPerSlot": 15,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 10.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #5 [[[Slot]]] #1",
+                  "position": {
+                    "name": "[[[Top]]]",
+                    "Id": 2
+                  },
+                  "number": 3,
+                  "vegetable": {
+                    "name": "[[[Chard]]]",
+                    "imagePath": "chard.jpg",
+                    "cropPerSlot": 5,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 25.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #5 [[[Slot]]] #2",
+                  "position": {
+                    "name": "[[[Medium]]]",
+                    "Id": 2
+                  },
+                  "number": 3,
+                  "vegetable": {
+                    "name": "[[[Fennel]]]",
+                    "imagePath": "fennel.jpg",
+                    "cropPerSlot": 4,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 150.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #5 [[[Slot]]] #3",
+                  "position": {
+                    "name": "[[[Down]]]",
+                    "Id": 3
+                  },
+                  "number": 3,
+                  "vegetable": {
+                    "name": "[[[Zucchini]]]",
+                    "imagePath": "zucchini.jpg",
+                    "cropPerSlot": 2,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 500.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                }
+              ]
+            },
+            {
+              "name": "[[[Aerospring]]]",
+              "slots": [
+                {
+                  "id": "[[[Aerospring]]] #1",
+                  "position": {
+                    "name": "[[[Down]]]",
+                    "Id": 3
+                  },
+                  "number": 12,
+                  "vegetable": {
+                    "name": "[[[Lettuce]]]",
+                    "imagePath": "lettice.jpg",
+                    "cropPerSlot": 8,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 180.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #2",
+                  "position": {
+                    "name": "[[[South]]]",
+                    "Id": 0
+                  },
+                  "number": 4,
+                  "vegetable": {
+                    "name": "[[[Cabbage Rave]]]",
+                    "imagePath": "cabbage-rave.jpg",
+                    "cropPerSlot": 5,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 250.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #3",
+                  "position": {
+                    "name": "[[[North]]]",
+                    "Id": 1
+                  },
+                  "number": 4,
+                  "vegetable": {
+                    "name": "[[[Purslane]]]",
+                    "imagePath": "purslane.jpg",
+                    "cropPerSlot": 8,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 100.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #4",
+                  "position": {
+                    "name": "[[[North]]]",
+                    "Id": 1
+                  },
+                  "number": 2,
+                  "vegetable": {
+                    "name": "[[[Kale]]]",
+                    "imagePath": "kale.jpg",
+                    "cropPerSlot": 4,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 180.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #5",
+                  "position": {
+                    "name": "[[[North]]]",
+                    "Id": 1
+                  },
+                  "number": 2,
+                  "vegetable": {
+                    "name": "[[[Mesclun]]]",
+                    "imagePath": "mesclun.jpg",
+                    "cropPerSlot": 4,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 180.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #6",
+                  "position": {
+                    "name": "[[[North]]]",
+                    "Id": 1
+                  },
+                  "number": 2,
+                  "vegetable": {
+                    "name": "[[[Purslane]]]",
+                    "imagePath": "purslane.jpg",
+                    "cropPerSlot": 8,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 100.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #7",
+                  "position": {
+                    "name": "[[[North]]]",
+                    "Id": 1
+                  },
+                  "number": 2,
+                  "vegetable": {
+                    "name": "[[[White Onion]]]",
+                    "imagePath": "white-onion.jpg",
+                    "cropPerSlot": 15,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 10.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #8",
+                  "position": {
+                    "name": "[[[North]]]",
+                    "Id": 1
+                  },
+                  "number": 2,
+                  "vegetable": {
+                    "name": "[[[Kale]]]",
+                    "imagePath": "kale.jpg",
+                    "cropPerSlot": 4,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 180.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #9",
+                  "position": {
+                    "name": "[[[North]]]",
+                    "Id": 1
+                  },
+                  "number": 2,
+                  "vegetable": {
+                    "name": "[[[Mesclun]]]",
+                    "imagePath": "mesclun.jpg",
+                    "cropPerSlot": 4,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 180.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #10",
+                  "position": {
+                    "name": "[[[North]]]",
+                    "Id": 1
+                  },
+                  "number": 2,
+                  "vegetable": {
+                    "name": "[[[Purslane]]]",
+                    "imagePath": "purslane.jpg",
+                    "cropPerSlot": 8,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 100.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #11",
+                  "position": {
+                    "name": "[[[North]]]",
+                    "Id": 1
+                  },
+                  "number": 2,
+                  "vegetable": {
+                    "name": "[[[White Onion]]]",
+                    "imagePath": "white-onion.jpg",
+                    "cropPerSlot": 15,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 10.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "month": {
+        "name": "[[[March]]]",
+        "Id": 2
+      },
+      "productionAreas": [
+        {
+          "name": "[[[Indoor]]]",
+          "productionTypes": [
+            {
+              "name": "[[[Aquaponics]]]",
+              "slots": [
+                {
+                  "id": "[[[Zipgrow Tower]]] #1",
+                  "position": {
+                    "name": "[[[South]]]",
+                    "Id": 0
+                  },
+                  "number": 6,
+                  "vegetable": {
+                    "name": "[[[Tomato]]]",
+                    "imagePath": "tomato.jpg",
+                    "cropPerSlot": 3,
+                    "growingState": {
+                      "name": "[[[Grow]]]",
+                      "Id": 1
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Zipgrow Tower]]] #2",
+                  "position": {
+                    "name": "[[[South]]]",
+                    "Id": 0
+                  },
+                  "number": 3,
+                  "vegetable": {
+                    "name": "[[[Pepper]]]",
+                    "imagePath": "pepper.jpg",
+                    "cropPerSlot": 4,
+                    "growingState": {
+                      "name": "[[[Grow]]]",
+                      "Id": 1
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Zipgrow Tower]]] #3",
+                  "position": {
+                    "name": "[[[North]]]",
+                    "Id": 1
+                  },
+                  "number": 3,
+                  "vegetable": {
+                    "name": "[[[Eggplant]]]",
+                    "imagePath": "eggplant.jpg",
+                    "cropPerSlot": 3,
+                    "growingState": {
+                      "name": "[[[Grow]]]",
+                      "Id": 1
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Zipgrow Tower]]] #4",
+                  "position": {
+                    "name": "[[[North]]]",
+                    "Id": 1
+                  },
+                  "number": 3,
+                  "vegetable": {
+                    "name": "[[[Cucumber]]]",
+                    "imagePath": "cucumber.jpg",
+                    "cropPerSlot": 3,
+                    "growingState": {
+                      "name": "[[[Grow]]]",
+                      "Id": 1
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Zipgrow Tower]]] #5",
+                  "position": {
+                    "name": "[[[North]]]",
+                    "Id": 1
+                  },
+                  "number": 3,
+                  "vegetable": {
+                    "name": "[[[Edible Flower]]]",
+                    "imagePath": "edible-flower.jpg",
+                    "cropPerSlot": 8,
+                    "growingState": {
+                      "name": "[[[Grow]]]",
+                      "Id": 1
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Zipgrow Tower]]] #6",
+                  "position": {
+                    "name": "[[[North]]]",
+                    "Id": 1
+                  },
+                  "number": 3,
+                  "vegetable": {
+                    "name": "[[[Strawberry]]]",
+                    "imagePath": "strawberry.jpg",
+                    "cropPerSlot": 8,
+                    "growingState": {
+                      "name": "[[[Grow]]]",
+                      "Id": 1
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Zipgrow Tower]]] #7",
+                  "position": {
+                    "name": "[[[North]]]",
+                    "Id": 1
+                  },
+                  "number": 3,
+                  "vegetable": {
+                    "name": "[[[Strawberry]]]",
+                    "imagePath": "strawberry.jpg",
+                    "cropPerSlot": 8,
+                    "growingState": {
+                      "name": "[[[Grow]]]",
+                      "Id": 1
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                }
+              ]
+            },
+            {
+              "name": "[[[Perma Beds]]]",
+              "slots": [
+                {
+                  "id": "[[[Perma Bed]]] #3 [[[Slot]]] #1",
+                  "position": {
+                    "name": "[[[Top]]]",
+                    "Id": 2
+                  },
+                  "number": 3,
+                  "vegetable": {
+                    "name": "[[[Tomato]]]",
+                    "imagePath": "tomato.jpg",
+                    "cropPerSlot": 3,
+                    "growingState": {
+                      "name": "[[[Grow]]]",
+                      "Id": 1
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #3 [[[Slot]]] #2",
+                  "position": {
+                    "name": "[[[Medium]]]",
+                    "Id": 2
+                  },
+                  "number": 3,
+                  "vegetable": {
+                    "name": "[[[Cabbage Rave]]]",
+                    "imagePath": "cabbage-rave.jpg",
+                    "cropPerSlot": 5,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 250.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #4 [[[Slot]]] #2",
+                  "position": {
+                    "name": "[[[Medium]]]",
+                    "Id": 2
+                  },
+                  "number": 3,
+                  "vegetable": {
+                    "name": "[[[White Onion]]]",
+                    "imagePath": "white-onion.jpg",
+                    "cropPerSlot": 15,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 10.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #4 [[[Slot]]] #3",
+                  "position": {
+                    "name": "[[[Down]]]",
+                    "Id": 3
+                  },
+                  "number": 3,
+                  "vegetable": {
+                    "name": "[[[White Onion]]]",
+                    "imagePath": "white-onion.jpg",
+                    "cropPerSlot": 15,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 10.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #5 [[[Slot]]] #1",
+                  "position": {
+                    "name": "[[[Top]]]",
+                    "Id": 2
+                  },
+                  "number": 3,
+                  "vegetable": {
+                    "name": "[[[Chard]]]",
+                    "imagePath": "chard.jpg",
+                    "cropPerSlot": 5,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 25.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #5 [[[Slot]]] #2",
+                  "position": {
+                    "name": "[[[Medium]]]",
+                    "Id": 2
+                  },
+                  "number": 3,
+                  "vegetable": {
+                    "name": "[[[Fennel]]]",
+                    "imagePath": "fennel.jpg",
+                    "cropPerSlot": 4,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 150.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #5 [[[Slot]]] #3",
+                  "position": {
+                    "name": "[[[Down]]]",
+                    "Id": 3
+                  },
+                  "number": 3,
+                  "vegetable": {
+                    "name": "[[[Zucchini]]]",
+                    "imagePath": "zucchini.jpg",
+                    "cropPerSlot": 2,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 500.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                }
+              ]
+            },
+            {
+              "name": "[[[Aerospring]]]",
+              "slots": [
+                {
+                  "id": "[[[Aerospring]]] #1",
+                  "position": {
+                    "name": "[[[Down]]]",
+                    "Id": 3
+                  },
+                  "number": 12,
+                  "vegetable": {
+                    "name": "[[[Lettuce]]]",
+                    "imagePath": "lettice.jpg",
+                    "cropPerSlot": 8,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 180.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #2",
+                  "position": {
+                    "name": "[[[South]]]",
+                    "Id": 0
+                  },
+                  "number": 4,
+                  "vegetable": {
+                    "name": "[[[Cabbage Rave]]]",
+                    "imagePath": "cabbage-rave.jpg",
+                    "cropPerSlot": 5,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 250.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #3",
+                  "position": {
+                    "name": "[[[North]]]",
+                    "Id": 1
+                  },
+                  "number": 4,
+                  "vegetable": {
+                    "name": "[[[Purslane]]]",
+                    "imagePath": "purslane.jpg",
+                    "cropPerSlot": 8,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 100.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #4",
+                  "position": {
+                    "name": "[[[North]]]",
+                    "Id": 1
+                  },
+                  "number": 2,
+                  "vegetable": {
+                    "name": "[[[Kale]]]",
+                    "imagePath": "kale.jpg",
+                    "cropPerSlot": 4,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 180.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #5",
+                  "position": {
+                    "name": "[[[North]]]",
+                    "Id": 1
+                  },
+                  "number": 2,
+                  "vegetable": {
+                    "name": "[[[Mesclun]]]",
+                    "imagePath": "mesclun.jpg",
+                    "cropPerSlot": 4,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 180.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #6",
+                  "position": {
+                    "name": "[[[North]]]",
+                    "Id": 1
+                  },
+                  "number": 2,
+                  "vegetable": {
+                    "name": "[[[Purslane]]]",
+                    "imagePath": "purslane.jpg",
+                    "cropPerSlot": 8,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 100.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #7",
+                  "position": {
+                    "name": "[[[North]]]",
+                    "Id": 1
+                  },
+                  "number": 2,
+                  "vegetable": {
+                    "name": "[[[White Onion]]]",
+                    "imagePath": "white-onion.jpg",
+                    "cropPerSlot": 15,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 10.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #8",
+                  "position": {
+                    "name": "[[[North]]]",
+                    "Id": 1
+                  },
+                  "number": 2,
+                  "vegetable": {
+                    "name": "[[[Kale]]]",
+                    "imagePath": "kale.jpg",
+                    "cropPerSlot": 4,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 180.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #9",
+                  "position": {
+                    "name": "[[[North]]]",
+                    "Id": 1
+                  },
+                  "number": 2,
+                  "vegetable": {
+                    "name": "[[[Mesclun]]]",
+                    "imagePath": "mesclun.jpg",
+                    "cropPerSlot": 4,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 180.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #10",
+                  "position": {
+                    "name": "[[[North]]]",
+                    "Id": 1
+                  },
+                  "number": 2,
+                  "vegetable": {
+                    "name": "[[[Purslane]]]",
+                    "imagePath": "purslane.jpg",
+                    "cropPerSlot": 8,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 100.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #11",
+                  "position": {
+                    "name": "[[[North]]]",
+                    "Id": 1
+                  },
+                  "number": 2,
+                  "vegetable": {
+                    "name": "[[[White Onion]]]",
+                    "imagePath": "white-onion.jpg",
+                    "cropPerSlot": 15,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 10.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "month": {
+        "name": "[[[April]]]",
+        "Id": 3
+      },
+      "productionAreas": [
+        {
+          "name": "[[[Indoor]]]",
+          "productionTypes": [
+            {
+              "name": "[[[Aquaponics]]]",
+              "slots": [
+                {
+                  "id": "[[[Zipgrow Tower]]] #1",
+                  "position": {
+                    "name": "[[[South]]]",
+                    "Id": 0
+                  },
+                  "number": 6,
+                  "vegetable": {
+                    "name": "[[[Tomato]]]",
+                    "imagePath": "tomato.jpg",
+                    "cropPerSlot": 3,
+                    "growingState": {
+                      "name": "[[[Grow]]]",
+                      "Id": 1
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Zipgrow Tower]]] #2",
+                  "position": {
+                    "name": "[[[South]]]",
+                    "Id": 0
+                  },
+                  "number": 3,
+                  "vegetable": {
+                    "name": "[[[Pepper]]]",
+                    "imagePath": "pepper.jpg",
+                    "cropPerSlot": 4,
+                    "growingState": {
+                      "name": "[[[Grow]]]",
+                      "Id": 1
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Zipgrow Tower]]] #3",
+                  "position": {
+                    "name": "[[[North]]]",
+                    "Id": 1
+                  },
+                  "number": 3,
+                  "vegetable": {
+                    "name": "[[[Eggplant]]]",
+                    "imagePath": "eggplant.jpg",
+                    "cropPerSlot": 3,
+                    "growingState": {
+                      "name": "[[[Grow]]]",
+                      "Id": 1
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Zipgrow Tower]]] #4",
+                  "position": {
+                    "name": "[[[North]]]",
+                    "Id": 1
+                  },
+                  "number": 3,
+                  "vegetable": {
+                    "name": "[[[Cucumber]]]",
+                    "imagePath": "cucumber.jpg",
+                    "cropPerSlot": 3,
+                    "growingState": {
+                      "name": "[[[Grow]]]",
+                      "Id": 1
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Zipgrow Tower]]] #5",
+                  "position": {
+                    "name": "[[[North]]]",
+                    "Id": 1
+                  },
+                  "number": 3,
+                  "vegetable": {
+                    "name": "[[[Edible Flower]]]",
+                    "imagePath": "edible-flower.jpg",
+                    "cropPerSlot": 8,
+                    "growingState": {
+                      "name": "[[[Grow]]]",
+                      "Id": 1
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Zipgrow Tower]]] #6",
+                  "position": {
+                    "name": "[[[North]]]",
+                    "Id": 1
+                  },
+                  "number": 3,
+                  "vegetable": {
+                    "name": "[[[Strawberry]]]",
+                    "imagePath": "strawberry.jpg",
+                    "cropPerSlot": 8,
+                    "growingState": {
+                      "name": "[[[Grow]]]",
+                      "Id": 1
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Zipgrow Tower]]] #7",
+                  "position": {
+                    "name": "[[[North]]]",
+                    "Id": 1
+                  },
+                  "number": 3,
+                  "vegetable": {
+                    "name": "[[[Strawberry]]]",
+                    "imagePath": "strawberry.jpg",
+                    "cropPerSlot": 8,
+                    "growingState": {
+                      "name": "[[[Grow]]]",
+                      "Id": 1
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                }
+              ]
+            },
+            {
+              "name": "[[[Perma Beds]]]",
+              "slots": [
+                {
+                  "id": "[[[Perma Bed]]] #3 [[[Slot]]] #1",
+                  "position": {
+                    "name": "[[[Top]]]",
+                    "Id": 2
+                  },
+                  "number": 3,
+                  "vegetable": {
+                    "name": "[[[Tomato]]]",
+                    "imagePath": "tomato.jpg",
+                    "cropPerSlot": 3,
+                    "growingState": {
+                      "name": "[[[Grow]]]",
+                      "Id": 1
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #3 [[[Slot]]] #2",
+                  "position": {
+                    "name": "[[[Medium]]]",
+                    "Id": 2
+                  },
+                  "number": 3,
+                  "vegetable": {
+                    "name": "[[[Cabbage Rave]]]",
+                    "imagePath": "cabbage-rave.jpg",
+                    "cropPerSlot": 5,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 250.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #4 [[[Slot]]] #1",
+                  "position": {
+                    "name": "[[[Top]]]",
+                    "Id": 2
+                  },
+                  "number": 3,
+                  "vegetable": {
+                    "name": "[[[Broad Bean]]]",
+                    "imagePath": "broad-bean.jpg",
+                    "cropPerSlot": 10,
+                    "growingState": {
+                      "name": "[[[Seed]]]",
+                      "Id": 0
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #5 [[[Slot]]] #3",
+                  "position": {
+                    "name": "[[[Down]]]",
+                    "Id": 3
+                  },
+                  "number": 3,
+                  "vegetable": {
+                    "name": "[[[Zucchini]]]",
+                    "imagePath": "zucchini.jpg",
+                    "cropPerSlot": 2,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 500.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                }
+              ]
+            },
+            {
+              "name": "[[[Aerospring]]]",
+              "slots": [
+                {
+                  "id": "[[[Aerospring]]] #1",
+                  "position": {
+                    "name": "[[[Down]]]",
+                    "Id": 3
+                  },
+                  "number": 12,
+                  "vegetable": {
+                    "name": "[[[Lettuce]]]",
+                    "imagePath": "lettice.jpg",
+                    "cropPerSlot": 8,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 180.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #2",
+                  "position": {
+                    "name": "[[[South]]]",
+                    "Id": 0
+                  },
+                  "number": 4,
+                  "vegetable": {
+                    "name": "[[[Cabbage Rave]]]",
+                    "imagePath": "cabbage-rave.jpg",
+                    "cropPerSlot": 5,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 250.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #3",
+                  "position": {
+                    "name": "[[[North]]]",
+                    "Id": 1
+                  },
+                  "number": 4,
+                  "vegetable": {
+                    "name": "[[[Purslane]]]",
+                    "imagePath": "purslane.jpg",
+                    "cropPerSlot": 8,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 100.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #4",
+                  "position": {
+                    "name": "[[[North]]]",
+                    "Id": 1
+                  },
+                  "number": 2,
+                  "vegetable": {
+                    "name": "[[[Kale]]]",
+                    "imagePath": "kale.jpg",
+                    "cropPerSlot": 4,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 180.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #5",
+                  "position": {
+                    "name": "[[[North]]]",
+                    "Id": 1
+                  },
+                  "number": 2,
+                  "vegetable": {
+                    "name": "[[[Mesclun]]]",
+                    "imagePath": "mesclun.jpg",
+                    "cropPerSlot": 4,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 180.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #6",
+                  "position": {
+                    "name": "[[[North]]]",
+                    "Id": 1
+                  },
+                  "number": 2,
+                  "vegetable": {
+                    "name": "[[[Purslane]]]",
+                    "imagePath": "purslane.jpg",
+                    "cropPerSlot": 8,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 100.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #7",
+                  "position": {
+                    "name": "[[[North]]]",
+                    "Id": 1
+                  },
+                  "number": 2,
+                  "vegetable": {
+                    "name": "[[[White Onion]]]",
+                    "imagePath": "white-onion.jpg",
+                    "cropPerSlot": 15,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 10.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #8",
+                  "position": {
+                    "name": "[[[North]]]",
+                    "Id": 1
+                  },
+                  "number": 2,
+                  "vegetable": {
+                    "name": "[[[Kale]]]",
+                    "imagePath": "kale.jpg",
+                    "cropPerSlot": 4,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 180.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #9",
+                  "position": {
+                    "name": "[[[North]]]",
+                    "Id": 1
+                  },
+                  "number": 2,
+                  "vegetable": {
+                    "name": "[[[Mesclun]]]",
+                    "imagePath": "mesclun.jpg",
+                    "cropPerSlot": 4,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 180.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #10",
+                  "position": {
+                    "name": "[[[North]]]",
+                    "Id": 1
+                  },
+                  "number": 2,
+                  "vegetable": {
+                    "name": "[[[Purslane]]]",
+                    "imagePath": "purslane.jpg",
+                    "cropPerSlot": 8,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 100.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #11",
+                  "position": {
+                    "name": "[[[North]]]",
+                    "Id": 1
+                  },
+                  "number": 2,
+                  "vegetable": {
+                    "name": "[[[White Onion]]]",
+                    "imagePath": "white-onion.jpg",
+                    "cropPerSlot": 15,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 10.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }
