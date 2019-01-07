@@ -16,6 +16,15 @@
         });
 
         $.ajax({
+            url: "@Url.Action("GetNetworkScore", "Home")",
+            dataType: "json",
+        type: "POST",
+        success: function (response) {
+            $("#NetworkScore").text('[[[Network Info]]] - ' + response.NetworkScore);
+        }
+        });
+
+        $.ajax({
             url: "@Url.Action("GetProductionUnitDetailList", "Home")",
             dataType: "json",
             type: "POST",
@@ -279,7 +288,7 @@
         </div>
         <div id="map-info" class="col-md-7">
             <div class="widget">
-                <h3 class="section-header">[[[Network Info]]]</h3>
+                <h3 id="NetworkScore" class="section-header">[[[Network Info]]]</h3>
                 <div style="margin: 25px;">
                     <div class="column-left">
                         <h2 class="widget-text" style="text-align: center;">[[[TOTAL<br />CONNECTED <br />PROD. UNITS]]]</h2>

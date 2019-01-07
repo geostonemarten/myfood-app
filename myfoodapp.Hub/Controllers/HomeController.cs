@@ -268,6 +268,18 @@ namespace myfoodapp.Hub.Controllers
                 TotalMonthlyProduction = stats.totalMonthlyProduction,
                 TotalMonthlySparedCO2 = stats.totalMonthlySparedCO2,
             }, JsonRequestBehavior.AllowGet);
-        }  
+        }
+
+        public ActionResult GetNetworkScore()
+        {
+            ApplicationDbContext db = new ApplicationDbContext();
+
+            var score = PerformanceManager.GetNetworkScore(db);
+
+            return Json(new
+            {
+                NetworkScore = score,
+            }, JsonRequestBehavior.AllowGet);
+        }
     }
 }

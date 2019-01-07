@@ -65,7 +65,11 @@ namespace myfoodapp.Hub.Business
         private static Vegetable lamblettuce = new Vegetable() { name = "[[[Lamb Lettuce]]]", cropPerSlot = 4, imagePath = "lamb-lettuce.jpg" };
         private static Vegetable zucchini = new Vegetable() { name = "[[[Zucchini]]]", cropPerSlot = 2, imagePath = "zucchini.jpg" };
         private static Vegetable cabbageBruxelles = new Vegetable() { name = "[[[Cabbage Bruxelles]]]", cropPerSlot = 2, imagePath = "cabbage-bruxelles.jpg" };
+        private static Vegetable chineseCabbage = new Vegetable() { name = "[[[Chinese Cabbage]]]", cropPerSlot = 1, imagePath = "chinese-cabbage.jpg" };
+        private static Vegetable melon = new Vegetable() { name = "[[[Melon]]]", cropPerSlot = 1, imagePath = "melon.jpg" };
+        private static Vegetable waterMelon = new Vegetable() { name = "[[[Water Melon]]]", cropPerSlot = 1, imagePath = "water-melon.jpg" };
 
+        private static Vegetable ramialChippedWood = new Vegetable() { name = "[[[Ramial Chipped Wood]]]", cropPerSlot = 1, imagePath = "ramial-chipped-wood.jpg" };
 
         public void GenerateModel()
         {

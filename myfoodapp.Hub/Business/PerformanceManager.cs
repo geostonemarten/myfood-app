@@ -100,5 +100,23 @@ namespace myfoodapp.Hub.Business
         {
             return Math.Round(averageMonthlyProduction * CO2SparedPerKilogramLocallyProduced, 0);
         }
+
+        public static decimal GetNetworkScore(ApplicationDbContext db)
+        {
+            decimal networkScore = 0;
+
+            var upAndRunning = db.ProductionUnits.Where(p => p.productionUnitStatus.Id == 3).Count();
+
+            var lastMeasures = db.Measures.Where(m => m.sensor.Id == 1).OrderByDescending(m => m.captureDate).Take(upAndRunning);
+
+            lastMeasures.ToList().ForEach(m => {
+                networkScore += Math.Abs(m.value - 6.8m);
+            });
+
+            if (upAndRunning > 0)
+                return Math.Round(networkScore, 1);
+            else
+                return 0;
+        }
     }
 }
