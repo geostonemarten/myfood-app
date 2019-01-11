@@ -152,16 +152,20 @@ namespace myfoodapp.Hub.Controllers
             var db = new ApplicationDbContext();
             var productionUnitService = new ProductionUnitService(db);
 
-            var currentProductionUnit = db.ProductionUnits.Include(p => p.owner.user).Include(p => p.options).Where(p => p.Id == id).FirstOrDefault();
-            if (currentProductionUnit != null && currentProductionUnit.owner.user.UserName == currentUser || isAdmin)
-            {
-                var currentProductionUnitViewModel = productionUnitService.One(id);
-                ViewBag.Options = PopulateOptions(currentProductionUnitViewModel);
+            var currentProductionUnits = db.ProductionUnits.Include(p => p.owner.user)
+                                                           .Where(p => p.owner.user.UserName == currentUser).ToList();
 
-				return View(currentProductionUnitViewModel);
+            var currentProductionUnit = currentProductionUnits.FirstOrDefault();
+
+            if (currentProductionUnit != null && isAdmin == false && currentProductionUnit.Id != id)
+            {
+                return Redirect("/ProductionUnits/Details/" + currentProductionUnit.Id);
             }
 
-            return Redirect("Home/Index");
+            var currentProductionUnitViewModel = productionUnitService.One(id);
+            ViewBag.Options = PopulateOptions(currentProductionUnitViewModel);
+
+            return View(currentProductionUnitViewModel);
         }
 
         [HttpPost]

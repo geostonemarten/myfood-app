@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2019-01-07 17:09+01:00\n"
-"PO-Revision-Date: 2019-01-07 17:09+01:00\n"
+"POT-Creation-Date: 2019-01-11 10:40+01:00\n"
+"PO-Revision-Date: 2019-01-11 10:40+01:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -133,30 +133,30 @@ msgstr "Beratungen"
 #: Content\GrowingModelv1.json:659
 #: Content\GrowingModelv1.json:680
 #: Content\GrowingModelv1.json:701
-#: Content\GrowingModelv1.json:1041
-#: Content\GrowingModelv1.json:1044
-#: Content\GrowingModelv1.json:1065
-#: Content\GrowingModelv1.json:1086
-#: Content\GrowingModelv1.json:1107
-#: Content\GrowingModelv1.json:1128
-#: Content\GrowingModelv1.json:1149
-#: Content\GrowingModelv1.json:1170
-#: Content\GrowingModelv1.json:1191
+#: Content\GrowingModelv1.json:1209
 #: Content\GrowingModelv1.json:1212
 #: Content\GrowingModelv1.json:1233
 #: Content\GrowingModelv1.json:1254
-#: Content\GrowingModelv1.json:1531
-#: Content\GrowingModelv1.json:1534
-#: Content\GrowingModelv1.json:1555
-#: Content\GrowingModelv1.json:1576
-#: Content\GrowingModelv1.json:1597
-#: Content\GrowingModelv1.json:1618
-#: Content\GrowingModelv1.json:1639
-#: Content\GrowingModelv1.json:1660
-#: Content\GrowingModelv1.json:1681
-#: Content\GrowingModelv1.json:1702
-#: Content\GrowingModelv1.json:1723
-#: Content\GrowingModelv1.json:1744
+#: Content\GrowingModelv1.json:1275
+#: Content\GrowingModelv1.json:1296
+#: Content\GrowingModelv1.json:1317
+#: Content\GrowingModelv1.json:1338
+#: Content\GrowingModelv1.json:1359
+#: Content\GrowingModelv1.json:1380
+#: Content\GrowingModelv1.json:1401
+#: Content\GrowingModelv1.json:1422
+#: Content\GrowingModelv1.json:1930
+#: Content\GrowingModelv1.json:1933
+#: Content\GrowingModelv1.json:1954
+#: Content\GrowingModelv1.json:1975
+#: Content\GrowingModelv1.json:1996
+#: Content\GrowingModelv1.json:2017
+#: Content\GrowingModelv1.json:2038
+#: Content\GrowingModelv1.json:2059
+#: Content\GrowingModelv1.json:2080
+#: Content\GrowingModelv1.json:2101
+#: Content\GrowingModelv1.json:2122
+#: Content\GrowingModelv1.json:2143
 #: Migrations\Configuration.cs:84
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:488
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:491
@@ -170,30 +170,30 @@ msgstr "Beratungen"
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:659
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:680
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:701
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1041
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1044
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1065
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1086
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1107
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1128
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1149
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1170
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1191
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1209
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1212
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1233
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1254
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1531
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1534
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1555
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1576
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1597
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1618
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1639
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1660
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1681
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1702
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1723
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1744
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1275
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1296
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1317
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1338
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1359
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1380
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1401
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1422
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1930
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1933
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1954
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1975
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1996
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:2017
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:2038
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:2059
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:2080
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:2101
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:2122
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:2143
 msgid "Aerospring"
 msgstr ""
 
@@ -235,9 +235,9 @@ msgid "Application Logs"
 msgstr "Anwendungsprotokoll"
 
 #: Business\GrowingModel.cs:20
-#: Content\GrowingModelv1.json:1282
+#: Content\GrowingModelv1.json:1450
 #: Migrations\Configuration.cs:183
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1282
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1450
 msgid "April"
 msgstr "April"
 
@@ -246,10 +246,10 @@ msgstr "April"
 #: Business\GrowingModel.cs:767
 #: Content\GrowingModelv1.json:16
 #: Content\GrowingModelv1.json:737
-#: Content\GrowingModelv1.json:1290
+#: Content\GrowingModelv1.json:1458
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:16
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:737
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1290
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1458
 msgid "Aquaponics"
 msgstr ""
 
@@ -401,6 +401,10 @@ msgid "Bad looking vegetables"
 msgstr "schlecht aussehende Gemüse"
 
 #: Business\GrowingModel.cs:59
+#: Content\GrowingModelv1.json:1004
+#: Content\GrowingModelv1.json:1725
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1004
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1725
 msgid "Beetroot"
 msgstr ""
 
@@ -416,12 +420,14 @@ msgid "Bioponics"
 msgstr "Bioponik"
 
 #: Business\GrowingModel.cs:56
+#: Content\GrowingModelv1.json:1151
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1151
 msgid "Black Radish"
 msgstr ""
 
 #: Business\GrowingModel.cs:63
-#: Content\GrowingModelv1.json:1494
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1494
+#: Content\GrowingModelv1.json:1809
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1809
 msgid "Broad Bean"
 msgstr ""
 
@@ -440,20 +446,18 @@ msgid "Cabbage Cabu"
 msgstr ""
 
 #: Business\GrowingModel.cs:61
-#: Content\GrowingModelv1.json:304
+#: Content\GrowingModelv1.json:325
 #: Content\GrowingModelv1.json:519
 #: Content\GrowingModelv1.json:708
-#: Content\GrowingModelv1.json:920
-#: Content\GrowingModelv1.json:1072
-#: Content\GrowingModelv1.json:1473
-#: Content\GrowingModelv1.json:1562
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:304
+#: Content\GrowingModelv1.json:1046
+#: Content\GrowingModelv1.json:1240
+#: Content\GrowingModelv1.json:1429
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:325
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:519
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:708
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:920
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1072
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1473
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1562
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1046
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1240
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1429
 msgid "Cabbage Rave"
 msgstr ""
 
@@ -488,6 +492,8 @@ msgid "Cauliflower"
 msgstr ""
 
 #: Business\GrowingModel.cs:54
+#: Content\GrowingModelv1.json:1641
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1641
 msgid "Celery"
 msgstr ""
 
@@ -499,10 +505,10 @@ msgstr ""
 #: Business\GrowingModel.cs:48
 #: Content\GrowingModelv1.json:220
 #: Content\GrowingModelv1.json:430
-#: Content\GrowingModelv1.json:983
+#: Content\GrowingModelv1.json:941
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:220
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:430
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:983
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:941
 msgid "Chard"
 msgstr ""
 
@@ -510,9 +516,15 @@ msgstr ""
 #: Content\GrowingModelv1.json:645
 #: Content\GrowingModelv1.json:666
 #: Content\GrowingModelv1.json:687
+#: Content\GrowingModelv1.json:1366
+#: Content\GrowingModelv1.json:1387
+#: Content\GrowingModelv1.json:1408
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:645
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:666
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:687
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1366
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1387
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1408
 msgid "Chinese Cabbage"
 msgstr ""
 
@@ -595,9 +607,11 @@ msgstr ""
 
 #: Business\GrowingModel.cs:40
 #: Content\GrowingModelv1.json:810
-#: Content\GrowingModelv1.json:1363
+#: Content\GrowingModelv1.json:1531
+#: Content\GrowingModelv1.json:2066
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:810
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1363
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1531
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:2066
 msgid "Cucumber"
 msgstr ""
 
@@ -692,30 +706,50 @@ msgstr "Entwicklungs-Kit"
 #: Content\GrowingModelv1.json:404
 #: Content\GrowingModelv1.json:467
 #: Content\GrowingModelv1.json:493
-#: Content\GrowingModelv1.json:957
-#: Content\GrowingModelv1.json:1020
-#: Content\GrowingModelv1.json:1046
-#: Content\GrowingModelv1.json:1510
-#: Content\GrowingModelv1.json:1536
+#: Content\GrowingModelv1.json:936
+#: Content\GrowingModelv1.json:999
+#: Content\GrowingModelv1.json:1125
+#: Content\GrowingModelv1.json:1188
+#: Content\GrowingModelv1.json:1214
+#: Content\GrowingModelv1.json:1657
+#: Content\GrowingModelv1.json:1720
+#: Content\GrowingModelv1.json:1783
+#: Content\GrowingModelv1.json:1846
+#: Content\GrowingModelv1.json:1909
+#: Content\GrowingModelv1.json:1935
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:215
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:278
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:341
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:404
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:467
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:493
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:957
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1020
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1046
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1510
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1536
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:936
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:999
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1125
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1188
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1214
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1657
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1720
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1783
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1846
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1909
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1935
 msgid "Down"
 msgstr ""
 
 #: Business\GrowingModel.cs:57
+#: Content\GrowingModelv1.json:962
+#: Content\GrowingModelv1.json:1683
+#: Content\GrowingModelv1.json:1704
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:962
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1683
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1704
 msgid "Dwarf Bean"
 msgstr ""
 
 #: Business\GrowingModel.cs:58
+#: Content\GrowingModelv1.json:983
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:983
 msgid "Dwarf Peas"
 msgstr ""
 
@@ -727,12 +761,20 @@ msgstr ""
 #: Content\GrowingModelv1.json:603
 #: Content\GrowingModelv1.json:624
 #: Content\GrowingModelv1.json:831
-#: Content\GrowingModelv1.json:1384
+#: Content\GrowingModelv1.json:1303
+#: Content\GrowingModelv1.json:1324
+#: Content\GrowingModelv1.json:1345
+#: Content\GrowingModelv1.json:1552
+#: Content\GrowingModelv1.json:1940
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:582
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:603
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:624
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:831
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1384
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1303
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1324
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1345
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1552
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1940
 msgid "Edible Flower, Aromatics"
 msgstr ""
 
@@ -755,9 +797,13 @@ msgstr "Benutzer bearbeiten"
 
 #: Business\GrowingModel.cs:39
 #: Content\GrowingModelv1.json:789
-#: Content\GrowingModelv1.json:1342
+#: Content\GrowingModelv1.json:1510
+#: Content\GrowingModelv1.json:2003
+#: Content\GrowingModelv1.json:2024
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:789
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1342
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1510
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:2003
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:2024
 msgid "Eggplant"
 msgstr ""
 
@@ -858,9 +904,9 @@ msgstr "Gefühl"
 
 #: Business\GrowingModel.cs:64
 #: Content\GrowingModelv1.json:451
-#: Content\GrowingModelv1.json:1004
+#: Content\GrowingModelv1.json:1172
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:451
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1004
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1172
 msgid "Fennel"
 msgstr ""
 
@@ -925,30 +971,15 @@ msgstr "Gut"
 #: Content\GrowingModelv1.json:670
 #: Content\GrowingModelv1.json:691
 #: Content\GrowingModelv1.json:712
-#: Content\GrowingModelv1.json:751
-#: Content\GrowingModelv1.json:772
-#: Content\GrowingModelv1.json:793
-#: Content\GrowingModelv1.json:814
-#: Content\GrowingModelv1.json:835
-#: Content\GrowingModelv1.json:856
-#: Content\GrowingModelv1.json:877
-#: Content\GrowingModelv1.json:903
-#: Content\GrowingModelv1.json:1055
-#: Content\GrowingModelv1.json:1097
-#: Content\GrowingModelv1.json:1160
-#: Content\GrowingModelv1.json:1244
-#: Content\GrowingModelv1.json:1304
-#: Content\GrowingModelv1.json:1325
-#: Content\GrowingModelv1.json:1346
-#: Content\GrowingModelv1.json:1367
-#: Content\GrowingModelv1.json:1388
-#: Content\GrowingModelv1.json:1409
-#: Content\GrowingModelv1.json:1430
-#: Content\GrowingModelv1.json:1456
-#: Content\GrowingModelv1.json:1545
-#: Content\GrowingModelv1.json:1587
-#: Content\GrowingModelv1.json:1650
-#: Content\GrowingModelv1.json:1734
+#: Content\GrowingModelv1.json:1472
+#: Content\GrowingModelv1.json:1493
+#: Content\GrowingModelv1.json:1514
+#: Content\GrowingModelv1.json:1535
+#: Content\GrowingModelv1.json:1556
+#: Content\GrowingModelv1.json:1577
+#: Content\GrowingModelv1.json:1598
+#: Content\GrowingModelv1.json:1729
+#: Content\GrowingModelv1.json:1750
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:182
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:502
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:523
@@ -961,30 +992,15 @@ msgstr "Gut"
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:670
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:691
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:712
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:751
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:772
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:793
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:814
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:835
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:856
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:877
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:903
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1055
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1097
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1160
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1244
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1304
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1325
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1346
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1367
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1388
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1409
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1430
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1456
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1545
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1587
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1650
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1734
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1472
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1493
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1514
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1535
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1556
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1577
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1598
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1729
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1750
 msgid "Grow"
 msgstr ""
 
@@ -1005,32 +1021,34 @@ msgstr "Froh"
 #: Content\GrowingModelv1.json:245
 #: Content\GrowingModelv1.json:266
 #: Content\GrowingModelv1.json:350
-#: Content\GrowingModelv1.json:371
+#: Content\GrowingModelv1.json:392
 #: Content\GrowingModelv1.json:413
 #: Content\GrowingModelv1.json:434
 #: Content\GrowingModelv1.json:455
-#: Content\GrowingModelv1.json:924
+#: Content\GrowingModelv1.json:903
 #: Content\GrowingModelv1.json:945
-#: Content\GrowingModelv1.json:966
-#: Content\GrowingModelv1.json:987
-#: Content\GrowingModelv1.json:1008
-#: Content\GrowingModelv1.json:1029
-#: Content\GrowingModelv1.json:1076
-#: Content\GrowingModelv1.json:1118
-#: Content\GrowingModelv1.json:1139
-#: Content\GrowingModelv1.json:1181
-#: Content\GrowingModelv1.json:1202
+#: Content\GrowingModelv1.json:1050
+#: Content\GrowingModelv1.json:1113
+#: Content\GrowingModelv1.json:1134
+#: Content\GrowingModelv1.json:1155
+#: Content\GrowingModelv1.json:1176
 #: Content\GrowingModelv1.json:1223
+#: Content\GrowingModelv1.json:1244
 #: Content\GrowingModelv1.json:1265
-#: Content\GrowingModelv1.json:1477
-#: Content\GrowingModelv1.json:1519
-#: Content\GrowingModelv1.json:1566
-#: Content\GrowingModelv1.json:1608
-#: Content\GrowingModelv1.json:1629
-#: Content\GrowingModelv1.json:1671
-#: Content\GrowingModelv1.json:1692
-#: Content\GrowingModelv1.json:1713
-#: Content\GrowingModelv1.json:1755
+#: Content\GrowingModelv1.json:1286
+#: Content\GrowingModelv1.json:1307
+#: Content\GrowingModelv1.json:1328
+#: Content\GrowingModelv1.json:1349
+#: Content\GrowingModelv1.json:1370
+#: Content\GrowingModelv1.json:1391
+#: Content\GrowingModelv1.json:1412
+#: Content\GrowingModelv1.json:1433
+#: Content\GrowingModelv1.json:1624
+#: Content\GrowingModelv1.json:1687
+#: Content\GrowingModelv1.json:1708
+#: Content\GrowingModelv1.json:1918
+#: Content\GrowingModelv1.json:2091
+#: Content\GrowingModelv1.json:2112
 #: Migrations\Configuration.cs:123
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:30
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:51
@@ -1044,32 +1062,34 @@ msgstr "Froh"
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:245
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:266
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:350
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:371
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:392
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:413
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:434
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:455
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:924
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:903
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:945
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:966
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:987
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1008
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1029
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1076
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1118
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1139
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1181
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1202
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1050
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1113
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1134
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1155
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1176
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1223
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1244
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1265
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1477
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1519
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1566
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1608
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1629
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1671
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1692
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1713
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1755
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1286
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1307
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1328
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1349
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1370
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1391
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1412
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1433
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1624
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1687
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1708
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1918
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:2091
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:2112
 msgid "Harvest"
 msgstr "Ernte"
 
@@ -1124,10 +1144,10 @@ msgstr "In Wartung"
 #: Business\GrowingModel.cs:764
 #: Content\GrowingModelv1.json:13
 #: Content\GrowingModelv1.json:734
-#: Content\GrowingModelv1.json:1287
+#: Content\GrowingModelv1.json:1455
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:13
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:734
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1287
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1455
 msgid "Indoor"
 msgstr "Drinnen"
 
@@ -1209,15 +1229,7 @@ msgstr "Juni"
 
 #: Business\GrowingModel.cs:42
 #: Content\GrowingModelv1.json:89
-#: Content\GrowingModelv1.json:1114
-#: Content\GrowingModelv1.json:1198
-#: Content\GrowingModelv1.json:1604
-#: Content\GrowingModelv1.json:1688
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:89
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1114
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1198
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1604
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1688
 msgid "Kale"
 msgstr ""
 
@@ -1262,7 +1274,11 @@ msgstr "Blattgemüse - mehr als 200gr"
 
 #: Business\GrowingModel.cs:47
 #: Content\GrowingModelv1.json:178
+#: Content\GrowingModelv1.json:899
+#: Content\GrowingModelv1.json:1620
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:178
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:899
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1620
 msgid "Leek"
 msgstr ""
 
@@ -1271,14 +1287,12 @@ msgstr ""
 #: Content\GrowingModelv1.json:47
 #: Content\GrowingModelv1.json:68
 #: Content\GrowingModelv1.json:498
-#: Content\GrowingModelv1.json:1051
-#: Content\GrowingModelv1.json:1541
+#: Content\GrowingModelv1.json:1219
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:26
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:47
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:68
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:498
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1051
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1541
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1219
 msgid "Lettuce"
 msgstr ""
 
@@ -1422,9 +1436,25 @@ msgstr "Maßnahmen Überwachung"
 #: Content\GrowingModelv1.json:556
 #: Content\GrowingModelv1.json:577
 #: Content\GrowingModelv1.json:915
-#: Content\GrowingModelv1.json:936
-#: Content\GrowingModelv1.json:999
-#: Content\GrowingModelv1.json:1468
+#: Content\GrowingModelv1.json:978
+#: Content\GrowingModelv1.json:1041
+#: Content\GrowingModelv1.json:1062
+#: Content\GrowingModelv1.json:1083
+#: Content\GrowingModelv1.json:1104
+#: Content\GrowingModelv1.json:1167
+#: Content\GrowingModelv1.json:1235
+#: Content\GrowingModelv1.json:1256
+#: Content\GrowingModelv1.json:1277
+#: Content\GrowingModelv1.json:1298
+#: Content\GrowingModelv1.json:1636
+#: Content\GrowingModelv1.json:1699
+#: Content\GrowingModelv1.json:1762
+#: Content\GrowingModelv1.json:1825
+#: Content\GrowingModelv1.json:1888
+#: Content\GrowingModelv1.json:1956
+#: Content\GrowingModelv1.json:1977
+#: Content\GrowingModelv1.json:1998
+#: Content\GrowingModelv1.json:2019
 #: Migrations\Configuration.cs:132
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:194
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:257
@@ -1437,27 +1467,37 @@ msgstr "Maßnahmen Überwachung"
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:556
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:577
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:915
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:936
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:999
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1468
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:978
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1041
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1062
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1083
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1104
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1167
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1235
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1256
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1277
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1298
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1636
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1699
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1762
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1825
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1888
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1956
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1977
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1998
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:2019
 msgid "Medium"
 msgstr "Mittel"
 
 #: Business\GrowingModel.cs:69
+#: Content\GrowingModelv1.json:2129
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:2129
 msgid "Melon"
 msgstr ""
 
 #: Business\GrowingModel.cs:43
 #: Content\GrowingModelv1.json:110
-#: Content\GrowingModelv1.json:1135
-#: Content\GrowingModelv1.json:1219
-#: Content\GrowingModelv1.json:1625
-#: Content\GrowingModelv1.json:1709
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:110
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1135
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1219
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1625
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1709
 msgid "Mesclun"
 msgstr ""
 
@@ -1580,29 +1620,11 @@ msgstr "Normal"
 #: Content\GrowingModelv1.json:826
 #: Content\GrowingModelv1.json:847
 #: Content\GrowingModelv1.json:868
-#: Content\GrowingModelv1.json:1088
-#: Content\GrowingModelv1.json:1109
-#: Content\GrowingModelv1.json:1130
-#: Content\GrowingModelv1.json:1151
-#: Content\GrowingModelv1.json:1172
-#: Content\GrowingModelv1.json:1193
-#: Content\GrowingModelv1.json:1214
-#: Content\GrowingModelv1.json:1235
-#: Content\GrowingModelv1.json:1256
-#: Content\GrowingModelv1.json:1337
-#: Content\GrowingModelv1.json:1358
-#: Content\GrowingModelv1.json:1379
-#: Content\GrowingModelv1.json:1400
-#: Content\GrowingModelv1.json:1421
-#: Content\GrowingModelv1.json:1578
-#: Content\GrowingModelv1.json:1599
-#: Content\GrowingModelv1.json:1620
-#: Content\GrowingModelv1.json:1641
-#: Content\GrowingModelv1.json:1662
-#: Content\GrowingModelv1.json:1683
-#: Content\GrowingModelv1.json:1704
-#: Content\GrowingModelv1.json:1725
-#: Content\GrowingModelv1.json:1746
+#: Content\GrowingModelv1.json:1505
+#: Content\GrowingModelv1.json:1526
+#: Content\GrowingModelv1.json:1547
+#: Content\GrowingModelv1.json:1568
+#: Content\GrowingModelv1.json:1589
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:63
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:84
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:105
@@ -1613,29 +1635,11 @@ msgstr "Normal"
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:826
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:847
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:868
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1088
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1109
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1130
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1151
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1172
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1193
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1214
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1235
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1256
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1337
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1358
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1379
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1400
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1421
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1578
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1599
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1620
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1641
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1662
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1683
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1704
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1725
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1746
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1505
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1526
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1547
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1568
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1589
 msgid "North"
 msgstr ""
 
@@ -1707,6 +1711,8 @@ msgid "Owner"
 msgstr ""
 
 #: Business\GrowingModel.cs:55
+#: Content\GrowingModelv1.json:1662
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1662
 msgid "Parsnip"
 msgstr ""
 
@@ -1745,13 +1751,29 @@ msgstr "LETZTE STUNDE"
 
 #: Business\GrowingModel.cs:15
 #: Content\GrowingModelv1.json:287
-#: Content\GrowingModelv1.json:329
-#: Content\GrowingModelv1.json:392
+#: Content\GrowingModelv1.json:308
+#: Content\GrowingModelv1.json:371
 #: Content\GrowingModelv1.json:476
+#: Content\GrowingModelv1.json:924
+#: Content\GrowingModelv1.json:1071
+#: Content\GrowingModelv1.json:1092
+#: Content\GrowingModelv1.json:1792
+#: Content\GrowingModelv1.json:1834
+#: Content\GrowingModelv1.json:1855
+#: Content\GrowingModelv1.json:1876
+#: Content\GrowingModelv1.json:1897
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:287
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:329
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:392
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:308
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:371
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:476
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:924
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1071
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1092
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1792
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1834
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1855
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1876
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1897
 msgid "Paused"
 msgstr ""
 
@@ -1761,9 +1783,11 @@ msgstr "Pelletofen"
 
 #: Business\GrowingModel.cs:38
 #: Content\GrowingModelv1.json:768
-#: Content\GrowingModelv1.json:1321
+#: Content\GrowingModelv1.json:1489
+#: Content\GrowingModelv1.json:2045
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:768
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1321
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1489
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:2045
 msgid "Pepper"
 msgstr ""
 
@@ -1853,6 +1877,12 @@ msgstr "Leistung &amp; Gesundheit (Vorschau)"
 #: Business\GrowingModel.cs:954
 #: Business\GrowingModel.cs:960
 #: Business\GrowingModel.cs:966
+#: Content\GrowingModelv1.json:171
+#: Content\GrowingModelv1.json:192
+#: Content\GrowingModelv1.json:213
+#: Content\GrowingModelv1.json:234
+#: Content\GrowingModelv1.json:255
+#: Content\GrowingModelv1.json:276
 #: Content\GrowingModelv1.json:297
 #: Content\GrowingModelv1.json:318
 #: Content\GrowingModelv1.json:339
@@ -1869,10 +1899,35 @@ msgstr "Leistung &amp; Gesundheit (Vorschau)"
 #: Content\GrowingModelv1.json:976
 #: Content\GrowingModelv1.json:997
 #: Content\GrowingModelv1.json:1018
-#: Content\GrowingModelv1.json:1445
-#: Content\GrowingModelv1.json:1466
-#: Content\GrowingModelv1.json:1487
-#: Content\GrowingModelv1.json:1508
+#: Content\GrowingModelv1.json:1039
+#: Content\GrowingModelv1.json:1060
+#: Content\GrowingModelv1.json:1081
+#: Content\GrowingModelv1.json:1102
+#: Content\GrowingModelv1.json:1123
+#: Content\GrowingModelv1.json:1144
+#: Content\GrowingModelv1.json:1165
+#: Content\GrowingModelv1.json:1186
+#: Content\GrowingModelv1.json:1613
+#: Content\GrowingModelv1.json:1634
+#: Content\GrowingModelv1.json:1655
+#: Content\GrowingModelv1.json:1676
+#: Content\GrowingModelv1.json:1697
+#: Content\GrowingModelv1.json:1718
+#: Content\GrowingModelv1.json:1739
+#: Content\GrowingModelv1.json:1760
+#: Content\GrowingModelv1.json:1781
+#: Content\GrowingModelv1.json:1802
+#: Content\GrowingModelv1.json:1823
+#: Content\GrowingModelv1.json:1844
+#: Content\GrowingModelv1.json:1865
+#: Content\GrowingModelv1.json:1886
+#: Content\GrowingModelv1.json:1907
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:171
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:192
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:213
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:234
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:255
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:276
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:297
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:318
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:339
@@ -1889,34 +1944,41 @@ msgstr "Leistung &amp; Gesundheit (Vorschau)"
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:976
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:997
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1018
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1445
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1466
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1487
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1508
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1039
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1060
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1081
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1102
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1123
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1144
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1165
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1186
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1613
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1634
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1655
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1676
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1697
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1718
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1739
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1760
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1781
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1802
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1823
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1844
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1865
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1886
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1907
 msgid "Perma Bed"
 msgstr ""
 
 #: Business\GrowingModel.cs:227
 #: Business\GrowingModel.cs:233
 #: Business\GrowingModel.cs:239
-#: Content\GrowingModelv1.json:171
-#: Content\GrowingModelv1.json:192
-#: Content\GrowingModelv1.json:213
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:171
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:192
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:213
 msgid "Perma Bed #1 [[[Slot"
 msgstr ""
 
 #: Business\GrowingModel.cs:245
 #: Business\GrowingModel.cs:251
 #: Business\GrowingModel.cs:257
-#: Content\GrowingModelv1.json:234
-#: Content\GrowingModelv1.json:255
-#: Content\GrowingModelv1.json:276
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:234
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:255
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:276
 msgid "Perma Bed #2 [[[Slot"
 msgstr ""
 
@@ -1925,10 +1987,10 @@ msgstr ""
 #: Business\GrowingModel.cs:770
 #: Content\GrowingModelv1.json:168
 #: Content\GrowingModelv1.json:889
-#: Content\GrowingModelv1.json:1442
+#: Content\GrowingModelv1.json:1610
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:168
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:889
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1442
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1610
 msgid "Perma Beds"
 msgstr ""
 
@@ -2025,7 +2087,7 @@ msgstr "Herstellungsart"
 msgid "prod. unit"
 msgstr "produktionseinheit"
 
-#: Controllers\ProductionUnitsController.cs:234
+#: Controllers\ProductionUnitsController.cs:235
 msgid "Production Unit already in use"
 msgstr "Produktionseinheit bereits im Einsatz"
 
@@ -2067,33 +2129,41 @@ msgstr "Produktionseinheiten Management"
 #: Content\GrowingModelv1.json:131
 #: Content\GrowingModelv1.json:540
 #: Content\GrowingModelv1.json:561
-#: Content\GrowingModelv1.json:1093
-#: Content\GrowingModelv1.json:1156
-#: Content\GrowingModelv1.json:1240
-#: Content\GrowingModelv1.json:1583
-#: Content\GrowingModelv1.json:1646
-#: Content\GrowingModelv1.json:1730
+#: Content\GrowingModelv1.json:1261
+#: Content\GrowingModelv1.json:1282
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:131
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:540
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:561
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1093
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1156
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1240
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1583
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1646
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1730
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1261
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1282
 msgid "Purslane"
 msgstr ""
 
 #: Business\GrowingModel.cs:72
 #: Content\GrowingModelv1.json:283
-#: Content\GrowingModelv1.json:325
-#: Content\GrowingModelv1.json:388
+#: Content\GrowingModelv1.json:304
+#: Content\GrowingModelv1.json:367
 #: Content\GrowingModelv1.json:472
+#: Content\GrowingModelv1.json:920
+#: Content\GrowingModelv1.json:1067
+#: Content\GrowingModelv1.json:1088
+#: Content\GrowingModelv1.json:1788
+#: Content\GrowingModelv1.json:1830
+#: Content\GrowingModelv1.json:1851
+#: Content\GrowingModelv1.json:1872
+#: Content\GrowingModelv1.json:1893
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:283
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:325
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:388
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:304
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:367
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:472
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:920
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1067
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1088
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1788
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1830
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1851
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1872
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1893
 msgid "Ramial Chipped Wood"
 msgstr ""
 
@@ -2129,10 +2199,58 @@ msgid "Save and Close"
 msgstr ""
 
 #: Business\GrowingModel.cs:12
-#: Content\GrowingModelv1.json:308
-#: Content\GrowingModelv1.json:1498
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:308
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1498
+#: Content\GrowingModelv1.json:329
+#: Content\GrowingModelv1.json:751
+#: Content\GrowingModelv1.json:772
+#: Content\GrowingModelv1.json:793
+#: Content\GrowingModelv1.json:814
+#: Content\GrowingModelv1.json:835
+#: Content\GrowingModelv1.json:856
+#: Content\GrowingModelv1.json:877
+#: Content\GrowingModelv1.json:966
+#: Content\GrowingModelv1.json:987
+#: Content\GrowingModelv1.json:1008
+#: Content\GrowingModelv1.json:1029
+#: Content\GrowingModelv1.json:1197
+#: Content\GrowingModelv1.json:1645
+#: Content\GrowingModelv1.json:1666
+#: Content\GrowingModelv1.json:1771
+#: Content\GrowingModelv1.json:1813
+#: Content\GrowingModelv1.json:1944
+#: Content\GrowingModelv1.json:1965
+#: Content\GrowingModelv1.json:1986
+#: Content\GrowingModelv1.json:2007
+#: Content\GrowingModelv1.json:2028
+#: Content\GrowingModelv1.json:2049
+#: Content\GrowingModelv1.json:2070
+#: Content\GrowingModelv1.json:2133
+#: Content\GrowingModelv1.json:2154
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:329
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:751
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:772
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:793
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:814
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:835
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:856
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:877
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:966
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:987
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1008
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1029
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1197
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1645
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1666
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1771
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1813
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1944
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1965
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1986
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:2007
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:2028
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:2049
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:2070
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:2133
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:2154
 msgid "Seed"
 msgstr ""
 
@@ -2207,6 +2325,12 @@ msgstr ""
 #: Business\GrowingModel.cs:954
 #: Business\GrowingModel.cs:960
 #: Business\GrowingModel.cs:966
+#: Content\GrowingModelv1.json:171
+#: Content\GrowingModelv1.json:192
+#: Content\GrowingModelv1.json:213
+#: Content\GrowingModelv1.json:234
+#: Content\GrowingModelv1.json:255
+#: Content\GrowingModelv1.json:276
 #: Content\GrowingModelv1.json:297
 #: Content\GrowingModelv1.json:318
 #: Content\GrowingModelv1.json:339
@@ -2223,10 +2347,35 @@ msgstr ""
 #: Content\GrowingModelv1.json:976
 #: Content\GrowingModelv1.json:997
 #: Content\GrowingModelv1.json:1018
-#: Content\GrowingModelv1.json:1445
-#: Content\GrowingModelv1.json:1466
-#: Content\GrowingModelv1.json:1487
-#: Content\GrowingModelv1.json:1508
+#: Content\GrowingModelv1.json:1039
+#: Content\GrowingModelv1.json:1060
+#: Content\GrowingModelv1.json:1081
+#: Content\GrowingModelv1.json:1102
+#: Content\GrowingModelv1.json:1123
+#: Content\GrowingModelv1.json:1144
+#: Content\GrowingModelv1.json:1165
+#: Content\GrowingModelv1.json:1186
+#: Content\GrowingModelv1.json:1613
+#: Content\GrowingModelv1.json:1634
+#: Content\GrowingModelv1.json:1655
+#: Content\GrowingModelv1.json:1676
+#: Content\GrowingModelv1.json:1697
+#: Content\GrowingModelv1.json:1718
+#: Content\GrowingModelv1.json:1739
+#: Content\GrowingModelv1.json:1760
+#: Content\GrowingModelv1.json:1781
+#: Content\GrowingModelv1.json:1802
+#: Content\GrowingModelv1.json:1823
+#: Content\GrowingModelv1.json:1844
+#: Content\GrowingModelv1.json:1865
+#: Content\GrowingModelv1.json:1886
+#: Content\GrowingModelv1.json:1907
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:171
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:192
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:213
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:234
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:255
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:276
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:297
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:318
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:339
@@ -2243,10 +2392,29 @@ msgstr ""
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:976
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:997
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1018
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1445
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1466
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1487
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1508
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1039
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1060
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1081
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1102
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1123
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1144
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1165
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1186
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1613
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1634
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1655
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1676
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1697
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1718
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1739
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1760
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1781
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1802
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1823
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1844
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1865
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1886
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1907
 msgid "Slot"
 msgstr ""
 
@@ -2259,18 +2427,14 @@ msgstr "Solarplatten"
 #: Content\GrowingModelv1.json:42
 #: Content\GrowingModelv1.json:742
 #: Content\GrowingModelv1.json:763
-#: Content\GrowingModelv1.json:1067
-#: Content\GrowingModelv1.json:1295
-#: Content\GrowingModelv1.json:1316
-#: Content\GrowingModelv1.json:1557
+#: Content\GrowingModelv1.json:1463
+#: Content\GrowingModelv1.json:1484
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:21
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:42
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:742
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:763
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1067
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1295
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1316
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1557
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1463
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1484
 msgid "South"
 msgstr ""
 
@@ -2302,12 +2466,12 @@ msgstr "Gestoppt"
 #: Business\GrowingModel.cs:44
 #: Content\GrowingModelv1.json:852
 #: Content\GrowingModelv1.json:873
-#: Content\GrowingModelv1.json:1405
-#: Content\GrowingModelv1.json:1426
+#: Content\GrowingModelv1.json:1573
+#: Content\GrowingModelv1.json:1594
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:852
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:873
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1405
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1426
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1573
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1594
 msgid "Strawberry"
 msgstr ""
 
@@ -2320,6 +2484,8 @@ msgid "Surname"
 msgstr "Nachname"
 
 #: Business\GrowingModel.cs:62
+#: Content\GrowingModelv1.json:1767
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1767
 msgid "Sweet Potatoes"
 msgstr ""
 
@@ -2337,13 +2503,17 @@ msgstr "Diese Woche"
 
 #: Business\GrowingModel.cs:36
 #: Content\GrowingModelv1.json:747
-#: Content\GrowingModelv1.json:899
-#: Content\GrowingModelv1.json:1300
-#: Content\GrowingModelv1.json:1452
+#: Content\GrowingModelv1.json:1025
+#: Content\GrowingModelv1.json:1468
+#: Content\GrowingModelv1.json:1746
+#: Content\GrowingModelv1.json:1961
+#: Content\GrowingModelv1.json:1982
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:747
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:899
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1300
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1452
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1025
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1468
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1746
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1961
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1982
 msgid "Tomato"
 msgstr ""
 
@@ -2363,9 +2533,26 @@ msgstr "Zu viel Algen"
 #: Content\GrowingModelv1.json:682
 #: Content\GrowingModelv1.json:703
 #: Content\GrowingModelv1.json:894
-#: Content\GrowingModelv1.json:978
-#: Content\GrowingModelv1.json:1447
-#: Content\GrowingModelv1.json:1489
+#: Content\GrowingModelv1.json:957
+#: Content\GrowingModelv1.json:1020
+#: Content\GrowingModelv1.json:1146
+#: Content\GrowingModelv1.json:1319
+#: Content\GrowingModelv1.json:1340
+#: Content\GrowingModelv1.json:1361
+#: Content\GrowingModelv1.json:1382
+#: Content\GrowingModelv1.json:1403
+#: Content\GrowingModelv1.json:1424
+#: Content\GrowingModelv1.json:1615
+#: Content\GrowingModelv1.json:1678
+#: Content\GrowingModelv1.json:1741
+#: Content\GrowingModelv1.json:1804
+#: Content\GrowingModelv1.json:1867
+#: Content\GrowingModelv1.json:2040
+#: Content\GrowingModelv1.json:2061
+#: Content\GrowingModelv1.json:2082
+#: Content\GrowingModelv1.json:2103
+#: Content\GrowingModelv1.json:2124
+#: Content\GrowingModelv1.json:2145
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:173
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:236
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:299
@@ -2377,9 +2564,26 @@ msgstr "Zu viel Algen"
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:682
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:703
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:894
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:978
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1447
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1489
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:957
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1020
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1146
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1319
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1340
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1361
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1382
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1403
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1424
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1615
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1678
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1741
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1804
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1867
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:2040
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:2061
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:2082
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:2103
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:2124
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:2145
 msgid "Top"
 msgstr ""
 
@@ -2497,6 +2701,8 @@ msgid "Water loss"
 msgstr "Wasserverlust"
 
 #: Business\GrowingModel.cs:70
+#: Content\GrowingModelv1.json:2150
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:2150
 msgid "Water Melon"
 msgstr ""
 
@@ -2535,23 +2741,15 @@ msgstr "WOCHEN"
 
 #: Business\GrowingModel.cs:46
 #: Content\GrowingModelv1.json:152
-#: Content\GrowingModelv1.json:367
+#: Content\GrowingModelv1.json:388
 #: Content\GrowingModelv1.json:409
-#: Content\GrowingModelv1.json:941
-#: Content\GrowingModelv1.json:962
-#: Content\GrowingModelv1.json:1177
-#: Content\GrowingModelv1.json:1261
-#: Content\GrowingModelv1.json:1667
-#: Content\GrowingModelv1.json:1751
+#: Content\GrowingModelv1.json:1109
+#: Content\GrowingModelv1.json:1130
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:152
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:367
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:388
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:409
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:941
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:962
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1177
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1261
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1667
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1751
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1109
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1130
 msgid "White Onion"
 msgstr ""
 
@@ -2599,13 +2797,13 @@ msgstr "Ja"
 #: Content\GrowingModelv1.json:824
 #: Content\GrowingModelv1.json:845
 #: Content\GrowingModelv1.json:866
-#: Content\GrowingModelv1.json:1293
-#: Content\GrowingModelv1.json:1314
-#: Content\GrowingModelv1.json:1335
-#: Content\GrowingModelv1.json:1356
-#: Content\GrowingModelv1.json:1377
-#: Content\GrowingModelv1.json:1398
-#: Content\GrowingModelv1.json:1419
+#: Content\GrowingModelv1.json:1461
+#: Content\GrowingModelv1.json:1482
+#: Content\GrowingModelv1.json:1503
+#: Content\GrowingModelv1.json:1524
+#: Content\GrowingModelv1.json:1545
+#: Content\GrowingModelv1.json:1566
+#: Content\GrowingModelv1.json:1587
 #: Migrations\Configuration.cs:157
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:19
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:40
@@ -2621,21 +2819,25 @@ msgstr "Ja"
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:824
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:845
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:866
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1293
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1314
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1335
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1356
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1377
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1398
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1419
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1461
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1482
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1503
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1524
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1545
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1566
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1587
 msgid "Zipgrow Tower"
 msgstr "Zipgrow Turm"
 
 #: Business\GrowingModel.cs:66
-#: Content\GrowingModelv1.json:1025
-#: Content\GrowingModelv1.json:1515
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1025
-#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1515
+#: Content\GrowingModelv1.json:1193
+#: Content\GrowingModelv1.json:1914
+#: Content\GrowingModelv1.json:2087
+#: Content\GrowingModelv1.json:2108
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1193
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1914
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:2087
+#: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:2108
 msgid "Zucchini"
 msgstr ""
 

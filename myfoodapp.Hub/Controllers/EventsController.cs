@@ -45,6 +45,23 @@ namespace myfoodapp.Hub.Controllers
         {
             ViewBag.Title = "Production Unit Event Page";
 
+            var currentUser = this.User.Identity.GetUserName();
+            var userId = UserManager.FindByName(currentUser).Id;
+
+            var db = new ApplicationDbContext();
+
+            var isAdmin = this.UserManager.IsInRole(userId, "Admin");
+
+            var currentProductionUnits = db.ProductionUnits.Include(p => p.owner.user)
+                                                           .Where(p => p.owner.user.UserName == currentUser).ToList();
+
+            var currentProductionUnit = currentProductionUnits.FirstOrDefault();
+
+            if (currentProductionUnit != null && isAdmin == false && currentProductionUnit.Id != id)
+            {
+                return Redirect("/ProductionUnits/Details/" + currentProductionUnit.Id);
+            }
+
             PopulateEventType();
 
             return View();
