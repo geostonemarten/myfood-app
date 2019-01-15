@@ -47,7 +47,7 @@
 						}
 					}
 				</div>
-				<div class="row">
+				<div class="row mx-xs-15px">
 					@foreach (var productionArea in item.productionAreas)
 					{
 						for (int i = 0; i < productionArea.productionTypes.Count; i++)
@@ -274,6 +274,7 @@
 		border-radius: 10px;
 		overflow: hidden;
 		background: #fff;
+		box-shadow: 0 0 10px rgba(0,0,0,0.5);
 	}
 
 	.card-block__haeder {
@@ -326,6 +327,12 @@
 
 	.filters button {
 		margin: 15px;
+	}
+
+	@@media (max-width: 449px) {
+		.mx-xs-15px {
+			margin: 0 15px;
+		}
 	}
 
 	@@media(max-width: 768px) {
