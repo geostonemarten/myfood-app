@@ -21,10 +21,10 @@ namespace myfoodapp.Model
                 context.SensorTypes.Add(new SensorType() { Id = 1, name = "pH Sensor", description = "Common values between 6-7" });
                 context.SensorTypes.Add(new SensorType() { Id = 2, name = "Water Temperature Sensor", description = "Common values between 15-30" });
                 context.SensorTypes.Add(new SensorType() { Id = 3, name = "Dissolved Oxygen Sensor", description = "Common values between 0-10" });
-                context.SensorTypes.Add(new SensorType() { Id = 4, name = "ORP sensor", description = "Common values between 300-800" });
+                context.SensorTypes.Add(new SensorType() { Id = 4, name = "Electro-Conductivity Sensor", description = "Common values between 300-800" });
                 context.SensorTypes.Add(new SensorType() { Id = 5, name = "Air Temperature Sensor", description = "Common values between 5-32" });
                 context.SensorTypes.Add(new SensorType() { Id = 6, name = "Air Humidity Sensor", description = "Common values between 40-80" });
-                context.SensorTypes.Add(new SensorType() { Id = 7, name = "Electro-Conductivity Sensor", description = "Common values between 0-280" });
+                context.SensorTypes.Add(new SensorType() { Id = 7, name = "ORP sensor", description = "Common values between 0-280" });
 
                 context.SaveChanges();
             }

@@ -80,6 +80,7 @@ namespace myfoodapp.Hub.Migrations
             context.SensorTypes.Add(new SensorType() { Id = 6, name = "Air Humidity Sensor", description = "Common values between 40-80" });
             context.SensorTypes.Add(new SensorType() { Id = 7, name = "External Air Temperature", description = "From OpenWeatherMap API" });
             context.SensorTypes.Add(new SensorType() { Id = 8, name = "External Air Humidity", description = "From OpenWeatherMap API" });
+            context.SensorTypes.Add(new SensorType() { Id = 9, name = "CO2 Sensor", description = "Common values between 300-800ppm" });
 
             context.ProductionUnitTypes.Add(new ProductionUnitType() { Id = 1, name = "[[[Aerospring]]]" });
             context.ProductionUnitTypes.Add(new ProductionUnitType() { Id = 2, name = "[[[City - Original]]]" });
@@ -236,7 +237,7 @@ namespace myfoodapp.Hub.Migrations
             context.EventTypeItems.Add(new EventTypeItem() { Id = 28, order = 6, eventType = actionEventTypes, isRestrictedForAdmin = false, name = "[[[Add magnesium]]]" });
             context.EventTypeItems.Add(new EventTypeItem() { Id = 29, order = 7, eventType = actionEventTypes, isRestrictedForAdmin = false, name = "[[[Add potassium]]]" });
             context.EventTypeItems.Add(new EventTypeItem() { Id = 30, order = 8, eventType = actionEventTypes, isRestrictedForAdmin = false, name = "[[[Use UV filter]]]" });
-            context.EventTypeItems.Add(new EventTypeItem() { Id = 31, order = 9, eventType = actionEventTypes, isRestrictedForAdmin = false, name = "[[[Add white on roof]]]" });
+            context.EventTypeItems.Add(new EventTypeItem() { Id = 31, order = 9, eventType = actionEventTypes, isRestrictedForAdmin = false, name = "[[[Add ammonium sulphate]]]" });
             context.EventTypeItems.Add(new EventTypeItem() { Id = 32, order = 10, eventType = actionEventTypes, isRestrictedForAdmin = false, name = "[[[Open doors]]]" });
             context.EventTypeItems.Add(new EventTypeItem() { Id = 33, order = 11, eventType = actionEventTypes, isRestrictedForAdmin = false, name = "[[[Perform pH calib.]]]" });
             context.EventTypeItems.Add(new EventTypeItem() { Id = 34, order = 12, eventType = actionEventTypes, isRestrictedForAdmin = true, name = "[[[Perform agro analysis]]]" });

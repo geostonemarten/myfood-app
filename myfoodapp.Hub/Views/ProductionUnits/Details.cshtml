@@ -23,9 +23,7 @@
 
 	$(document).ready(function () {
 		var leg_1_datepicker = $('#datepicker-here').datepicker({
-			startDate: new Date(ToJavaScriptDate(new Date())),
-			minDate: new Date(),
-			startDate: new Date()
+			startDate: new Date(ToJavaScriptDate(new Date()))
 		}).data('datepicker').selectDate(new Date(ToJavaScriptDate(new Date())));
 
 		viewInfo();
@@ -378,6 +376,94 @@
         });
     }
 
+    function AirCarboneDioxideMeasureChart(productId, ProductRange) {
+        $.ajax({
+            url: "@Url.Action("AirCarbonDioxydeMeasure_Read", "ProductionUnits")",
+            dataType: "json",
+            data: { id: productId, range: ProductRange },
+            type: "POST",
+            success: function (response) {
+                var val = JSON.decode(response.responseText);
+
+                if (val.count > 0) {
+                    $("#CarbonDioxideContainer").show();
+                }
+
+                response.forEach(function (item, i, response) {
+                    var date = new Date(response[i][0].toString());
+                    response[i][0] = Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate(), date.getUTCHours(), date.getUTCMinutes(), date.getUTCSeconds());
+                });
+
+                Highcharts.chart('carbon-dioxide-chart', {
+                    chart: {
+                        type: 'spline',
+                        backgroundColor: 'transparent',
+                    },
+                    //legend: {
+                    //    enabled: false
+                    //},
+                    title: {
+                        text: ''
+                    },
+                    subtitle: {
+                        text: ''
+                    },
+                    xAxis: {
+                        type: 'datetime',
+                        dateTimeLabelFormats: {
+                            month: '%e. %b'
+                        },
+                        title: {
+                            text: ''
+                        },
+                        minorGridLineWidth: 1,
+                        gridLineWidth: 0,
+                        alternateGridColor: null,
+                    },
+                    yAxis: {
+                        min: 4,
+                        max: 10,
+                        title: {
+                            text: ''
+                        },
+                        minorGridLineWidth: 1,
+                        gridLineWidth: 1,
+                        alternateGridColor: null,
+
+                    },
+                    tooltip: {
+                        headerFormat: '<b>{series.name}</b><br>',
+                        pointFormat: '{point.x:%e %b %H:%M} value:<b>{point.y:.2f}</b>'
+                    },
+                    plotOptions: {
+                        spline: {
+                            marker: {
+                                enabled: false
+							},
+							lineWidth: 4,
+							color: '#2EA636',
+                        }
+                    },
+                    series: [{
+                        name: 'CO2',
+                        data: response,
+                        label: {
+                            enabled: false,
+                        }
+                    }],
+                    navigation: {
+                        menuItemStyle: {
+                            fontSize: '10px'
+                        }
+                    }
+                });
+                $('.highcharts-contextbutton').remove();
+                $('.highcharts-credits').remove();
+                $('.highcharts-label').remove();
+            }
+        });
+    }
+
 
     function viewInfo() {
 
@@ -400,7 +486,7 @@
 				$(".mail").text(item.ContactMail);
 				$(".phone").attr("href", "tel:" + item.PhoneNumber.replace(" ", ""));
 				$(".mail").attr("href", "mailto:" + item.ContactMail);
-				
+
 				if (item.Location != "") {
 					$(".location").text(item.Location);
 					$("li.loc").show();
@@ -546,12 +632,15 @@
         var productionUnitId = $('#routeDataId').val();
 
         PHMeasureChart(productionUnitId, null);
+
         WaterTempMeasureChart(productionUnitId, null);
-        
+
         AirTempMeasureChart(productionUnitId, null);
-        
+
         HumidityMeasureChart(productionUnitId, null);
-        
+
+        AirCarboneDioxideMeasureChart(productionUnitId, null);
+
         $.ajax({
             url: "@Url.Action("GetProductionUnitDetail", "ProductionUnits")",
             dataType: "json",
@@ -628,23 +717,25 @@
 			PHMeasureChart(productionUnitId, "thisLastDays");
 			WaterTempMeasureChart(productionUnitId, "thisLastDays");
 			AirTempMeasureChart(productionUnitId, "thisLastDays");
-			HumidityMeasureChart(productionUnitId, "thisLastDays");
-		}
+            HumidityMeasureChart(productionUnitId, "thisLastDays");
+            AirCarboneDioxideMeasureChart(productionUnitId, "thisLastDays");
 
+		}
 
 		if (sel.options[sel.selectedIndex].text == "Last Week") {
 			PHMeasureChart(productionUnitId, "thisWeek");
 			WaterTempMeasureChart(productionUnitId, "thisWeek");
 			AirTempMeasureChart(productionUnitId, "thisWeek");
-			HumidityMeasureChart(productionUnitId, "thisWeek");
+            HumidityMeasureChart(productionUnitId, "thisWeek");
+            AirCarboneDioxideMeasureChart(productionUnitId, "thisWeek");
 		}
-
 
 		if (sel.options[sel.selectedIndex].text == "Last Three Months") {
 			PHMeasureChart(productionUnitId, "lastThreeMonths");
 			WaterTempMeasureChart(productionUnitId, "lastThreeMonths");
 			AirTempMeasureChart(productionUnitId, "lastThreeMonths");
-			HumidityMeasureChart(productionUnitId, "lastThreeMonths");
+            HumidityMeasureChart(productionUnitId, "lastThreeMonths");
+            AirCarboneDioxideMeasureChart(productionUnitId, "lastThreeMonths");
 		}
 
     }
@@ -750,28 +841,15 @@
 <div id="main-section-header" class="row big-section">
 	<h2 id="title" class="col-lg-7">[[[Production Unit Details]]]</h2>
 	<div id="title-buttons" class="col-lg-5">
-
-
-
-
 		<select onchange="onThisWeekClick(this)" class="change-graph">
 			<option>This Last Day</option>
 			<option>Last Week</option>
 			<option>Last Three Months</option>
 		</select>
 		<button class="fill" data-toggle="modal" data-target="#performanceModal">View Info</button>
-
-
-
 	</div>
 	<div style="clear:both;"></div>
 </div>
-
-
-
-
-
-
 
 <div id="statsContainerTop" class="row">
 	<div id="pHContainer" class="col-md-6">
@@ -801,8 +879,7 @@
 		</div>
 	</div>
 
-
-
+    
 	<div id="WaterTempContainer" class="col-md-6">
 		<div class="wrapper">
 			<h3 class="graph-header">[[[Water Temperature (°C)]]]</h3>
@@ -831,10 +908,8 @@
 		</div>
 	</div>
 
-
-
+    
 	<div id="AirTempContainer" class="col-md-6">
-
 		<div class="wrapper">
 			<h3 class="graph-header">[[[Air Temperature (°C)]]]</h3>
 			<div class="sparkline-container">
@@ -856,12 +931,9 @@
 					</div>
 				</div>
 			</div>
-
 			<div id="airtemp-chart"></div>
 		</div>
 	</div>
-
-
 
 
 	<div id="HumidityContainer" class="col-md-6">
@@ -890,6 +962,34 @@
 			<div id="humidity-chart"></div>
 		</div>
 	</div>
+
+
+    <div id="CarbonDioxideContainer" class="col-md-6" style="visibility:hidden">
+        <div class="wrapper">
+            <h3 class="graph-header">[[[Carbon Dioxide (ppm)]]]</h3>
+            <div class="sparkline-container">
+                <div>
+                    <div class="column-left">
+                        <h2>[[[CURRENT]]]</h2>
+                        <span id="CurrentCarbonDioxideValue">-</span>
+                        <h2 id="CurrentCarbonDioxideCaptureTime">-</h2>
+                    </div>
+                    <div class="column-center">
+                        <h2>[[[AVERAGE]]]</h2>
+                        <span id="AverageHourCarbonDioxideValue">-</span>
+                        <h2>PAST HOUR</h2>
+                    </div>
+                    <div class="column-right">
+                        <h2>[[[AVERAGE]]]</h2>
+                        <span id="AverageDayCarbonDioxideValue">-</span>
+                        <h2 id="LastDayCarbonDioxideCaptureTime">-</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div id="carbon-dioxide-chart"></div>
+        </div>
+    </div>
 
 	<div class="col-md-9 buttons-section">
 		<button class="btn btn-transparent" data-toggle="modal" data-target="#add-event" onclick="AddEventPopupInit()">[[[Add Event]]]</button>

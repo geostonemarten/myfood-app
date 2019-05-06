@@ -40,6 +40,7 @@ namespace myfoodapp.Hub.Models
         airTemperature = 5,
         humidity = 6,
         externalAirTemperature = 7,
-        externalHumidity = 8
+        externalHumidity = 8,
+        airCarbonDioxide = 9
     }
 }

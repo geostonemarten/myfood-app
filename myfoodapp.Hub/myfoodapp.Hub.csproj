@@ -354,6 +354,7 @@
     <Compile Include="Common\MailManager.cs" />
     <Compile Include="Common\NotificationPushManager.cs" />
     <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\API\InteropMessages\CarbonDioxideController.cs" />
     <Compile Include="Controllers\API\PushController.cs" />
     <Compile Include="Controllers\API\OpenData\OpenDataController.cs" />
     <Compile Include="Controllers\ErrorController.cs" />
@@ -523,7 +524,7 @@
     <Content Include="Content\Pictures\Recipes\purslane.jpg" />
     <Content Include="Content\Pictures\Recipes\spinach.jpg" />
     <Content Include="Content\Pictures\Recipes\strawberries.jpg" />
-    <Content Include="Content\Pictures\Recipes\sweet-potato.jpg" />
+    <Content Include="Content\Pictures\Recipes\sweet-potatoes.jpg" />
     <Content Include="Content\Pictures\Recipes\tomato.jpg" />
     <Content Include="Content\Pictures\Recipes\turnip.jpg" />
     <Content Include="Content\Pictures\Recipes\watermelon.jpg" />

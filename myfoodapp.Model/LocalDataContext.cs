@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.ComponentModel.DataAnnotations.Schema;
-using Microsoft.EntityFrameworkCore;
-using System.IO;
-using Windows.Storage;
 
 namespace myfoodapp.Model
 {
-        public class LocalDataContext : DbContext
+    public class LocalDataContext : DbContext
         {
             public DbSet<Measure> Measures { get; set; }
             public DbSet<SensorType> SensorTypes { get; set; }
@@ -53,9 +47,9 @@ namespace myfoodapp.Model
             ph = 1,
             waterTemperature = 2,
             dissolvedOxygen = 3,
-            orp = 4,
+            EC = 4,
             airTemperature = 5,
             humidity = 6,
-            EC = 7
+            orp = 7
         }
 }

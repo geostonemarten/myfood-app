@@ -372,26 +372,6 @@ namespace myfoodapp.Hub.Controllers
         }
 
         [Authorize]
-        public ActionResult PHMeasure_Read([DataSourceRequest] DataSourceRequest request, int id, string range)
-        {
-            var db = new ApplicationDbContext();
-            var measureService = new MeasureService(db);
-            var json = new List<List<object>>();
-
-            var hpList = measureService.Read(SensorTypeEnum.ph, id, range).ToList();
-            var phFiltered = FilterArrayForGraph(hpList);
-
-            foreach (var PHMeasure in phFiltered)
-            {
-                var list = new List<object>();
-                list.Add(PHMeasure.captureDate.ToString("R"));
-                list.Add(PHMeasure.value);
-                json.Add(list);
-            }
-            return Json(json, JsonRequestBehavior.AllowGet);
-        }
-
-        [Authorize]
         public ActionResult GetProductionUnitDetailPopUp(int id)
         {
             var db = new ApplicationDbContext();
@@ -446,20 +426,40 @@ namespace myfoodapp.Hub.Controllers
         }
 
         [Authorize]
+        public ActionResult PHMeasure_Read([DataSourceRequest] DataSourceRequest request, int id, string range)
+        {
+            var db = new ApplicationDbContext();
+            var measureService = new MeasureService(db);
+            var json = new List<List<object>>();
+
+            var hpList = measureService.Read(SensorTypeEnum.ph, id, range).ToList();
+            var filteredResult = FilterArrayForGraph(hpList);
+
+            foreach (var PHMeasure in filteredResult)
+            {
+                var list = new List<object>();
+                list.Add(PHMeasure.captureDate.ToString("R"));
+                list.Add(PHMeasure.value);
+                json.Add(list);
+            }
+            return Json(json, JsonRequestBehavior.AllowGet);
+        }
+
+        [Authorize]
         public ActionResult WaterTempMeasure_Read([DataSourceRequest] DataSourceRequest request, int id, string range)
         {
             var db = new ApplicationDbContext();
             var measureService = new MeasureService(db);
 
             var waterTemperature = measureService.Read(SensorTypeEnum.waterTemperature, id, range).ToList();
-            var waterTemperatureFiltered = FilterArrayForGraph(waterTemperature);
+            var filteredResult = FilterArrayForGraph(waterTemperature);
 
             var json = new List<List<object>>();
-            foreach (var WaterTempMeasure in waterTemperatureFiltered)
+            foreach (var waterTempMeasure in filteredResult)
             {
                 var list = new List<object>();
-                list.Add(WaterTempMeasure.captureDate.ToString("R"));
-                list.Add(WaterTempMeasure.value);
+                list.Add(waterTempMeasure.captureDate.ToString("R"));
+                list.Add(waterTempMeasure.value);
                 json.Add(list);
             }
             return Json(json, JsonRequestBehavior.AllowGet);
@@ -482,18 +482,16 @@ namespace myfoodapp.Hub.Controllers
 
             var airTemperature = measureService.Read(SensorTypeEnum.airTemperature, id, range).ToList();
 
-            var airTemperatureFiltered = FilterArrayForGraph(airTemperature);
-
+            var filteredResult = FilterArrayForGraph(airTemperature);
 
             var air = new List<List<object>>();
-            foreach (var airtemp in airTemperatureFiltered)
+            foreach (var airtemp in filteredResult)
             {
                 var list = new List<object>();
                 list.Add(airtemp.captureDate.ToString("R"));
                 list.Add(airtemp.value);
                 air.Add(list);
             }
-
 
             var airExternalTemperature = measureService.Read(SensorTypeEnum.externalAirTemperature, id, range).ToList();
 
@@ -535,7 +533,6 @@ namespace myfoodapp.Hub.Controllers
 
             var measuresList = new List<MeasureViewModel>();
 
-
             var result = measureService.Read(SensorTypeEnum.humidity, id, range).ToList();
 
             var filteredResult = FilterArrayForGraph(result);
@@ -551,10 +548,10 @@ namespace myfoodapp.Hub.Controllers
             }
 
             var resultHumidiy = measureService.Read(SensorTypeEnum.externalHumidity, id, range).ToList();
-            var filteredResultHumidiy = FilterArrayForGraph(resultHumidiy);
+            var filteredResultHumidity = FilterArrayForGraph(resultHumidiy);
 
             var externalHum = new List<List<object>>();
-            foreach (var externalHumidity in filteredResultHumidiy)
+            foreach (var externalHumidity in filteredResultHumidity)
             {
                 var list = new List<object>();
                 list.Add(externalHumidity.captureDate.ToString("R"));
@@ -571,6 +568,30 @@ namespace myfoodapp.Hub.Controllers
 
 
             return Json(obj, JsonRequestBehavior.AllowGet);
+        }
+
+        [Authorize]
+        public ActionResult AirCarbonDioxydeMeasure_Read([DataSourceRequest] DataSourceRequest request, int id, string range)
+        {
+            var db = new ApplicationDbContext();
+            var measureService = new MeasureService(db);
+
+            var measuresList = new List<MeasureViewModel>();
+
+            var result = measureService.Read(SensorTypeEnum.airCarbonDioxide, id, range).ToList();
+
+            var filteredResult = FilterArrayForGraph(result);
+
+            var json = new List<List<object>>();
+            foreach (var waterTempMeasure in filteredResult)
+            {
+                var list = new List<object>();
+                list.Add(waterTempMeasure.captureDate.ToString("R"));
+                list.Add(waterTempMeasure.value);
+                json.Add(list);
+            }
+
+            return Json(json, JsonRequestBehavior.AllowGet);
         }
 
         private List<MeasureViewModel> FilterArrayForGraph(List<MeasureViewModel> result)
