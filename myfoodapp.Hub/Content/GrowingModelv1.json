@@ -5,8 +5,8 @@
   "productionMonths": [
     {
       "month": {
-        "name": "[[[February]]]",
-        "Id": 1
+        "name": "[[[January]]]",
+        "Id": 0
       },
       "productionAreas": [
         {
@@ -149,14 +149,14 @@
                   },
                   "number": 3,
                   "vegetable": {
-                    "name": "[[[White Onion]]]",
-                    "imagePath": "white-onion.jpg",
-                    "cropPerSlot": 15,
+                    "name": "[[[Kale]]]",
+                    "imagePath": "kale.jpg",
+                    "cropPerSlot": 4,
                     "growingState": {
                       "name": "[[[Harvest]]]",
                       "Id": 2
                     },
-                    "productionQuantity": 60.0,
+                    "productionQuantity": 180.0,
                     "temperatureMin": 0.0,
                     "temperatureMax": 0.0
                   },
@@ -200,10 +200,10 @@
                     "imagePath": "cabbage-cabu.jpg",
                     "cropPerSlot": 3,
                     "growingState": {
-                      "name": "[[[Harvest]]]",
-                      "Id": 2
+                      "name": "[[[Grow]]]",
+                      "Id": 1
                     },
-                    "productionQuantity": 1500.0,
+                    "productionQuantity": 0.0,
                     "temperatureMin": 0.0,
                     "temperatureMax": 0.0
                   },
@@ -242,8 +242,8 @@
                     "imagePath": "spinach.jpg",
                     "cropPerSlot": 12,
                     "growingState": {
-                      "name": "[[[Harvest]]]",
-                      "Id": 2
+                      "name": "[[[Grow]]]",
+                      "Id": 1
                     },
                     "productionQuantity": 180.0,
                     "temperatureMin": 0.0,
@@ -392,7 +392,7 @@
                       "name": "[[[Harvest]]]",
                       "Id": 2
                     },
-                    "productionQuantity": 60.0,
+                    "productionQuantity": 30.0,
                     "temperatureMin": 0.0,
                     "temperatureMax": 0.0
                   },
@@ -413,7 +413,7 @@
                       "name": "[[[Harvest]]]",
                       "Id": 2
                     },
-                    "productionQuantity": 60.0,
+                    "productionQuantity": 30.0,
                     "temperatureMin": 0.0,
                     "temperatureMax": 0.0
                   },
@@ -711,6 +711,727 @@
                     "growingState": {
                       "name": "[[[Grow]]]",
                       "Id": 1
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "month": {
+        "name": "[[[February]]]",
+        "Id": 1
+      },
+      "productionAreas": [
+        {
+          "name": "[[[Indoor]]]",
+          "productionTypes": [
+            {
+              "name": "[[[Aquaponics]]]",
+              "slots": [
+                {
+                  "id": "[[[Zipgrow Tower]]] #1",
+                  "position": {
+                    "name": "[[[South]]]",
+                    "Id": 0
+                  },
+                  "number": 6,
+                  "vegetable": {
+                    "name": "[[[Lettuce]]]",
+                    "imagePath": "lettuce.jpg",
+                    "cropPerSlot": 8,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 180.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Zipgrow Tower]]] #2",
+                  "position": {
+                    "name": "[[[South]]]",
+                    "Id": 0
+                  },
+                  "number": 3,
+                  "vegetable": {
+                    "name": "[[[Lettuce]]]",
+                    "imagePath": "lettuce.jpg",
+                    "cropPerSlot": 8,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 180.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Zipgrow Tower]]] #3",
+                  "position": {
+                    "name": "[[[North]]]",
+                    "Id": 1
+                  },
+                  "number": 3,
+                  "vegetable": {
+                    "name": "[[[Lettuce]]]",
+                    "imagePath": "lettuce.jpg",
+                    "cropPerSlot": 8,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 180.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Zipgrow Tower]]] #4",
+                  "position": {
+                    "name": "[[[North]]]",
+                    "Id": 1
+                  },
+                  "number": 3,
+                  "vegetable": {
+                    "name": "[[[Kale]]]",
+                    "imagePath": "kale.jpg",
+                    "cropPerSlot": 4,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 180.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Zipgrow Tower]]] #5",
+                  "position": {
+                    "name": "[[[North]]]",
+                    "Id": 1
+                  },
+                  "number": 3,
+                  "vegetable": {
+                    "name": "[[[Mesclun]]]",
+                    "imagePath": "mesclun.jpg",
+                    "cropPerSlot": 4,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 180.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Zipgrow Tower]]] #6",
+                  "position": {
+                    "name": "[[[North]]]",
+                    "Id": 1
+                  },
+                  "number": 3,
+                  "vegetable": {
+                    "name": "[[[Purslane]]]",
+                    "imagePath": "purslane.jpg",
+                    "cropPerSlot": 8,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 100.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Zipgrow Tower]]] #7",
+                  "position": {
+                    "name": "[[[North]]]",
+                    "Id": 1
+                  },
+                  "number": 3,
+                  "vegetable": {
+                    "name": "[[[Kale]]]",
+                    "imagePath": "kale.jpg",
+                    "cropPerSlot": 4,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 180.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                }
+              ]
+            },
+            {
+              "name": "[[[Perma Beds]]]",
+              "slots": [
+                {
+                  "id": "[[[Perma Bed]]] #1 [[[Slot]]] #1",
+                  "position": {
+                    "name": "[[[Top]]]",
+                    "Id": 2
+                  },
+                  "number": 1,
+                  "vegetable": {
+                    "name": "[[[Leek]]]",
+                    "imagePath": "leek.jpg",
+                    "cropPerSlot": 30,
+                    "growingState": {
+                      "name": "[[[Grow]]]",
+                      "Id": 1
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #1 [[[Slot]]] #2",
+                  "position": {
+                    "name": "[[[Medium]]]",
+                    "Id": 2
+                  },
+                  "number": 1,
+                  "vegetable": {
+                    "name": "[[[Cabbage Cabu]]]",
+                    "imagePath": "cabbage-cabu.jpg",
+                    "cropPerSlot": 3,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 1500.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #1 [[[Slot]]] #3",
+                  "position": {
+                    "name": "[[[Down]]]",
+                    "Id": 3
+                  },
+                  "number": 1,
+                  "vegetable": {
+                    "name": "[[[Chard]]]",
+                    "imagePath": "chard.jpg",
+                    "cropPerSlot": 5,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 200.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #2 [[[Slot]]] #1",
+                  "position": {
+                    "name": "[[[Top]]]",
+                    "Id": 2
+                  },
+                  "number": 1,
+                  "vegetable": {
+                    "name": "[[[Spinach]]]",
+                    "imagePath": "spinach.jpg",
+                    "cropPerSlot": 12,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 180.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #2 [[[Slot]]] #2",
+                  "position": {
+                    "name": "[[[Medium]]]",
+                    "Id": 2
+                  },
+                  "number": 1,
+                  "vegetable": {
+                    "name": "[[[Argula Salad]]]",
+                    "imagePath": "argula-salad.jpg",
+                    "cropPerSlot": 4,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 200.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #2 [[[Slot]]] #3",
+                  "position": {
+                    "name": "[[[Down]]]",
+                    "Id": 3
+                  },
+                  "number": 1,
+                  "vegetable": {
+                    "name": "[[[Ramial Chipped Wood]]]",
+                    "imagePath": "chipped-ramial-wood.jpg",
+                    "cropPerSlot": 1,
+                    "growingState": {
+                      "name": "[[[Paused]]]",
+                      "Id": 3
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #3 [[[Slot]]] #1",
+                  "position": {
+                    "name": "[[[Top]]]",
+                    "Id": 2
+                  },
+                  "number": 1,
+                  "vegetable": {
+                    "name": "[[[Ramial Chipped Wood]]]",
+                    "imagePath": "chipped-ramial-wood.jpg",
+                    "cropPerSlot": 1,
+                    "growingState": {
+                      "name": "[[[Paused]]]",
+                      "Id": 3
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #3 [[[Slot]]] #2",
+                  "position": {
+                    "name": "[[[Medium]]]",
+                    "Id": 2
+                  },
+                  "number": 1,
+                  "vegetable": {
+                    "name": "[[[Lettuce]]]",
+                    "imagePath": "lettuce.jpg",
+                    "cropPerSlot": 8,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 300.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #3 [[[Slot]]] #3",
+                  "position": {
+                    "name": "[[[Down]]]",
+                    "Id": 3
+                  },
+                  "number": 1,
+                  "vegetable": {
+                    "name": "[[[Cauliflower]]]",
+                    "imagePath": "cauliflower.jpg",
+                    "cropPerSlot": 3,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 1000.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #4 [[[Slot]]] #1",
+                  "position": {
+                    "name": "[[[Medium]]]",
+                    "Id": 2
+                  },
+                  "number": 1,
+                  "vegetable": {
+                    "name": "[[[Cabbage Bruxelles]]]",
+                    "imagePath": "cabbage-bruxelles.jpg",
+                    "cropPerSlot": 2,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 500.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #4 [[[Slot]]] #2",
+                  "position": {
+                    "name": "[[[Medium]]]",
+                    "Id": 2
+                  },
+                  "number": 1,
+                  "vegetable": {
+                    "name": "[[[White Onion]]]",
+                    "imagePath": "white-onion.jpg",
+                    "cropPerSlot": 15,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 60.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #4 [[[Slot]]] #3",
+                  "position": {
+                    "name": "[[[Down]]]",
+                    "Id": 3
+                  },
+                  "number": 1,
+                  "vegetable": {
+                    "name": "[[[White Onion]]]",
+                    "imagePath": "white-onion.jpg",
+                    "cropPerSlot": 15,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 60.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #5 [[[Slot]]] #1",
+                  "position": {
+                    "name": "[[[Top]]]",
+                    "Id": 2
+                  },
+                  "number": 1,
+                  "vegetable": {
+                    "name": "[[[Purslane]]]",
+                    "imagePath": "purslane.jpg",
+                    "cropPerSlot": 8,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 200.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #5 [[[Slot]]] #2",
+                  "position": {
+                    "name": "[[[Medium]]]",
+                    "Id": 2
+                  },
+                  "number": 1,
+                  "vegetable": {
+                    "name": "[[[Fennel]]]",
+                    "imagePath": "fennel.jpg",
+                    "cropPerSlot": 4,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 300.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #5 [[[Slot]]] #3",
+                  "position": {
+                    "name": "[[[Down]]]",
+                    "Id": 3
+                  },
+                  "number": 1,
+                  "vegetable": {
+                    "name": "[[[Ramial Chipped Wood]]]",
+                    "imagePath": "chipped-ramial-wood.jpg",
+                    "cropPerSlot": 1,
+                    "growingState": {
+                      "name": "[[[Paused]]]",
+                      "Id": 3
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                }
+              ]
+            },
+            {
+              "name": "[[[Aerospring]]]",
+              "slots": [
+                {
+                  "id": "[[[Aerospring]]] #1",
+                  "position": {
+                    "name": "[[[Down]]]",
+                    "Id": 3
+                  },
+                  "number": 12,
+                  "vegetable": {
+                    "name": "[[[Lettuce]]]",
+                    "imagePath": "lettuce.jpg",
+                    "cropPerSlot": 8,
+                    "growingState": {
+                      "name": "[[[Seed]]]",
+                      "Id": 0
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #2",
+                  "position": {
+                    "name": "[[[Medium]]]",
+                    "Id": 2
+                  },
+                  "number": 4,
+                  "vegetable": {
+                    "name": "[[[Cabbage Rave]]]",
+                    "imagePath": "cabbage-rave.jpg",
+                    "cropPerSlot": 5,
+                    "growingState": {
+                      "name": "[[[Seed]]]",
+                      "Id": 0
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #3",
+                  "position": {
+                    "name": "[[[Medium]]]",
+                    "Id": 2
+                  },
+                  "number": 4,
+                  "vegetable": {
+                    "name": "[[[Purslane]]]",
+                    "imagePath": "purslane.jpg",
+                    "cropPerSlot": 8,
+                    "growingState": {
+                      "name": "[[[Seed]]]",
+                      "Id": 0
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #4",
+                  "position": {
+                    "name": "[[[Medium]]]",
+                    "Id": 2
+                  },
+                  "number": 2,
+                  "vegetable": {
+                    "name": "[[[Purslane]]]",
+                    "imagePath": "purslane.jpg",
+                    "cropPerSlot": 8,
+                    "growingState": {
+                      "name": "[[[Seed]]]",
+                      "Id": 0
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #5",
+                  "position": {
+                    "name": "[[[Medium]]]",
+                    "Id": 2
+                  },
+                  "number": 2,
+                  "vegetable": {
+                    "name": "[[[Edible Flower, Aromatics]]]",
+                    "imagePath": "edible-flower.jpg",
+                    "cropPerSlot": 8,
+                    "growingState": {
+                      "name": "[[[Seed]]]",
+                      "Id": 0
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #6",
+                  "position": {
+                    "name": "[[[Top]]]",
+                    "Id": 2
+                  },
+                  "number": 2,
+                  "vegetable": {
+                    "name": "[[[Edible Flower, Aromatics]]]",
+                    "imagePath": "edible-flower.jpg",
+                    "cropPerSlot": 8,
+                    "growingState": {
+                      "name": "[[[Seed]]]",
+                      "Id": 0
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #7",
+                  "position": {
+                    "name": "[[[Top]]]",
+                    "Id": 2
+                  },
+                  "number": 2,
+                  "vegetable": {
+                    "name": "[[[Edible Flower, Aromatics]]]",
+                    "imagePath": "edible-flower.jpg",
+                    "cropPerSlot": 8,
+                    "growingState": {
+                      "name": "[[[Seed]]]",
+                      "Id": 0
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #8",
+                  "position": {
+                    "name": "[[[Top]]]",
+                    "Id": 2
+                  },
+                  "number": 2,
+                  "vegetable": {
+                    "name": "[[[Chinese Cabbage]]]",
+                    "imagePath": "chinese-cabbage.jpg",
+                    "cropPerSlot": 1,
+                    "growingState": {
+                      "name": "[[[Grow]]]",
+                      "Id": 1
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #9",
+                  "position": {
+                    "name": "[[[Top]]]",
+                    "Id": 2
+                  },
+                  "number": 2,
+                  "vegetable": {
+                    "name": "[[[Chinese Cabbage]]]",
+                    "imagePath": "chinese-cabbage.jpg",
+                    "cropPerSlot": 1,
+                    "growingState": {
+                      "name": "[[[Grow]]]",
+                      "Id": 1
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #10",
+                  "position": {
+                    "name": "[[[Top]]]",
+                    "Id": 2
+                  },
+                  "number": 2,
+                  "vegetable": {
+                    "name": "[[[Chinese Cabbage]]]",
+                    "imagePath": "chinese-cabbage.jpg",
+                    "cropPerSlot": 1,
+                    "growingState": {
+                      "name": "[[[Grow]]]",
+                      "Id": 1
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #11",
+                  "position": {
+                    "name": "[[[Top]]]",
+                    "Id": 2
+                  },
+                  "number": 2,
+                  "vegetable": {
+                    "name": "[[[Cabbage Rave]]]",
+                    "imagePath": "cabbage-rave.jpg",
+                    "cropPerSlot": 5,
+                    "growingState": {
+                      "name": "[[[Seed]]]",
+                      "Id": 0
                     },
                     "productionQuantity": 0.0,
                     "temperatureMin": 0.0,
@@ -1944,7 +2665,7 @@
                       "name": "[[[Harvest]]]",
                       "Id": 2
                     },
-                    "productionQuantity": 300.0,
+                    "productionQuantity": 100.0,
                     "temperatureMin": 0.0,
                     "temperatureMax": 0.0
                   },
@@ -1965,7 +2686,7 @@
                       "name": "[[[Harvest]]]",
                       "Id": 2
                     },
-                    "productionQuantity": 150.0,
+                    "productionQuantity": 2500.0,
                     "temperatureMin": 0.0,
                     "temperatureMax": 0.0
                   },
@@ -1986,7 +2707,7 @@
                       "name": "[[[Harvest]]]",
                       "Id": 2
                     },
-                    "productionQuantity": 150.0,
+                    "productionQuantity": 2500.0,
                     "temperatureMin": 0.0,
                     "temperatureMax": 0.0
                   },
@@ -2049,7 +2770,7 @@
                       "name": "[[[Harvest]]]",
                       "Id": 2
                     },
-                    "productionQuantity": 250.0,
+                    "productionQuantity": 180.0,
                     "temperatureMin": 0.0,
                     "temperatureMax": 0.0
                   },
@@ -2665,7 +3386,7 @@
                       "name": "[[[Harvest]]]",
                       "Id": 2
                     },
-                    "productionQuantity": 300.0,
+                    "productionQuantity": 100.0,
                     "temperatureMin": 0.0,
                     "temperatureMax": 0.0
                   },
@@ -2686,7 +3407,7 @@
                       "name": "[[[Harvest]]]",
                       "Id": 2
                     },
-                    "productionQuantity": 150.0,
+                    "productionQuantity": 2500.0,
                     "temperatureMin": 0.0,
                     "temperatureMax": 0.0
                   },
@@ -2707,7 +3428,7 @@
                       "name": "[[[Harvest]]]",
                       "Id": 2
                     },
-                    "productionQuantity": 150.0,
+                    "productionQuantity": 2500.0,
                     "temperatureMin": 0.0,
                     "temperatureMax": 0.0
                   },
@@ -2770,7 +3491,7 @@
                       "name": "[[[Harvest]]]",
                       "Id": 2
                     },
-                    "productionQuantity": 250.0,
+                    "productionQuantity": 180.0,
                     "temperatureMin": 0.0,
                     "temperatureMax": 0.0
                   },
@@ -3386,7 +4107,7 @@
                       "name": "[[[Harvest]]]",
                       "Id": 2
                     },
-                    "productionQuantity": 300.0,
+                    "productionQuantity": 100.0,
                     "temperatureMin": 0.0,
                     "temperatureMax": 0.0
                   },
@@ -3407,7 +4128,7 @@
                       "name": "[[[Harvest]]]",
                       "Id": 2
                     },
-                    "productionQuantity": 150.0,
+                    "productionQuantity": 2500.0,
                     "temperatureMin": 0.0,
                     "temperatureMax": 0.0
                   },
@@ -3428,7 +4149,7 @@
                       "name": "[[[Harvest]]]",
                       "Id": 2
                     },
-                    "productionQuantity": 150.0,
+                    "productionQuantity": 2500.0,
                     "temperatureMin": 0.0,
                     "temperatureMax": 0.0
                   },
@@ -3491,7 +4212,7 @@
                       "name": "[[[Harvest]]]",
                       "Id": 2
                     },
-                    "productionQuantity": 250.0,
+                    "productionQuantity": 180.0,
                     "temperatureMin": 0.0,
                     "temperatureMax": 0.0
                   },
@@ -4107,7 +4828,7 @@
                       "name": "[[[Harvest]]]",
                       "Id": 2
                     },
-                    "productionQuantity": 300.0,
+                    "productionQuantity": 100.0,
                     "temperatureMin": 0.0,
                     "temperatureMax": 0.0
                   },
@@ -4128,7 +4849,7 @@
                       "name": "[[[Harvest]]]",
                       "Id": 2
                     },
-                    "productionQuantity": 150.0,
+                    "productionQuantity": 2500.0,
                     "temperatureMin": 0.0,
                     "temperatureMax": 0.0
                   },
@@ -4149,7 +4870,7 @@
                       "name": "[[[Harvest]]]",
                       "Id": 2
                     },
-                    "productionQuantity": 150.0,
+                    "productionQuantity": 2500.0,
                     "temperatureMin": 0.0,
                     "temperatureMax": 0.0
                   },
@@ -4212,7 +4933,7 @@
                       "name": "[[[Harvest]]]",
                       "Id": 2
                     },
-                    "productionQuantity": 250.0,
+                    "productionQuantity": 180.0,
                     "temperatureMin": 0.0,
                     "temperatureMax": 0.0
                   },
@@ -4828,7 +5549,7 @@
                       "name": "[[[Harvest]]]",
                       "Id": 2
                     },
-                    "productionQuantity": 300.0,
+                    "productionQuantity": 100.0,
                     "temperatureMin": 0.0,
                     "temperatureMax": 0.0
                   },
@@ -4849,7 +5570,7 @@
                       "name": "[[[Harvest]]]",
                       "Id": 2
                     },
-                    "productionQuantity": 150.0,
+                    "productionQuantity": 2500.0,
                     "temperatureMin": 0.0,
                     "temperatureMax": 0.0
                   },
@@ -4870,7 +5591,7 @@
                       "name": "[[[Harvest]]]",
                       "Id": 2
                     },
-                    "productionQuantity": 150.0,
+                    "productionQuantity": 2500.0,
                     "temperatureMin": 0.0,
                     "temperatureMax": 0.0
                   },
@@ -4933,7 +5654,7 @@
                       "name": "[[[Harvest]]]",
                       "Id": 2
                     },
-                    "productionQuantity": 250.0,
+                    "productionQuantity": 180.0,
                     "temperatureMin": 0.0,
                     "temperatureMax": 0.0
                   },
@@ -5549,7 +6270,7 @@
                       "name": "[[[Harvest]]]",
                       "Id": 2
                     },
-                    "productionQuantity": 300.0,
+                    "productionQuantity": 100.0,
                     "temperatureMin": 0.0,
                     "temperatureMax": 0.0
                   },
@@ -5570,7 +6291,7 @@
                       "name": "[[[Harvest]]]",
                       "Id": 2
                     },
-                    "productionQuantity": 150.0,
+                    "productionQuantity": 2500.0,
                     "temperatureMin": 0.0,
                     "temperatureMax": 0.0
                   },
@@ -5591,7 +6312,7 @@
                       "name": "[[[Harvest]]]",
                       "Id": 2
                     },
-                    "productionQuantity": 150.0,
+                    "productionQuantity": 2500.0,
                     "temperatureMin": 0.0,
                     "temperatureMax": 0.0
                   },
@@ -5654,7 +6375,7 @@
                       "name": "[[[Harvest]]]",
                       "Id": 2
                     },
-                    "productionQuantity": 250.0,
+                    "productionQuantity": 180.0,
                     "temperatureMin": 0.0,
                     "temperatureMax": 0.0
                   },
@@ -5755,6 +6476,2169 @@
                     "name": "[[[Water Melon]]]",
                     "imagePath": "water-melon.jpg",
                     "cropPerSlot": 1,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 150.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "month": {
+        "name": "[[[October]]]",
+        "Id": 9
+      },
+      "productionAreas": [
+        {
+          "name": "[[[Indoor]]]",
+          "productionTypes": [
+            {
+              "name": "[[[Aquaponics]]]",
+              "slots": [
+                {
+                  "id": "[[[Zipgrow Tower]]] #1",
+                  "position": {
+                    "name": "[[[South]]]",
+                    "Id": 0
+                  },
+                  "number": 6,
+                  "vegetable": {
+                    "name": "[[[Lettuce]]]",
+                    "imagePath": "lettuce.jpg",
+                    "cropPerSlot": 8,
+                    "growingState": {
+                      "name": "[[[Seed]]]",
+                      "Id": 0
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Zipgrow Tower]]] #2",
+                  "position": {
+                    "name": "[[[South]]]",
+                    "Id": 0
+                  },
+                  "number": 3,
+                  "vegetable": {
+                    "name": "[[[Lettuce]]]",
+                    "imagePath": "lettuce.jpg",
+                    "cropPerSlot": 8,
+                    "growingState": {
+                      "name": "[[[Seed]]]",
+                      "Id": 0
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Zipgrow Tower]]] #3",
+                  "position": {
+                    "name": "[[[North]]]",
+                    "Id": 1
+                  },
+                  "number": 3,
+                  "vegetable": {
+                    "name": "[[[Lettuce]]]",
+                    "imagePath": "lettuce.jpg",
+                    "cropPerSlot": 8,
+                    "growingState": {
+                      "name": "[[[Seed]]]",
+                      "Id": 0
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Zipgrow Tower]]] #4",
+                  "position": {
+                    "name": "[[[North]]]",
+                    "Id": 1
+                  },
+                  "number": 3,
+                  "vegetable": {
+                    "name": "[[[Kale]]]",
+                    "imagePath": "kale.jpg",
+                    "cropPerSlot": 4,
+                    "growingState": {
+                      "name": "[[[Seed]]]",
+                      "Id": 0
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Zipgrow Tower]]] #5",
+                  "position": {
+                    "name": "[[[North]]]",
+                    "Id": 1
+                  },
+                  "number": 3,
+                  "vegetable": {
+                    "name": "[[[Mesclun]]]",
+                    "imagePath": "mesclun.jpg",
+                    "cropPerSlot": 4,
+                    "growingState": {
+                      "name": "[[[Seed]]]",
+                      "Id": 0
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Zipgrow Tower]]] #6",
+                  "position": {
+                    "name": "[[[North]]]",
+                    "Id": 1
+                  },
+                  "number": 3,
+                  "vegetable": {
+                    "name": "[[[Pepper]]]",
+                    "imagePath": "pepper.jpg",
+                    "cropPerSlot": 4,
+                    "growingState": {
+                      "name": "[[[Seed]]]",
+                      "Id": 0
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Zipgrow Tower]]] #7",
+                  "position": {
+                    "name": "[[[North]]]",
+                    "Id": 1
+                  },
+                  "number": 3,
+                  "vegetable": {
+                    "name": "[[[Kale]]]",
+                    "imagePath": "kale.jpg",
+                    "cropPerSlot": 4,
+                    "growingState": {
+                      "name": "[[[Seed]]]",
+                      "Id": 0
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                }
+              ]
+            },
+            {
+              "name": "[[[Perma Beds]]]",
+              "slots": [
+                {
+                  "id": "[[[Perma Bed]]] #1 [[[Slot]]] #1",
+                  "position": {
+                    "name": "[[[Top]]]",
+                    "Id": 2
+                  },
+                  "number": 1,
+                  "vegetable": {
+                    "name": "[[[Leek]]]",
+                    "imagePath": "leek.jpg",
+                    "cropPerSlot": 30,
+                    "growingState": {
+                      "name": "[[[Grow]]]",
+                      "Id": 1
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #1 [[[Slot]]] #2",
+                  "position": {
+                    "name": "[[[Medium]]]",
+                    "Id": 2
+                  },
+                  "number": 1,
+                  "vegetable": {
+                    "name": "[[[Cabbage Cabu]]]",
+                    "imagePath": "cabbage-cabu.jpg",
+                    "cropPerSlot": 3,
+                    "growingState": {
+                      "name": "[[[Seed]]]",
+                      "Id": 0
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #1 [[[Slot]]] #3",
+                  "position": {
+                    "name": "[[[Down]]]",
+                    "Id": 3
+                  },
+                  "number": 1,
+                  "vegetable": {
+                    "name": "[[[Black Radish]]]",
+                    "imagePath": "black-radish.jpg",
+                    "cropPerSlot": 40,
+                    "growingState": {
+                      "name": "[[[Seed]]]",
+                      "Id": 0
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #2 [[[Slot]]] #1",
+                  "position": {
+                    "name": "[[[Top]]]",
+                    "Id": 2
+                  },
+                  "number": 1,
+                  "vegetable": {
+                    "name": "[[[Spinach]]]",
+                    "imagePath": "spinach.jpg",
+                    "cropPerSlot": 12,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 180.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #2 [[[Slot]]] #2",
+                  "position": {
+                    "name": "[[[Medium]]]",
+                    "Id": 2
+                  },
+                  "number": 1,
+                  "vegetable": {
+                    "name": "[[[Argula Salad]]]",
+                    "imagePath": "argula-salad.jpg",
+                    "cropPerSlot": 4,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 200.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #2 [[[Slot]]] #3",
+                  "position": {
+                    "name": "[[[Down]]]",
+                    "Id": 3
+                  },
+                  "number": 1,
+                  "vegetable": {
+                    "name": "[[[Ramial Chipped Wood]]]",
+                    "imagePath": "chipped-ramial-wood.jpg",
+                    "cropPerSlot": 1,
+                    "growingState": {
+                      "name": "[[[Paused]]]",
+                      "Id": 3
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #3 [[[Slot]]] #1",
+                  "position": {
+                    "name": "[[[Top]]]",
+                    "Id": 2
+                  },
+                  "number": 1,
+                  "vegetable": {
+                    "name": "[[[Ramial Chipped Wood]]]",
+                    "imagePath": "chipped-ramial-wood.jpg",
+                    "cropPerSlot": 1,
+                    "growingState": {
+                      "name": "[[[Paused]]]",
+                      "Id": 3
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #3 [[[Slot]]] #2",
+                  "position": {
+                    "name": "[[[Medium]]]",
+                    "Id": 2
+                  },
+                  "number": 1,
+                  "vegetable": {
+                    "name": "[[[Sweet Potatoes]]]",
+                    "imagePath": "sweet-potatoes.jpg",
+                    "cropPerSlot": 4,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 1500.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #3 [[[Slot]]] #3",
+                  "position": {
+                    "name": "[[[Down]]]",
+                    "Id": 3
+                  },
+                  "number": 1,
+                  "vegetable": {
+                    "name": "[[[Ramial Chipped Wood]]]",
+                    "imagePath": "chipped-ramial-wood.jpg",
+                    "cropPerSlot": 1,
+                    "growingState": {
+                      "name": "[[[Paused]]]",
+                      "Id": 3
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #4 [[[Slot]]] #1",
+                  "position": {
+                    "name": "[[[Top]]]",
+                    "Id": 2
+                  },
+                  "number": 1,
+                  "vegetable": {
+                    "name": "[[[Cabbage Bruxelles]]]",
+                    "imagePath": "cabbage-bruxelles.jpg",
+                    "cropPerSlot": 2,
+                    "growingState": {
+                      "name": "[[[Grow]]]",
+                      "Id": 1
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #4 [[[Slot]]] #2",
+                  "position": {
+                    "name": "[[[Medium]]]",
+                    "Id": 2
+                  },
+                  "number": 1,
+                  "vegetable": {
+                    "name": "[[[White Onion]]]",
+                    "imagePath": "white-onion.jpg",
+                    "cropPerSlot": 15,
+                    "growingState": {
+                      "name": "[[[Seed]]]",
+                      "Id": 0
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #4 [[[Slot]]] #3",
+                  "position": {
+                    "name": "[[[Down]]]",
+                    "Id": 3
+                  },
+                  "number": 1,
+                  "vegetable": {
+                    "name": "[[[White Onion]]]",
+                    "imagePath": "white-onion.jpg",
+                    "cropPerSlot": 15,
+                    "growingState": {
+                      "name": "[[[Seed]]]",
+                      "Id": 0
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #5 [[[Slot]]] #1",
+                  "position": {
+                    "name": "[[[Top]]]",
+                    "Id": 2
+                  },
+                  "number": 1,
+                  "vegetable": {
+                    "name": "[[[Purslane]]]",
+                    "imagePath": "purslane.jpg",
+                    "cropPerSlot": 8,
+                    "growingState": {
+                      "name": "[[[Seed]]]",
+                      "Id": 0
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #5 [[[Slot]]] #2",
+                  "position": {
+                    "name": "[[[Medium]]]",
+                    "Id": 2
+                  },
+                  "number": 1,
+                  "vegetable": {
+                    "name": "[[[Fennel]]]",
+                    "imagePath": "fennel.jpg",
+                    "cropPerSlot": 4,
+                    "growingState": {
+                      "name": "[[[Seed]]]",
+                      "Id": 0
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #5 [[[Slot]]] #3",
+                  "position": {
+                    "name": "[[[Down]]]",
+                    "Id": 3
+                  },
+                  "number": 1,
+                  "vegetable": {
+                    "name": "[[[Ramial Chipped Wood]]]",
+                    "imagePath": "chipped-ramial-wood.jpg",
+                    "cropPerSlot": 1,
+                    "growingState": {
+                      "name": "[[[Paused]]]",
+                      "Id": 3
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                }
+              ]
+            },
+            {
+              "name": "[[[Aerospring]]]",
+              "slots": [
+                {
+                  "id": "[[[Aerospring]]] #1",
+                  "position": {
+                    "name": "[[[Down]]]",
+                    "Id": 3
+                  },
+                  "number": 12,
+                  "vegetable": {
+                    "name": "[[[Lettuce]]]",
+                    "imagePath": "lettuce.jpg",
+                    "cropPerSlot": 8,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 150.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #2",
+                  "position": {
+                    "name": "[[[Medium]]]",
+                    "Id": 2
+                  },
+                  "number": 4,
+                  "vegetable": {
+                    "name": "[[[Lettuce]]]",
+                    "imagePath": "lettuce.jpg",
+                    "cropPerSlot": 8,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 150.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #3",
+                  "position": {
+                    "name": "[[[Medium]]]",
+                    "Id": 2
+                  },
+                  "number": 4,
+                  "vegetable": {
+                    "name": "[[[Kale]]]",
+                    "imagePath": "kale.jpg",
+                    "cropPerSlot": 4,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 150.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #4",
+                  "position": {
+                    "name": "[[[Medium]]]",
+                    "Id": 2
+                  },
+                  "number": 2,
+                  "vegetable": {
+                    "name": "[[[Kale]]]",
+                    "imagePath": "kale.jpg",
+                    "cropPerSlot": 4,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 150.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #5",
+                  "position": {
+                    "name": "[[[Medium]]]",
+                    "Id": 2
+                  },
+                  "number": 2,
+                  "vegetable": {
+                    "name": "[[[Fennel]]]",
+                    "imagePath": "fennel.jpg",
+                    "cropPerSlot": 4,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 150.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #6",
+                  "position": {
+                    "name": "[[[Top]]]",
+                    "Id": 2
+                  },
+                  "number": 2,
+                  "vegetable": {
+                    "name": "[[[Spinach]]]",
+                    "imagePath": "spinach.jpg",
+                    "cropPerSlot": 12,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 180.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #7",
+                  "position": {
+                    "name": "[[[Top]]]",
+                    "Id": 2
+                  },
+                  "number": 2,
+                  "vegetable": {
+                    "name": "[[[Spinach]]]",
+                    "imagePath": "spinach.jpg",
+                    "cropPerSlot": 12,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 180.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #8",
+                  "position": {
+                    "name": "[[[Top]]]",
+                    "Id": 2
+                  },
+                  "number": 2,
+                  "vegetable": {
+                    "name": "[[[Spinach]]]",
+                    "imagePath": "spinach.jpg",
+                    "cropPerSlot": 12,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 180.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #9",
+                  "position": {
+                    "name": "[[[Top]]]",
+                    "Id": 2
+                  },
+                  "number": 2,
+                  "vegetable": {
+                    "name": "[[[Edible Flower, Aromatics]]]",
+                    "imagePath": "edible-flower.jpg",
+                    "cropPerSlot": 8,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 100.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #10",
+                  "position": {
+                    "name": "[[[Top]]]",
+                    "Id": 2
+                  },
+                  "number": 2,
+                  "vegetable": {
+                    "name": "[[[Fennel]]]",
+                    "imagePath": "fennel.jpg",
+                    "cropPerSlot": 4,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 150.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #11",
+                  "position": {
+                    "name": "[[[Top]]]",
+                    "Id": 2
+                  },
+                  "number": 2,
+                  "vegetable": {
+                    "name": "[[[Lettuce]]]",
+                    "imagePath": "lettuce.jpg",
+                    "cropPerSlot": 8,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 150.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "month": {
+        "name": "[[[November]]]",
+        "Id": 10
+      },
+      "productionAreas": [
+        {
+          "name": "[[[Indoor]]]",
+          "productionTypes": [
+            {
+              "name": "[[[Aquaponics]]]",
+              "slots": [
+                {
+                  "id": "[[[Zipgrow Tower]]] #1",
+                  "position": {
+                    "name": "[[[South]]]",
+                    "Id": 0
+                  },
+                  "number": 6,
+                  "vegetable": {
+                    "name": "[[[Lettuce]]]",
+                    "imagePath": "lettuce.jpg",
+                    "cropPerSlot": 8,
+                    "growingState": {
+                      "name": "[[[Grow]]]",
+                      "Id": 1
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Zipgrow Tower]]] #2",
+                  "position": {
+                    "name": "[[[South]]]",
+                    "Id": 0
+                  },
+                  "number": 3,
+                  "vegetable": {
+                    "name": "[[[Lettuce]]]",
+                    "imagePath": "lettuce.jpg",
+                    "cropPerSlot": 8,
+                    "growingState": {
+                      "name": "[[[Grow]]]",
+                      "Id": 1
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Zipgrow Tower]]] #3",
+                  "position": {
+                    "name": "[[[North]]]",
+                    "Id": 1
+                  },
+                  "number": 3,
+                  "vegetable": {
+                    "name": "[[[Lettuce]]]",
+                    "imagePath": "lettuce.jpg",
+                    "cropPerSlot": 8,
+                    "growingState": {
+                      "name": "[[[Grow]]]",
+                      "Id": 1
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Zipgrow Tower]]] #4",
+                  "position": {
+                    "name": "[[[North]]]",
+                    "Id": 1
+                  },
+                  "number": 3,
+                  "vegetable": {
+                    "name": "[[[Kale]]]",
+                    "imagePath": "kale.jpg",
+                    "cropPerSlot": 4,
+                    "growingState": {
+                      "name": "[[[Grow]]]",
+                      "Id": 1
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Zipgrow Tower]]] #5",
+                  "position": {
+                    "name": "[[[North]]]",
+                    "Id": 1
+                  },
+                  "number": 3,
+                  "vegetable": {
+                    "name": "[[[Mesclun]]]",
+                    "imagePath": "mesclun.jpg",
+                    "cropPerSlot": 4,
+                    "growingState": {
+                      "name": "[[[Grow]]]",
+                      "Id": 1
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Zipgrow Tower]]] #6",
+                  "position": {
+                    "name": "[[[North]]]",
+                    "Id": 1
+                  },
+                  "number": 3,
+                  "vegetable": {
+                    "name": "[[[Pepper]]]",
+                    "imagePath": "pepper.jpg",
+                    "cropPerSlot": 4,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 180.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Zipgrow Tower]]] #7",
+                  "position": {
+                    "name": "[[[North]]]",
+                    "Id": 1
+                  },
+                  "number": 3,
+                  "vegetable": {
+                    "name": "[[[Kale]]]",
+                    "imagePath": "kale.jpg",
+                    "cropPerSlot": 4,
+                    "growingState": {
+                      "name": "[[[Grow]]]",
+                      "Id": 1
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                }
+              ]
+            },
+            {
+              "name": "[[[Perma Beds]]]",
+              "slots": [
+                {
+                  "id": "[[[Perma Bed]]] #1 [[[Slot]]] #1",
+                  "position": {
+                    "name": "[[[Top]]]",
+                    "Id": 2
+                  },
+                  "number": 1,
+                  "vegetable": {
+                    "name": "[[[Leek]]]",
+                    "imagePath": "leek.jpg",
+                    "cropPerSlot": 30,
+                    "growingState": {
+                      "name": "[[[Grow]]]",
+                      "Id": 1
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #1 [[[Slot]]] #2",
+                  "position": {
+                    "name": "[[[Medium]]]",
+                    "Id": 2
+                  },
+                  "number": 1,
+                  "vegetable": {
+                    "name": "[[[Cabbage Cabu]]]",
+                    "imagePath": "cabbage-cabu.jpg",
+                    "cropPerSlot": 3,
+                    "growingState": {
+                      "name": "[[[Grow]]]",
+                      "Id": 1
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #1 [[[Slot]]] #3",
+                  "position": {
+                    "name": "[[[Down]]]",
+                    "Id": 3
+                  },
+                  "number": 1,
+                  "vegetable": {
+                    "name": "[[[Black Radish]]]",
+                    "imagePath": "black-radish.jpg",
+                    "cropPerSlot": 40,
+                    "growingState": {
+                      "name": "[[[Grow]]]",
+                      "Id": 1
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #2 [[[Slot]]] #1",
+                  "position": {
+                    "name": "[[[Top]]]",
+                    "Id": 2
+                  },
+                  "number": 1,
+                  "vegetable": {
+                    "name": "[[[Spinach]]]",
+                    "imagePath": "spinach.jpg",
+                    "cropPerSlot": 12,
+                    "growingState": {
+                      "name": "[[[Seed]]]",
+                      "Id": 0
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #2 [[[Slot]]] #2",
+                  "position": {
+                    "name": "[[[Medium]]]",
+                    "Id": 2
+                  },
+                  "number": 1,
+                  "vegetable": {
+                    "name": "[[[Argula Salad]]]",
+                    "imagePath": "argula-salad.jpg",
+                    "cropPerSlot": 4,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 200.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #2 [[[Slot]]] #3",
+                  "position": {
+                    "name": "[[[Down]]]",
+                    "Id": 3
+                  },
+                  "number": 1,
+                  "vegetable": {
+                    "name": "[[[Ramial Chipped Wood]]]",
+                    "imagePath": "chipped-ramial-wood.jpg",
+                    "cropPerSlot": 1,
+                    "growingState": {
+                      "name": "[[[Paused]]]",
+                      "Id": 3
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #3 [[[Slot]]] #1",
+                  "position": {
+                    "name": "[[[Top]]]",
+                    "Id": 2
+                  },
+                  "number": 1,
+                  "vegetable": {
+                    "name": "[[[Ramial Chipped Wood]]]",
+                    "imagePath": "chipped-ramial-wood.jpg",
+                    "cropPerSlot": 1,
+                    "growingState": {
+                      "name": "[[[Paused]]]",
+                      "Id": 3
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #3 [[[Slot]]] #2",
+                  "position": {
+                    "name": "[[[Medium]]]",
+                    "Id": 2
+                  },
+                  "number": 1,
+                  "vegetable": {
+                    "name": "[[[Sweet Potatoes]]]",
+                    "imagePath": "sweet-potatoes.jpg",
+                    "cropPerSlot": 4,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 1500.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #3 [[[Slot]]] #3",
+                  "position": {
+                    "name": "[[[Down]]]",
+                    "Id": 3
+                  },
+                  "number": 1,
+                  "vegetable": {
+                    "name": "[[[Ramial Chipped Wood]]]",
+                    "imagePath": "chipped-ramial-wood.jpg",
+                    "cropPerSlot": 1,
+                    "growingState": {
+                      "name": "[[[Paused]]]",
+                      "Id": 3
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #4 [[[Slot]]] #1",
+                  "position": {
+                    "name": "[[[Top]]]",
+                    "Id": 2
+                  },
+                  "number": 1,
+                  "vegetable": {
+                    "name": "[[[Cabbage Bruxelles]]]",
+                    "imagePath": "cabbage-bruxelles.jpg",
+                    "cropPerSlot": 2,
+                    "growingState": {
+                      "name": "[[[Grow]]]",
+                      "Id": 1
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #4 [[[Slot]]] #2",
+                  "position": {
+                    "name": "[[[Medium]]]",
+                    "Id": 2
+                  },
+                  "number": 1,
+                  "vegetable": {
+                    "name": "[[[White Onion]]]",
+                    "imagePath": "white-onion.jpg",
+                    "cropPerSlot": 15,
+                    "growingState": {
+                      "name": "[[[Grow]]]",
+                      "Id": 1
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #4 [[[Slot]]] #3",
+                  "position": {
+                    "name": "[[[Down]]]",
+                    "Id": 3
+                  },
+                  "number": 1,
+                  "vegetable": {
+                    "name": "[[[White Onion]]]",
+                    "imagePath": "white-onion.jpg",
+                    "cropPerSlot": 15,
+                    "growingState": {
+                      "name": "[[[Grow]]]",
+                      "Id": 1
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #5 [[[Slot]]] #1",
+                  "position": {
+                    "name": "[[[Top]]]",
+                    "Id": 2
+                  },
+                  "number": 1,
+                  "vegetable": {
+                    "name": "[[[Purslane]]]",
+                    "imagePath": "purslane.jpg",
+                    "cropPerSlot": 8,
+                    "growingState": {
+                      "name": "[[[Grow]]]",
+                      "Id": 1
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #5 [[[Slot]]] #2",
+                  "position": {
+                    "name": "[[[Medium]]]",
+                    "Id": 2
+                  },
+                  "number": 1,
+                  "vegetable": {
+                    "name": "[[[Fennel]]]",
+                    "imagePath": "fennel.jpg",
+                    "cropPerSlot": 4,
+                    "growingState": {
+                      "name": "[[[Grow]]]",
+                      "Id": 1
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #5 [[[Slot]]] #3",
+                  "position": {
+                    "name": "[[[Down]]]",
+                    "Id": 3
+                  },
+                  "number": 1,
+                  "vegetable": {
+                    "name": "[[[Ramial Chipped Wood]]]",
+                    "imagePath": "chipped-ramial-wood.jpg",
+                    "cropPerSlot": 1,
+                    "growingState": {
+                      "name": "[[[Paused]]]",
+                      "Id": 3
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                }
+              ]
+            },
+            {
+              "name": "[[[Aerospring]]]",
+              "slots": [
+                {
+                  "id": "[[[Aerospring]]] #1",
+                  "position": {
+                    "name": "[[[Down]]]",
+                    "Id": 3
+                  },
+                  "number": 12,
+                  "vegetable": {
+                    "name": "[[[Lettuce]]]",
+                    "imagePath": "lettuce.jpg",
+                    "cropPerSlot": 8,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 150.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #2",
+                  "position": {
+                    "name": "[[[Medium]]]",
+                    "Id": 2
+                  },
+                  "number": 4,
+                  "vegetable": {
+                    "name": "[[[Lettuce]]]",
+                    "imagePath": "lettuce.jpg",
+                    "cropPerSlot": 8,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 150.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #3",
+                  "position": {
+                    "name": "[[[Medium]]]",
+                    "Id": 2
+                  },
+                  "number": 4,
+                  "vegetable": {
+                    "name": "[[[Kale]]]",
+                    "imagePath": "kale.jpg",
+                    "cropPerSlot": 4,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 150.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #4",
+                  "position": {
+                    "name": "[[[Medium]]]",
+                    "Id": 2
+                  },
+                  "number": 2,
+                  "vegetable": {
+                    "name": "[[[Kale]]]",
+                    "imagePath": "kale.jpg",
+                    "cropPerSlot": 4,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 150.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #5",
+                  "position": {
+                    "name": "[[[Medium]]]",
+                    "Id": 2
+                  },
+                  "number": 2,
+                  "vegetable": {
+                    "name": "[[[Fennel]]]",
+                    "imagePath": "fennel.jpg",
+                    "cropPerSlot": 4,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 150.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #6",
+                  "position": {
+                    "name": "[[[Top]]]",
+                    "Id": 2
+                  },
+                  "number": 2,
+                  "vegetable": {
+                    "name": "[[[Spinach]]]",
+                    "imagePath": "spinach.jpg",
+                    "cropPerSlot": 12,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 180.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #7",
+                  "position": {
+                    "name": "[[[Top]]]",
+                    "Id": 2
+                  },
+                  "number": 2,
+                  "vegetable": {
+                    "name": "[[[Spinach]]]",
+                    "imagePath": "spinach.jpg",
+                    "cropPerSlot": 12,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 180.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #8",
+                  "position": {
+                    "name": "[[[Top]]]",
+                    "Id": 2
+                  },
+                  "number": 2,
+                  "vegetable": {
+                    "name": "[[[Spinach]]]",
+                    "imagePath": "spinach.jpg",
+                    "cropPerSlot": 12,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 180.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #9",
+                  "position": {
+                    "name": "[[[Top]]]",
+                    "Id": 2
+                  },
+                  "number": 2,
+                  "vegetable": {
+                    "name": "[[[Edible Flower, Aromatics]]]",
+                    "imagePath": "edible-flower.jpg",
+                    "cropPerSlot": 8,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 100.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #10",
+                  "position": {
+                    "name": "[[[Top]]]",
+                    "Id": 2
+                  },
+                  "number": 2,
+                  "vegetable": {
+                    "name": "[[[Fennel]]]",
+                    "imagePath": "fennel.jpg",
+                    "cropPerSlot": 4,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 150.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #11",
+                  "position": {
+                    "name": "[[[Top]]]",
+                    "Id": 2
+                  },
+                  "number": 2,
+                  "vegetable": {
+                    "name": "[[[Lettuce]]]",
+                    "imagePath": "lettuce.jpg",
+                    "cropPerSlot": 8,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 150.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "month": {
+        "name": "[[[December]]]",
+        "Id": 11
+      },
+      "productionAreas": [
+        {
+          "name": "[[[Indoor]]]",
+          "productionTypes": [
+            {
+              "name": "[[[Aquaponics]]]",
+              "slots": [
+                {
+                  "id": "[[[Zipgrow Tower]]] #1",
+                  "position": {
+                    "name": "[[[South]]]",
+                    "Id": 0
+                  },
+                  "number": 6,
+                  "vegetable": {
+                    "name": "[[[Lettuce]]]",
+                    "imagePath": "lettuce.jpg",
+                    "cropPerSlot": 8,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 180.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Zipgrow Tower]]] #2",
+                  "position": {
+                    "name": "[[[South]]]",
+                    "Id": 0
+                  },
+                  "number": 3,
+                  "vegetable": {
+                    "name": "[[[Lettuce]]]",
+                    "imagePath": "lettuce.jpg",
+                    "cropPerSlot": 8,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 180.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Zipgrow Tower]]] #3",
+                  "position": {
+                    "name": "[[[North]]]",
+                    "Id": 1
+                  },
+                  "number": 3,
+                  "vegetable": {
+                    "name": "[[[Lettuce]]]",
+                    "imagePath": "lettuce.jpg",
+                    "cropPerSlot": 8,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 180.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Zipgrow Tower]]] #4",
+                  "position": {
+                    "name": "[[[North]]]",
+                    "Id": 1
+                  },
+                  "number": 3,
+                  "vegetable": {
+                    "name": "[[[Kale]]]",
+                    "imagePath": "kale.jpg",
+                    "cropPerSlot": 4,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 180.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Zipgrow Tower]]] #5",
+                  "position": {
+                    "name": "[[[North]]]",
+                    "Id": 1
+                  },
+                  "number": 3,
+                  "vegetable": {
+                    "name": "[[[Mesclun]]]",
+                    "imagePath": "mesclun.jpg",
+                    "cropPerSlot": 4,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 180.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Zipgrow Tower]]] #6",
+                  "position": {
+                    "name": "[[[North]]]",
+                    "Id": 1
+                  },
+                  "number": 3,
+                  "vegetable": {
+                    "name": "[[[Pepper]]]",
+                    "imagePath": "pepper.jpg",
+                    "cropPerSlot": 4,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 180.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Zipgrow Tower]]] #7",
+                  "position": {
+                    "name": "[[[North]]]",
+                    "Id": 1
+                  },
+                  "number": 3,
+                  "vegetable": {
+                    "name": "[[[Kale]]]",
+                    "imagePath": "kale.jpg",
+                    "cropPerSlot": 4,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 180.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                }
+              ]
+            },
+            {
+              "name": "[[[Perma Beds]]]",
+              "slots": [
+                {
+                  "id": "[[[Perma Bed]]] #1 [[[Slot]]] #1",
+                  "position": {
+                    "name": "[[[Top]]]",
+                    "Id": 2
+                  },
+                  "number": 1,
+                  "vegetable": {
+                    "name": "[[[Leek]]]",
+                    "imagePath": "leek.jpg",
+                    "cropPerSlot": 30,
+                    "growingState": {
+                      "name": "[[[Grow]]]",
+                      "Id": 1
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #1 [[[Slot]]] #2",
+                  "position": {
+                    "name": "[[[Medium]]]",
+                    "Id": 2
+                  },
+                  "number": 1,
+                  "vegetable": {
+                    "name": "[[[Cabbage Cabu]]]",
+                    "imagePath": "cabbage-cabu.jpg",
+                    "cropPerSlot": 3,
+                    "growingState": {
+                      "name": "[[[Grow]]]",
+                      "Id": 1
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #1 [[[Slot]]] #3",
+                  "position": {
+                    "name": "[[[Down]]]",
+                    "Id": 3
+                  },
+                  "number": 1,
+                  "vegetable": {
+                    "name": "[[[Black Radish]]]",
+                    "imagePath": "black-radish.jpg",
+                    "cropPerSlot": 40,
+                    "growingState": {
+                      "name": "[[[Grow]]]",
+                      "Id": 1
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #2 [[[Slot]]] #1",
+                  "position": {
+                    "name": "[[[Top]]]",
+                    "Id": 2
+                  },
+                  "number": 1,
+                  "vegetable": {
+                    "name": "[[[Spinach]]]",
+                    "imagePath": "spinach.jpg",
+                    "cropPerSlot": 12,
+                    "growingState": {
+                      "name": "[[[Grow]]]",
+                      "Id": 1
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #2 [[[Slot]]] #2",
+                  "position": {
+                    "name": "[[[Medium]]]",
+                    "Id": 2
+                  },
+                  "number": 1,
+                  "vegetable": {
+                    "name": "[[[Argula Salad]]]",
+                    "imagePath": "argula-salad.jpg",
+                    "cropPerSlot": 4,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 200.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #2 [[[Slot]]] #3",
+                  "position": {
+                    "name": "[[[Down]]]",
+                    "Id": 3
+                  },
+                  "number": 1,
+                  "vegetable": {
+                    "name": "[[[Ramial Chipped Wood]]]",
+                    "imagePath": "chipped-ramial-wood.jpg",
+                    "cropPerSlot": 1,
+                    "growingState": {
+                      "name": "[[[Paused]]]",
+                      "Id": 3
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #3 [[[Slot]]] #1",
+                  "position": {
+                    "name": "[[[Top]]]",
+                    "Id": 2
+                  },
+                  "number": 1,
+                  "vegetable": {
+                    "name": "[[[Ramial Chipped Wood]]]",
+                    "imagePath": "chipped-ramial-wood.jpg",
+                    "cropPerSlot": 1,
+                    "growingState": {
+                      "name": "[[[Paused]]]",
+                      "Id": 3
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #3 [[[Slot]]] #2",
+                  "position": {
+                    "name": "[[[Medium]]]",
+                    "Id": 2
+                  },
+                  "number": 1,
+                  "vegetable": {
+                    "name": "[[[Sweet Potatoes]]]",
+                    "imagePath": "sweet-potatoes.jpg",
+                    "cropPerSlot": 4,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 1500.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #3 [[[Slot]]] #3",
+                  "position": {
+                    "name": "[[[Down]]]",
+                    "Id": 3
+                  },
+                  "number": 1,
+                  "vegetable": {
+                    "name": "[[[Ramial Chipped Wood]]]",
+                    "imagePath": "chipped-ramial-wood.jpg",
+                    "cropPerSlot": 1,
+                    "growingState": {
+                      "name": "[[[Paused]]]",
+                      "Id": 3
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #4 [[[Slot]]] #1",
+                  "position": {
+                    "name": "[[[Top]]]",
+                    "Id": 2
+                  },
+                  "number": 1,
+                  "vegetable": {
+                    "name": "[[[Cabbage Bruxelles]]]",
+                    "imagePath": "cabbage-bruxelles.jpg",
+                    "cropPerSlot": 2,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 500.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #4 [[[Slot]]] #2",
+                  "position": {
+                    "name": "[[[Medium]]]",
+                    "Id": 2
+                  },
+                  "number": 1,
+                  "vegetable": {
+                    "name": "[[[White Onion]]]",
+                    "imagePath": "white-onion.jpg",
+                    "cropPerSlot": 15,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 50.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #4 [[[Slot]]] #3",
+                  "position": {
+                    "name": "[[[Down]]]",
+                    "Id": 3
+                  },
+                  "number": 1,
+                  "vegetable": {
+                    "name": "[[[White Onion]]]",
+                    "imagePath": "white-onion.jpg",
+                    "cropPerSlot": 15,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 50.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #5 [[[Slot]]] #1",
+                  "position": {
+                    "name": "[[[Top]]]",
+                    "Id": 2
+                  },
+                  "number": 1,
+                  "vegetable": {
+                    "name": "[[[Purslane]]]",
+                    "imagePath": "purslane.jpg",
+                    "cropPerSlot": 8,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 200.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #5 [[[Slot]]] #2",
+                  "position": {
+                    "name": "[[[Medium]]]",
+                    "Id": 2
+                  },
+                  "number": 1,
+                  "vegetable": {
+                    "name": "[[[Fennel]]]",
+                    "imagePath": "fennel.jpg",
+                    "cropPerSlot": 4,
+                    "growingState": {
+                      "name": "[[[Grow]]]",
+                      "Id": 1
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                },
+                {
+                  "id": "[[[Perma Bed]]] #5 [[[Slot]]] #3",
+                  "position": {
+                    "name": "[[[Down]]]",
+                    "Id": 3
+                  },
+                  "number": 1,
+                  "vegetable": {
+                    "name": "[[[Ramial Chipped Wood]]]",
+                    "imagePath": "chipped-ramial-wood.jpg",
+                    "cropPerSlot": 1,
+                    "growingState": {
+                      "name": "[[[Paused]]]",
+                      "Id": 3
+                    },
+                    "productionQuantity": 0.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": false
+                }
+              ]
+            },
+            {
+              "name": "[[[Aerospring]]]",
+              "slots": [
+                {
+                  "id": "[[[Aerospring]]] #1",
+                  "position": {
+                    "name": "[[[Down]]]",
+                    "Id": 3
+                  },
+                  "number": 12,
+                  "vegetable": {
+                    "name": "[[[Lettuce]]]",
+                    "imagePath": "lettuce.jpg",
+                    "cropPerSlot": 8,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 150.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #2",
+                  "position": {
+                    "name": "[[[Medium]]]",
+                    "Id": 2
+                  },
+                  "number": 4,
+                  "vegetable": {
+                    "name": "[[[Lettuce]]]",
+                    "imagePath": "lettuce.jpg",
+                    "cropPerSlot": 8,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 150.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #3",
+                  "position": {
+                    "name": "[[[Medium]]]",
+                    "Id": 2
+                  },
+                  "number": 4,
+                  "vegetable": {
+                    "name": "[[[Kale]]]",
+                    "imagePath": "kale.jpg",
+                    "cropPerSlot": 4,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 150.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #4",
+                  "position": {
+                    "name": "[[[Medium]]]",
+                    "Id": 2
+                  },
+                  "number": 2,
+                  "vegetable": {
+                    "name": "[[[Kale]]]",
+                    "imagePath": "kale.jpg",
+                    "cropPerSlot": 4,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 150.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #5",
+                  "position": {
+                    "name": "[[[Medium]]]",
+                    "Id": 2
+                  },
+                  "number": 2,
+                  "vegetable": {
+                    "name": "[[[Fennel]]]",
+                    "imagePath": "fennel.jpg",
+                    "cropPerSlot": 4,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 150.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #6",
+                  "position": {
+                    "name": "[[[Top]]]",
+                    "Id": 2
+                  },
+                  "number": 2,
+                  "vegetable": {
+                    "name": "[[[Spinach]]]",
+                    "imagePath": "spinach.jpg",
+                    "cropPerSlot": 12,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 180.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #7",
+                  "position": {
+                    "name": "[[[Top]]]",
+                    "Id": 2
+                  },
+                  "number": 2,
+                  "vegetable": {
+                    "name": "[[[Spinach]]]",
+                    "imagePath": "spinach.jpg",
+                    "cropPerSlot": 12,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 180.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #8",
+                  "position": {
+                    "name": "[[[Top]]]",
+                    "Id": 2
+                  },
+                  "number": 2,
+                  "vegetable": {
+                    "name": "[[[Spinach]]]",
+                    "imagePath": "spinach.jpg",
+                    "cropPerSlot": 12,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 180.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #9",
+                  "position": {
+                    "name": "[[[Top]]]",
+                    "Id": 2
+                  },
+                  "number": 2,
+                  "vegetable": {
+                    "name": "[[[Edible Flower, Aromatics]]]",
+                    "imagePath": "edible-flower.jpg",
+                    "cropPerSlot": 8,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 100.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #10",
+                  "position": {
+                    "name": "[[[Top]]]",
+                    "Id": 2
+                  },
+                  "number": 2,
+                  "vegetable": {
+                    "name": "[[[Fennel]]]",
+                    "imagePath": "fennel.jpg",
+                    "cropPerSlot": 4,
+                    "growingState": {
+                      "name": "[[[Harvest]]]",
+                      "Id": 2
+                    },
+                    "productionQuantity": 150.0,
+                    "temperatureMin": 0.0,
+                    "temperatureMax": 0.0
+                  },
+                  "oneCropPerSlot": true
+                },
+                {
+                  "id": "[[[Aerospring]]] #11",
+                  "position": {
+                    "name": "[[[Top]]]",
+                    "Id": 2
+                  },
+                  "number": 2,
+                  "vegetable": {
+                    "name": "[[[Lettuce]]]",
+                    "imagePath": "lettuce.jpg",
+                    "cropPerSlot": 8,
                     "growingState": {
                       "name": "[[[Harvest]]]",
                       "Id": 2
