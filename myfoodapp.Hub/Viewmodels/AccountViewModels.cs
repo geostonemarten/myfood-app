@@ -29,9 +29,13 @@ namespace myfoodapp.Hub.Models
         public string Surname { get; set; }
 
         [Required]
-        [Display(Name = "[[[Email]]]")]
+        [Display(Name = "[[[Login]]]")]
         [EmailAddress]
-        public string Email { get; set; }
+        public string Login { get; set; }
+
+        [Display(Name = "[[[Notification Email]]]")]
+        [EmailAddress]
+        public string NotificationEmail { get; set; }
 
         [DataType(DataType.Password)]
         [Display(Name = "[[[Old Password]]]")]

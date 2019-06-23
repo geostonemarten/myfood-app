@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2019-06-12 17:01+02:00\n"
-"PO-Revision-Date: 2019-06-12 17:01+02:00\n"
+"POT-Creation-Date: 2019-06-23 12:28+02:00\n"
+"PO-Revision-Date: 2019-06-23 12:28+02:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -966,8 +966,8 @@ msgstr "Bettes"
 msgid "Chinese Cabbage"
 msgstr "Chou Chinois"
 
-#: Views\MyInfo\Update.cshtml:110
-#: obj\Release\Package\PackageTmp\Views\MyInfo\Update.cshtml:110
+#: Views\MyInfo\Update.cshtml:113
+#: obj\Release\Package\PackageTmp\Views\MyInfo\Update.cshtml:113
 msgid "Choose the application default language"
 msgstr "Choisissez la langue par défaut"
 
@@ -1456,9 +1456,6 @@ msgid "Eggplant"
 msgstr "Aubergines"
 
 #: Viewmodels\AccountViewModels.cs:8
-#: Viewmodels\AccountViewModels.cs:32
-#: Views\MyInfo\Update.cshtml:98
-#: obj\Release\Package\PackageTmp\Views\MyInfo\Update.cshtml:98
 msgid "Email"
 msgstr "Email"
 
@@ -2573,12 +2570,18 @@ msgstr "Déconnexion"
 msgid "Log your Actions / Events here"
 msgstr "Saisir vos Actions / Evénements ici"
 
+#: Viewmodels\AccountViewModels.cs:32
 #: Views\Shared\_Layout.cshtml:235
 #: Views\Shared\_RedesignLayout.cshtml:249
 #: obj\Release\Package\PackageTmp\Views\Shared\_Layout.cshtml:235
 #: obj\Release\Package\PackageTmp\Views\Shared\_RedesignLayout.cshtml:249
 msgid "Login"
 msgstr "Connexion"
+
+#: Views\MyInfo\Update.cshtml:97
+#: obj\Release\Package\PackageTmp\Views\MyInfo\Update.cshtml:97
+msgid "Login Identification"
+msgstr "Identifiant de connexion"
 
 #: Migrations\Configuration.cs:132
 msgid "Low"
@@ -3012,9 +3015,9 @@ msgstr "Info du Réseau"
 msgid "Network Status"
 msgstr "Etat du Réseau"
 
-#: Viewmodels\AccountViewModels.cs:41
-#: Views\MyInfo\Update.cshtml:106
-#: obj\Release\Package\PackageTmp\Views\MyInfo\Update.cshtml:106
+#: Viewmodels\AccountViewModels.cs:45
+#: Views\MyInfo\Update.cshtml:109
+#: obj\Release\Package\PackageTmp\Views\MyInfo\Update.cshtml:109
 msgid "New Password"
 msgstr "Nouveau Mot de Passe"
 
@@ -3172,6 +3175,12 @@ msgstr "Pas applicable"
 msgid "Note"
 msgstr "Note"
 
+#: Viewmodels\AccountViewModels.cs:36
+#: Views\MyInfo\Update.cshtml:101
+#: obj\Release\Package\PackageTmp\Views\MyInfo\Update.cshtml:101
+msgid "Notification Email"
+msgstr "Email de Notification"
+
 #: Business\GrowingModel.cs:27
 #: Content\GrowingModelv1.json:7218
 #: Migrations\Configuration.cs:191
@@ -3199,9 +3208,9 @@ msgstr "Hors-ligne"
 msgid "OK"
 msgstr "OK"
 
-#: Viewmodels\AccountViewModels.cs:37
-#: Views\MyInfo\Update.cshtml:102
-#: obj\Release\Package\PackageTmp\Views\MyInfo\Update.cshtml:102
+#: Viewmodels\AccountViewModels.cs:41
+#: Views\MyInfo\Update.cshtml:105
+#: obj\Release\Package\PackageTmp\Views\MyInfo\Update.cshtml:105
 msgid "Old Password"
 msgstr "Ancien Mot de Passe"
 
@@ -4366,8 +4375,8 @@ msgstr "Légumes racines - plus de 200gr"
 msgid "Satify"
 msgstr "Satisfait"
 
-#: Views\MyInfo\Update.cshtml:114
-#: obj\Release\Package\PackageTmp\Views\MyInfo\Update.cshtml:114
+#: Views\MyInfo\Update.cshtml:117
+#: obj\Release\Package\PackageTmp\Views\MyInfo\Update.cshtml:117
 msgid "Save"
 msgstr "Enregistrer"
 
@@ -6188,12 +6197,6 @@ msgstr "Courgette"
 
 #~ msgid "PERFOMANCE"
 #~ msgstr "PERFOMANCE"
-
-#~ msgid "Perma Bed #1 [[[Slot"
-#~ msgstr ""
-
-#~ msgid "Perma Bed #2 [[[Slot"
-#~ msgstr ""
 
 #~ msgid "Permaculture beds & biochar"
 #~ msgstr "Buttes de Permaculture avec Biochar"

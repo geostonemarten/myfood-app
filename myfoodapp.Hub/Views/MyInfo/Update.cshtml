@@ -90,14 +90,17 @@
 
 		@using (Html.BeginForm("Update", "MyInfo", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { @class = "form-horizontal", role = "form" }))
 		{
-
 			@Html.AntiForgeryToken()
 			<div class="error">
 			</div>
 			<div class="i-wrapper">
-				<label class="input-caption">[[[Email]]]</label>
-				<input class="default-input" type="email" name="Email" value="@Model.Email" />
+				<label class="input-caption">[[[Login Identification]]]</label>
+				<input class="default-input" type="email" name="Login" readonly value="@Model.Login" />
 			</div>
+            <div class="i-wrapper">
+                <label class="input-caption">[[[Notification Email]]]</label>
+                <input class="default-input" type="email" name="NotificationEmail" value="@Model.NotificationEmail" />
+            </div>
 			<div class="i-wrapper">
 				<label class="input-caption">[[[Old Password]]]</label>
 				<input class="default-input" type="password" name="OldPassword" />

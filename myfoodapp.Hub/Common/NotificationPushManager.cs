@@ -195,7 +195,7 @@ namespace myfoodapp.Hub.Common
                         obj = new
                         {
                             app_id = OneSignalAPIId,
-                            headings = new { en = String.Format("Aucun message reçu depuis 30 min {0}", currentProductionUnit.info) },
+                            headings = new { en = String.Format("Aucun message reçu depuis 60 min {0}", currentProductionUnit.info) },
                             contents = new { en = "envoyé depuis votre Unité de Prod. | Serre Connectée" },
                             include_player_ids = new string[] { currentProductionUnit.owner.notificationPushKey },
                             url = WebAppUrl + "&_osp=do_not_open",
@@ -206,7 +206,7 @@ namespace myfoodapp.Hub.Common
                         obj = new
                         {
                             app_id = OneSignalAPIId,
-                            headings = new { en = String.Format("No message received since 30 min {0}", currentProductionUnit.info) },
+                            headings = new { en = String.Format("No message received since 60 min {0}", currentProductionUnit.info) },
                             contents = new { en = "from your Production Unit | Smart Greenhouse" },
                             include_player_ids = new string[] { currentProductionUnit.owner.notificationPushKey },
                             url = WebAppUrl + "&_osp=do_not_open",

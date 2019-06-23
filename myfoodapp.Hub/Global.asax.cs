@@ -87,7 +87,7 @@ namespace myfoodapp.Hub
 
                 upRunningProductionUnits.ForEach(p =>
                 {
-                    if (p.lastMeasureReceived == null || currentDate - p.lastMeasureReceived > TimeSpan.FromMinutes(60))
+                    if (p.lastMeasureReceived == null || currentDate - p.lastMeasureReceived > TimeSpan.FromMinutes(240))
                     {
                         p.productionUnitStatus = offlineStatus;
 
@@ -107,6 +107,11 @@ namespace myfoodapp.Hub
                         if (p.owner.notificationPushKey != null)
                         {
                             NotificationPushManager.PioneerUnitOfflineMessage(p);
+                        }
+
+                        if (p.owner.contactMail != null)
+                        {
+                            MailManager.PioneerUnitOfflineMessage(p);
                         }
                     }
                     
