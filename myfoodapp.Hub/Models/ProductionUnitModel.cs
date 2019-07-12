@@ -34,6 +34,7 @@ namespace myfoodapp.Hub.Models
         [Required]
         public ProductionUnitStatus productionUnitStatus { get; set; }
         public DateTime? lastMeasureReceived { get; set; }
+        public string lastSignalStrenghtReceived { get; set; }
     }
 
     public class OptionList
@@ -57,6 +58,7 @@ namespace myfoodapp.Hub.Models
         public Language language { get; set; }
         public PreferedMoment preferedMoment { get; set; }
         public string notificationPushKey { get; set; }
+        public bool? isMailNotificationActivated { get; set; }
     }
 
     public class ProductionUnitType

@@ -21,7 +21,7 @@ namespace myfoodapp.Hub.Business
             ApplicationDbContext db = new ApplicationDbContext();
             ApplicationDbContext dbLog = new ApplicationDbContext();
 
-            var data = File.ReadAllText(HostingEnvironment.MapPath("~/Content/AquaponicsRules.json"));
+            var data = File.ReadAllText(HostingEnvironment.MapPath("~/Content/SmartGreenhouseRules.json"));
             var rulesList = JsonConvert.DeserializeObject<List<Rule>>(data);
 
             var currentProductionUnit = db.ProductionUnits.Include(p => p.owner.language).Where(p => p.Id == productionUnitId).FirstOrDefault();
@@ -147,11 +147,8 @@ namespace myfoodapp.Hub.Business
                    m.productionUnit.Id == currentProductionUnit.Id &&
                    m.sensor.Id == phSensor.Id).OrderBy(m => m.Id).Average(t => t.value);
 
-
                 currentMeasures.lastDayPHvariation = Math.Round(Math.Abs(currentLastDayPHValueMax - currentLastDayPHValueMin), 1);
-
                 currentMeasures.threeLastDayPHvariation = Math.Round((Math.Abs(currentLastDayPHValueMax - currentLastDayPHValueMin) + Math.Abs(currentTwoDaysPHValueMax - currentTwoDaysPHValueMin) + Math.Abs(currentThreeDaysPHValueMax - currentThreeDaysPHValueMin)) / 3, 1);
-
                 currentMeasures.lastWeekPHmean = Math.Round(currentLastWeekPHValueMean, 1);
 
                 var currentTwoDaysAirTempValueMax = db.Measures.Where(m => m.captureDate > lastDay &&

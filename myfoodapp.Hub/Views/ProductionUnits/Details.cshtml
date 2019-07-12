@@ -376,7 +376,7 @@
         });
     }
 
-    function AirCarboneDioxideMeasureChart(productId, ProductRange) {
+    @*function AirCarboneDioxideMeasureChart(productId, ProductRange) {
         $.ajax({
             url: "@Url.Action("AirCarbonDioxydeMeasure_Read", "ProductionUnits")",
             dataType: "json",
@@ -462,7 +462,7 @@
                 $('.highcharts-label').remove();
             }
         });
-    }
+    }*@
 
 
     function viewInfo() {
@@ -560,10 +560,6 @@
 		console.log(obj.CurrentDate);
 		obj.Details = $("[name='event-description']").val();
 
-		if (obj.Note === "")
-			$("[name=event-note]").css("border", "2px solid #e54848");
-		else
-			$("[name=event-note]").css("border", "2px solid #F3F6F8");
 		if (obj.EventTypeItemId === undefined)
 			$("#event-item-caption").css("color", "#e54848");
 		else
@@ -573,7 +569,7 @@
 		else
 			$("#datepicker-here").css("border", "2px solid #F3F6F8");
 
-		if (obj.Note === "" || obj.EventTypeItemId === undefined || obj.CurrentDate == null) {
+		if (obj.EventTypeItemId === undefined || obj.CurrentDate == null) {
 			return;
 		}
 
@@ -639,7 +635,7 @@
 
         HumidityMeasureChart(productionUnitId, null);
 
-        AirCarboneDioxideMeasureChart(productionUnitId, null);
+        //AirCarboneDioxideMeasureChart(productionUnitId, null);
 
         $.ajax({
             url: "@Url.Action("GetProductionUnitDetail", "ProductionUnits")",

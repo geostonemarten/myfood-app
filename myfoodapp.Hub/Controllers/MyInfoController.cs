@@ -58,10 +58,13 @@ namespace myfoodapp.Hub.Controllers
 
 			if (currentProductOwner.language != null)
               currentLanguageId = currentProductOwner.language.Id;
-            return View(new UserViewModel() { Login = applicationUser.Email,
-                                              NotificationEmail = currentProductOwner.contactMail,
-                                              Language = currentLanguageId
-                                            });
+            return View(new UserViewModel()
+            {
+                Login = applicationUser.Email,
+                NotificationEmail = currentProductOwner.contactMail,
+                IsMailNotificationActivated = currentProductOwner.isMailNotificationActivated,
+                Language = currentLanguageId
+            });
         }
 
         [HttpPost]
@@ -72,14 +75,22 @@ namespace myfoodapp.Hub.Controllers
             var db = new ApplicationDbContext();
             var currentUser = this.User.Identity.GetUserName();
 
-            var currentProductionUnitOwner = db.ProductionUnitOwners.Include(p => p.language)
+            var currentProductionUnitOwner = db.ProductionUnitOwners.Include(p => p.language).Include(p => p.user)
                                                  .Where(p => p.user.UserName == currentUser).FirstOrDefault();
 
             currentProductionUnitOwner.language = db.Languages.Where(l => l.Id == model.Language).FirstOrDefault();
-
+            //currentProductionUnitOwner.isMailNotificationActivated = model.IsMailNotificationActivated;
             currentProductionUnitOwner.contactMail = model.NotificationEmail;
 
-            db.SaveChanges();
+            try
+            {
+                db.SaveChanges();
+            }
+            catch (Exception ex )
+            {
+                var tto = ex;
+            }
+            
 
             if (ModelState.IsValid)
             {

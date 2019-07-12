@@ -1,6 +1,6 @@
 ﻿[
   {
-    "ruleEvaluator": "(lastDayMinpHvalue != 0) && (lastDayMinpHvalue < 6)",
+    "ruleEvaluator": "(lastDayMinpHvalue != 0) && (lastDayMinpHvalue < 5)",
     "warningContent": "Fish and vegetable won't appreciate - pH value is out of range : min last 24h {0}",
     "warningContentFR": "Les poissons et les végétaux ne vont pas apprécier - La valeur du pH est hors-limite : min dern. 24h {0}",
     "bindingPropertyValue": "lastDayMinpHvalue"

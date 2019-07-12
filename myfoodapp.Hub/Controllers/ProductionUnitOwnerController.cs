@@ -65,7 +65,6 @@ namespace myfoodapp.Hub.Controllers
                 else
                     return View("Home");
             }
-
         }
 
         private void PopulateLanguage()

@@ -45,6 +45,9 @@ namespace myfoodapp.Hub.Models
         [Display(Name = "[[[New Password]]]")]
         public string NewPassword { get; set; }
 
+        [Display(Name = "[[[Enable Email Notification]]]")]
+        public bool? IsMailNotificationActivated { get; set; }
+
         public int Language { get; set; }
     }
 

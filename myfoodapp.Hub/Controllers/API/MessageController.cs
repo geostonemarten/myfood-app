@@ -18,6 +18,7 @@ namespace myfoodapp.Hub.Controllers.Api
         {
             var content = data["content"].ToObject<string>();
             var device = data["device"].ToObject<string>();
+            var lqi = data["data"].ToObject<string>();
 
             var db = new ApplicationDbContext();
             var dbLog = new ApplicationDbContext();
@@ -88,8 +89,14 @@ namespace myfoodapp.Hub.Controllers.Api
                     {
                         NotificationPushManager.PioneerUnitOnlineMessage(currentProductionUnit);
                     }
+
+                    if (currentProductionUnit.owner.contactMail != null && currentProductionUnit.owner.isMailNotificationActivated == true)
+                    {
+                        MailManager.PioneerUnitOnlineMessage(currentProductionUnit);
+                    }
                 }
 
+                currentProductionUnit.lastSignalStrenghtReceived = lqi;
                 currentProductionUnit.lastMeasureReceived = date;
                 currentProductionUnit.productionUnitStatus = upRunningStatus;
 

@@ -434,6 +434,14 @@
     <Compile Include="Migrations\201808281124118_Add-Event-Types-Picture.Designer.cs">
       <DependentUpon>201808281124118_Add-Event-Types-Picture.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201907041237380_Add-Notification-Mail.cs" />
+    <Compile Include="Migrations\201907041237380_Add-Notification-Mail.Designer.cs">
+      <DependentUpon>201907041237380_Add-Notification-Mail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201907072105295_Add-Last-Signal-Strenght.cs" />
+    <Compile Include="Migrations\201907072105295_Add-Last-Signal-Strenght.Designer.cs">
+      <DependentUpon>201907072105295_Add-Last-Signal-Strenght.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Migrations\UpgradeDatabase.cs" />
     <Compile Include="Models\AccountBindingModels.cs" />
@@ -1447,7 +1455,7 @@
     <Content Include="fonts\font-awesome\fonts\fontawesome-webfont.woff" />
     <Content Include="fonts\font-awesome\fonts\fontawesome-webfont.woff2" />
     <Content Include="fonts\font-awesome\fonts\FontAwesome.otf" />
-    <Content Include="Content\AquaponicsRules.json">
+    <Content Include="Content\SmartGreenhouseRules.json">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Content\kendo\2016.3.1118\kendo.black.min.css.map" />
@@ -2369,6 +2377,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201808281124118_Add-Event-Types-Picture.resx">
       <DependentUpon>201808281124118_Add-Event-Types-Picture.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907041237380_Add-Notification-Mail.resx">
+      <DependentUpon>201907041237380_Add-Notification-Mail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201907072105295_Add-Last-Signal-Strenght.resx">
+      <DependentUpon>201907072105295_Add-Last-Signal-Strenght.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

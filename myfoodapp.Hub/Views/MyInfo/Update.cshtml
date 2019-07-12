@@ -98,6 +98,18 @@
 				<input class="default-input" type="email" name="Login" readonly value="@Model.Login" />
 			</div>
             <div class="i-wrapper">
+                <label class="input-caption">[[[Enable Notification Email]]]</label>
+
+                <input id="IsMailNotificationActivated"
+                       name="IsMailNotificationActivated"
+                       type="checkbox"
+                       value="true" />
+
+                <input name="IsMailNotificationActivated" type="hidden" value="false" />
+
+            </div>
+
+            <div class="i-wrapper">
                 <label class="input-caption">[[[Notification Email]]]</label>
                 <input class="default-input" type="email" name="NotificationEmail" value="@Model.NotificationEmail" />
             </div>
@@ -116,7 +128,6 @@
 			<div class="i-wrapper-btn">
 				<button class="btn-infosave">[[[Save]]]</button>
 			</div>
-
 		}
 	</form>
 </div>

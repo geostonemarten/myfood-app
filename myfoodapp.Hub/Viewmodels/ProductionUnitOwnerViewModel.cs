@@ -25,6 +25,8 @@ namespace myfoodapp.Hub.Models
         public int preferedMomentId { get; set; }
         public PreferedMomentViewModel preferedMoment { get; set; }
         public string notificationPushKey { get; set; }
+        public bool? isMailNotificationActivated { get; set; }
+        public string lastMSignalStrenghtReceived { get; set; }
 
     }
     public class ApplicationUserViewModel
