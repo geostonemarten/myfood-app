@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2019-07-07 23:08+02:00\n"
-"PO-Revision-Date: 2019-07-07 23:08+02:00\n"
+"POT-Creation-Date: 2019-07-18 12:31+02:00\n"
+"PO-Revision-Date: 2019-07-18 12:31+02:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -30,7 +30,7 @@ msgid "36 towers"
 msgstr "36 towers"
 
 #: Views\About\Index.cshtml:8
-#: Views\Shared\_Layout.cshtml:193
+#: Views\Shared\_Layout.cshtml:209
 #: Views\Shared\_RedesignLayout.cshtml:209
 #: obj\Release\Package\PackageTmp\Views\About\Index.cshtml:8
 #: obj\Release\Package\PackageTmp\Views\Shared\_Layout.cshtml:193
@@ -46,12 +46,12 @@ msgstr "Action"
 msgid "Add ammonium sulphate"
 msgstr ""
 
-#: Views\ProductionUnits\Details.cshtml:991
-#: Views\ProductionUnits\Details.cshtml:1079
-#: Views\ProductionUnits\UserUnit.cshtml:874
-#: Views\ProductionUnits\UserUnit.cshtml:962
-#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:991
-#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:1079
+#: Views\ProductionUnits\Details.cshtml:986
+#: Views\ProductionUnits\Details.cshtml:1074
+#: Views\ProductionUnits\UserUnit.cshtml:864
+#: Views\ProductionUnits\UserUnit.cshtml:952
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:990
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:1078
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:874
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:962
 msgid "Add Event"
@@ -531,10 +531,10 @@ msgid "Air Temp"
 msgstr ""
 
 #: Views\Home\Index.cshtml:209
-#: Views\ProductionUnits\Details.cshtml:910
-#: Views\ProductionUnits\UserUnit.cshtml:818
+#: Views\ProductionUnits\Details.cshtml:907
+#: Views\ProductionUnits\UserUnit.cshtml:811
 #: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:209
-#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:910
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:909
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:818
 msgid "Air Temperature (°C)"
 msgstr "Air Temperature (°C)"
@@ -676,24 +676,24 @@ msgstr "Average"
 #: Views\InteractiveMap\Index.cshtml:370
 #: Views\InteractiveMap\Index.cshtml:389
 #: Views\InteractiveMap\Index.cshtml:394
-#: Views\ProductionUnits\Details.cshtml:862
-#: Views\ProductionUnits\Details.cshtml:867
-#: Views\ProductionUnits\Details.cshtml:890
-#: Views\ProductionUnits\Details.cshtml:895
-#: Views\ProductionUnits\Details.cshtml:919
-#: Views\ProductionUnits\Details.cshtml:924
-#: Views\ProductionUnits\Details.cshtml:946
-#: Views\ProductionUnits\Details.cshtml:951
+#: Views\ProductionUnits\Details.cshtml:861
+#: Views\ProductionUnits\Details.cshtml:866
+#: Views\ProductionUnits\Details.cshtml:888
+#: Views\ProductionUnits\Details.cshtml:893
+#: Views\ProductionUnits\Details.cshtml:916
+#: Views\ProductionUnits\Details.cshtml:921
+#: Views\ProductionUnits\Details.cshtml:942
+#: Views\ProductionUnits\Details.cshtml:947
+#: Views\ProductionUnits\Details.cshtml:969
 #: Views\ProductionUnits\Details.cshtml:974
-#: Views\ProductionUnits\Details.cshtml:979
-#: Views\ProductionUnits\UserUnit.cshtml:767
-#: Views\ProductionUnits\UserUnit.cshtml:772
+#: Views\ProductionUnits\UserUnit.cshtml:764
+#: Views\ProductionUnits\UserUnit.cshtml:769
+#: Views\ProductionUnits\UserUnit.cshtml:791
 #: Views\ProductionUnits\UserUnit.cshtml:796
-#: Views\ProductionUnits\UserUnit.cshtml:801
-#: Views\ProductionUnits\UserUnit.cshtml:827
-#: Views\ProductionUnits\UserUnit.cshtml:832
-#: Views\ProductionUnits\UserUnit.cshtml:857
-#: Views\ProductionUnits\UserUnit.cshtml:862
+#: Views\ProductionUnits\UserUnit.cshtml:820
+#: Views\ProductionUnits\UserUnit.cshtml:825
+#: Views\ProductionUnits\UserUnit.cshtml:847
+#: Views\ProductionUnits\UserUnit.cshtml:852
 #: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:174
 #: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:179
 #: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:196
@@ -706,16 +706,16 @@ msgstr "Average"
 #: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:370
 #: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:389
 #: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:394
-#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:862
-#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:867
-#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:890
-#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:895
-#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:919
-#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:924
-#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:946
-#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:951
-#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:974
-#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:979
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:861
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:866
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:889
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:894
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:918
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:923
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:945
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:950
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:973
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:978
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:767
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:772
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:796
@@ -775,9 +775,9 @@ msgstr "Bad looking vegetables"
 msgid "Beetroot"
 msgstr ""
 
-#: Views\ProductionUnits\Details.cshtml:1034
-#: Views\ProductionUnits\UserUnit.cshtml:917
-#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:1034
+#: Views\ProductionUnits\Details.cshtml:1029
+#: Views\ProductionUnits\UserUnit.cshtml:907
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:1033
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:917
 msgid "Best to contact:"
 msgstr "Best to contact:"
@@ -868,7 +868,7 @@ msgstr ""
 msgid "Cabbage Rave"
 msgstr ""
 
-#: Views\Shared\_Layout.cshtml:156
+#: Views\Shared\_Layout.cshtml:152
 #: Views\Shared\_RedesignLayout.cshtml:166
 #: obj\Release\Package\PackageTmp\Views\Shared\_Layout.cshtml:156
 #: obj\Release\Package\PackageTmp\Views\Shared\_RedesignLayout.cshtml:166
@@ -880,16 +880,16 @@ msgid "Call Pioneer"
 msgstr "Call Pioneer"
 
 #: Views\Events\Index.cshtml:131
-#: Views\ProductionUnits\Details.cshtml:1108
-#: Views\ProductionUnits\UserUnit.cshtml:991
+#: Views\ProductionUnits\Details.cshtml:1103
+#: Views\ProductionUnits\UserUnit.cshtml:981
 #: obj\Release\Package\PackageTmp\Views\Events\Index.cshtml:131
-#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:1108
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:1107
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:991
 msgid "Cancel"
 msgstr ""
 
-#: Views\ProductionUnits\Details.cshtml:965
-#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:965
+#: Views\ProductionUnits\Details.cshtml:960
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:964
 msgid "Carbon Dioxide (ppm)"
 msgstr ""
 
@@ -987,9 +987,9 @@ msgstr "Clogged sprinkler"
 msgid "Clogged tubes"
 msgstr "Clogged tubes"
 
-#: Views\ProductionUnits\Details.cshtml:1052
-#: Views\ProductionUnits\UserUnit.cshtml:935
-#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:1052
+#: Views\ProductionUnits\Details.cshtml:1047
+#: Views\ProductionUnits\UserUnit.cshtml:925
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:1051
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:935
 msgid "CO2 SAVED"
 msgstr "CO2 SAVED"
@@ -1079,26 +1079,26 @@ msgstr ""
 #: Views\Home\Index.cshtml:235
 #: Views\InteractiveMap\Index.cshtml:360
 #: Views\InteractiveMap\Index.cshtml:384
-#: Views\ProductionUnits\Details.cshtml:857
-#: Views\ProductionUnits\Details.cshtml:885
-#: Views\ProductionUnits\Details.cshtml:914
-#: Views\ProductionUnits\Details.cshtml:941
-#: Views\ProductionUnits\Details.cshtml:969
-#: Views\ProductionUnits\UserUnit.cshtml:762
-#: Views\ProductionUnits\UserUnit.cshtml:791
-#: Views\ProductionUnits\UserUnit.cshtml:822
-#: Views\ProductionUnits\UserUnit.cshtml:852
+#: Views\ProductionUnits\Details.cshtml:856
+#: Views\ProductionUnits\Details.cshtml:883
+#: Views\ProductionUnits\Details.cshtml:911
+#: Views\ProductionUnits\Details.cshtml:937
+#: Views\ProductionUnits\Details.cshtml:964
+#: Views\ProductionUnits\UserUnit.cshtml:759
+#: Views\ProductionUnits\UserUnit.cshtml:786
+#: Views\ProductionUnits\UserUnit.cshtml:815
+#: Views\ProductionUnits\UserUnit.cshtml:842
 #: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:169
 #: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:191
 #: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:213
 #: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:235
 #: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:360
 #: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:384
-#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:857
-#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:885
-#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:914
-#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:941
-#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:969
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:856
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:884
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:913
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:940
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:968
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:762
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:791
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:822
@@ -1459,9 +1459,9 @@ msgstr ""
 msgid "Email"
 msgstr "Email"
 
-#: Views\ProductionUnits\Details.cshtml:1032
-#: Views\ProductionUnits\UserUnit.cshtml:915
-#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:1032
+#: Views\ProductionUnits\Details.cshtml:1027
+#: Views\ProductionUnits\UserUnit.cshtml:905
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:1031
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:915
 msgid "Email:"
 msgstr ""
@@ -1479,21 +1479,21 @@ msgstr ""
 msgid "Equipment"
 msgstr "Equipment"
 
-#: Views\ProductionUnits\Details.cshtml:1047
-#: Views\ProductionUnits\UserUnit.cshtml:930
-#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:1047
+#: Views\ProductionUnits\Details.cshtml:1042
+#: Views\ProductionUnits\UserUnit.cshtml:920
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:1046
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:930
 msgid "EST. PROD."
 msgstr ""
 
 #: Views\Events\Manage.cshtml:48
-#: Views\ProductionUnits\Details.cshtml:994
-#: Views\ProductionUnits\Details.cshtml:997
-#: Views\ProductionUnits\UserUnit.cshtml:877
-#: Views\ProductionUnits\UserUnit.cshtml:880
+#: Views\ProductionUnits\Details.cshtml:989
+#: Views\ProductionUnits\Details.cshtml:992
+#: Views\ProductionUnits\UserUnit.cshtml:867
+#: Views\ProductionUnits\UserUnit.cshtml:870
 #: obj\Release\Package\PackageTmp\Views\Events\Manage.cshtml:48
-#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:994
-#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:997
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:993
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:996
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:877
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:880
 msgid "Export CSV"
@@ -2244,10 +2244,10 @@ msgid "Humidity"
 msgstr ""
 
 #: Views\Home\Index.cshtml:231
-#: Views\ProductionUnits\Details.cshtml:937
-#: Views\ProductionUnits\UserUnit.cshtml:848
+#: Views\ProductionUnits\Details.cshtml:933
+#: Views\ProductionUnits\UserUnit.cshtml:838
 #: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:231
-#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:937
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:936
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:848
 msgid "Humidity (%)"
 msgstr "Humidity (%)"
@@ -2451,12 +2451,12 @@ msgstr "last measure"
 msgid "Last Month"
 msgstr "Last Month"
 
-#: Views\ProductionUnits\UserUnit.cshtml:746
+#: Views\ProductionUnits\UserUnit.cshtml:744
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:746
 msgid "Last Three Months"
 msgstr "Last Three Months"
 
-#: Views\ProductionUnits\UserUnit.cshtml:745
+#: Views\ProductionUnits\UserUnit.cshtml:743
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:745
 msgid "Last Week"
 msgstr ""
@@ -2553,9 +2553,9 @@ msgstr ""
 msgid "Light"
 msgstr "Light"
 
-#: Views\ProductionUnits\Details.cshtml:1035
-#: Views\ProductionUnits\UserUnit.cshtml:918
-#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:1035
+#: Views\ProductionUnits\Details.cshtml:1030
+#: Views\ProductionUnits\UserUnit.cshtml:908
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:1034
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:918
 msgid "Location:"
 msgstr "Location:"
@@ -2565,22 +2565,22 @@ msgstr "Location:"
 msgid "Log in"
 msgstr "Log in"
 
-#: Views\Shared\_Layout.cshtml:216
+#: Views\Shared\_Layout.cshtml:232
 #: Views\Shared\_RedesignLayout.cshtml:231
 #: obj\Release\Package\PackageTmp\Views\Shared\_Layout.cshtml:216
 #: obj\Release\Package\PackageTmp\Views\Shared\_RedesignLayout.cshtml:231
 msgid "Log off"
 msgstr "Log off"
 
-#: Views\ProductionUnits\Details.cshtml:1082
-#: Views\ProductionUnits\UserUnit.cshtml:965
-#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:1082
+#: Views\ProductionUnits\Details.cshtml:1077
+#: Views\ProductionUnits\UserUnit.cshtml:955
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:1081
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:965
 msgid "Log your Actions / Events here"
 msgstr "Log your Actions / Events here"
 
 #: Viewmodels\AccountViewModels.cs:32
-#: Views\Shared\_Layout.cshtml:235
+#: Views\Shared\_Layout.cshtml:251
 #: Views\Shared\_RedesignLayout.cshtml:249
 #: obj\Release\Package\PackageTmp\Views\Shared\_Layout.cshtml:235
 #: obj\Release\Package\PackageTmp\Views\Shared\_RedesignLayout.cshtml:249
@@ -2637,9 +2637,9 @@ msgstr "Manage Production Units Owners from Pioneer Citizen Network"
 msgid "Manage Recognition Records from your Production Units"
 msgstr "Manage Recognition Records from your Production Units"
 
-#: Views\ProductionUnits\Details.cshtml:993
-#: Views\ProductionUnits\UserUnit.cshtml:876
-#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:993
+#: Views\ProductionUnits\Details.cshtml:988
+#: Views\ProductionUnits\UserUnit.cshtml:866
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:992
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:876
 msgid "Manage Unit"
 msgstr "Manage Unit"
@@ -2673,7 +2673,7 @@ msgstr "Maximum"
 msgid "May"
 msgstr "May"
 
-#: Views\Shared\_Layout.cshtml:108
+#: Views\Shared\_Layout.cshtml:105
 #: Views\Shared\_RedesignLayout.cshtml:108
 #: obj\Release\Package\PackageTmp\Views\Shared\_Layout.cshtml:108
 #: obj\Release\Package\PackageTmp\Views\Shared\_RedesignLayout.cshtml:108
@@ -2949,7 +2949,7 @@ msgstr ""
 msgid "message type"
 msgstr "message type"
 
-#: Views\Shared\_Layout.cshtml:91
+#: Views\Shared\_Layout.cshtml:88
 #: Views\Shared\_RedesignLayout.cshtml:80
 #: obj\Release\Package\PackageTmp\Views\Shared\_Layout.cshtml:91
 #: obj\Release\Package\PackageTmp\Views\Shared\_RedesignLayout.cshtml:80
@@ -2982,7 +2982,7 @@ msgid "Morning"
 msgstr "Morning"
 
 #: Views\MyInfo\Update.cshtml:84
-#: Views\Shared\_Layout.cshtml:170
+#: Views\Shared\_Layout.cshtml:166
 #: Views\Shared\_RedesignLayout.cshtml:186
 #: obj\Release\Package\PackageTmp\Views\MyInfo\Update.cshtml:84
 #: obj\Release\Package\PackageTmp\Views\Shared\_Layout.cshtml:170
@@ -3210,9 +3210,9 @@ msgstr "October"
 msgid "Offline"
 msgstr "Offline"
 
-#: Views\ProductionUnits\Details.cshtml:1109
-#: Views\ProductionUnits\UserUnit.cshtml:992
-#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:1109
+#: Views\ProductionUnits\Details.cshtml:1104
+#: Views\ProductionUnits\UserUnit.cshtml:982
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:1108
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:992
 msgid "OK"
 msgstr ""
@@ -3276,22 +3276,22 @@ msgstr "Password"
 #: Views\Home\Index.cshtml:242
 #: Views\InteractiveMap\Index.cshtml:367
 #: Views\InteractiveMap\Index.cshtml:391
-#: Views\ProductionUnits\Details.cshtml:864
-#: Views\ProductionUnits\Details.cshtml:892
-#: Views\ProductionUnits\Details.cshtml:921
-#: Views\ProductionUnits\UserUnit.cshtml:769
-#: Views\ProductionUnits\UserUnit.cshtml:798
-#: Views\ProductionUnits\UserUnit.cshtml:829
-#: Views\ProductionUnits\UserUnit.cshtml:859
+#: Views\ProductionUnits\Details.cshtml:863
+#: Views\ProductionUnits\Details.cshtml:890
+#: Views\ProductionUnits\Details.cshtml:918
+#: Views\ProductionUnits\UserUnit.cshtml:766
+#: Views\ProductionUnits\UserUnit.cshtml:793
+#: Views\ProductionUnits\UserUnit.cshtml:822
+#: Views\ProductionUnits\UserUnit.cshtml:849
 #: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:176
 #: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:198
 #: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:220
 #: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:242
 #: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:367
 #: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:391
-#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:864
-#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:892
-#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:921
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:863
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:891
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:920
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:769
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:798
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:829
@@ -3455,12 +3455,12 @@ msgstr "Pellet stove"
 msgid "Pepper"
 msgstr ""
 
+#: Views\ProductionUnits\Details.cshtml:1044
 #: Views\ProductionUnits\Details.cshtml:1049
-#: Views\ProductionUnits\Details.cshtml:1054
-#: Views\ProductionUnits\UserUnit.cshtml:932
-#: Views\ProductionUnits\UserUnit.cshtml:937
-#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:1049
-#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:1054
+#: Views\ProductionUnits\UserUnit.cshtml:922
+#: Views\ProductionUnits\UserUnit.cshtml:927
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:1048
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:1053
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:932
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:937
 msgid "PER MONTH"
@@ -3487,14 +3487,14 @@ msgstr "Perform pH calib."
 msgid "Performance"
 msgstr "Performance"
 
-#: Views\ProductionUnits\Details.cshtml:1042
-#: Views\ProductionUnits\UserUnit.cshtml:925
-#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:1042
+#: Views\ProductionUnits\Details.cshtml:1037
+#: Views\ProductionUnits\UserUnit.cshtml:915
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:1041
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:925
 msgid "PERFORMANCE"
 msgstr ""
 
-#: Views\Shared\_Layout.cshtml:141
+#: Views\Shared\_Layout.cshtml:137
 #: Views\Shared\_RedesignLayout.cshtml:146
 #: obj\Release\Package\PackageTmp\Views\Shared\_Layout.cshtml:141
 #: obj\Release\Package\PackageTmp\Views\Shared\_RedesignLayout.cshtml:146
@@ -4105,17 +4105,17 @@ msgid "Pest"
 msgstr "Pest"
 
 #: Views\InteractiveMap\Index.cshtml:356
-#: Views\ProductionUnits\Details.cshtml:853
-#: Views\ProductionUnits\UserUnit.cshtml:758
+#: Views\ProductionUnits\Details.cshtml:852
+#: Views\ProductionUnits\UserUnit.cshtml:755
 #: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:356
-#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:853
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:852
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:758
 msgid "pH"
 msgstr "pH"
 
-#: Views\ProductionUnits\Details.cshtml:1033
-#: Views\ProductionUnits\UserUnit.cshtml:916
-#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:1033
+#: Views\ProductionUnits\Details.cshtml:1028
+#: Views\ProductionUnits\UserUnit.cshtml:906
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:1032
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:916
 msgid "Phone:"
 msgstr ""
@@ -4142,13 +4142,13 @@ msgstr "Plant seedlings"
 msgid "Plants"
 msgstr "Plants"
 
-#: Views\ProductionUnits\UserUnit.cshtml:970
+#: Views\ProductionUnits\UserUnit.cshtml:960
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:970
 msgid "Please select more detailed option"
 msgstr ""
 
-#: Views\ProductionUnits\Details.cshtml:1087
-#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:1087
+#: Views\ProductionUnits\Details.cshtml:1082
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:1086
 msgid "Please select More detailed Option"
 msgstr ""
 
@@ -4181,13 +4181,13 @@ msgstr "prod. type"
 msgid "prod. unit"
 msgstr "unit. prod"
 
-#: Controllers\ProductionUnitsController.cs:238
+#: Controllers\ProductionUnitsController.cs:248
 msgid "Production Unit already in use"
 msgstr "Production Unit already in use"
 
-#: Views\ProductionUnits\Details.cshtml:838
-#: Views\ProductionUnits\UserUnit.cshtml:740
-#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:838
+#: Views\ProductionUnits\Details.cshtml:836
+#: Views\ProductionUnits\UserUnit.cshtml:738
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:836
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:740
 msgid "Production Unit Details"
 msgstr "Production Unit Details"
@@ -4196,7 +4196,7 @@ msgstr "Production Unit Details"
 msgid "Production Unit Owner already in use"
 msgstr "Production Unit Owner already in use"
 
-#: Views\Shared\_Layout.cshtml:124
+#: Views\Shared\_Layout.cshtml:120
 #: Views\Shared\_RedesignLayout.cshtml:127
 #: obj\Release\Package\PackageTmp\Views\Shared\_Layout.cshtml:124
 #: obj\Release\Package\PackageTmp\Views\Shared\_RedesignLayout.cshtml:127
@@ -4523,13 +4523,21 @@ msgstr "September"
 msgid "Setup Planned"
 msgstr "Setup Planned"
 
+#: Views\Shared\_Layout.cshtml:186
+msgid "Shop"
+msgstr ""
+
+#: Views\Shared\_Layout.cshtml:180
+msgid "SHOP URL"
+msgstr ""
+
 #: Migrations\Configuration.cs:148
 msgid "Sigfox connectivity kit"
 msgstr "Sigfox connectivity kit"
 
-#: Views\ProductionUnits\Details.cshtml:1057
-#: Views\ProductionUnits\UserUnit.cshtml:940
-#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:1057
+#: Views\ProductionUnits\Details.cshtml:1052
+#: Views\ProductionUnits\UserUnit.cshtml:930
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:1056
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:940
 msgid "SINCE"
 msgstr ""
@@ -5246,7 +5254,7 @@ msgstr "Surname"
 msgid "Sweet Potatoes"
 msgstr ""
 
-#: Views\ProductionUnits\UserUnit.cshtml:744
+#: Views\ProductionUnits\UserUnit.cshtml:742
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:744
 msgid "This Last Day"
 msgstr ""
@@ -5666,14 +5674,14 @@ msgstr "Users List"
 msgid "Vegetable management"
 msgstr "Vegetable management"
 
-#: Views\ProductionUnits\Details.cshtml:992
-#: Views\ProductionUnits\UserUnit.cshtml:875
-#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:992
+#: Views\ProductionUnits\Details.cshtml:987
+#: Views\ProductionUnits\UserUnit.cshtml:865
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:991
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:875
 msgid "View Events"
 msgstr "View Events"
 
-#: Views\ProductionUnits\UserUnit.cshtml:748
+#: Views\ProductionUnits\UserUnit.cshtml:746
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:748
 msgid "View Info"
 msgstr ""
@@ -5730,11 +5738,11 @@ msgstr ""
 
 #: Views\Home\Index.cshtml:187
 #: Views\InteractiveMap\Index.cshtml:380
-#: Views\ProductionUnits\Details.cshtml:881
-#: Views\ProductionUnits\UserUnit.cshtml:787
+#: Views\ProductionUnits\Details.cshtml:879
+#: Views\ProductionUnits\UserUnit.cshtml:782
 #: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:187
 #: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:380
-#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:881
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:880
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:787
 msgid "Water Temperature (°C)"
 msgstr "Water Temperature (°C)"
@@ -5743,9 +5751,9 @@ msgstr "Water Temperature (°C)"
 msgid "Weekend"
 msgstr "Weekend"
 
-#: Views\ProductionUnits\Details.cshtml:1059
-#: Views\ProductionUnits\UserUnit.cshtml:942
-#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:1059
+#: Views\ProductionUnits\Details.cshtml:1054
+#: Views\ProductionUnits\UserUnit.cshtml:932
+#: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:1058
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:942
 msgid "WEEKS"
 msgstr "WEEKS"
@@ -5776,6 +5784,10 @@ msgstr "WEEKS"
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:8319
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:8340
 msgid "White Onion"
+msgstr ""
+
+#: Views\Shared\_Layout.cshtml:176
+msgid "Wiki"
 msgstr ""
 
 #: Migrations\Configuration.cs:152
@@ -6106,6 +6118,9 @@ msgstr ""
 #~ msgstr "City"
 
 #~ msgid "CLOSE"
+#~ msgstr ""
+
+#~ msgid "Connectivity"
 #~ msgstr ""
 
 #~ msgid "Copyright &copy; 2017, myfood and/or its subsidiaries or affiliates. All Rights Reserved."
