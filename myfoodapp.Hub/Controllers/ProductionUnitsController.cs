@@ -101,17 +101,11 @@ namespace myfoodapp.Hub.Controllers
 				var userProductionUnit = db.ProductionUnits.Include(p => p.owner.user).Where(p => p.owner.user.UserName == currentUser).ToList().FirstOrDefault();
 
 				ViewBag.CurrentUser = userProductionUnit.Id;
-                ViewBag.SignalStrenghtImagePath = Signal.GetSignalStrenghtName(userProductionUnit.lastSignalStrenghtReceived);
 
-                if (userProductionUnit.lastSignalStrenghtReceived != null)
-                    ViewBag.SignalStrenghtText = userProductionUnit.lastSignalStrenghtReceived;
-                else
-                    ViewBag.SignalStrenghtText = String.Empty;
-
-                if (userProductionUnit != null && userProductionUnit.owner.user.UserName == currentUser)
+				if (userProductionUnit != null && userProductionUnit.owner.user.UserName == currentUser)
 				{
 					ViewBag.DisplayManagementBtn = "All";
-                }
+				}
 			}
 			
 			ViewBag.Title = "Production Unit Detail Page";
@@ -128,21 +122,17 @@ namespace myfoodapp.Hub.Controllers
             var currentUser = this.User.Identity.GetUserName();
             var userId = UserManager.FindByName(currentUser).Id;
             var isAdmin = this.UserManager.IsInRole(userId, "Admin");
-
-            ApplicationDbContext db = new ApplicationDbContext();
-
-            var currentProductionUnit = db.ProductionUnits.Include(p => p.owner.user).Where(p => p.Id == id).FirstOrDefault();
-
-            ViewBag.SignalStrenghtImagePath = Signal.GetSignalStrenghtName(currentProductionUnit.lastSignalStrenghtReceived);
-
-            if (currentProductionUnit.lastSignalStrenghtReceived != null)
-                ViewBag.SignalStrenghtText = currentProductionUnit.lastSignalStrenghtReceived;
-
-            if (isAdmin)
+			
+			if (isAdmin)
                 ViewBag.DisplayManagementBtn = "All";
             else
             {
-                if (currentProductionUnit != null && currentProductionUnit.owner.user.UserName == currentUser)
+                ApplicationDbContext db = new ApplicationDbContext();
+				
+				var currentProductionUnit = db.ProductionUnits.Include(p => p.owner.user).Where(p => p.Id == id).FirstOrDefault();
+				
+
+                if(currentProductionUnit != null && currentProductionUnit.owner.user.UserName == currentUser)
                 {
                     ViewBag.DisplayManagementBtn = "All";
                 }

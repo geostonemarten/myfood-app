@@ -351,7 +351,6 @@
     <Compile Include="Business\GrowingModel.cs" />
     <Compile Include="Business\SensorValueSet.cs" />
     <Compile Include="Business\PerformanceManager.cs" />
-    <Compile Include="Business\Signal.cs" />
     <Compile Include="Common\AuthorizationHeaderHandler.cs" />
     <Compile Include="Common\BrowserJSONFormatter.cs" />
     <Compile Include="Common\DecimalModelBinder.cs" />
@@ -542,10 +541,6 @@
     <Content Include="Content\Pictures\Recipes\watermelon.jpg" />
     <Content Include="Content\Pictures\Recipes\white-onion.jpg" />
     <Content Include="Content\Pictures\Recipes\zucchini.jpg" />
-    <Content Include="Content\Pictures\Signals\strenght-average.png" />
-    <Content Include="Content\Pictures\Signals\strenght-good.png" />
-    <Content Include="Content\Pictures\Signals\strenght-limit.png" />
-    <Content Include="Content\Pictures\Signals\strenght-no-signal.png" />
     <Content Include="Content\slick-theme.css" />
     <Content Include="Scripts\Grid\jquery-paginate.min.js" />
     <Content Include="Content\images\background-hub.jpg" />
