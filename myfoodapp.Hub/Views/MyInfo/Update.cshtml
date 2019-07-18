@@ -98,14 +98,17 @@
 				<input class="default-input" type="email" name="Login" readonly value="@Model.Login" />
 			</div>
             <div class="i-wrapper">
-                <label class="input-caption">[[[Enable Notification Email]]]</label>
+	            <label class="input-caption">[[[Enable Notification Email]]]
+	            </label>
+				<label for="IsMailNotificationActivated" class="checkbox-container">
+					<input id="IsMailNotificationActivated"
+					       name="IsMailNotificationActivated"
+					       type="checkbox"
+					       value="true" />
+					<span class="checkmark"></span>
+				</label>
 
-                <input id="IsMailNotificationActivated"
-                       name="IsMailNotificationActivated"
-                       type="checkbox"
-                       value="true" />
-
-                <input name="IsMailNotificationActivated" type="hidden" value="false" />
+	            <input name="IsMailNotificationActivated" type="hidden" value="false" />
 
             </div>
 
@@ -134,6 +137,7 @@
 
 
 <style type="text/css">
+
 	.error {
 		text-align: center;
 		color: red;
@@ -247,6 +251,4 @@
 			-webkit-transform: rotate(359deg);
 		}
 	}
-
-	
 </style>

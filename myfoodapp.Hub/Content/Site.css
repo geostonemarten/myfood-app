@@ -2222,3 +2222,38 @@ li.active [class*="cls"] {
 	.checkbox-slider--b-flat input + span:before {
 		box-shadow: none;
 	}
+
+	
+.checkbox-container input[type=checkbox] + .checkmark {
+	display: block;
+	height: 20px;
+	width: 20px;
+	border: 2px solid #6C7A73;
+	border-radius: 5px;
+	transition: .4s;
+}
+.checkbox-container input[type=checkbox]:checked + .checkmark {
+	display: block;
+	height: 20px;
+	width: 20px;
+	border: 2px solid #2EA636;
+	border-radius: 5px;
+	transition: .4s;
+	position: relative;
+}
+.checkbox-container input[type=checkbox]:checked + .checkmark:before {
+	content: "";
+	position: absolute;
+	top: 1px;
+	left: 5px;
+	height: 11px;
+	width: 6px;
+	border: solid #2EA636;
+	border-width: 0 2.2px 2.2px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.checkbox-container input[type=checkbox] {
+	display: none;
+}
