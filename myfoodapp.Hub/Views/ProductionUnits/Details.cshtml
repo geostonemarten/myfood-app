@@ -847,6 +847,15 @@
 </div>
 
 <div id="statsContainerTop" class="row">
+	<div class="col-md-9 buttons-section">
+		<button class="btn btn-transparent" data-toggle="modal" data-target="#add-event" onclick="AddEventPopupInit()">[[[Add Event]]]</button>
+		<button class="btn btn-transparent" onclick="onViewEventsClick()">[[[View Events]]]</button>
+		<button class="btn btn-transparent" onclick="onManageUnitClick()">[[[Manage Unit]]]</button>
+		<button class="btn btn-green-sm" onclick="onExportCSVClick()">[[[Export CSV]]]</button>
+	</div>
+	<div class="col-md-3 buttons-section a-right">
+		<button class="btn btn-green" onclick="onExportCSVClick()">[[[Export CSV]]]</button>
+	</div>
 	<div id="pHContainer" class="col-md-6">
 		<div class="wrapper">
 			<h3 class="graph-header">[[[pH]]]</h3>
@@ -955,41 +964,31 @@
 		</div>
 	</div>
 
-    <div id="CarbonDioxideContainer" class="col-md-6" style="visibility:hidden">
-        <div class="wrapper">
-            <h3 class="graph-header">[[[Carbon Dioxide (ppm)]]]</h3>
-            <div class="sparkline-container">
-                <div>
-                    <div class="column-left">
-                        <h2>[[[CURRENT]]]</h2>
-                        <span id="CurrentCarbonDioxideValue">-</span>
-                        <h2 id="CurrentCarbonDioxideCaptureTime">-</h2>
-                    </div>
-                    <div class="column-center">
-                        <h2>[[[AVERAGE]]]</h2>
-                        <span id="AverageHourCarbonDioxideValue">-</span>
-                        <h2>PAST HOUR</h2>
-                    </div>
-                    <div class="column-right">
-                        <h2>[[[AVERAGE]]]</h2>
-                        <span id="AverageDayCarbonDioxideValue">-</span>
-                        <h2 id="LastDayCarbonDioxideCaptureTime">-</h2>
-                    </div>
-                </div>
-            </div>
+	<div id="CarbonDioxideContainer" class="col-md-6" style="visibility: hidden">
+		<div class="wrapper">
+			<h3 class="graph-header">[[[Carbon Dioxide (ppm)]]]</h3>
+			<div class="sparkline-container">
+				<div>
+					<div class="column-left">
+						<h2>[[[CURRENT]]]</h2>
+						<span id="CurrentCarbonDioxideValue">-</span>
+						<h2 id="CurrentCarbonDioxideCaptureTime">-</h2>
+					</div>
+					<div class="column-center">
+						<h2>[[[AVERAGE]]]</h2>
+						<span id="AverageHourCarbonDioxideValue">-</span>
+						<h2>PAST HOUR</h2>
+					</div>
+					<div class="column-right">
+						<h2>[[[AVERAGE]]]</h2>
+						<span id="AverageDayCarbonDioxideValue">-</span>
+						<h2 id="LastDayCarbonDioxideCaptureTime">-</h2>
+					</div>
+				</div>
+			</div>
 
-            <div id="carbon-dioxide-chart"></div>
-        </div>
-    </div>
-
-	<div class="col-md-9 buttons-section">
-		<button class="btn btn-transparent" data-toggle="modal" data-target="#add-event" onclick="AddEventPopupInit()">[[[Add Event]]]</button>
-		<button class="btn btn-transparent" onclick="onViewEventsClick()">[[[View Events]]]</button>
-		<button class="btn btn-transparent" onclick="onManageUnitClick()">[[[Manage Unit]]]</button>
-		<button class="btn btn-green-sm" onclick="onExportCSVClick()">[[[Export CSV]]]</button>
-	</div>
-	<div class="col-md-3 buttons-section a-right">
-		<button class="btn btn-green" onclick="onExportCSVClick()">[[[Export CSV]]]</button>
+			<div id="carbon-dioxide-chart"></div>
+		</div>
 	</div>
 
 </div>
@@ -1233,8 +1232,17 @@
 
 	.buttons-section {
 		margin-top: 10px;
+		margin-top: 10px;
+		position: sticky;
+		top: 0;
 	}
-
+	
+	.buttons-section .btn-transparent {
+		background: #e7e0d5;
+		color: #2b5a2e;
+		font-weight: 700;
+		letter-spacing: .5px;
+	}
 	.column-right {
 		color: #707070;
 		float: right;
@@ -1393,6 +1401,7 @@
 
 		.buttons-section {
 			padding-left: 0;
+			position: unset;
 		}
 
 		.btn-transparent {
