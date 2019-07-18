@@ -96,7 +96,11 @@ namespace myfoodapp.Hub.Controllers.Api
                     }
                 }
 
-                currentProductionUnit.lastSignalStrenghtReceived = lqi;
+                if(lqi == String.Empty)
+                    currentProductionUnit.lastSignalStrenghtReceived = "Wifi";
+                else
+                 currentProductionUnit.lastSignalStrenghtReceived = lqi;
+
                 currentProductionUnit.lastMeasureReceived = date;
                 currentProductionUnit.productionUnitStatus = upRunningStatus;
 

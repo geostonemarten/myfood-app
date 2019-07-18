@@ -821,8 +821,6 @@
 
     }
 
-
-
 </script>
 
 <script type="text/x-kendo-tmpl" id="templateOption">
@@ -835,14 +833,15 @@
 <input type="hidden" id="displayManagementBtn" value="@ViewBag.DisplayManagementBtn" />
 
 <div id="main-section-header" class="row big-section">
-	<h2 id="title" class="col-lg-7">[[[Production Unit Details]]]</h2>
-	<div id="title-buttons" class="col-lg-5">
+	<h2 id="title" class="col-lg-6">[[[Production Unit Details]]]</h2>
+	<div id="title-buttons" class="col-lg-6">
+        <img id="signal-img" width="40" title="@ViewBag.SignalStrenghtText" src="@ViewBag.SignalStrenghtImagePath" />
 		<select onchange="onThisWeekClick(this)" class="change-graph">
 			<option>This Last Day</option>
 			<option>Last Week</option>
 			<option>Last Three Months</option>
 		</select>
-		<button class="fill" data-toggle="modal" data-target="#performanceModal">View Info</button>
+		<button class="fill" data-toggle="modal" data-target="#performanceModal">View Info</button>        
 	</div>
 	<div style="clear:both;"></div>
 </div>
@@ -874,7 +873,6 @@
 			<div id="ph-chart"></div>
 		</div>
 	</div>
-
     
 	<div id="WaterTempContainer" class="col-md-6">
 		<div class="wrapper">
@@ -903,8 +901,7 @@
 
 		</div>
 	</div>
-
-    
+   
 	<div id="AirTempContainer" class="col-md-6">
 		<div class="wrapper">
 			<h3 class="graph-header">[[[Air Temperature (°C)]]]</h3>
@@ -930,7 +927,6 @@
 			<div id="airtemp-chart"></div>
 		</div>
 	</div>
-
 
 	<div id="HumidityContainer" class="col-md-6">
 		<div class="wrapper">
@@ -958,7 +954,6 @@
 			<div id="humidity-chart"></div>
 		</div>
 	</div>
-
 
     <div id="CarbonDioxideContainer" class="col-md-6" style="visibility:hidden">
         <div class="wrapper">

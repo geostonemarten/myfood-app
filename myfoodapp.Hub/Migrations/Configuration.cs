@@ -944,7 +944,8 @@ namespace myfoodapp.Hub.Migrations
                 productionUnitType = prodUnitTypeFam22,
                 hydroponicType = hydroTypeAquaponicsColdFish,
                 productionUnitStatus = prodUnitStatusRunning,
-                picturePath = "SainteBarbeFamily22.jpg"
+                picturePath = "SainteBarbeFamily22.jpg",
+                lastSignalStrenghtReceived = "Excellent"
             };
 
             var MURProdUnit = new ProductionUnit()
@@ -959,7 +960,8 @@ namespace myfoodapp.Hub.Migrations
                 productionUnitType = prodUnitTypeFam22,
                 hydroponicType = hydroTypeAquaponicsCarp,
                 productionUnitStatus = prodUnitStatusRunning,
-                picturePath = "GertwillerFamily22.jpg"
+                picturePath = "GertwillerFamily22.jpg",
+                lastSignalStrenghtReceived = "Good"
             };
 
             var JNAProdUnit = new ProductionUnit()
@@ -974,7 +976,8 @@ namespace myfoodapp.Hub.Migrations
                 productionUnitType = prodUnitTypeCity,
                 hydroponicType = hydroTypeAquaponicsColdFish,
                 productionUnitStatus = prodUnitStatusRunning,
-                picturePath = "BlancMesnil.jpg"
+                picturePath = "BlancMesnil.jpg",
+                lastSignalStrenghtReceived = "Average"
             };
 
             var CLAProdUnit = new ProductionUnit()
@@ -989,7 +992,8 @@ namespace myfoodapp.Hub.Migrations
                 productionUnitType = prodUnitTypeFam22,
                 hydroponicType = hydroTypeAquaponicsColdFish,
                 productionUnitStatus = prodUnitStatusMaintenance,
-                picturePath = "BivilleFamily22.jpg"
+                picturePath = "BivilleFamily22.jpg",
+                lastSignalStrenghtReceived = "Limit"
             };
 
             var JPMProdUnit = new ProductionUnit()
@@ -1004,7 +1008,8 @@ namespace myfoodapp.Hub.Migrations
                 productionUnitType = prodUnitTypeFam22,
                 hydroponicType = hydroTypeAquaponicsColdFish,
                 productionUnitStatus = prodUnitStatusRunning,
-                picturePath = "PavillyFamily22.jpg"
+                picturePath = "PavillyFamily22.jpg",
+                lastSignalStrenghtReceived = "Wifi"
             };
 
             var AMAProdUnit = new ProductionUnit()
