@@ -94,7 +94,7 @@
                                 enabled: false
 							},
 							lineWidth: 4,
-							color: '#2EA636',
+							color: '#2EA636',.
                         }
                     },
                     series: [{
@@ -1115,8 +1115,10 @@
 </script>
 
 <style>
-
-	#main-section-header{
+	#statsContainerTop {
+		position: relative;
+	}
+	#main-section-header {
 		display: block;
 	}
 	.datepickers-container .datepicker {
@@ -1232,6 +1234,7 @@
 
 	.buttons-section {
 		margin-top: 10px;
+		z-index: 999;
 		margin-top: 10px;
 		position: sticky;
 		top: 0;
