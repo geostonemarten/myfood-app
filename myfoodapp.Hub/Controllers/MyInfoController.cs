@@ -22,26 +22,14 @@ namespace myfoodapp.Hub.Controllers
              
         public ApplicationSignInManager SignInManager
         {
-            get
-            {
-                return _signInManager ?? HttpContext.GetOwinContext().Get<ApplicationSignInManager>();
-            }
-            private set
-            {
-                _signInManager = value;
-            }
+            get => _signInManager ?? HttpContext.GetOwinContext().Get<ApplicationSignInManager>();
+	        private set => _signInManager = value;
         }
 
         public ApplicationUserManager UserManager
         {
-            get
-            {
-                return _userManager ?? HttpContext.GetOwinContext().GetUserManager<ApplicationUserManager>();
-            }
-            private set
-            {
-                _userManager = value;
-            }
+            get => _userManager ?? HttpContext.GetOwinContext().GetUserManager<ApplicationUserManager>();
+	        private set => _userManager = value;
         }
 
         [Authorize]
@@ -52,8 +40,7 @@ namespace myfoodapp.Hub.Controllers
 
             var db = new ApplicationDbContext();
 
-            var currentProductOwner = db.ProductionUnitOwners.Include(p => p.language)
-                                                             .Where(p => p.user.UserName == currentUser).FirstOrDefault();
+            var currentProductOwner = db.ProductionUnitOwners.Include(p => p.language).FirstOrDefault(p => p.user.UserName == currentUser);
 			var currentLanguageId = 1;
 
 			if (currentProductOwner.language != null)
@@ -75,11 +62,11 @@ namespace myfoodapp.Hub.Controllers
             var db = new ApplicationDbContext();
             var currentUser = this.User.Identity.GetUserName();
 
-            var currentProductionUnitOwner = db.ProductionUnitOwners.Include(p => p.language).Include(p => p.user)
-                                                 .Where(p => p.user.UserName == currentUser).FirstOrDefault();
+            var currentProductionUnitOwner = db.ProductionUnitOwners.Include(p => p.language)
+                                                 .Include(p => p.user).FirstOrDefault(p => p.user.UserName == currentUser);
 
-            currentProductionUnitOwner.language = db.Languages.Where(l => l.Id == model.Language).FirstOrDefault();
-            //currentProductionUnitOwner.isMailNotificationActivated = model.IsMailNotificationActivated;
+            currentProductionUnitOwner.language = db.Languages.FirstOrDefault(l => l.Id == model.Language);
+            currentProductionUnitOwner.isMailNotificationActivated = model.IsMailNotificationActivated;
             currentProductionUnitOwner.contactMail = model.NotificationEmail;
 
             try
@@ -138,7 +125,7 @@ namespace myfoodapp.Hub.Controllers
             var currentProductionUnitOwner = db.ProductionUnitOwners
                                                            .Include(p => p.user)
                                                            .Include(p => p.language)
-                                                           .Where(p => p.user.UserName == currentUser).FirstOrDefault();
+														   .FirstOrDefault(p => p.user.UserName == currentUser);
             if (currentProductionUnitOwner != null)
             {
                 currentProductionUnitOwner.notificationPushKey = id;
