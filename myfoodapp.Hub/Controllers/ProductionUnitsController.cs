@@ -84,43 +84,85 @@ namespace myfoodapp.Hub.Controllers
             }
         }
 
-		[Authorize]
-		public ActionResult UserUnit()
-		{
-			ViewBag.DisplayManagementBtn = "None";
+        [Authorize]
+        public ActionResult UserUnit(int? id)
+        {
+            ViewBag.DisplayManagementBtn = "None";
+            ViewBag.DisplayProdUnitSelector = "None";
 
-			var currentUser = this.User.Identity.GetUserName();
-			var userId = UserManager.FindByName(currentUser).Id;
-			var isAdmin = this.UserManager.IsInRole(userId, "Admin");
-			if (isAdmin)
-				ViewBag.DisplayManagementBtn = "All";
-			else
-			{
-				ApplicationDbContext db = new ApplicationDbContext();
+            var currentUser = this.User.Identity.GetUserName();
+            var userId = UserManager.FindByName(currentUser).Id;
+            var isAdmin = this.UserManager.IsInRole(userId, "Admin");
+            if (isAdmin)
+                ViewBag.DisplayManagementBtn = "All";
+            else
+            {
+                ApplicationDbContext db = new ApplicationDbContext();
+                var currentUserProductionUnit = new ProductionUnit();
 
-				var userProductionUnit = db.ProductionUnits.Include(p => p.owner.user).Where(p => p.owner.user.UserName == currentUser).ToList().FirstOrDefault();
+                var userProductionUnit = db.ProductionUnits.Include(p => p.owner.user).Where(p => p.owner.user.UserName == currentUser).ToList();
 
-				ViewBag.CurrentUser = userProductionUnit.Id;
-                ViewBag.SignalStrenghtImagePath = Signal.GetSignalStrenghtName(userProductionUnit.lastSignalStrenghtReceived);
+                if (userProductionUnit.Count > 1)
+                {
+                    ViewBag.DisplayProdUnitSelector = "All";
 
-                if (userProductionUnit.lastSignalStrenghtReceived != null)
-                    ViewBag.SignalStrenghtText = userProductionUnit.lastSignalStrenghtReceived;
+                    var selectList = new SelectList(userProductionUnit.ToList(), "Id", "info", userProductionUnit.FirstOrDefault());
+
+                    if (id != null && id != 0)
+                    {
+                        var selected = selectList.Where(x => x.Value == id.ToString()).First();
+                        selected.Selected = true;
+
+                        selectList = new SelectList(userProductionUnit.ToList(), "Id", "info", selected);
+                        currentUserProductionUnit = userProductionUnit.Where(p => p.Id == id).FirstOrDefault();
+                    }
+                    else
+                        currentUserProductionUnit = userProductionUnit.FirstOrDefault();
+
+                    ViewBag.ProdUnitList = selectList;
+                }
+
+                ViewBag.CurrentUser = currentUserProductionUnit.Id;
+                ViewBag.SignalStrenghtImagePath = Signal.GetSignalStrenghtName(currentUserProductionUnit.lastSignalStrenghtReceived);
+
+                if (currentUserProductionUnit.lastSignalStrenghtReceived != null)
+                    ViewBag.SignalStrenghtText = currentUserProductionUnit.lastSignalStrenghtReceived;
                 else
                     ViewBag.SignalStrenghtText = String.Empty;
 
-                if (userProductionUnit != null && userProductionUnit.owner.user.UserName == currentUser)
-				{
-					ViewBag.DisplayManagementBtn = "All";
+                if (currentUserProductionUnit != null && currentUserProductionUnit.owner.user.UserName == currentUser)
+                {
+                    ViewBag.DisplayManagementBtn = "All";
                 }
-			}
-			
-			ViewBag.Title = "Production Unit Detail Page";
+            }
 
-			return View();
-		}
+            ViewBag.Title = "Production Unit Detail Page";
 
+            return View();
+        }
 
-		[Authorize]
+        [Authorize]
+        public ActionResult SelectProdUnit(string prodUnitId)
+        {
+            int currentUnitProdId = 0;
+
+            if(!string.IsNullOrEmpty(prodUnitId))
+            {
+                bool success = Int32.TryParse(prodUnitId, out currentUnitProdId);
+                if (success)
+                {
+                    return RedirectToAction("UserUnit", "ProductionUnits", new { id = currentUnitProdId});
+                }
+                else
+                    return RedirectToAction("UserUnit", "ProductionUnits");
+
+            }
+            else
+                return RedirectToAction("UserUnit", "ProductionUnits");
+
+        }
+
+        [Authorize]
         public ActionResult Details(int id)
         {
             ViewBag.DisplayManagementBtn = "None";

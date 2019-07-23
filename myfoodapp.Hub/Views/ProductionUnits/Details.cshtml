@@ -837,11 +837,11 @@
 	<div id="title-buttons" class="col-lg-6">
         <img id="signal-img" width="40" title="@ViewBag.SignalStrenghtText" src="@ViewBag.SignalStrenghtImagePath" />
 		<select onchange="onThisWeekClick(this)" class="change-graph">
-			<option>This Last Day</option>
-			<option>Last Week</option>
-			<option>Last Three Months</option>
+            <option>[[[This Last Day]]]</option>
+            <option>[[[Last Week]]]</option>
+            <option>[[[Last Three Months]]]</option>
 		</select>
-		<button class="fill" data-toggle="modal" data-target="#performanceModal">View Info</button>        
+		<button class="fill" data-toggle="modal" data-target="#performanceModal">[[[View Info]]]</button>        
 	</div>
 	<div style="clear:both;"></div>
 </div>
@@ -1039,12 +1039,12 @@
 						<div class="row">
 							<div class="col-xs-4">
 								<div>[[[EST. PROD.]]]</div>
-								<span class="Average-Monthly-Production"></span>
+								<span class="Average-Monthly-Production"></span>kg
 								<div>[[[PER MONTH]]]</div>
 							</div>
 							<div class="col-xs-4">
 								<div>[[[CO2 SAVED]]]</div>
-								<span class="Average-Monthly-Spared-CO2"></span>
+								<span class="Average-Monthly-Spared-CO2"></span>kg
 								<div>[[[PER MONTH]]]</div>
 							</div>
 							<div class="col-xs-4">

@@ -1,19 +1,16 @@
-﻿using System.Web;
-using System.Web.Mvc;
-using System.Threading.Tasks;
+﻿using Kendo.Mvc.UI;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.Owin;
 using myfoodapp.Hub.Models;
+using System;
 using System.Data.Entity;
 using System.Linq;
-using Kendo.Mvc.UI;
-using System.Globalization;
-using System.Threading;
-using System;
-using i18n;
+using System.Threading.Tasks;
+using System.Web;
+using System.Web.Mvc;
 
 namespace myfoodapp.Hub.Controllers
-{   
+{
     [Authorize]
     public class MyInfoController : Controller
     {        
@@ -22,14 +19,28 @@ namespace myfoodapp.Hub.Controllers
              
         public ApplicationSignInManager SignInManager
         {
-            get => _signInManager ?? HttpContext.GetOwinContext().Get<ApplicationSignInManager>();
-	        private set => _signInManager = value;
+            get
+            {
+                return _signInManager ?? HttpContext.GetOwinContext().Get<ApplicationSignInManager>();
+            }
+
+            private set
+            {
+                _signInManager = value;
+            }
         }
 
         public ApplicationUserManager UserManager
         {
-            get => _userManager ?? HttpContext.GetOwinContext().GetUserManager<ApplicationUserManager>();
-	        private set => _userManager = value;
+            get
+            {
+                return _userManager ?? HttpContext.GetOwinContext().GetUserManager<ApplicationUserManager>();
+            }
+
+            private set
+            {
+                _userManager = value;
+            }
         }
 
         [Authorize]

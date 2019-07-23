@@ -19,10 +19,10 @@ namespace myfoodapp.Hub.Migrations
         }
         protected override void Seed(ApplicationDbContext context)
         {
-			//UpgradeDatabase.DoWork(context);
+			UpgradeDatabase.DoWork(context);
 
 			//UpgradeDatabase.EventTypesIcons(context);
-			return;
+			//return;
 
             //if (System.Diagnostics.Debugger.IsAttached == false)
             //    System.Diagnostics.Debugger.Launch();
@@ -1080,7 +1080,7 @@ namespace myfoodapp.Hub.Migrations
                 info = "Family Experimentation",
                 startDate = new DateTime(2016, 06, 01),
                 version = "1",
-                owner = DidierPOwner,
+                owner = MickaelGOwner,
                 productionUnitType = prodUnitTypeFam22,
                 hydroponicType = hydroTypeAquaponicsTilapia,
                 productionUnitStatus = prodUnitStatusRunning,
@@ -1095,7 +1095,7 @@ namespace myfoodapp.Hub.Migrations
                 info = "Organic Farm Exploitation",
                 startDate = new DateTime(2016, 06, 11),
                 version = "1",
-                owner = ChristophePOwner,
+                owner = MickaelGOwner,
                 productionUnitType = prodUnitTypeFam22,
                 hydroponicType = hydroTypeAquaponicsTilapia,
                 productionUnitStatus = prodUnitStatusRunning,

@@ -4,6 +4,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
+using System.Web.Mvc;
 
 namespace myfoodapp.Hub.Models
 {
@@ -43,4 +44,5 @@ namespace myfoodapp.Hub.Models
         public string name { get; set; }
 		public bool Checked { get; set; } = false;
     }
+
 }

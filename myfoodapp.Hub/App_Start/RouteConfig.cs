@@ -10,13 +10,13 @@ namespace myfoodapp.Hub
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 			
-				routes.MapRoute(
+			routes.MapRoute(
 				name: "PioneerProductionSite",
-				url: "PioneerProductionSite",
+				url: "PioneerProductionSite/{id}",
 				defaults: new { controller = "ProductionUnits", action = "UserUnit" }
 				);
 
-			routes.MapRoute(
+            routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
