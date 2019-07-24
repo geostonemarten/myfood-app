@@ -25,6 +25,15 @@
         });
 
         $.ajax({
+            url: "@Url.Action("GetConnectivityStats", "Home")",
+            dataType: "json",
+        type: "POST",
+        success: function (response) {
+            $("#networkStatus").text('[[[Network Status]]] - ' + response.Stats);
+        }
+        });
+
+        $.ajax({
             url: "@Url.Action("GetProductionUnitDetailList", "Home")",
             dataType: "json",
             type: "POST",
@@ -253,7 +262,7 @@
 
     <div id="performanceHealthAnalysis">
         <div id="performanceHealthAnalysisContainer" class="col-md-5">
-            <h3 class="section-header">[[[Network Status]]]</h3>
+            <h3 id="networkStatus" class="section-header">[[[Network Status]]]</h3>
             <div style="text-align: center">
                 @(Html.Kendo().Chart<myfoodapp.Hub.Models.PieChartViewModel>()
         .Name("chart")

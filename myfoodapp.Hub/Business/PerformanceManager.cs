@@ -32,18 +32,18 @@ namespace myfoodapp.Hub.Business
             var totalCity = rslt.Where(p => p.productionUnitType.Id == 2 ||
                                             p.productionUnitType.Id == 12).Count();
 
-            var totalFamilyWithoutBeds = rslt.Where(p => p.productionUnitType.Id == 3 || 
+            var totalFamilyWithoutBeds = rslt.Where(p => p.productionUnitType.Id == 3 ||
                                                          p.productionUnitType.Id == 4).Count();
 
             var totalFamilyWithBeds = rslt.Where(p => p.productionUnitType.Id == 8 ||
                                                       p.productionUnitType.Id == 9 ||
-                                                      p.productionUnitType.Id == 10||
+                                                      p.productionUnitType.Id == 10 ||
                                                       p.productionUnitType.Id == 11).Count();
 
             var totalFarm = rslt.Where(p => p.productionUnitType.Id == 5).Count();
 
-            var totalMonthlyProduction = totalBalcony * monthlyAverageProductionAerospring 
-                                           + totalCity * monthlyAverageProductionCity 
+            var totalMonthlyProduction = totalBalcony * monthlyAverageProductionAerospring
+                                           + totalCity * monthlyAverageProductionCity
                                            + totalFamilyWithoutBeds * monthlyAverageProductionFamilyWithoutBeds
                                            + totalFamilyWithBeds * monthlyAverageProductionFamilyWithoutBeds
                                            + totalFarm * monthlyAverageProductionFarm;
@@ -52,10 +52,62 @@ namespace myfoodapp.Hub.Business
 
             productionUnitNumber = totalCity + totalFamilyWithoutBeds + totalFamilyWithBeds + totalFarm;
 
-            return new OpenProductionUnitsStatsViewModel() { productionUnitNumber = productionUnitNumber,
-                                                             totalMonthlyProduction = totalMonthlyProduction,
-                                                             totalMonthlySparedCO2 = totalMonthlySparedCO2
-                                                           }; 
+            return new OpenProductionUnitsStatsViewModel()
+            {
+                productionUnitNumber = productionUnitNumber,
+                totalMonthlyProduction = totalMonthlyProduction,
+                totalMonthlySparedCO2 = totalMonthlySparedCO2
+            };
+        }
+
+        public static string GetConnectivityStatistics(ApplicationDbContext db)
+        {
+            MeasureService measureService = new MeasureService(db);
+
+            var productionUnits = db.ProductionUnits;
+
+            var lastYearUpPercent = 0.0;
+            var twoYearsUpPercent = 0.0;
+            var threeYearsUpPercent = 0.0;
+
+            var lastYearDate = DateTime.Today.AddYears(-1);
+            var twoYearsAgoDate = DateTime.Today.AddYears(-2);
+            var threeYearsAgoDate =  DateTime.Today.AddYears(-3);
+
+            var lastYear = productionUnits.Include(p => p.productionUnitStatus).Where(p => p.startDate > lastYearDate).ToList();
+
+            if (lastYear != null)
+            {
+                var upLastYear = lastYear.Where(p => p.productionUnitStatus.Id == 3).Count();
+                var totalLastYear = lastYear.Where(p => p.productionUnitStatus.Id == 3 || p.productionUnitStatus.Id == 6).Count();
+
+                if (upLastYear > 0 && totalLastYear > 0)
+                    lastYearUpPercent = 100 * (upLastYear / totalLastYear);
+            }
+
+            var twoYearsAgo = productionUnits.Include(p => p.productionUnitStatus).Where(p => p.startDate > twoYearsAgoDate).ToList();
+
+            if(twoYearsAgo != null)
+            {
+                var uptwoYearsAgo = twoYearsAgo.Where(p => p.productionUnitStatus.Id == 3).Count();
+                var totaltwoYearsAgo = twoYearsAgo.Where(p => p.productionUnitStatus.Id == 3 || p.productionUnitStatus.Id == 6).Count();
+
+                if (uptwoYearsAgo > 0 && totaltwoYearsAgo > 0)
+                    twoYearsUpPercent = 100 * (uptwoYearsAgo / totaltwoYearsAgo);
+            }
+                       
+            var threeYearsAgo = productionUnits.Include(p => p.productionUnitStatus).Where(p => p.startDate > threeYearsAgoDate).ToList();
+
+            if(threeYearsAgo != null)
+            {
+                var upThreeYearsAgo = threeYearsAgo.Where(p => p.productionUnitStatus.Id == 3).Count();
+                var totalthreeYearsAgo = twoYearsAgo.Where(p => p.productionUnitStatus.Id == 3 || p.productionUnitStatus.Id == 6).Count();
+
+                if (upThreeYearsAgo > 0 && lastYear.Count() > 0)
+                    threeYearsUpPercent = 100 * (upThreeYearsAgo / totalthreeYearsAgo);
+            }
+
+            return String.Format("{0}% - {1}% - {2}%",lastYearUpPercent, twoYearsUpPercent, threeYearsUpPercent); 
         }
 
         public static int GetEstimatedMonthlyProduction(int productionUnitTypeId)

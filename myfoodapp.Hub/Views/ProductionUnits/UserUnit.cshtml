@@ -759,7 +759,10 @@
 
             @using (Html.BeginForm("SelectProdUnit", "ProductionUnits"))
             {
-                @Html.DropDownList("prodUnitId", (SelectList)ViewBag.ProdUnitList, new { @class = "change-graph", onchange = "this.form.submit();" })
+                if (ViewBag.ProdUnitList != null)
+                {
+                    @Html.DropDownList("prodUnitId", (SelectList)ViewBag.ProdUnitList, new { @class = "change-graph", onchange = "this.form.submit();" })
+                }
             }
         </div>
         <div class="col-md-3 buttons-section a-right">

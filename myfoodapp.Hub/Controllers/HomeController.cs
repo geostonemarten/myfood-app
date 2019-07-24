@@ -281,5 +281,17 @@ namespace myfoodapp.Hub.Controllers
                 NetworkScore = score,
             }, JsonRequestBehavior.AllowGet);
         }
+
+        public ActionResult GetConnectivityStats()
+        {
+            ApplicationDbContext db = new ApplicationDbContext();
+
+            var stats = PerformanceManager.GetConnectivityStatistics(db);
+
+            return Json(new
+            {
+                Stats = stats
+            }, JsonRequestBehavior.AllowGet);
+        }
     }
 }

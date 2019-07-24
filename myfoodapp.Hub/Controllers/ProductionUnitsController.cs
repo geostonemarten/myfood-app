@@ -130,7 +130,7 @@ namespace myfoodapp.Hub.Controllers
                 else
                     ViewBag.SignalStrenghtText = String.Empty;
 
-                if (currentUserProductionUnit != null && currentUserProductionUnit.owner.user.UserName == currentUser)
+                if (currentUserProductionUnit != null && currentUserProductionUnit.owner != null && currentUserProductionUnit.owner.user.UserName == currentUser)
                 {
                     ViewBag.DisplayManagementBtn = "All";
                 }
@@ -428,15 +428,19 @@ namespace myfoodapp.Hub.Controllers
         {
             var db = new ApplicationDbContext();
 
-            var responseData = db.ProductionUnits.Where(p => p.Id == id)
+            var productionUnits = db.ProductionUnits.Where(p => p.Id == id)
                                          .Include(p => p.owner.preferedMoment)
                                          .Include(p => p.productionUnitType)
-                                         .Include(p => p.productionUnitStatus).ToList()[0];
+                                         .Include(p => p.productionUnitStatus).ToList();
 
+            var productionUnit = productionUnits.FirstOrDefault();
+
+            if (productionUnit == null)
+                return Json("");
 
             var options = db.OptionLists.Include(o => o.productionUnit)
                 .Include(o => o.option)
-                .Where(o => o.productionUnit.Id == responseData.Id)
+                .Where(o => o.productionUnit.Id == productionUnit.Id)
                 .Select(o => o.option);
 
             var optionList = string.Empty;
@@ -446,35 +450,35 @@ namespace myfoodapp.Hub.Controllers
                 options.ToList().ForEach(o => { optionList += o.name + "/"; });
             }
 
-            var averageMonthlyProduction = PerformanceManager.GetEstimatedMonthlyProduction(responseData.productionUnitType.Id);
-            var onlineSinceWeeks = Math.Round((DateTime.Now - responseData.startDate).TotalDays / 7);
+            var averageMonthlyProduction = PerformanceManager.GetEstimatedMonthlyProduction(productionUnit.productionUnitType.Id);
+            var onlineSinceWeeks = Math.Round((DateTime.Now - productionUnit.startDate).TotalDays / 7);
             var averageMonthlySparedCO2 = PerformanceManager.GetEstimatedMonthlySparedCO2(averageMonthlyProduction);
 
-            var lst = new object();
-            lst = new
+            var results = new object();
+            results = new
             {
                 AverageMonthlySparedCO2 = averageMonthlySparedCO2,
                 OnlineSinceWeeks = onlineSinceWeeks,
                 AverageMonthlyProduction = averageMonthlyProduction,
-                PioneerCitizenName = responseData.owner.pioneerCitizenName,
-                PioneerCitizenNumber = responseData.owner.pioneerCitizenNumber,
-                ProductionUnitStartDate = responseData.startDate,
-                ProductionUnitInfo = responseData.info,
-                ProductionUnitTypeName = responseData.productionUnitType.name,
-                ProductionUnitTypeImage = responseData.productionUnitType.imagePath,
-                ProductionUnitStatus = responseData.productionUnitStatus.name,
+                PioneerCitizenName = productionUnit.owner.pioneerCitizenName,
+                PioneerCitizenNumber = productionUnit.owner.pioneerCitizenNumber,
+                ProductionUnitStartDate = productionUnit.startDate,
+                ProductionUnitInfo = productionUnit.info,
+                ProductionUnitTypeName = productionUnit.productionUnitType.name,
+                ProductionUnitTypeImage = productionUnit.productionUnitType.imagePath,
+                ProductionUnitStatus = productionUnit.productionUnitStatus.name,
 
-                PhoneNumber = responseData.owner.phoneNumber == null ? "00 33 3 67 37 00 56" : responseData.owner.phoneNumber,
-                ContactMail = responseData.owner.contactMail == null ? "contact@myfood.eu" : responseData.owner.contactMail,
-                PicturePath = responseData.picturePath == null ? "NoImage.png" : responseData.picturePath,
+                PhoneNumber = productionUnit.owner.phoneNumber == null ? "00 33 3 67 37 00 56" : productionUnit.owner.phoneNumber,
+                ContactMail = productionUnit.owner.contactMail == null ? "contact@myfood.eu" : productionUnit.owner.contactMail,
+                PicturePath = productionUnit.picturePath == null ? "NoImage.png" : productionUnit.picturePath,
 
-                PreferedMoment = responseData.owner.preferedMoment == null ? "" : responseData.owner.preferedMoment.name,
-                Location = responseData.owner.location == null ? "" : responseData.owner.location,
+                PreferedMoment = productionUnit.owner.preferedMoment == null ? "" : productionUnit.owner.preferedMoment.name,
+                Location = productionUnit.owner.location == null ? "" : productionUnit.owner.location,
 
                 ProductionUnitOptions = optionList,
             };
 
-            return Json(lst);
+            return Json(results);
         }
 
         [Authorize]
@@ -698,6 +702,8 @@ namespace myfoodapp.Hub.Controllers
                                           .Include(p => p.options)
                                           .Where(p => p.Id == id).FirstOrDefault();
 
+            if (currentProductionUnit == null)
+                return Json("");
 
             var averageMonthlyProduction = PerformanceManager.GetEstimatedMonthlyProduction(currentProductionUnit.productionUnitType.Id);
             var onlineSinceWeeks = Math.Round((DateTime.Now - currentProductionUnit.startDate).TotalDays / 7);
