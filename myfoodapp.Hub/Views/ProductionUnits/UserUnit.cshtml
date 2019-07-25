@@ -750,135 +750,137 @@
 		<div style="clear:both;"></div>
 	</div>
 
-    <div id="statsContainerTop" class="row">
-        <div class="col-md-9 buttons-section">
-            <button class="btn btn-transparent" data-toggle="modal" data-target="#add-event" onclick="AddEventPopupInit()">[[[Add Event]]]</button>
-            <button class="btn btn-transparent" onclick="onViewEventsClick()">[[[View Events]]]</button>
-            <button class="btn btn-transparent" onclick="onManageUnitClick()">[[[Manage Unit]]]</button>
-            <button class="btn btn-green-sm" onclick="onExportCSVClick()">[[[Export CSV]]]</button>
+<div id="statsContainerTop" class="row">
+	<div class="sticky-panel">
+		<div class="left-buttons-section">
+			<button class="btn btn-transparent" data-toggle="modal" data-target="#add-event" onclick="AddEventPopupInit()">[[[Add Event]]]</button>
+			<button class="btn btn-transparent" onclick="onViewEventsClick()">[[[View Events]]]</button>
+			<button class="btn btn-transparent" onclick="onManageUnitClick()">[[[Manage Unit]]]</button>
+			<button class="btn btn-green-sm" onclick="onExportCSVClick()">[[[Export CSV]]]</button>
 
-            @using (Html.BeginForm("SelectProdUnit", "ProductionUnits"))
-            {
-                if (ViewBag.ProdUnitList != null)
-                {
-                    @Html.DropDownList("prodUnitId", (SelectList)ViewBag.ProdUnitList, new { @class = "change-graph", onchange = "this.form.submit();" })
-                }
-            }
-        </div>
-        <div class="col-md-3 buttons-section a-right">
-            <button class="btn btn-green" onclick="onExportCSVClick()">[[[Export CSV]]]</button>
-        </div>
+		</div>
+		<div class="right-buttons-section">
+			@using (Html.BeginForm("SelectProdUnit", "ProductionUnits", FormMethod.Post, new { @class = "unit-dropdown" }))
+			{
+							if (ViewBag.ProdUnitList != null)
+							{
+								@Html.DropDownList("prodUnitId", (SelectList) ViewBag.ProdUnitList, new {@class = "change-graph", onchange = "this.form.submit();"})
+							}
+						}
+			<button class="btn btn-green" onclick="onExportCSVClick()">[[[Export CSV]]]</button>
+		</div>
+	</div>
 
-        <div id="pHContainer" class="col-md-6">
-            <div class="wrapper">
-                <h3 class="graph-header">[[[pH]]]</h3>
-                <div class="sparkline-container">
-                    <div>
-                        <div class="column-left">
-                            <h2>[[[CURRENT]]]</h2>
-                            <span id="CurrentPhValue">-</span>
-                            <h2 id="CurrentPhCaptureTime">-</h2>
-                        </div>
-                        <div class="column-center">
-                            <h2>[[[AVERAGE]]]</h2>
-                            <span id="AverageHourPhValue">-</span>
-                            <h2>[[[PAST HOUR]]]</h2>
-                        </div>
-                        <div class="column-right">
-                            <h2>[[[AVERAGE]]]</h2>
-                            <span id="AverageDayPhValue">-</span>
-                            <h2 id="LastDayPhCaptureTime">-</h2>
-                        </div>
-                    </div>
-                </div>
+	<div id="pHContainer" class="col-md-6">
+		<div class="wrapper">
+			<h3 class="graph-header">[[[pH]]]</h3>
+			<div class="sparkline-container">
+				<div>
+					<div class="column-left">
+						<h2>[[[CURRENT]]]</h2>
+						<span id="CurrentPhValue">-</span>
+						<h2 id="CurrentPhCaptureTime">-</h2>
+					</div>
+					<div class="column-center">
+						<h2>[[[AVERAGE]]]</h2>
+						<span id="AverageHourPhValue">-</span>
+						<h2>[[[PAST HOUR]]]</h2>
+					</div>
+					<div class="column-right">
+						<h2>[[[AVERAGE]]]</h2>
+						<span id="AverageDayPhValue">-</span>
+						<h2 id="LastDayPhCaptureTime">-</h2>
+					</div>
+				</div>
+			</div>
 
-                <div id="ph-chart"></div>
-            </div>
-        </div>
+			<div id="ph-chart"></div>
+		</div>
+	</div>
 
-        <div id="WaterTempContainer" class="col-md-6">
-            <div class="wrapper">
-                <h3 class="graph-header">[[[Water Temperature (°C)]]]</h3>
-                <div class="sparkline-container">
-                    <div>
-                        <div class="column-left">
-                            <h2>[[[CURRENT]]]</h2>
-                            <span id="CurrentWaterTempValue">-</span>
-                            <h2 id="CurrentWaterTempCaptureTime">-</h2>
-                        </div>
-                        <div class="column-center">
-                            <h2>[[[AVERAGE]]]</h2>
-                            <span id="AverageHourWaterTempValue">-</span>
-                            <h2>[[[PAST HOUR]]]</h2>
-                        </div>
-                        <div class="column-right">
-                            <h2> [[[AVERAGE]]]</h2>
-                            <span id="AverageDayWaterTempValue">-</span>
-                            <h2 id="LastDayWaterTempCaptureTime">-</h2>
-                        </div>
-                    </div>
-                </div>
+	<div id="WaterTempContainer" class="col-md-6">
+		<div class="wrapper">
+			<h3 class="graph-header">[[[Water Temperature (°C)]]]</h3>
+			<div class="sparkline-container">
+				<div>
+					<div class="column-left">
+						<h2>[[[CURRENT]]]</h2>
+						<span id="CurrentWaterTempValue">-</span>
+						<h2 id="CurrentWaterTempCaptureTime">-</h2>
+					</div>
+					<div class="column-center">
+						<h2>[[[AVERAGE]]]</h2>
+						<span id="AverageHourWaterTempValue">-</span>
+						<h2>[[[PAST HOUR]]]</h2>
+					</div>
+					<div class="column-right">
+						<h2> [[[AVERAGE]]]</h2>
+						<span id="AverageDayWaterTempValue">-</span>
+						<h2 id="LastDayWaterTempCaptureTime">-</h2>
+					</div>
+				</div>
+			</div>
 
-                <div id="watertemp-chart"></div>
+			<div id="watertemp-chart"></div>
 
-            </div>
-        </div>
+		</div>
+	</div>
 
-        <div id="AirTempContainer" class="col-md-6">
+	<div id="AirTempContainer" class="col-md-6">
 
-            <div class="wrapper">
-                <h3 class="graph-header">[[[Air Temperature (°C)]]]</h3>
-                <div class="sparkline-container">
-                    <div>
-                        <div class="column-left">
-                            <h2>[[[CURRENT]]]</h2>
-                            <span id="CurrentAirTempValue">-</span>
-                            <h2 id="CurrentAirTempCaptureTime">-</h2>
-                        </div>
-                        <div class="column-center">
-                            <h2>[[[AVERAGE]]]</h2>
-                            <span id="AverageHourAirTempValue">-</span>
-                            <h2>[[[PAST HOUR]]]</h2>
-                        </div>
-                        <div class="column-right">
-                            <h2>[[[AVERAGE]]]</h2>
-                            <span id="AverageDayAirTempValue">-</span>
-                            <h2 id="LastDayAirTempCaptureTime">-</h2>
-                        </div>
-                    </div>
-                </div>
+		<div class="wrapper">
+			<h3 class="graph-header">[[[Air Temperature (°C)]]]</h3>
+			<div class="sparkline-container">
+				<div>
+					<div class="column-left">
+						<h2>[[[CURRENT]]]</h2>
+						<span id="CurrentAirTempValue">-</span>
+						<h2 id="CurrentAirTempCaptureTime">-</h2>
+					</div>
+					<div class="column-center">
+						<h2>[[[AVERAGE]]]</h2>
+						<span id="AverageHourAirTempValue">-</span>
+						<h2>[[[PAST HOUR]]]</h2>
+					</div>
+					<div class="column-right">
+						<h2>[[[AVERAGE]]]</h2>
+						<span id="AverageDayAirTempValue">-</span>
+						<h2 id="LastDayAirTempCaptureTime">-</h2>
+					</div>
+				</div>
+			</div>
 
-                <div id="airtemp-chart"></div>
-            </div>
-        </div>
+			<div id="airtemp-chart"></div>
+		</div>
+	</div>
 
-        <div id="HumidityContainer" class="col-md-6">
-            <div class="wrapper">
-                <h3 class="graph-header">[[[Humidity (%)]]]</h3>
-                <div class="sparkline-container">
-                    <div>
-                        <div class="column-left">
-                            <h2>[[[CURRENT]]]</h2>
-                            <span id="CurrentHumidityValue">-</span>
-                            <h2 id="CurrentHumidityCaptureTime">-</h2>
-                        </div>
-                        <div class="column-center">
-                            <h2>[[[AVERAGE]]]</h2>
-                            <span id="AverageHourHumidityValue">-</span>
-                            <h2>[[[PAST HOUR]]]</h2>
-                        </div>
-                        <div class="column-right">
-                            <h2>[[[AVERAGE]]]</h2>
-                            <span id="AverageDayHumidityValue">-</span>
-                            <h2 id="LastDayHumidityCaptureTime">-</h2>
-                        </div>
-                    </div>
-                </div>
+	<div id="HumidityContainer" class="col-md-6">
+		<div class="wrapper">
+			<h3 class="graph-header">[[[Humidity (%)]]]</h3>
+			<div class="sparkline-container">
+				<div>
+					<div class="column-left">
+						<h2>[[[CURRENT]]]</h2>
+						<span id="CurrentHumidityValue">-</span>
+						<h2 id="CurrentHumidityCaptureTime">-</h2>
+					</div>
+					<div class="column-center">
+						<h2>[[[AVERAGE]]]</h2>
+						<span id="AverageHourHumidityValue">-</span>
+						<h2>[[[PAST HOUR]]]</h2>
+					</div>
+					<div class="column-right">
+						<h2>[[[AVERAGE]]]</h2>
+						<span id="AverageDayHumidityValue">-</span>
+						<h2 id="LastDayHumidityCaptureTime">-</h2>
+					</div>
+				</div>
+			</div>
 
-                <div id="humidity-chart"></div>
-            </div>
-        </div>
-    </div>
+			<div id="humidity-chart"></div>
+		</div>
+	</div>
+</div>
 
 	<!-- Modal -->
 	<div class="modal fade" id="performanceModal" tabindex="-1" role="dialog" aria-labelledby="performanceModalLabel">
@@ -1002,11 +1004,11 @@
 	</script>
 
 	<style>
-		#statsContainerTop {
+#statsContainerTop {
 			position: relative;
 		}
-		#main-section-header {
-			display: block;
+#main-section-header {
+				display: block;
 		}
 
 		.datepickers-container .datepicker {
@@ -1119,26 +1121,74 @@
 			text-align: center;
 			font-size: 14px;
 		}
-		.buttons-section {
-			margin-top: 10px;
-			z-index: 999;
-			margin-top: 10px;
-			position: sticky;
-			top: 0;
+		.sticky-panel {
 			background: #eee;
+			z-index: 999;
+			top: 0;
+			position: sticky;
+			display: flex;
+			justify-content: space-between;
+			padding: 10px 15px;
+			align-items: center;
 		}
-		.buttons-section .btn-transparent {
+		.sticky-panel .unit-dropdown {
+			display: inline-block;
+		}
+		.sticky-panel .left-buttons-section .btn,
+		.sticky-panel .right-buttons-section .btn {
+			min-width: 135px;
+		}
+		@@media (max-width: 1150px) {
+			.sticky-panel {
+				flex-direction: column;
+			}
+		}
+		
+		@@media (max-width: 590px) {
+			.sticky-panel {
+				position: relative;
+			}
+			.sticky-panel .right-buttons-section,
+			.sticky-panel .left-buttons-section {
+				display: flex;
+				flex-direction: column;
+				width: 100%;
+			}
+				.sticky-panel .left-buttons-section .unit-dropdown {
+					margin: 2px 0;
+				}
+				.sticky-panel .left-buttons-section .btn,
+				.sticky-panel .right-buttons-section .btn {
+					margin: 7px 0;
+				}
+				.sticky-panel .left-buttons-section .btn,
+				.sticky-panel .right-buttons-section .btn,
+				.sticky-panel .right-buttons-section .unit-dropdown,
+				.sticky-panel .right-buttons-section .unit-dropdown .change-graph {
+					width: 100%;
+				}
+		}
+		.left-buttons-section .btn-transparent {
 			background: #e7e0d5;
 			color: #2b5a2e;
 			font-weight: 700;
 			letter-spacing: .5px;
-			margin: 10px 0;
 		}
-		.buttons-section .btn-green {
-			font-weight: 700;
-			letter-spacing: .5px;
-			margin: 10px 0;
+		.right-buttons-section,
+		.left-buttons-section{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-wrap: wrap;
+
 		}
+			.right-buttons-section .change-graph {
+				padding: 0.7em;
+			}
+			.right-buttons-section .btn-green {
+				letter-spacing: .5px;
+				margin: 0.5em;
+			}
 		.column-right {
 			color: #707070;
 			float: right;
@@ -1156,11 +1206,11 @@
 		}
 
 		.wrapper span {
-			font-weight: bold;
-			color: #2EA636;
+				font-weight: bold;
+				color: #2EA636;
 			font-size: 27px;
-			line-height: 38px;
-		}
+				line-height: 38px;
+			}
 
 		.column-left span:first-of-type {
 			color: #E54848;
@@ -1271,24 +1321,8 @@
 				line-height: 20px;
 			}
 
-			#title-buttons {
-			}
 		}
 
-		@@media (max-width: 797px) {
-			.btn-transparent {
-				width: 46%;
-			}
-
-			.btn-green-sm {
-				display: inline-block;
-				width: 45%;
-			}
-
-			.btn-green {
-				display: none;
-			}
-		}
 
 		@@media (max-width: 500px) {
 			#ph-chart, #watertemp-chart, #airtemp-chart, #humidity-chart {
@@ -1296,18 +1330,8 @@
 			}
 
 			.buttons-section {
-				padding-left: 0;
-				position: unset;
 			}
 
-			.btn-transparent {
-				width: 100%;
-			}
-
-			.btn-green-sm {
-				width: 100%;
-				margin: 0.5em;
-			}
 		}
 
 		@@media (max-width: 768px) {
