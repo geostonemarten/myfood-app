@@ -21,6 +21,8 @@
     <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async='async'></script>
     <script src="~/Scripts/jquery.fancybox.min.js"></script>
 
+
+
     <link rel="stylesheet" href="~/fonts/font-awesome/css/font-awesome.css">
     <link rel="stylesheet" href="~/Content/jquery.fancybox.min.css" />
 
@@ -30,22 +32,99 @@
     <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
     <link rel="icon" href="~/Content/favicon.ico" type="image/x-icon" />
     <link rel="manifest" href="~/manifest.txt">
+    <style>
+        
+        @@keyframes seq-preloader {
+            50% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .seq-preloader {
+            visibility: visible;
+            opacity: 1;
+            position: absolute;
+            z-index: 9999;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        .seq-preloader.seq-preloaded {
+            opacity: 0;
+            visibility: hidden;
+            transition: visibility 0s .5s, opacity .5s;
+        }
+
+        .seq-preload-indicator {
+            overflow: visible;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .seq-preload-circle {
+            display: inline-block;
+            height: 12px;
+            width: 12px;
+            fill: #F96D38;
+            opacity: 0;
+            animation: seq-preloader 1.25s infinite;
+        }
+
+        .seq-preload-circle-2 {
+            animation-delay: .15s;
+        }
+
+        .seq-preload-circle-3 {
+            animation-delay: .3s;
+        }
+
+        .seq-preload-indicator-fallback {
+            width: 42px;
+            overflow: visible;
+        }
+
+        .seq-preload-indicator-fallback .seq-preload-circle {
+            width: 8px;
+            height:8px;
+            background-color: #e54848;
+            border-radius: 100%;
+            opacity: 1;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .seq-preload-indicator-fallback .seq-preload-circle-2 {
+            margin-left: 3px;
+            margin-right: 3px;
+            width: 12px;
+            height: 12px;
+        }
+
+        .seq-preload-indicator-fallback .seq-preload-circle-3 {
+            width: 16px;
+            height: 16px;
+        }
+        @@media screen and (max-width: 480px) {
+            #rights {
+                visibility: hidden;
+                display: none;
+            }
+        }
+    </style>
 </head>
 <body>
 	@using Microsoft.AspNet.Identity
 
-	<div class="loaderArea">
-		<div class="sequence">
-			<div class="seq-preloader">
-				<svg height="35" viewBox="0 0 39 16" xmlns="http://www.w3.org/2000/svg" class="seq-preload-indicator">
-					<g fill="#e54848"><path class="seq-preload-circle seq-preload-circle-1" d="M3.999 12.012c2.209 0 3.999-1.791 3.999-3.999s-1.79-3.999-3.999-3.999-3.999 1.791-3.999 3.999 1.79 3.999 3.999 3.999z" />
-						<path class="seq-preload-circle seq-preload-circle-2" d="M15.996 13.468c3.018 0 5.465-2.447 5.465-5.466 0-3.018-2.447-5.465-5.465-5.465-3.019 0-5.466 2.447-5.466 5.465 0 3.019 2.447 5.466 5.466 5.466z" />
-						<path class="seq-preload-circle seq-preload-circle-3" d="M31.322 15.334c4.049 0 7.332-3.282 7.332-7.332 0-4.049-3.282-7.332-7.332-7.332s-7.332 3.283-7.332 7.332c0 4.05 3.283 7.332 7.332 7.332z" />
-					</g>
-				</svg>
-			</div>
-		</div>
-	</div>
 	<!-- End Google Tag Manager -->
 	@*<div class="container-fluid" style="background-color:aqua">
 
@@ -56,7 +135,7 @@
 		<!--open nav column-->
 		<div class="navbar-default">
 			<button id="toggle-button" type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-				<span class="icon-bar"></span>
+				<span id="test" class="icon-bar"></span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
@@ -256,128 +335,62 @@
 			</ul>
 		</div>
 	</div><!--close left column-->
-	<div id="main-section" class="col-md-12 column">
-		<!--open main column-->
-		@RenderBody()
-	</div><!--close main column-->
+<div id="main-section" class="col-md-12 column">
+
+    <div class="loaderArea">
+        <div class="sequence">
+            <div class="seq-preloader">
+                <svg height="35" viewBox="0 0 39 16" xmlns="http://www.w3.org/2000/svg" class="seq-preload-indicator">
+                    <g fill="green">
+                        <path class="seq-preload-circle seq-preload-circle-1" d="M3.999 12.012c2.209 0 3.999-1.791 3.999-3.999s-1.79-3.999-3.999-3.999-3.999 1.791-3.999 3.999 1.79 3.999 3.999 3.999z" />
+                        <path class="seq-preload-circle seq-preload-circle-2" d="M15.996 13.468c3.018 0 5.465-2.447 5.465-5.466 0-3.018-2.447-5.465-5.465-5.465-3.019 0-5.466 2.447-5.466 5.465 0 3.019 2.447 5.466 5.466 5.466z" />
+                        <path class="seq-preload-circle seq-preload-circle-3" d="M31.322 15.334c4.049 0 7.332-3.282 7.332-7.332 0-4.049-3.282-7.332-7.332-7.332s-7.332 3.283-7.332 7.332c0 4.05 3.283 7.332 7.332 7.332z" />
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <!--open main column-->
+    @RenderBody()
+</div><!--close main column-->
 	@*</div><!--close row-->
 		</div><!--close container-->*@
 	<script>
-		$(document).ready(function () {
-			$('[data-toggle=offcanvas]').click(function () {
-				$('.row-offcanvas').toggleClass('active');
-			});
-		});
-	</script>
-	<style type="text/css">
+        $(document).ready(function () {
+            $('[data-toggle=offcanvas]').click(function () {
+                $('.row-offcanvas').toggleClass('active');
+            });
+        });
+    </script>
+<style type="text/css">
 
-		@@keyframes seq-preloader {
-			50% {
-			opacity: 1;
-			}
 
-			100% {
-			opacity: 0;
-			}
-		}
-
-		.seq-preloader {
-			visibility: visible;
-			opacity: 1;
-			position: absolute;
-			z-index: 9999;
-			height: 100%;
-			width: 100%;
-			top: 0;
-			left: 0;
-			right: 0;
-			bottom: 0;
-		}
-
-		.seq-preloader.seq-preloaded {
-			opacity: 0;
-			visibility: hidden;
-			transition: visibility 0s .5s, opacity .5s;
-		}
-
-		.seq-preload-indicator {
-			overflow: visible;
-			position: relative;
-			top: 50%;
-			left: 50%;
-			transform: translate(-50%, -50%);
-		}
-
-		.seq-preload-circle {
-			display: inline-block;
-			height: 12px;
-			width: 12px;
-			fill: #F96D38;
-			opacity: 0;
-			animation: seq-preloader 1.25s infinite;
-		}
-
-		.seq-preload-circle-2 {
-			animation-delay: .15s;
-		}
-
-		.seq-preload-circle-3 {
-			animation-delay: .3s;
-		}
-
-		.seq-preload-indicator-fallback {
-			width: 42px;
-			overflow: visible;
-		}
-
-		.seq-preload-circle{
-			fill: #e54848;
-		}
-
-		.seq-preload-indicator-fallback .seq-preload-circle {
-			width: 8px;
-			height:8px;
-			background-color: #e54848;
-			border-radius: 100%;
-			opacity: 1;
-			display: inline-block;
-			vertical-align: middle;
-		}
-
-		.seq-preload-indicator-fallback .seq-preload-circle-2 {
-			margin-left: 3px;
-			margin-right: 3px;
-			width: 12px;
-			height: 12px;
-		}
-
-		.seq-preload-indicator-fallback .seq-preload-circle-3 {
-			width: 16px;
-			height: 16px;
-		}
-		@@media screen and (max-width: 480px) {
-			#rights {
-				visibility: hidden;
-				display: none;
-			}
-		}
-
-		a:link {
-			color: #ffffff;
-		}
-		/* normal link */
-		a:visited {
-			color: #ffffff;
-		}
-		/* visited link */
-		a:hover {
-			color: #ffffff;
-		}
-		/* mouse over link */
-		a:active {
-			color: #ffffff;
-		}
-		/* selected link */
+    a:link {
+        color: #ffffff;
+    }
+    /* normal link */
+    a:visited {
+        color: #ffffff;
+    }
+    /* visited link */
+    a:hover {
+        color: #ffffff;
+    }
+    /* mouse over link */
+    a:active {
+        color: #ffffff;
+    }
+/* selected link */
 	</style>
+
+<script>
+    $("#main-section").ready(function () {
+            $preloader = $('.loaderArea'),
+                $loader = $preloader.find('.loader');
+            $loader.fadeOut();
+            $preloader.delay(800).fadeOut('slow');
+        }
+    );
+</script>
 </body>
 </html>
