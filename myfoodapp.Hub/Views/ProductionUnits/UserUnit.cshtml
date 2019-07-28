@@ -615,7 +615,7 @@
 
 			var productionUnitId = $('#routeDataId').val();
 
-			if (sel.options[sel.selectedIndex].text == "This Last Day") {
+			if (sel.options[sel.selectedIndex].text == "[[[This Last Day]]]") {
 				PHMeasureChart(productionUnitId, "thisLastDays");
 				WaterTempMeasureChart(productionUnitId, "thisLastDays");
 				AirTempMeasureChart(productionUnitId, "thisLastDays");
@@ -623,7 +623,7 @@
 			}
 
 
-			if (sel.options[sel.selectedIndex].text == "Last Week") {
+			if (sel.options[sel.selectedIndex].text == "[[[Last Week]]]") {
 				PHMeasureChart(productionUnitId, "thisWeek");
 				WaterTempMeasureChart(productionUnitId, "thisWeek");
 				AirTempMeasureChart(productionUnitId, "thisWeek");
@@ -631,7 +631,7 @@
 			}
 
 
-			if (sel.options[sel.selectedIndex].text == "Last Three Months") {
+			if (sel.options[sel.selectedIndex].text == "[[[Last Three Months]]]") {
 				PHMeasureChart(productionUnitId, "lastThreeMonths");
 				WaterTempMeasureChart(productionUnitId, "lastThreeMonths");
 				AirTempMeasureChart(productionUnitId, "lastThreeMonths");
