@@ -397,7 +397,6 @@
 					$(".Online-Since-Weeks").text(item.OnlineSinceWeeks);
 					$(".phone").text(item.PhoneNumber);
 					$(".mail").text(item.ContactMail);
-					$(".phone").attr("href", "tel:" + item.PhoneNumber.replace(" ", ""));
 					$(".mail").attr("href", "mailto:" + item.ContactMail);
 
 					if (item.Location != "") {
@@ -413,8 +412,6 @@
 					}
 					else
 						$("li.btc").remove()
-
-
 				}
 			});
 		}

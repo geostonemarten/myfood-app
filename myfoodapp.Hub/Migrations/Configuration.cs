@@ -19,10 +19,10 @@ namespace myfoodapp.Hub.Migrations
         }
         protected override void Seed(ApplicationDbContext context)
         {
-			UpgradeDatabase.DoWork(context);
+			//UpgradeDatabase.DoWork(context);
 
 			//UpgradeDatabase.EventTypesIcons(context);
-			//return;
+			return;
 
             //if (System.Diagnostics.Debugger.IsAttached == false)
             //    System.Diagnostics.Debugger.Launch();
