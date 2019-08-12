@@ -34,6 +34,8 @@ namespace myfoodapp
             this.InitializeComponent();
             this.Suspending += OnSuspending;
 
+            this.UnhandledException += App_UnhandledException;
+
             logModel.AppendLog(Log.CreateLog("Local Webserver starting...", Log.LogType.System));
 
             webServer = new WebServerEngine();
@@ -52,6 +54,11 @@ namespace myfoodapp
                         App.TryShowNewWindow<MainPage>();
                 }
             });
+        }
+
+        private void App_UnhandledException(object sender, UnhandledExceptionEventArgs e)
+        {
+            Application.Current.Exit();
         }
 
         /// <summary>

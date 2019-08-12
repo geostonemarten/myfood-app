@@ -13,7 +13,7 @@ namespace myfoodapp.Hub
 			routes.MapRoute(
 				name: "PioneerProductionSite",
 				url: "PioneerProductionSite/{id}",
-				defaults: new { controller = "ProductionUnits", action = "UserUnit" }
+				defaults: new { controller = "ProductionUnits", action = "UserUnit", id = UrlParameter.Optional }
 				);
 
             routes.MapRoute(

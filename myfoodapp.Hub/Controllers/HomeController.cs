@@ -260,7 +260,7 @@ namespace myfoodapp.Hub.Controllers
         {
             ApplicationDbContext db = new ApplicationDbContext();
 
-            var stats = PerformanceManager.GetNetworkStatistic(db);
+            var stats = PerformanceManager.GetNetworkStatistics(db);
 
             return Json(new
             {
