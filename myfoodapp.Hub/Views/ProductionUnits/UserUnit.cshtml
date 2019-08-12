@@ -14,431 +14,431 @@
 
 	<script type="text/javascript">
 
-		var dialog = $("#dialog");
+        var dialog = $("#dialog");
 
-		(function (H) {
-			H.seriesTypes.line.prototype.requireSorting = false;
-		})(Highcharts);
-
-
-		$(document).ready(function () {
-			var leg_1_datepicker = $('#datepicker-here').datepicker({
-				startDate: new Date(ToJavaScriptDate(new Date())),
-				minDate: new Date(),
-				startDate: new Date()
-			}).data('datepicker').selectDate(new Date(ToJavaScriptDate(new Date())));
-
-			viewInfo();
-		});
-
-		function ToJavaScriptDate(value) {
-			var options = { year: 'numeric', month: 'short', day: 'numeric' };
-
-			return value.toLocaleDateString("en-US", options);
-		}
-
-		function PHMeasureChart(productId, ProductRange) {
-			$.ajax({
-				url: "@Url.Action("PHMeasure_Read", "ProductionUnits")",
-				dataType: "json",
-				data: { id: productId, range: ProductRange },
-				type: "POST",
-				success: function (response) {
-					response.forEach(function (item, i, response) {
-						var date = new Date(response[i][0].toString());
-						response[i][0] = Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate(), date.getUTCHours(), date.getUTCMinutes(), date.getUTCSeconds());
-					});
-
-					Highcharts.chart('ph-chart', {
-						chart: {
-							type: 'spline',
-							backgroundColor: 'transparent',
-						},
-						//legend: {
-						//    enabled: false
-						//},
-						title: {
-							text: ''
-						},
-						subtitle: {
-							text: ''
-						},
-						xAxis: {
-							type: 'datetime',
-							dateTimeLabelFormats: {
-								month: '%e. %b'
-							},
-							title: {
-								text: ''
-							},
-							minorGridLineWidth: 1,
-							gridLineWidth: 0,
-							alternateGridColor: null,
-						},
-						yAxis: {
-							min: 4,
-							max: 10,
-							title: {
-								text: ''
-							},
-							minorGridLineWidth: 1,
-							gridLineWidth: 1,
-							alternateGridColor: null,
-
-						},
-						tooltip: {
-							headerFormat: '<b>{series.name}</b><br>',
-							pointFormat: '{point.x:%e %b %H:%M} value:<b>{point.y:.2f}</b>'
-						},
-						plotOptions: {
-							spline: {
-								marker: {
-									enabled: false
-								},
-								lineWidth: 4,
-								color: '#2EA636',
-							}
-						},
-						series: [{
-							name: 'pH',
-							data: response,
-							label: {
-								enabled: false,
-							}
-						}],
-						navigation: {
-							menuItemStyle: {
-								fontSize: '10px'
-							}
-						}
-					});
-					$('.highcharts-contextbutton').remove();
-					$('.highcharts-credits').remove();
-					$('.highcharts-label').remove();
-				}
-			});
-		}
-
-		function WaterTempMeasureChart(productId, ProductRange) {
-			$.ajax({
-				url: "@Url.Action("WaterTempMeasure_Read", "ProductionUnits")",
-				dataType: "json",
-				data: { id: productId, range: ProductRange },
-				type: "POST",
-				success: function (response) {
-					response.forEach(function (item, i, response) {
-						var date = new Date(response[i][0].toString());
-						response[i][0] = Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate(), date.getUTCHours(), date.getUTCMinutes(), date.getUTCSeconds());
-					});
-
-					Highcharts.chart('watertemp-chart', {
-						chart: {
-							type: 'spline',
-							backgroundColor: 'transparent',
-						},
-						//legend: {
-						//    enabled: false
-						//},
-						title: {
-							text: ''
-						},
-						subtitle: {
-							text: ''
-						},
-						xAxis: {
-							type: 'datetime',
-							dateTimeLabelFormats: {
-								month: '%e. %b'
-							},
-							title: {
-								text: ''
-							},
-							minorGridLineWidth: 1,
-							gridLineWidth: 0,
-							alternateGridColor: null,
-						},
-						yAxis: {
-							title: {
-								text: ''
-							},
-							minorGridLineWidth: 1,
-							gridLineWidth: 1,
-							alternateGridColor: null,
-
-						},
-						tooltip: {
-							headerFormat: '<b>{series.name}</b><br>',
-							pointFormat: '{point.x:%e %b %H:%M} value:<b>{point.y:.2f}</b>'
-						},
-						plotOptions: {
-							spline: {
-								marker: {
-									enabled: false
-								},
-								lineWidth: 4,
-								color: '#2EA636',
-							},
-						},
-						series: [{
-							name: '[[[Water Temp]]]',
-							data: response,
-							label: {
-								enabled: false,
-							},
-						}],
-						navigation: {
-							menuItemStyle: {
-								fontSize: '10px'
-							}
-						}
-					});
-					$('.highcharts-contextbutton').remove();
-					$('.highcharts-credits').remove();
-				}
-			});
-		}
-		function AirTempMeasureChart(productId, ProductRange) {
-			$.ajax({
-				url: "@Url.Action("TempMeasure_Read", "ProductionUnits")",
-				dataType: "json",
-				data: { id: productId, range: ProductRange },
-				type: "POST",
-				success: function (response) {
-					response.air.forEach(function (item, i, response) {
-						var date = new Date(response[i][0].toString());
-						response[i][0] = Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate(), date.getUTCHours(), date.getUTCMinutes(), date.getUTCSeconds());
-					});
-					response.externalAir.forEach(function (item, i, response) {
-						var date = new Date(response[i][0].toString());
-						response[i][0] = Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate(), date.getUTCHours(), date.getUTCMinutes(), date.getUTCSeconds());
-					});
-					Highcharts.chart('airtemp-chart', {
-						chart: {
-							type: 'spline',
-							backgroundColor: 'transparent',
-						},
-						title: {
-							text: ''
-						},
-						subtitle: {
-							text: ''
-						},
-						xAxis: {
-							type: 'datetime',
-							dateTimeLabelFormats: {
-								month: '%e. %b'
-							},
-							title: {
-								text: ''
-							},
-							minorGridLineWidth: 1,
-							gridLineWidth: 0,
-							alternateGridColor: null,
-						},
-						yAxis: {
-							title: {
-								text: ''
-							},
-							minorGridLineWidth: 1,
-							gridLineWidth: 1,
-							alternateGridColor: null,
-
-						},
-						tooltip: {
-							headerFormat: '<b>{series.name}</b><br>',
-							pointFormat: '{point.x:%e %b %H:%M} value:<b>{point.y:.2f}</b>'
-						},
-						plotOptions: {
-							spline: {
-								marker: {
-									enabled: false
-								},
-								lineWidth: 4,
-							}
-						},
-						series: [
-							{
-								name: '[[[Air Temp]]]',
-								data: response.air,
-								color: '#2EA636',
-								label: {
-									enabled: false,
-								},
-							},
-
-							{
-								name: '[[[External Air Temp]]]',
-								data: response.externalAir,
-								color: '#E54848',
-								label: {
-									enabled: false,
-								}
-							}
-						],
-						navigation: {
-							menuItemStyle: {
-								fontSize: '10px'
-							}
-						}
-					});
-					$('.highcharts-contextbutton').remove();
-					$('.highcharts-credits').remove();
-				},
-				error: function (response) {
-					console.log('hmm');
-				}
-			});
-		}
-		function HumidityMeasureChart(productId, ProductRange) {
-			$.ajax({
-				url: "@Url.Action("HumidityMeasure_Read", "ProductionUnits")",
-				dataType: "json",
-				data: { id: productId, range: ProductRange },
-				type: "POST",
-				success: function (response) {
-					response.humidity.forEach(function (item, i, response) {
-						var date = new Date(response[i][0].toString());
-						response[i][0] = Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate(), date.getUTCHours(), date.getUTCMinutes(), date.getUTCSeconds());
-					});
-					response.externalHumidity.forEach(function (item, i, response) {
-						var date = new Date(response[i][0].toString());
-						response[i][0] = Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate(), date.getUTCHours(), date.getUTCMinutes(), date.getUTCSeconds());
-					});
-
-					Highcharts.chart('humidity-chart', {
-						chart: {
-							type: 'spline',
-							backgroundColor: 'transparent',
-						},
-						title: {
-							text: ''
-						},
-						subtitle: {
-							text: ''
-						},
-						xAxis: {
-							type: 'datetime',
-							dateTimeLabelFormats: {
-								month: '%e. %b'
-							},
-							title: {
-								text: ''
-							},
-							minorGridLineWidth: 1,
-							gridLineWidth: 0,
-							alternateGridColor: null,
-						},
-						yAxis: {
-							title: {
-								text: ''
-							},
-							minorGridLineWidth: 1,
-							gridLineWidth: 1,
-							alternateGridColor: null,
-
-						},
-						tooltip: {
-							headerFormat: '<b>{series.name}</b><br>',
-							pointFormat: '{point.x:%e %b %H:%M} value:<b>{point.y:.2f}</b>'
-						},
-						plotOptions: {
-							spline: {
-								marker: {
-									enabled: false
-								},
-								lineWidth: 4,
-							}
-						},
-						series: [{
-							name: '[[[Humidity]]]',
-							data: response.humidity,
-							color: '#2EA636',
-							label: {
-								enabled: false,
-							}
-						},
-						{
-							name: '[[[External Humidity]]]',
-							data: response.externalHumidity,
-							color: '#E54848',
-							label: {
-								enabled: false,
-							}
-						}],
-						navigation: {
-							menuItemStyle: {
-								fontSize: '10px'
-							}
-						}
-					});
-					$('.highcharts-contextbutton').remove();
-					$('.highcharts-credits').remove();
-				}
-			});
-		}
+        (function (H) {
+            H.seriesTypes.line.prototype.requireSorting = false;
+        })(Highcharts);
 
 
-		function viewInfo() {
+        $(document).ready(function () {
+            var leg_1_datepicker = $('#datepicker-here').datepicker({
+                startDate: new Date(ToJavaScriptDate(new Date())),
+                minDate: new Date(),
+                startDate: new Date()
+            }).data('datepicker').selectDate(new Date(ToJavaScriptDate(new Date())));
 
-			var productionUnitId = $('#routeDataId').val();
-			$.ajax({
-				url: "@Url.Action("GetProductionUnitDetailPopUp", "ProductionUnits")",
-				dataType: "json",
-				data: { id: productionUnitId },
-				type: "POST",
-				success: function (item) {
+            viewInfo();
+        });
 
-					$(".image-container .img-responsive").attr("src", "/Content/Pictures/Sites/" + item.PicturePath);
-					$(".company-logo .img-responsive").attr("src", "/Content/Pictures/ProductType/" + item.ProductionUnitTypeImage);
-					$(".company-name").text(item.ProductionUnitTypeName);
-					$(".contacts .title").text(item.PioneerCitizenName + ' #' + item.PioneerCitizenNumber);
-					$(".Average-Monthly-Production").text(item.AverageMonthlyProduction);
-					$(".Average-Monthly-Spared-CO2").text(item.AverageMonthlySparedCO2);
-					$(".Online-Since-Weeks").text(item.OnlineSinceWeeks);
-					$(".phone").text(item.PhoneNumber);
-					$(".mail").text(item.ContactMail);
-					$(".mail").attr("href", "mailto:" + item.ContactMail);
+        function ToJavaScriptDate(value) {
+            var options = { year: 'numeric', month: 'short', day: 'numeric' };
 
-					if (item.Location != "") {
-						$(".location").text(item.Location);
-						$("li.loc").show();
-					}
-					else
-						$("li.loc").remove()
+            return value.toLocaleDateString("en-US", options);
+        }
 
-					if (item.PreferedMoment != "") {
-						$(".best-to-contact").text(item.PreferedMoment);
-						$("li.btc").show();
-					}
-					else
-						$("li.btc").remove()
-				}
-			});
-		}
+        function PHMeasureChart(productId, ProductRange) {
+            $.ajax({
+                url: "@Url.Action("PHMeasure_Read", "ProductionUnits")",
+                dataType: "json",
+                data: { id: productId, range: ProductRange },
+                type: "POST",
+                success: function (response) {
+                    response.forEach(function (item, i, response) {
+                        var date = new Date(response[i][0].toString());
+                        response[i][0] = Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate(), date.getUTCHours(), date.getUTCMinutes(), date.getUTCSeconds());
+                    });
 
-		function GetEventTypes() {
-			$("#event-type-tiles").empty();
-			$.ajax({
-				url: "@Url.Action("EventType_Read", "ProductionUnits")",
-				dataType: "json",
-				type: "POST",
-				success: function (result) {
-					var count = result.Data.length;
-					var div;
-					$.each(result.Data, function (key, value) {
+                    Highcharts.chart('ph-chart', {
+                        chart: {
+                            type: 'spline',
+                            backgroundColor: 'transparent',
+                        },
+                        //legend: {
+                        //    enabled: false
+                        //},
+                        title: {
+                            text: ''
+                        },
+                        subtitle: {
+                            text: ''
+                        },
+                        xAxis: {
+                            type: 'datetime',
+                            dateTimeLabelFormats: {
+                                month: '%e. %b'
+                            },
+                            title: {
+                                text: ''
+                            },
+                            minorGridLineWidth: 1,
+                            gridLineWidth: 0,
+                            alternateGridColor: null,
+                        },
+                        yAxis: {
+                            min: 4,
+                            max: 10,
+                            title: {
+                                text: ''
+                            },
+                            minorGridLineWidth: 1,
+                            gridLineWidth: 1,
+                            alternateGridColor: null,
 
-						if (key % 6 == 0) {
-							div = document.createElement('div');
-							$(div).addClass("radio-tile-row");
+                        },
+                        tooltip: {
+                            headerFormat: '<b>{series.name}</b><br>',
+                            pointFormat: '{point.x:%e %b %H:%M} value:<b>{point.y:.2f}</b>'
+                        },
+                        plotOptions: {
+                            spline: {
+                                marker: {
+                                    enabled: false
+                                },
+                                lineWidth: 4,
+                                color: '#2EA636',
+                            }
+                        },
+                        series: [{
+                            name: 'pH',
+                            data: response,
+                            label: {
+                                enabled: false,
+                            }
+                        }],
+                        navigation: {
+                            menuItemStyle: {
+                                fontSize: '10px'
+                            }
+                        }
+                    });
+                    $('.highcharts-contextbutton').remove();
+                    $('.highcharts-credits').remove();
+                    $('.highcharts-label').remove();
+                }
+            });
+        }
 
-							if (key + 6 > count)
-								$(div).addClass("incomplete-row");
+        function WaterTempMeasureChart(productId, ProductRange) {
+            $.ajax({
+                url: "@Url.Action("WaterTempMeasure_Read", "ProductionUnits")",
+                dataType: "json",
+                data: { id: productId, range: ProductRange },
+                type: "POST",
+                success: function (response) {
+                    response.forEach(function (item, i, response) {
+                        var date = new Date(response[i][0].toString());
+                        response[i][0] = Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate(), date.getUTCHours(), date.getUTCMinutes(), date.getUTCSeconds());
+                    });
 
-							$("#event-type-tiles").append(div);
-						}
+                    Highcharts.chart('watertemp-chart', {
+                        chart: {
+                            type: 'spline',
+                            backgroundColor: 'transparent',
+                        },
+                        //legend: {
+                        //    enabled: false
+                        //},
+                        title: {
+                            text: ''
+                        },
+                        subtitle: {
+                            text: ''
+                        },
+                        xAxis: {
+                            type: 'datetime',
+                            dateTimeLabelFormats: {
+                                month: '%e. %b'
+                            },
+                            title: {
+                                text: ''
+                            },
+                            minorGridLineWidth: 1,
+                            gridLineWidth: 0,
+                            alternateGridColor: null,
+                        },
+                        yAxis: {
+                            title: {
+                                text: ''
+                            },
+                            minorGridLineWidth: 1,
+                            gridLineWidth: 1,
+                            alternateGridColor: null,
 
-						var checked = !key ? "checked" : "";
-						var eventItem = `
+                        },
+                        tooltip: {
+                            headerFormat: '<b>{series.name}</b><br>',
+                            pointFormat: '{point.x:%e %b %H:%M} value:<b>{point.y:.2f}</b>'
+                        },
+                        plotOptions: {
+                            spline: {
+                                marker: {
+                                    enabled: false
+                                },
+                                lineWidth: 4,
+                                color: '#2EA636',
+                            },
+                        },
+                        series: [{
+                            name: '[[[Water Temp]]]',
+                            data: response,
+                            label: {
+                                enabled: false,
+                            },
+                        }],
+                        navigation: {
+                            menuItemStyle: {
+                                fontSize: '10px'
+                            }
+                        }
+                    });
+                    $('.highcharts-contextbutton').remove();
+                    $('.highcharts-credits').remove();
+                }
+            });
+        }
+        function AirTempMeasureChart(productId, ProductRange) {
+            $.ajax({
+                url: "@Url.Action("TempMeasure_Read", "ProductionUnits")",
+                dataType: "json",
+                data: { id: productId, range: ProductRange },
+                type: "POST",
+                success: function (response) {
+                    response.air.forEach(function (item, i, response) {
+                        var date = new Date(response[i][0].toString());
+                        response[i][0] = Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate(), date.getUTCHours(), date.getUTCMinutes(), date.getUTCSeconds());
+                    });
+                    response.externalAir.forEach(function (item, i, response) {
+                        var date = new Date(response[i][0].toString());
+                        response[i][0] = Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate(), date.getUTCHours(), date.getUTCMinutes(), date.getUTCSeconds());
+                    });
+                    Highcharts.chart('airtemp-chart', {
+                        chart: {
+                            type: 'spline',
+                            backgroundColor: 'transparent',
+                        },
+                        title: {
+                            text: ''
+                        },
+                        subtitle: {
+                            text: ''
+                        },
+                        xAxis: {
+                            type: 'datetime',
+                            dateTimeLabelFormats: {
+                                month: '%e. %b'
+                            },
+                            title: {
+                                text: ''
+                            },
+                            minorGridLineWidth: 1,
+                            gridLineWidth: 0,
+                            alternateGridColor: null,
+                        },
+                        yAxis: {
+                            title: {
+                                text: ''
+                            },
+                            minorGridLineWidth: 1,
+                            gridLineWidth: 1,
+                            alternateGridColor: null,
+
+                        },
+                        tooltip: {
+                            headerFormat: '<b>{series.name}</b><br>',
+                            pointFormat: '{point.x:%e %b %H:%M} value:<b>{point.y:.2f}</b>'
+                        },
+                        plotOptions: {
+                            spline: {
+                                marker: {
+                                    enabled: false
+                                },
+                                lineWidth: 4,
+                            }
+                        },
+                        series: [
+                            {
+                                name: '[[[Air Temp]]]',
+                                data: response.air,
+                                color: '#2EA636',
+                                label: {
+                                    enabled: false,
+                                },
+                            },
+
+                            {
+                                name: '[[[External Air Temp]]]',
+                                data: response.externalAir,
+                                color: '#E54848',
+                                label: {
+                                    enabled: false,
+                                }
+                            }
+                        ],
+                        navigation: {
+                            menuItemStyle: {
+                                fontSize: '10px'
+                            }
+                        }
+                    });
+                    $('.highcharts-contextbutton').remove();
+                    $('.highcharts-credits').remove();
+                },
+                error: function (response) {
+                    console.log('hmm');
+                }
+            });
+        }
+        function HumidityMeasureChart(productId, ProductRange) {
+            $.ajax({
+                url: "@Url.Action("HumidityMeasure_Read", "ProductionUnits")",
+                dataType: "json",
+                data: { id: productId, range: ProductRange },
+                type: "POST",
+                success: function (response) {
+                    response.humidity.forEach(function (item, i, response) {
+                        var date = new Date(response[i][0].toString());
+                        response[i][0] = Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate(), date.getUTCHours(), date.getUTCMinutes(), date.getUTCSeconds());
+                    });
+                    response.externalHumidity.forEach(function (item, i, response) {
+                        var date = new Date(response[i][0].toString());
+                        response[i][0] = Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate(), date.getUTCHours(), date.getUTCMinutes(), date.getUTCSeconds());
+                    });
+
+                    Highcharts.chart('humidity-chart', {
+                        chart: {
+                            type: 'spline',
+                            backgroundColor: 'transparent',
+                        },
+                        title: {
+                            text: ''
+                        },
+                        subtitle: {
+                            text: ''
+                        },
+                        xAxis: {
+                            type: 'datetime',
+                            dateTimeLabelFormats: {
+                                month: '%e. %b'
+                            },
+                            title: {
+                                text: ''
+                            },
+                            minorGridLineWidth: 1,
+                            gridLineWidth: 0,
+                            alternateGridColor: null,
+                        },
+                        yAxis: {
+                            title: {
+                                text: ''
+                            },
+                            minorGridLineWidth: 1,
+                            gridLineWidth: 1,
+                            alternateGridColor: null,
+
+                        },
+                        tooltip: {
+                            headerFormat: '<b>{series.name}</b><br>',
+                            pointFormat: '{point.x:%e %b %H:%M} value:<b>{point.y:.2f}</b>'
+                        },
+                        plotOptions: {
+                            spline: {
+                                marker: {
+                                    enabled: false
+                                },
+                                lineWidth: 4,
+                            }
+                        },
+                        series: [{
+                                name: '[[[Humidity]]]',
+                                data: response.humidity,
+                                color: '#2EA636',
+                                label: {
+                                    enabled: false,
+                                }
+                            },
+                            {
+                                name: '[[[External Humidity]]]',
+                                data: response.externalHumidity,
+                                color: '#E54848',
+                                label: {
+                                    enabled: false,
+                                }
+                            }],
+                        navigation: {
+                            menuItemStyle: {
+                                fontSize: '10px'
+                            }
+                        }
+                    });
+                    $('.highcharts-contextbutton').remove();
+                    $('.highcharts-credits').remove();
+                }
+            });
+        }
+
+
+        function viewInfo() {
+
+            var productionUnitId = $('#routeDataId').val();
+            $.ajax({
+                url: "@Url.Action("GetProductionUnitDetailPopUp", "ProductionUnits")",
+                dataType: "json",
+                data: { id: productionUnitId },
+                type: "POST",
+                success: function (item) {
+
+                    $(".image-container .img-responsive").attr("src", "/Content/Pictures/Sites/" + item.PicturePath);
+                    $(".company-logo .img-responsive").attr("src", "/Content/Pictures/ProductType/" + item.ProductionUnitTypeImage);
+                    $(".company-name").text(item.ProductionUnitTypeName);
+                    $(".contacts .title").text(item.PioneerCitizenName + ' #' + item.PioneerCitizenNumber);
+                    $(".Average-Monthly-Production").text(item.AverageMonthlyProduction);
+                    $(".Average-Monthly-Spared-CO2").text(item.AverageMonthlySparedCO2);
+                    $(".Online-Since-Weeks").text(item.OnlineSinceWeeks);
+                    $(".phone").text(item.PhoneNumber);
+                    $(".mail").text(item.ContactMail);
+                    $(".mail").attr("href", "mailto:" + item.ContactMail);
+
+                    if (item.Location != "") {
+                        $(".location").text(item.Location);
+                        $("li.loc").show();
+                    }
+                    else
+                        $("li.loc").remove()
+
+                    if (item.PreferedMoment != "") {
+                        $(".best-to-contact").text(item.PreferedMoment);
+                        $("li.btc").show();
+                    }
+                    else
+                        $("li.btc").remove()
+                }
+            });
+        }
+
+        function GetEventTypes() {
+            $("#event-type-tiles").empty();
+            $.ajax({
+                url: "@Url.Action("EventType_Read", "ProductionUnits")",
+                dataType: "json",
+                type: "POST",
+                success: function (result) {
+                    var count = result.Data.length;
+                    var div;
+                    $.each(result.Data, function (key, value) {
+
+                        if (key % 6 == 0) {
+                            div = document.createElement('div');
+                            $(div).addClass("radio-tile-row");
+
+                            if (key + 6 > count)
+                                $(div).addClass("incomplete-row");
+
+                            $("#event-type-tiles").append(div);
+                        }
+
+                        var checked = !key ? "checked" : "";
+                        var eventItem = `
 							<div class="input-container">
 								<input class="radio-button" value="${value.Id}" type="radio" name="event-type" ${checked}/>
 								<div class="radio-tile">
@@ -449,278 +449,278 @@
 								</div>
 							  </div>`;
 
-						$(div).append(eventItem);
-					});
+                        $(div).append(eventItem);
+                    });
 
-					$("[name='event-type']").on("click", function () {
-						var id = $(this).val();
-						GetEventTypeItems(id);
-					});
-				}
-			});
-		}
+                    $("[name='event-type']").on("click", function () {
+                        var id = $(this).val();
+                        GetEventTypeItems(id);
+                    });
+                }
+            });
+        }
 
-		function AddEvent() {
-			var obj = {};
-			obj.ProductionUnitId = $('#routeDataId').val();
-			obj.EventTypeId = $("[name='event-type']:checked").val();
-			obj.EventTypeItemId = $("[name='event-item']:checked").val();
-			obj.Note = $("[name='event-note']").val();
-			obj.CurrentDate = new Date($('#datepicker-here').data('datepicker').selectedDates[0]).toJSON();
-			obj.Details = $("[name='event-description']").val();
+        function AddEvent() {
+            var obj = {};
+            obj.ProductionUnitId = $('#routeDataId').val();
+            obj.EventTypeId = $("[name='event-type']:checked").val();
+            obj.EventTypeItemId = $("[name='event-item']:checked").val();
+            obj.Note = $("[name='event-note']").val();
+            obj.CurrentDate = new Date($('#datepicker-here').data('datepicker').selectedDates[0]).toJSON();
+            obj.Details = $("[name='event-description']").val();
 
-			if (obj.EventTypeItemId === undefined)
-				$("#event-item-caption").css("color", "#e54848");
-			else
-				$("#event-item-caption").css("color", "#6C7A73");
-			if (obj.CurrentDate == null)
-				$("#datepicker-here").css("border", "2px solid #e54848");
-			else
-				$("#datepicker-here").css("border", "2px solid #F3F6F8");
+            if (obj.EventTypeItemId === undefined)
+                $("#event-item-caption").css("color", "#e54848");
+            else
+                $("#event-item-caption").css("color", "#6C7A73");
+            if (obj.CurrentDate == null)
+                $("#datepicker-here").css("border", "2px solid #e54848");
+            else
+                $("#datepicker-here").css("border", "2px solid #F3F6F8");
 
-			if (obj.EventTypeItemId === undefined || obj.CurrentDate == null) {
-				return;
-			}
+            if (obj.EventTypeItemId === undefined || obj.CurrentDate == null) {
+                return;
+            }
 
-			$.ajax({
-				url: "@Url.Action("AddEvent", "ProductionUnits")",
-				dataType: "json",
-				data: obj,
-				type: "POST",
-				success: function (result) {
-					if (result) {
-						$("#add-event").modal("hide");
-					}
-				}
-			});
-		}
+            $.ajax({
+                url: "@Url.Action("AddEvent", "ProductionUnits")",
+                dataType: "json",
+                data: obj,
+                type: "POST",
+                success: function (result) {
+                    if (result) {
+                        $("#add-event").modal("hide");
+                    }
+                }
+            });
+        }
 
 
-		function AddEventPopupInit() {
-			GetEventTypes();
-			GetEventTypeItems(4);
-		}
-		function GetEventTypeItems(id) {
-			$("#event-item-tiles").empty();
+        function AddEventPopupInit() {
+            GetEventTypes();
+            GetEventTypeItems(4);
+        }
+        function GetEventTypeItems(id) {
+            $("#event-item-tiles").empty();
 
-			$.ajax({
-				url: "@Url.Action("EventTypeItem_Read", "ProductionUnits")",
-				dataType: "json",
-				data: { "evenTypeId": id },
-				type: "POST",
-				success: function (result) {
-					var count = result.Data.length;
-					var div;
-					$.each(result.Data, function (key, value) {
+            $.ajax({
+                url: "@Url.Action("EventTypeItem_Read", "ProductionUnits")",
+                dataType: "json",
+                data: { "evenTypeId": id },
+                type: "POST",
+                success: function (result) {
+                    var count = result.Data.length;
+                    var div;
+                    $.each(result.Data, function (key, value) {
 
-						if (key % 3 == 0) {
-							div = document.createElement('div');
-							$(div).addClass("row radio-tile-row more-row");
+                        if (key % 3 == 0) {
+                            div = document.createElement('div');
+                            $(div).addClass("row radio-tile-row more-row");
 
-							$("#event-item-tiles").append(div);
-						}
+                            $("#event-item-tiles").append(div);
+                        }
 
-						var eventItem = `
+                        var eventItem = `
 								  <div class="more-item">
 									<input id="eventItem-${value.Id}" name="event-item" value="${value.Id}" class="custom-radio" type="radio">
 									<label for="eventItem-${value.Id}">${value.name}</label>
 								  </div>`;
 
-						$(div).append(eventItem);
-					});
-				}
-			});
-		}
+                        $(div).append(eventItem);
+                    });
+                }
+            });
+        }
 
-		window.onload = function onLoad(e) {
+        window.onload = function onLoad(e) {
 
-			var productionUnitId = $('#routeDataId').val();
+            var productionUnitId = $('#routeDataId').val();
 
-			PHMeasureChart(productionUnitId, null);
-			WaterTempMeasureChart(productionUnitId, null);
+            PHMeasureChart(productionUnitId, null);
+            WaterTempMeasureChart(productionUnitId, null);
 
-			AirTempMeasureChart(productionUnitId, null);
+            AirTempMeasureChart(productionUnitId, null);
 
-			HumidityMeasureChart(productionUnitId, null);
+            HumidityMeasureChart(productionUnitId, null);
 
-			$.ajax({
-				url: "@Url.Action("GetProductionUnitDetail", "ProductionUnits")",
-				dataType: "json",
-				data: { id: productionUnitId },
-				type: "POST",
-				success: function (response) {
-					$("#PioneerCitizenName").text(response.PioneerCitizenName + " #" + response.PioneerCitizenNumber);
-					$("#ProductionUnitType").text(response.ProductionUnitType);
-					$("#ProductionUnitVersion").text('VERSION: ' + response.ProductionUnitVersion);
-					$("#ProductionUnitOptions").text('Options: ' + response.ProductionUnitOptions);
-					$("#OnlineSinceWeeks").text(response.OnlineSinceWeeks);
-					$("#AverageMonthlyProduction").text(response.AverageMonthlyProduction + 'kg');
-					$("#AverageMonthlySparedCO2").text(response.AverageMonthlySparedCO2 + 'kg');
+            $.ajax({
+                url: "@Url.Action("GetProductionUnitDetail", "ProductionUnits")",
+                dataType: "json",
+                data: { id: productionUnitId },
+                type: "POST",
+                success: function (response) {
+                    $("#PioneerCitizenName").text(response.PioneerCitizenName + " #" + response.PioneerCitizenNumber);
+                    $("#ProductionUnitType").text(response.ProductionUnitType);
+                    $("#ProductionUnitVersion").text('VERSION: ' + response.ProductionUnitVersion);
+                    $("#ProductionUnitOptions").text('Options: ' + response.ProductionUnitOptions);
+                    $("#OnlineSinceWeeks").text(response.OnlineSinceWeeks);
+                    $("#AverageMonthlyProduction").text(response.AverageMonthlyProduction + 'kg');
+                    $("#AverageMonthlySparedCO2").text(response.AverageMonthlySparedCO2 + 'kg');
 
-					if (response.PicturePath === null) {
-						$("#ProductionUnitPicture").hide();
-					}
-					else {
-						$('#ProductionUnitPicture').css("background-image", "linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .5)), url(/Content/Pictures/Sites/" + response.PicturePath + ")");
-						$("#ProductionUnitPicture").show();
-					}
+                    if (response.PicturePath === null) {
+                        $("#ProductionUnitPicture").hide();
+                    }
+                    else {
+                        $('#ProductionUnitPicture').css("background-image", "linear-gradient(rgba(0, 0, 0, .1), rgba(0, 0, 0, .5)), url(/Content/Pictures/Sites/" + response.PicturePath + ")");
+                        $("#ProductionUnitPicture").show();
+                    }
 
-					$("#CurrentPhValue").text(response.CurrentPhValue);
-					$("#CurrentPhCaptureTime").text(response.CurrentPhCaptureTime);
-					$("#AverageHourPhValue").text(response.AverageHourPhValue);
-					$("#AverageDayPhValue").text(response.AverageDayPhValue);
-					$("#LastDayPhCaptureTime").text(response.LastDayPhCaptureTime);
+                    $("#CurrentPhValue").text(response.CurrentPhValue);
+                    $("#CurrentPhCaptureTime").text(response.CurrentPhCaptureTime);
+                    $("#AverageHourPhValue").text(response.AverageHourPhValue);
+                    $("#AverageDayPhValue").text(response.AverageDayPhValue);
+                    $("#LastDayPhCaptureTime").text(response.LastDayPhCaptureTime);
 
-					$("#CurrentWaterTempValue").text(response.CurrentWaterTempValue);
-					$("#CurrentWaterTempCaptureTime").text(response.CurrentWaterTempCaptureTime);
-					$("#AverageHourWaterTempValue").text(response.AverageHourWaterTempValue);
-					$("#AverageDayWaterTempValue").text(response.AverageDayWaterTempValue);
-					$("#LastDayWaterTempCaptureTime").text(response.LastDayWaterTempCaptureTime);
+                    $("#CurrentWaterTempValue").text(response.CurrentWaterTempValue);
+                    $("#CurrentWaterTempCaptureTime").text(response.CurrentWaterTempCaptureTime);
+                    $("#AverageHourWaterTempValue").text(response.AverageHourWaterTempValue);
+                    $("#AverageDayWaterTempValue").text(response.AverageDayWaterTempValue);
+                    $("#LastDayWaterTempCaptureTime").text(response.LastDayWaterTempCaptureTime);
 
-					$("#CurrentAirTempValue").text(response.CurrentAirTempValue);
-					$("#CurrentAirTempCaptureTime").text(response.CurrentAirTempCaptureTime);
-					$("#AverageHourAirTempValue").text(response.AverageHourAirTempValue);
-					$("#AverageDayAirTempValue").text(response.AverageDayAirTempValue);
-					$("#LastDayAirTempCaptureTime").text(response.LastDayAirTempCaptureTime);
+                    $("#CurrentAirTempValue").text(response.CurrentAirTempValue);
+                    $("#CurrentAirTempCaptureTime").text(response.CurrentAirTempCaptureTime);
+                    $("#AverageHourAirTempValue").text(response.AverageHourAirTempValue);
+                    $("#AverageDayAirTempValue").text(response.AverageDayAirTempValue);
+                    $("#LastDayAirTempCaptureTime").text(response.LastDayAirTempCaptureTime);
 
-					$("#CurrentHumidityValue").text(response.CurrentHumidityValue);
-					$("#CurrentHumidityCaptureTime").text(response.CurrentHumidityCaptureTime);
-					$("#AverageHourHumidityValue").text(response.AverageHourHumidityValue);
-					$("#AverageDayHumidityValue").text(response.AverageDayHumidityValue);
-					$("#LastDayHumidityCaptureTime").text(response.LastDayHumidityCaptureTime);
-				}
-			});
+                    $("#CurrentHumidityValue").text(response.CurrentHumidityValue);
+                    $("#CurrentHumidityCaptureTime").text(response.CurrentHumidityCaptureTime);
+                    $("#AverageHourHumidityValue").text(response.AverageHourHumidityValue);
+                    $("#AverageDayHumidityValue").text(response.AverageDayHumidityValue);
+                    $("#LastDayHumidityCaptureTime").text(response.LastDayHumidityCaptureTime);
+                }
+            });
 
-			var myVal = $("#displayManagementBtn").val();
-			if (myVal === 'None') {
-				$("#managementButton").hide();
-			}
-		}
-
-
-		function onViewEventsClick() {
-			var productionUnitId = $('#routeDataId').val();
-			window.location = window.location.origin + "/Events/Index/" + productionUnitId;
-		}
-
-		function onManageUnitClick() {
-			var productionUnitId = $('#routeDataId').val();
-			window.location = window.location.origin + "/ProductionUnits/Update/" + productionUnitId;
-		}
-
-		function onThisWeekClick(sel) {
-
-			var productionUnitId = $('#routeDataId').val();
-
-			if (sel.options[sel.selectedIndex].text == "[[[This Last Day]]]") {
-				PHMeasureChart(productionUnitId, "thisLastDays");
-				WaterTempMeasureChart(productionUnitId, "thisLastDays");
-				AirTempMeasureChart(productionUnitId, "thisLastDays");
-				HumidityMeasureChart(productionUnitId, "thisLastDays");
-			}
+            var myVal = $("#displayManagementBtn").val();
+            if (myVal === 'None') {
+                $("#managementButton").hide();
+            }
+        }
 
 
-			if (sel.options[sel.selectedIndex].text == "[[[Last Week]]]") {
-				PHMeasureChart(productionUnitId, "thisWeek");
-				WaterTempMeasureChart(productionUnitId, "thisWeek");
-				AirTempMeasureChart(productionUnitId, "thisWeek");
-				HumidityMeasureChart(productionUnitId, "thisWeek");
-			}
+        function onViewEventsClick() {
+            var productionUnitId = $('#routeDataId').val();
+            window.location = window.location.origin + "/Events/Index/" + productionUnitId;
+        }
+
+        function onManageUnitClick() {
+            var productionUnitId = $('#routeDataId').val();
+            window.location = window.location.origin + "/ProductionUnits/Update/" + productionUnitId;
+        }
+
+        function onThisWeekClick(sel) {
+
+            var productionUnitId = $('#routeDataId').val();
+
+            if (sel.options[sel.selectedIndex].text == "[[[This Last Day]]]") {
+                PHMeasureChart(productionUnitId, "thisLastDays");
+                WaterTempMeasureChart(productionUnitId, "thisLastDays");
+                AirTempMeasureChart(productionUnitId, "thisLastDays");
+                HumidityMeasureChart(productionUnitId, "thisLastDays");
+            }
 
 
-			if (sel.options[sel.selectedIndex].text == "[[[Last Three Months]]]") {
-				PHMeasureChart(productionUnitId, "lastThreeMonths");
-				WaterTempMeasureChart(productionUnitId, "lastThreeMonths");
-				AirTempMeasureChart(productionUnitId, "lastThreeMonths");
-				HumidityMeasureChart(productionUnitId, "lastThreeMonths");
-			}
+            if (sel.options[sel.selectedIndex].text == "[[[Last Week]]]") {
+                PHMeasureChart(productionUnitId, "thisWeek");
+                WaterTempMeasureChart(productionUnitId, "thisWeek");
+                AirTempMeasureChart(productionUnitId, "thisWeek");
+                HumidityMeasureChart(productionUnitId, "thisWeek");
+            }
 
-		}
 
-		function onExportCSVClick() {
-			var productionUnitId = $('#routeDataId').val();
-			window.location.href = "@Url.Action("DownloadCSV", "ProductionUnits")?id=" + productionUnitId;
-		}
+            if (sel.options[sel.selectedIndex].text == "[[[Last Three Months]]]") {
+                PHMeasureChart(productionUnitId, "lastThreeMonths");
+                WaterTempMeasureChart(productionUnitId, "lastThreeMonths");
+                AirTempMeasureChart(productionUnitId, "lastThreeMonths");
+                HumidityMeasureChart(productionUnitId, "lastThreeMonths");
+            }
 
-		function onEventTypeChange(arg) {
-			var currentEventypeIndex = $('#listViewEventType').data("kendoListView").select().index();
-			var currentEventypeId = $('#listViewEventType').data("kendoListView").dataSource.view()[currentEventypeIndex].Id;
+        }
 
-			var listViewEventTypeItems = $('#listViewEventTypeItems').data("kendoListView");
-			listViewEventTypeItems.dataSource.read({ evenTypeId: currentEventypeId });
-		}
+        function onExportCSVClick() {
+            var productionUnitId = $('#routeDataId').val();
+            window.location.href = "@Url.Action("DownloadCSV", "ProductionUnits")?id=" + productionUnitId;
+        }
 
-		function onEventTypeItemChange(arg) {
-			$('#descriptionTextBox').css("visibility", "visible");
-			$('#datePicker').css("visibility", "visible");
-		}
+        function onEventTypeChange(arg) {
+            var currentEventypeIndex = $('#listViewEventType').data("kendoListView").select().index();
+            var currentEventypeId = $('#listViewEventType').data("kendoListView").dataSource.view()[currentEventypeIndex].Id;
 
-		function onInitOpen(e) {
+            var listViewEventTypeItems = $('#listViewEventTypeItems').data("kendoListView");
+            listViewEventTypeItems.dataSource.read({ evenTypeId: currentEventypeId });
+        }
 
-		}
+        function onEventTypeItemChange(arg) {
+            $('#descriptionTextBox').css("visibility", "visible");
+            $('#datePicker').css("visibility", "visible");
+        }
 
-		function onOpen(e) {
+        function onInitOpen(e) {
 
-		}
+        }
 
-		function onShow(e) {
+        function onOpen(e) {
 
-		}
+        }
 
-		function onHide(e) {
+        function onShow(e) {
 
-		}
+        }
 
-		function onClose(e) {
+        function onHide(e) {
 
-		}
+        }
 
-		function onCancel(e) {
+        function onClose(e) {
 
-		}
+        }
 
-		function onOK(e) {
+        function onCancel(e) {
 
-			var currentProductionUnitId = $('#routeDataId').val();
+        }
 
-			var currentEventypeIndex = $('#listViewEventType').data("kendoListView").select().index();
-			if (currentEventypeIndex == -1)
-				return;
+        function onOK(e) {
 
-			var currentEventypeId = $('#listViewEventType').data("kendoListView").dataSource.view()[currentEventypeIndex].Id;
+            var currentProductionUnitId = $('#routeDataId').val();
 
-			var currentEventTypeItemIndex = $('#listViewEventTypeItems').data("kendoListView").select().index();
-			var currentEventTypeItemId = 0;
+            var currentEventypeIndex = $('#listViewEventType').data("kendoListView").select().index();
+            if (currentEventypeIndex == -1)
+                return;
 
-			if (currentEventTypeItemIndex == -1) {
-				currentEventTypeItemId = 0;
-			}
-			else {
-				currentEventTypeItemId = $('#listViewEventTypeItems').data("kendoListView").dataSource.view()[currentEventTypeItemIndex].Id;
-			}
+            var currentEventypeId = $('#listViewEventType').data("kendoListView").dataSource.view()[currentEventypeIndex].Id;
 
-			var strNote = $('#descriptionTextBox').val();
+            var currentEventTypeItemIndex = $('#listViewEventTypeItems').data("kendoListView").select().index();
+            var currentEventTypeItemId = 0;
 
-			var date = $('#datePicker').data("kendoDatePicker").value().toISOString();
+            if (currentEventTypeItemIndex == -1) {
+                currentEventTypeItemId = 0;
+            }
+            else {
+                currentEventTypeItemId = $('#listViewEventTypeItems').data("kendoListView").dataSource.view()[currentEventTypeItemIndex].Id;
+            }
 
-			var strDetails = $('#detailsTextArea').val();
+            var strNote = $('#descriptionTextBox').val();
 
-			$.ajax({
-				url: "@Url.Action("AddEvent", "ProductionUnits")",
-				dataType: "json",
-				data: { productionUnitId: currentProductionUnitId, eventTypeId: currentEventypeId, eventTypeItemId: currentEventTypeItemId, note: strNote, currentDate: date, details: strDetails, },
-				type: "POST",
-				success: function (response) {
-					$('#descriptionTextBox').val('');
-					$('#detailsTextArea').val('');
+            var date = $('#datePicker').data("kendoDatePicker").value().toISOString();
 
-					$('#listViewEventTypeItems').data("kendoListView").clearSelection();
-				}
-			});
+            var strDetails = $('#detailsTextArea').val();
 
-		}
+            $.ajax({
+                url: "@Url.Action("AddEvent", "ProductionUnits")",
+                dataType: "json",
+                data: { productionUnitId: currentProductionUnitId, eventTypeId: currentEventypeId, eventTypeItemId: currentEventTypeItemId, note: strNote, currentDate: date, details: strDetails, },
+                type: "POST",
+                success: function (response) {
+                    $('#descriptionTextBox').val('');
+                    $('#detailsTextArea').val('');
 
-	</script>
+                    $('#listViewEventTypeItems').data("kendoListView").clearSelection();
+                }
+            });
+
+        }
+
+    </script>
 
 	<script type="text/x-kendo-tmpl" id="templateOption">
 		<div class="option">
@@ -761,7 +761,7 @@
 			{
 							if (ViewBag.ProdUnitList != null)
 							{
-								@Html.DropDownList("prodUnitId", (SelectList) ViewBag.ProdUnitList, new {@class = "change-graph", onchange = "this.form.submit();"})
+								@Html.DropDownList("prodUnitId", (SelectList) ViewBag.ProdUnitList, new {@class = "change-graph", onchange = "this.form.submit();", id="selectList"})
 							}
 						}
 			<button class="btn btn-green" onclick="onExportCSVClick()">[[[Export CSV]]]</button>
@@ -1095,7 +1095,7 @@
 
 		.change-graph {
 			border: 2px solid #D5EDD6;
-			padding: 0.63em;
+			padding: 0.5em;
 			border-radius: 15px;
 			color: #2EA636;
 			font-size: 14px;
@@ -1341,18 +1341,32 @@
 
 
 	<script type="text/javascript">
-		function error_handler(e) {
-			if (e.errors) {
-				var measure = "Errors:\n";
-				$.each(e.errors, function (key, value) {
-					if ('errors' in value) {
-						$.each(value.errors, function () {
-							measure += this + "\n";
-						});
-					}
-				});
-				alert(measure);
-			}
-		}
-	</script>
+        function error_handler(e) {
+            if (e.errors) {
+                var measure = "Errors:\n";
+                $.each(e.errors, function (key, value) {
+                    if ('errors' in value) {
+                        $.each(value.errors, function () {
+                            measure += this + "\n";
+                        });
+                    }
+                });
+                alert(measure);
+            }
+        }
+    </script>
 
+<script type="text/javascript">
+    var url_match = window.location.href.match("PioneerProductionSite\/([0-9]+)$");
+    var id = "";
+    if (url_match.length > 0) {
+        id = url_match[1];
+    }
+    var options = document.getElementById("selectList").children;
+    for (let option of options) {
+        if (option.value === id) {
+            option.selected = true;
+            break;
+        }
+    }
+</script>
