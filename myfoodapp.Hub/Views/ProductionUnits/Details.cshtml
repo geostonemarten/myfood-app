@@ -709,7 +709,7 @@
 
 		var productionUnitId = $('#routeDataId').val();
 
-		if (sel.options[sel.selectedIndex].text == "This Last Day") {
+		if (sel.options[sel.selectedIndex].text == "[[[This Last Day]]]") {
 			PHMeasureChart(productionUnitId, "thisLastDays");
 			WaterTempMeasureChart(productionUnitId, "thisLastDays");
 			AirTempMeasureChart(productionUnitId, "thisLastDays");
@@ -718,7 +718,7 @@
 
 		}
 
-		if (sel.options[sel.selectedIndex].text == "Last Week") {
+		if (sel.options[sel.selectedIndex].text == "[[[Last Week]]]") {
 			PHMeasureChart(productionUnitId, "thisWeek");
 			WaterTempMeasureChart(productionUnitId, "thisWeek");
 			AirTempMeasureChart(productionUnitId, "thisWeek");
@@ -726,7 +726,7 @@
             AirCarboneDioxideMeasureChart(productionUnitId, "thisWeek");
 		}
 
-		if (sel.options[sel.selectedIndex].text == "Last Three Months") {
+		if (sel.options[sel.selectedIndex].text == "[[[Last Three Months]]]") {
 			PHMeasureChart(productionUnitId, "lastThreeMonths");
 			WaterTempMeasureChart(productionUnitId, "lastThreeMonths");
 			AirTempMeasureChart(productionUnitId, "lastThreeMonths");
@@ -847,14 +847,18 @@
 </div>
 
 <div id="statsContainerTop" class="row">
-	<div class="col-md-9 buttons-section">
-		<button class="btn btn-transparent" data-toggle="modal" data-target="#add-event" onclick="AddEventPopupInit()">[[[Add Event]]]</button>
-		<button class="btn btn-transparent" onclick="onViewEventsClick()">[[[View Events]]]</button>
-		<button class="btn btn-transparent" onclick="onManageUnitClick()">[[[Manage Unit]]]</button>
-		<button class="btn btn-green-sm" onclick="onExportCSVClick()">[[[Export CSV]]]</button>
-	</div>
-	<div class="col-md-3 buttons-section a-right">
-		<button class="btn btn-green" onclick="onExportCSVClick()">[[[Export CSV]]]</button>
+	
+	<div class="sticky-panel">
+		<div class="left-buttons-section">
+			<button class="btn btn-transparent" data-toggle="modal" data-target="#add-event" onclick="AddEventPopupInit()">[[[Add Event]]]</button>
+			<button class="btn btn-transparent" onclick="onViewEventsClick()">[[[View Events]]]</button>
+			<button class="btn btn-transparent" onclick="onManageUnitClick()">[[[Manage Unit]]]</button>
+			<button class="btn btn-green-sm" onclick="onExportCSVClick()">[[[Export CSV]]]</button>
+
+		</div>
+		<div class="right-buttons-section">
+			<button class="btn btn-green" onclick="onExportCSVClick()">[[[Export CSV]]]</button>
+		</div>
 	</div>
 	<div id="pHContainer" class="col-md-6">
 		<div class="wrapper">
@@ -1232,27 +1236,70 @@
 		font-size: 14px;
 	}
 
-	.buttons-section {
-		margin-top: 10px;
-		z-index: 999;
-		margin-top: 10px;
-		position: sticky;
-		top: 0;
+	.sticky-panel {
 		background: #eee;
+		z-index: 999;
+		top: 0;
+		position: sticky;
+		display: flex;
+		justify-content: space-between;
+		padding: 10px 15px;
+		align-items: center;
 	}
-	
-	.buttons-section .btn-transparent {
+	.sticky-panel .unit-dropdown {
+		display: inline-block;
+	}
+	.sticky-panel .left-buttons-section .btn,
+	.sticky-panel .right-buttons-section .btn {
+		min-width: 135px;
+	}
+	@@media (max-width: 1150px) {
+		.sticky-panel {
+			flex-direction: column;
+		}
+	}
+		
+	@@media (max-width: 590px) {
+		.sticky-panel {
+			position: relative;
+		}
+		.sticky-panel .right-buttons-section,
+		.sticky-panel .left-buttons-section {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+		}
+		.sticky-panel .left-buttons-section .unit-dropdown {
+			margin: 2px 0;
+		}
+		.sticky-panel .left-buttons-section .btn,
+		.sticky-panel .right-buttons-section .btn {
+			margin: 7px 0;
+		}
+		.sticky-panel .left-buttons-section .btn,
+		.sticky-panel .right-buttons-section .btn,
+		.sticky-panel .right-buttons-section .unit-dropdown,
+		.sticky-panel .right-buttons-section .unit-dropdown .change-graph {
+			width: 100%;
+		}
+	}
+	.left-buttons-section .btn-transparent {
 		background: #e7e0d5;
 		color: #2b5a2e;
 		font-weight: 700;
 		letter-spacing: .5px;
-		margin: 10px 0;
 	}
-		.buttons-section .btn-green {
-			font-weight: 700;
-			letter-spacing: .5px;
-			margin: 10px 0;
-		}
+	.right-buttons-section {
+		display: flex;
+		align-items: center;
+	}
+	.right-buttons-section .change-graph {
+		padding: 0.7em;
+	}
+	.right-buttons-section .btn-green {
+		letter-spacing: .5px;
+		margin: 0.5em;
+	}
 	.column-right {
 		color: #707070;
 		float: right;

@@ -116,11 +116,10 @@ namespace myfoodapp.Hub.Controllers
                         selectList = new SelectList(userProductionUnit.ToList(), "Id", "info", selected);
                         currentUserProductionUnit = userProductionUnit.Where(p => p.Id == id).FirstOrDefault();
                     }
-                    else
-                        currentUserProductionUnit = userProductionUnit.FirstOrDefault();
-
                     ViewBag.ProdUnitList = selectList;
                 }
+                else
+                    currentUserProductionUnit = userProductionUnit.FirstOrDefault();
 
                 ViewBag.CurrentUser = currentUserProductionUnit.Id;
                 ViewBag.SignalStrenghtImagePath = Signal.GetSignalStrenghtName(currentUserProductionUnit.lastSignalStrenghtReceived);
