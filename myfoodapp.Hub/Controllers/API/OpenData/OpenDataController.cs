@@ -51,7 +51,7 @@ namespace myfoodapp.Hub.Controllers.Api
         public OpenProductionUnitsStatsViewModel GetProductionUnitStats()
         {
             var db = new ApplicationDbContext();
-            var stats = PerformanceManager.GetNetworkStatistic(db);
+            var stats = PerformanceManager.GetNetworkStatistics(db);
 
             return stats;
         }

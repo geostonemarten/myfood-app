@@ -1,19 +1,8 @@
-﻿using GalaSoft.MvvmLight.Messaging;
-using myfoodapp.Business;
+﻿using myfoodapp.Business;
 using myfoodapp.Common;
 using myfoodapp.Model;
 using myfoodapp.Views;
-using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Text;
-using System.Threading.Tasks;
-using Windows.Data.Json;
-using Windows.Data.Xml.Dom;
-using Windows.UI.Notifications;
 using Windows.UI.Xaml;
 
 namespace myfoodapp.ViewModel

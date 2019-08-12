@@ -1,12 +1,6 @@
-﻿using Windows.UI.Xaml;
+﻿using myfoodapp.ViewModel;
+using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using myfoodapp.ViewModel;
-using GalaSoft.MvvmLight.Messaging;
-using myfoodapp.Common;
-using System;
-using Windows.Networking.NetworkOperators;
-using Windows.Networking.Connectivity;
-using MetroLog;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 

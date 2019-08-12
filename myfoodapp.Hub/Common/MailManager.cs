@@ -37,7 +37,7 @@ namespace myfoodapp.Hub.Common
                         case "fr":
                             subject = "[myfood] Votre serre est déconnectée";
                             htmlContent = string.Format("Bonjour {0}, </br></br>" +
-                                                        "Nous avons détecté que votre serre #{1} n'émet plus de signal depuis 6 heures.</br>" +
+                                                        "Nous avons détecté que votre serre #{1} n'émet plus de signal depuis quelques heures.</br>" +
                                                         "Vérifiez l'état de fonctionnement électrique de votre installation.</br>" +
                                                         @"N'hésitez pas à consulter la rubrique de dépannage sur le <a href=""https://wiki.myfood.eu/docs/boitier-puissance"">WIKI</a>.</br></br>" +
                                                         "Bien à vous,", currentProductionUnit.owner.pioneerCitizenName, currentProductionUnit.owner.pioneerCitizenNumber);
@@ -45,7 +45,7 @@ namespace myfoodapp.Hub.Common
                         default:
                             subject = "[myfood] Your greenhouse is disconnected";
                             htmlContent = string.Format("Hi {0}, </br></br>" +
-                                                        "We have detected that your greenhouse #{1} is no longer signaling for 6 hours.</br>" +
+                                                        "We have detected that your greenhouse #{1} is no longer signaling since few hours.</br>" +
                                                         "Check the electrical operating status of your installation.</br>" +
                                                          @"Do not hesitate to consult the troubleshooting page on the <a href=""https://wiki.myfood.eu/docs/boitier-puissance"">WIKI</a>.</br></br>" +
                                                         "Have a nice day,", currentProductionUnit.owner.pioneerCitizenName, currentProductionUnit.owner.pioneerCitizenNumber);
@@ -55,14 +55,14 @@ namespace myfoodapp.Hub.Common
                 {
                     subject = "[myfood] Your greenhouse is disconnected";
                     htmlContent = string.Format("Hi {0}, </br></br>" +
-                                                "We have detected that your greenhouse #{1} is no longer signaling for 6 hours.</br>" +
+                                                "We have detected that your greenhouse #{1} is no longer signaling since few hours.</br>" +
                                                 "Check the electrical operating status of your installation.</br>" +
                                                  @"Do not hesitate to consult the troubleshooting page on the <a href=""https://wiki.myfood.eu/docs/boitier-puissance"">WIKI</a>.</br></br>" +
                                                 "Have a nice day,", currentProductionUnit.owner.pioneerCitizenName, currentProductionUnit.owner.pioneerCitizenNumber);
                 }
 
                 var msg = MailHelper.CreateSingleEmailToMultipleRecipients(from, tos, subject, "", htmlContent, false);
-                //msg.AddCc("support@myfood.eu");
+                msg.AddCc("agro@myfood.eu");
                 var response = client.SendEmailAsync(msg);
             }
             catch (Exception ex)
@@ -122,7 +122,7 @@ namespace myfoodapp.Hub.Common
                 }
 
                 var msg = MailHelper.CreateSingleEmailToMultipleRecipients(from, tos, subject, "", htmlContent, false);
-                //msg.AddCc("support@myfood.eu");
+                msg.AddCc("agro@myfood.eu");
                 var response = client.SendEmailAsync(msg);
             }
             catch (Exception ex)

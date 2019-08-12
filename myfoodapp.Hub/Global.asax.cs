@@ -87,7 +87,9 @@ namespace myfoodapp.Hub
 
                 upRunningProductionUnits.ForEach(p =>
                 {
-                    if (p.lastMeasureReceived == null || currentDate - p.lastMeasureReceived > TimeSpan.FromMinutes(360))
+                    if (p.lastMeasureReceived == null 
+                        || (p.lastSignalStrenghtReceived == "Limit" && currentDate - p.lastMeasureReceived > TimeSpan.FromMinutes(360))
+                        || (p.lastSignalStrenghtReceived != "Limit" && currentDate - p.lastMeasureReceived > TimeSpan.FromMinutes(120)))
                     {
                         p.productionUnitStatus = offlineStatus;
 
@@ -96,7 +98,7 @@ namespace myfoodapp.Hub
                             switch (p.owner.language.description)
                             {
                                 case "fr":
-                                    db.Events.Add(new Event() { date = DateTime.Now, description = "Serre déconnectée", isOpen = false, productionUnit = p, eventType = warningEventType, createdBy = "MyFood Bot" });
+                                    db.Events.Add(new Event() { date = DateTime.Now, description = "Serre Déconnectée", isOpen = false, productionUnit = p, eventType = warningEventType, createdBy = "MyFood Bot" });
                                     break;
                                 default:
                                     db.Events.Add(new Event() { date = DateTime.Now, description = "Smart Greenhouse Offline", isOpen = false, productionUnit = p, eventType = warningEventType, createdBy = "MyFood Bot" });

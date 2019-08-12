@@ -19,28 +19,28 @@ namespace myfoodapp.Hub.Business
         // The American journal of clinical nutrition. 2009, 1704S-1709S
         private static double CO2SparedPerKilogramLocallyProduced = 1.1;
 
-        public static OpenProductionUnitsStatsViewModel GetNetworkStatistic(ApplicationDbContext db)
+        public static OpenProductionUnitsStatsViewModel GetNetworkStatistics(ApplicationDbContext db)
         {
             MeasureService measureService = new MeasureService(db);
 
-            var rslt = db.ProductionUnits;
+            var productionUnits = db.ProductionUnits;
 
             var productionUnitNumber = 0;
 
-            var totalBalcony = rslt.Where(p => p.productionUnitType.Id == 1).Count();
+            var totalBalcony = productionUnits.Where(p => p.productionUnitType.Id == 1).Count();
 
-            var totalCity = rslt.Where(p => p.productionUnitType.Id == 2 ||
+            var totalCity = productionUnits.Where(p => p.productionUnitType.Id == 2 ||
                                             p.productionUnitType.Id == 12).Count();
 
-            var totalFamilyWithoutBeds = rslt.Where(p => p.productionUnitType.Id == 3 ||
+            var totalFamilyWithoutBeds = productionUnits.Where(p => p.productionUnitType.Id == 3 ||
                                                          p.productionUnitType.Id == 4).Count();
 
-            var totalFamilyWithBeds = rslt.Where(p => p.productionUnitType.Id == 8 ||
+            var totalFamilyWithBeds = productionUnits.Where(p => p.productionUnitType.Id == 8 ||
                                                       p.productionUnitType.Id == 9 ||
                                                       p.productionUnitType.Id == 10 ||
                                                       p.productionUnitType.Id == 11).Count();
 
-            var totalFarm = rslt.Where(p => p.productionUnitType.Id == 5).Count();
+            var totalFarm = productionUnits.Where(p => p.productionUnitType.Id == 5).Count();
 
             var totalMonthlyProduction = totalBalcony * monthlyAverageProductionAerospring
                                            + totalCity * monthlyAverageProductionCity
@@ -50,7 +50,7 @@ namespace myfoodapp.Hub.Business
 
             var totalMonthlySparedCO2 = Math.Round(totalMonthlyProduction * CO2SparedPerKilogramLocallyProduced);
 
-            productionUnitNumber = totalCity + totalFamilyWithoutBeds + totalFamilyWithBeds + totalFarm;
+            productionUnitNumber = productionUnits.Where(p => p.productionUnitStatus.Id != 5).Count();
 
             return new OpenProductionUnitsStatsViewModel()
             {
@@ -64,50 +64,60 @@ namespace myfoodapp.Hub.Business
         {
             MeasureService measureService = new MeasureService(db);
 
-            var productionUnits = db.ProductionUnits;
+            var productionUnits = db.ProductionUnits.Include(p => p.productionUnitStatus).ToList();
 
             var lastYearUpPercent = 0.0;
             var twoYearsUpPercent = 0.0;
             var threeYearsUpPercent = 0.0;
 
+            var upLastYear = 0.0;
+            var upTwoYearsAgo = 0.0;
+            var upThreeYearsAgo = 0.0;
+
+            var downLastYear = 0.0;
+            var downTwoYearsAgo = 0.0;
+            var downThreeYearsAgo = 0.0;
+
             var lastYearDate = DateTime.Today.AddYears(-1);
             var twoYearsAgoDate = DateTime.Today.AddYears(-2);
             var threeYearsAgoDate =  DateTime.Today.AddYears(-3);
 
-            var lastYear = productionUnits.Include(p => p.productionUnitStatus).Where(p => p.startDate > lastYearDate).ToList();
+            var lastYear = productionUnits.Where(p => p.startDate > lastYearDate).ToList();
 
             if (lastYear != null)
             {
-                var upLastYear = lastYear.Where(p => p.productionUnitStatus.Id == 3).Count();
-                var totalLastYear = lastYear.Where(p => p.productionUnitStatus.Id == 3 || p.productionUnitStatus.Id == 6).Count();
+                upLastYear = lastYear.Where(p => p.productionUnitStatus.Id == 3).Count();
+                downLastYear = lastYear.Where(p => p.productionUnitStatus.Id == 6).Count();
 
-                if (upLastYear > 0 && totalLastYear > 0)
-                    lastYearUpPercent = 100 * (upLastYear / totalLastYear);
+                if (upLastYear + downLastYear > 0)
+                    lastYearUpPercent = 100 * (upLastYear / (upLastYear + downLastYear));
             }
 
-            var twoYearsAgo = productionUnits.Include(p => p.productionUnitStatus).Where(p => p.startDate > twoYearsAgoDate).ToList();
+            var twoYearsAgo = productionUnits.Where(p => p.startDate > twoYearsAgoDate && p.startDate < lastYearDate).ToList();
 
             if(twoYearsAgo != null)
             {
-                var uptwoYearsAgo = twoYearsAgo.Where(p => p.productionUnitStatus.Id == 3).Count();
-                var totaltwoYearsAgo = twoYearsAgo.Where(p => p.productionUnitStatus.Id == 3 || p.productionUnitStatus.Id == 6).Count();
+                upTwoYearsAgo = twoYearsAgo.Where(p => p.productionUnitStatus.Id == 3).Count();
+                downTwoYearsAgo = twoYearsAgo.Where(p => p.productionUnitStatus.Id == 6).Count();
 
-                if (uptwoYearsAgo > 0 && totaltwoYearsAgo > 0)
-                    twoYearsUpPercent = 100 * (uptwoYearsAgo / totaltwoYearsAgo);
+                if (upTwoYearsAgo + downTwoYearsAgo > 0)
+                    twoYearsUpPercent = 100 * (upTwoYearsAgo / (upTwoYearsAgo + downTwoYearsAgo));
             }
                        
-            var threeYearsAgo = productionUnits.Include(p => p.productionUnitStatus).Where(p => p.startDate > threeYearsAgoDate).ToList();
+            var threeYearsAgo = productionUnits.Where(p => p.startDate < twoYearsAgoDate).ToList();
 
             if(threeYearsAgo != null)
             {
-                var upThreeYearsAgo = threeYearsAgo.Where(p => p.productionUnitStatus.Id == 3).Count();
-                var totalthreeYearsAgo = twoYearsAgo.Where(p => p.productionUnitStatus.Id == 3 || p.productionUnitStatus.Id == 6).Count();
+                upThreeYearsAgo = threeYearsAgo.Where(p => p.productionUnitStatus.Id == 3).Count();
+                downThreeYearsAgo = threeYearsAgo.Where(p => p.productionUnitStatus.Id == 6).Count();
 
-                if (upThreeYearsAgo > 0 && lastYear.Count() > 0)
-                    threeYearsUpPercent = 100 * (upThreeYearsAgo / totalthreeYearsAgo);
+                if (upThreeYearsAgo + downThreeYearsAgo > 0)
+                    threeYearsUpPercent = 100 * (upThreeYearsAgo / (upThreeYearsAgo + downThreeYearsAgo));
             }
 
-            return String.Format("{0}% - {1}% - {2}%",lastYearUpPercent, twoYearsUpPercent, threeYearsUpPercent); 
+            return String.Format("{0}%(3y+) - {1}%(2y) - {2}%(1y)", Math.Round(threeYearsUpPercent, 0), 
+                                                       Math.Round(twoYearsUpPercent, 0), 
+                                                       Math.Round(lastYearUpPercent, 0)); 
         }
 
         public static int GetEstimatedMonthlyProduction(int productionUnitTypeId)

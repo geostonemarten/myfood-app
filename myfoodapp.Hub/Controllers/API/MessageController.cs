@@ -75,7 +75,7 @@ namespace myfoodapp.Hub.Controllers.Api
                         switch (currentProductionUnit.owner.language.description)
                         {
                             case "fr":
-                                db.Events.Add(new Event() { date = DateTime.Now, description = "Serre connectée", isOpen = false, productionUnit = currentProductionUnit, eventType = infoEventType, createdBy = "MyFood Bot" });
+                                db.Events.Add(new Event() { date = DateTime.Now, description = "Serre Connectée", isOpen = false, productionUnit = currentProductionUnit, eventType = infoEventType, createdBy = "MyFood Bot" });
                                 break;
                             default:
                                 db.Events.Add(new Event() { date = DateTime.Now, description = "Smart Greenhouse Online", isOpen = false, productionUnit = currentProductionUnit, eventType = infoEventType, createdBy = "MyFood Bot" });
