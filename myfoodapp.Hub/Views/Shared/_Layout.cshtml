@@ -296,7 +296,8 @@
     $("#main-section").ready(function () {
             $preloader = $('.loaderArea'),
             //$loader = $preloader.find('.loader');
-            $preloader.animate({left: '100%', width:0},1000);
+            $preloader.animate({ left: '100%', width: 0 }, 1000);
+            $("img.seq-preload-indicator").animate({ opacity: 0 }, 500);
             //$loader.fadeOut();
             //$preloader.delay(800).fadeOut('slow');
         }

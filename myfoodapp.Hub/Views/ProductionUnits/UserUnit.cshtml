@@ -1355,18 +1355,3 @@
             }
         }
     </script>
-
-<script type="text/javascript">
-    var url_match = window.location.href.match("PioneerProductionSite\/([0-9]+)$");
-    var id = "";
-    if (url_match.length > 0) {
-        id = url_match[1];
-    }
-    var options = document.getElementById("selectList").children;
-    for (let option of options) {
-        if (option.value === id) {
-            option.selected = true;
-            break;
-        }
-    }
-</script>

@@ -110,11 +110,12 @@ namespace myfoodapp.Hub.Controllers
 
                     if (id != null && id != 0)
                     {
-                        var selected = selectList.Where(x => x.Value == id.ToString()).First();
-                        selected.Selected = true;
+                        //var selected = selectList.FirstOrDefault(x => x.Value == id.ToString()).Value;
+
+                        var selected = id;
 
                         selectList = new SelectList(userProductionUnit.ToList(), "Id", "info", selected);
-                        currentUserProductionUnit = userProductionUnit.Where(p => p.Id == id).FirstOrDefault();
+                        currentUserProductionUnit = userProductionUnit.FirstOrDefault(p => p.Id == id);
                     }
                     ViewBag.ProdUnitList = selectList;
                 }
