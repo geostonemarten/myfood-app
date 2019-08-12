@@ -949,16 +949,71 @@ li.active [class*="cls"] {
 		border-radius: 20px;
 	}
 
-	#add-event .modal-dialog .modal-group-title {
-		font-size: 18px;
-		font-weight: 500;
-		color: #6C7A73;
-		margin-bottom: 15px;
-	}
+    #add-event .modal-dialog .modal-group-title {
+        font-size: 18px;
+        font-weight: 500;
+        color: #6C7A73;
+        margin-bottom: 15px;
+      
+    }
 
-#add-event .modal-footer > :not(:last-child) {
-	margin-right: .75rem;
+#main-section .closed.loaderArea {
+    /*transition: all 2s ease-out 2s;*/
+    /*right: -10000px;*/
+    /*animation-delay: 3s;*/
+    width: 0;
+    left: unset;
+    opacity: 0;
 }
+
+@@keyframes seq-preloader {
+     50% {
+         opacity: 1;
+     }
+
+     100% {
+         opacity: 0;
+     }
+ }
+
+.seq-preloader {
+    visibility: visible;
+    opacity: 1;
+    position: absolute;
+    z-index: 9999;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+img.seq-preload-indicator {
+    width: 100px;
+    overflow: visible;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+        
+@@media screen and (max-width: 480px) {
+     #rights {
+         visibility: hidden;
+         display: none;
+     }
+ }
+
+    #main-section .closed.loaderArea .seq-preload-indicator {
+        opacity: 0;
+    }
+
+    #add-event .modal-footer > :not(:last-child) {
+        margin-right: .75rem;
+    }
 
 #add-event .modal-dialog .btn-popup {
 	background: transparent;
