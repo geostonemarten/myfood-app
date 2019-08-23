@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2019-07-31 14:00+02:00\n"
-"PO-Revision-Date: 2019-07-31 14:00+02:00\n"
+"POT-Creation-Date: 2019-08-13 09:57+02:00\n"
+"PO-Revision-Date: 2019-08-13 09:57+02:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -30,10 +30,10 @@ msgid "36 towers"
 msgstr "36 tours"
 
 #: Views\About\Index.cshtml:8
-#: Views\Shared\_Layout.cshtml:288
+#: Views\Shared\_Layout.cshtml:203
 #: Views\Shared\_RedesignLayout.cshtml:209
 #: obj\Release\Package\PackageTmp\Views\About\Index.cshtml:8
-#: obj\Release\Package\PackageTmp\Views\Shared\_Layout.cshtml:288
+#: obj\Release\Package\PackageTmp\Views\Shared\_Layout.cshtml:203
 #: obj\Release\Package\PackageTmp\Views\Shared\_RedesignLayout.cshtml:209
 msgid "About"
 msgstr "A propos"
@@ -868,9 +868,9 @@ msgstr "Chou Cabu"
 msgid "Cabbage Rave"
 msgstr "Chou Rave"
 
-#: Views\Shared\_Layout.cshtml:231
+#: Views\Shared\_Layout.cshtml:146
 #: Views\Shared\_RedesignLayout.cshtml:166
-#: obj\Release\Package\PackageTmp\Views\Shared\_Layout.cshtml:231
+#: obj\Release\Package\PackageTmp\Views\Shared\_Layout.cshtml:146
 #: obj\Release\Package\PackageTmp\Views\Shared\_RedesignLayout.cshtml:166
 msgid "Calendar"
 msgstr "Calendrier"
@@ -2577,9 +2577,9 @@ msgstr "Location:"
 msgid "Log in"
 msgstr "Se Connecter"
 
-#: Views\Shared\_Layout.cshtml:311
+#: Views\Shared\_Layout.cshtml:226
 #: Views\Shared\_RedesignLayout.cshtml:231
-#: obj\Release\Package\PackageTmp\Views\Shared\_Layout.cshtml:311
+#: obj\Release\Package\PackageTmp\Views\Shared\_Layout.cshtml:226
 #: obj\Release\Package\PackageTmp\Views\Shared\_RedesignLayout.cshtml:231
 msgid "Log off"
 msgstr "Déconnexion"
@@ -2592,9 +2592,9 @@ msgid "Log your Actions / Events here"
 msgstr "Saisir vos Actions / Evénements ici"
 
 #: Viewmodels\AccountViewModels.cs:32
-#: Views\Shared\_Layout.cshtml:330
+#: Views\Shared\_Layout.cshtml:245
 #: Views\Shared\_RedesignLayout.cshtml:249
-#: obj\Release\Package\PackageTmp\Views\Shared\_Layout.cshtml:330
+#: obj\Release\Package\PackageTmp\Views\Shared\_Layout.cshtml:245
 #: obj\Release\Package\PackageTmp\Views\Shared\_RedesignLayout.cshtml:249
 msgid "Login"
 msgstr "Connexion"
@@ -2685,9 +2685,9 @@ msgstr "Maximum"
 msgid "May"
 msgstr "Mai"
 
-#: Views\Shared\_Layout.cshtml:184
+#: Views\Shared\_Layout.cshtml:99
 #: Views\Shared\_RedesignLayout.cshtml:108
-#: obj\Release\Package\PackageTmp\Views\Shared\_Layout.cshtml:184
+#: obj\Release\Package\PackageTmp\Views\Shared\_Layout.cshtml:99
 #: obj\Release\Package\PackageTmp\Views\Shared\_RedesignLayout.cshtml:108
 msgid "Measures"
 msgstr "Mesures"
@@ -2961,9 +2961,9 @@ msgstr "Mesclun"
 msgid "message type"
 msgstr "type message"
 
-#: Views\Shared\_Layout.cshtml:167
+#: Views\Shared\_Layout.cshtml:82
 #: Views\Shared\_RedesignLayout.cshtml:80
-#: obj\Release\Package\PackageTmp\Views\Shared\_Layout.cshtml:167
+#: obj\Release\Package\PackageTmp\Views\Shared\_Layout.cshtml:82
 #: obj\Release\Package\PackageTmp\Views\Shared\_RedesignLayout.cshtml:80
 msgid "Messages"
 msgstr "Messages"
@@ -2994,10 +2994,10 @@ msgid "Morning"
 msgstr "Matin"
 
 #: Views\MyInfo\Update.cshtml:84
-#: Views\Shared\_Layout.cshtml:245
+#: Views\Shared\_Layout.cshtml:160
 #: Views\Shared\_RedesignLayout.cshtml:186
 #: obj\Release\Package\PackageTmp\Views\MyInfo\Update.cshtml:84
-#: obj\Release\Package\PackageTmp\Views\Shared\_Layout.cshtml:245
+#: obj\Release\Package\PackageTmp\Views\Shared\_Layout.cshtml:160
 #: obj\Release\Package\PackageTmp\Views\Shared\_RedesignLayout.cshtml:186
 msgid "My Information"
 msgstr "Mes Informations"
@@ -3508,9 +3508,9 @@ msgstr "Performance"
 msgid "PERFORMANCE"
 msgstr "PERFORMANCE"
 
-#: Views\Shared\_Layout.cshtml:216
+#: Views\Shared\_Layout.cshtml:131
 #: Views\Shared\_RedesignLayout.cshtml:146
-#: obj\Release\Package\PackageTmp\Views\Shared\_Layout.cshtml:216
+#: obj\Release\Package\PackageTmp\Views\Shared\_Layout.cshtml:131
 #: obj\Release\Package\PackageTmp\Views\Shared\_RedesignLayout.cshtml:146
 msgid "Performance &amp; Health"
 msgstr "Performances &amp; Santé"
@@ -4210,9 +4210,9 @@ msgstr "Détails Unité de Production"
 msgid "Production Unit Owner already in use"
 msgstr "Propriétaire déjà en cours d'utilisation"
 
-#: Views\Shared\_Layout.cshtml:199
+#: Views\Shared\_Layout.cshtml:114
 #: Views\Shared\_RedesignLayout.cshtml:127
-#: obj\Release\Package\PackageTmp\Views\Shared\_Layout.cshtml:199
+#: obj\Release\Package\PackageTmp\Views\Shared\_Layout.cshtml:114
 #: obj\Release\Package\PackageTmp\Views\Shared\_RedesignLayout.cshtml:127
 msgid "Production Units"
 msgstr "Unités de Prod."
@@ -4537,13 +4537,13 @@ msgstr "Septembre"
 msgid "Setup Planned"
 msgstr "Instal. Planifiée"
 
-#: Views\Shared\_Layout.cshtml:265
-#: obj\Release\Package\PackageTmp\Views\Shared\_Layout.cshtml:265
+#: Views\Shared\_Layout.cshtml:180
+#: obj\Release\Package\PackageTmp\Views\Shared\_Layout.cshtml:180
 msgid "Shop"
 msgstr ""
 
-#: Views\Shared\_Layout.cshtml:259
-#: obj\Release\Package\PackageTmp\Views\Shared\_Layout.cshtml:259
+#: Views\Shared\_Layout.cshtml:174
+#: obj\Release\Package\PackageTmp\Views\Shared\_Layout.cshtml:174
 msgid "SHOP URL"
 msgstr "https://myfood.eu/fr/categorie-produit/accessoire-consommable/"
 
@@ -5815,8 +5815,8 @@ msgstr "SEMAINES"
 msgid "White Onion"
 msgstr "Oignon Blanc "
 
-#: Views\Shared\_Layout.cshtml:255
-#: obj\Release\Package\PackageTmp\Views\Shared\_Layout.cshtml:255
+#: Views\Shared\_Layout.cshtml:170
+#: obj\Release\Package\PackageTmp\Views\Shared\_Layout.cshtml:170
 msgid "Wiki"
 msgstr ""
 

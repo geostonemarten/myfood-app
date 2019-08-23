@@ -76,7 +76,7 @@ namespace myfoodapp.Hub.Controllers
 						return RedirectToAction("Details", "ProductionUnits", new { Id = currentProductionUnits.FirstOrDefault().Id });
 					else
 					{
-						return RedirectToAction("UserUnit", "ProductionUnits");
+						return RedirectToAction("UserUnit", "ProductionUnits", new { Id = currentProductionUnits.FirstOrDefault().Id });
 					}
                 }
                 else
