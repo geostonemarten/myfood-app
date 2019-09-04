@@ -76,8 +76,6 @@ namespace myfoodapp.Hub.Controllers
 											String.Format(@"Click for view details"))
 					{ shape = "redMarker" });
 				
-				
-
 			});
 		
 
@@ -256,17 +254,18 @@ namespace myfoodapp.Hub.Controllers
             return Json(statusList);
         }
 
-        public ActionResult GetNetworkStats()
+        [OutputCache(Duration = 3600)]
+        public ActionResult GetNetworkStatsAndIncidents()
         {
             ApplicationDbContext db = new ApplicationDbContext();
 
-            var stats = PerformanceManager.GetNetworkStatistics(db);
+            var stats = PerformanceManager.GetNetworkStatisticsAndIncidents(db);
 
             return Json(new
             {
                 ProductionUnitNumber = stats.productionUnitNumber,
-                TotalMonthlyProduction = stats.totalMonthlyProduction,
-                TotalMonthlySparedCO2 = stats.totalMonthlySparedCO2,
+                TotalMonthlyIncident = stats.totalMonthlyIncident,
+                TotalAnnuallyIncident = stats.totalAnnuallyIncident,
             }, JsonRequestBehavior.AllowGet);
         }
 

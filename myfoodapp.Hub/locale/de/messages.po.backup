@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2019-08-13 09:54+02:00\n"
-"PO-Revision-Date: 2019-08-13 09:54+02:00\n"
+"POT-Creation-Date: 2019-09-04 11:18+02:00\n"
+"PO-Revision-Date: 2019-09-04 11:18+02:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -3219,8 +3219,7 @@ msgstr "November"
 msgid "October"
 msgstr "Oktober"
 
-#: Controllers\HomeController.cs:254
-#: Controllers\InteractiveMapController.cs:247
+#: Controllers\HomeController.cs:252
 #: Migrations\Configuration.cs:112
 msgid "Offline"
 msgstr "Offline"
@@ -3238,8 +3237,8 @@ msgstr ""
 msgid "Old Password"
 msgstr "Altes Passwort"
 
-#: Controllers\HomeController.cs:252
-#: Controllers\InteractiveMapController.cs:245
+#: Controllers\HomeController.cs:250
+#: Controllers\InteractiveMapController.cs:247
 msgid "On Maintenance"
 msgstr "In Wartung"
 
@@ -4196,6 +4195,10 @@ msgstr "Herstellungsart"
 msgid "prod. unit"
 msgstr "produktionseinheit"
 
+#: Migrations\Configuration.cs:209
+msgid "Production lost"
+msgstr ""
+
 #: Controllers\ProductionUnitsController.cs:289
 msgid "Production Unit already in use"
 msgstr "Produktionseinheit bereits im Einsatz"
@@ -4532,8 +4535,8 @@ msgstr "Sensortyp"
 msgid "September"
 msgstr "September"
 
-#: Controllers\HomeController.cs:250
-#: Controllers\InteractiveMapController.cs:243
+#: Controllers\HomeController.cs:248
+#: Controllers\InteractiveMapController.cs:245
 #: Migrations\Configuration.cs:108
 msgid "Setup Planned"
 msgstr "Einrichten geplant"
@@ -5203,8 +5206,7 @@ msgstr "Sprinklerreinigung"
 msgid "status"
 msgstr "Status"
 
-#: Controllers\HomeController.cs:253
-#: Controllers\InteractiveMapController.cs:246
+#: Controllers\HomeController.cs:251
 #: Migrations\Configuration.cs:111
 msgid "Stopped"
 msgstr "Gestoppt"
@@ -5344,10 +5346,6 @@ msgstr "Diese Woche"
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:6308
 msgid "Tomato"
 msgstr ""
-
-#: Migrations\Configuration.cs:209
-msgid "Too much algeas"
-msgstr "Zu viel Algen"
 
 #: Business\GrowingModel.cs:32
 #: Content\GrowingModelv1.json:173
@@ -5616,9 +5614,7 @@ msgstr ""
 msgid "Total pH Deviation"
 msgstr ""
 
-#: Views\Home\Index.cshtml:311
 #: Views\InteractiveMap\Index.cshtml:416
-#: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:311
 #: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:416
 msgid "TOTAL<br />CO2 SAVED<br />PER MONTH"
 msgstr "GESAMT <br /> CO2 SPEICHERT <br /> PRO MONAT"
@@ -5630,12 +5626,20 @@ msgstr "GESAMT <br /> CO2 SPEICHERT <br /> PRO MONAT"
 msgid "TOTAL<br />CONNECTED <br />PROD. UNITS"
 msgstr "TOTAL <br /> ANGESCHLOSSEN <br /> PROD. EINHEITEN"
 
-#: Views\Home\Index.cshtml:307
 #: Views\InteractiveMap\Index.cshtml:412
-#: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:307
 #: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:412
 msgid "TOTAL<br />EST. PROD. <br />PER MONTH"
 msgstr "GESAMT <br /> EST. Produkt <br /> PRO MONAT"
+
+#: Views\Home\Index.cshtml:307
+#: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:307
+msgid "TOTAL<br />INCIDENT(S) <br />LAST MONTH"
+msgstr ""
+
+#: Views\Home\Index.cshtml:311
+#: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:311
+msgid "TOTAL<br />INCIDENT(S) <br />LAST YEAR"
+msgstr ""
 
 #: Migrations\Configuration.cs:159
 msgid "Tower Garden"
@@ -5670,11 +5674,11 @@ msgstr ""
 msgid "Unknown"
 msgstr "Unbekannt"
 
-#: Controllers\InteractiveMapController.cs:244
+#: Controllers\InteractiveMapController.cs:246
 msgid "Up & Running"
 msgstr "Oben & laufen"
 
-#: Controllers\HomeController.cs:251
+#: Controllers\HomeController.cs:249
 #: Migrations\Configuration.cs:109
 msgid "Up and Running"
 msgstr "Oben und laufen"
@@ -5721,8 +5725,8 @@ msgstr ""
 msgid "View Logs"
 msgstr "Logs anzeigen"
 
-#: Controllers\HomeController.cs:249
-#: Controllers\InteractiveMapController.cs:242
+#: Controllers\HomeController.cs:247
+#: Controllers\InteractiveMapController.cs:244
 #: Migrations\Configuration.cs:107
 msgid "Wait Confirm."
 msgstr "Wartebestätigung"
@@ -6228,6 +6232,9 @@ msgstr ""
 
 #~ msgid "This Last Days"
 #~ msgstr "Diese letzten Tage"
+
+#~ msgid "Too much algeas"
+#~ msgstr "Zu viel Algen"
 
 #~ msgid "User Management"
 #~ msgstr "Benutzerverwaltung"

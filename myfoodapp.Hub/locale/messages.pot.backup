@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2019-08-13 09:54+02:00\n"
+"POT-Creation-Date: 2019-09-04 11:18+02:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -3217,8 +3217,7 @@ msgstr ""
 msgid "October"
 msgstr ""
 
-#: Controllers\HomeController.cs:254
-#: Controllers\InteractiveMapController.cs:247
+#: Controllers\HomeController.cs:252
 #: Migrations\Configuration.cs:112
 msgid "Offline"
 msgstr ""
@@ -3236,8 +3235,8 @@ msgstr ""
 msgid "Old Password"
 msgstr ""
 
-#: Controllers\HomeController.cs:252
-#: Controllers\InteractiveMapController.cs:245
+#: Controllers\HomeController.cs:250
+#: Controllers\InteractiveMapController.cs:247
 msgid "On Maintenance"
 msgstr ""
 
@@ -4194,6 +4193,10 @@ msgstr ""
 msgid "prod. unit"
 msgstr ""
 
+#: Migrations\Configuration.cs:209
+msgid "Production lost"
+msgstr ""
+
 #: Controllers\ProductionUnitsController.cs:289
 msgid "Production Unit already in use"
 msgstr ""
@@ -4530,8 +4533,8 @@ msgstr ""
 msgid "September"
 msgstr ""
 
-#: Controllers\HomeController.cs:250
-#: Controllers\InteractiveMapController.cs:243
+#: Controllers\HomeController.cs:248
+#: Controllers\InteractiveMapController.cs:245
 #: Migrations\Configuration.cs:108
 msgid "Setup Planned"
 msgstr ""
@@ -5201,8 +5204,7 @@ msgstr ""
 msgid "status"
 msgstr ""
 
-#: Controllers\HomeController.cs:253
-#: Controllers\InteractiveMapController.cs:246
+#: Controllers\HomeController.cs:251
 #: Migrations\Configuration.cs:111
 msgid "Stopped"
 msgstr ""
@@ -5341,10 +5343,6 @@ msgstr ""
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:6287
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:6308
 msgid "Tomato"
-msgstr ""
-
-#: Migrations\Configuration.cs:209
-msgid "Too much algeas"
 msgstr ""
 
 #: Business\GrowingModel.cs:32
@@ -5614,9 +5612,7 @@ msgstr ""
 msgid "Total pH Deviation"
 msgstr ""
 
-#: Views\Home\Index.cshtml:311
 #: Views\InteractiveMap\Index.cshtml:416
-#: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:311
 #: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:416
 msgid "TOTAL<br />CO2 SAVED<br />PER MONTH"
 msgstr ""
@@ -5628,11 +5624,19 @@ msgstr ""
 msgid "TOTAL<br />CONNECTED <br />PROD. UNITS"
 msgstr ""
 
-#: Views\Home\Index.cshtml:307
 #: Views\InteractiveMap\Index.cshtml:412
-#: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:307
 #: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:412
 msgid "TOTAL<br />EST. PROD. <br />PER MONTH"
+msgstr ""
+
+#: Views\Home\Index.cshtml:307
+#: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:307
+msgid "TOTAL<br />INCIDENT(S) <br />LAST MONTH"
+msgstr ""
+
+#: Views\Home\Index.cshtml:311
+#: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:311
+msgid "TOTAL<br />INCIDENT(S) <br />LAST YEAR"
 msgstr ""
 
 #: Migrations\Configuration.cs:159
@@ -5668,11 +5672,11 @@ msgstr ""
 msgid "Unknown"
 msgstr ""
 
-#: Controllers\InteractiveMapController.cs:244
+#: Controllers\InteractiveMapController.cs:246
 msgid "Up & Running"
 msgstr ""
 
-#: Controllers\HomeController.cs:251
+#: Controllers\HomeController.cs:249
 #: Migrations\Configuration.cs:109
 msgid "Up and Running"
 msgstr ""
@@ -5719,8 +5723,8 @@ msgstr ""
 msgid "View Logs"
 msgstr ""
 
-#: Controllers\HomeController.cs:249
-#: Controllers\InteractiveMapController.cs:242
+#: Controllers\HomeController.cs:247
+#: Controllers\InteractiveMapController.cs:244
 #: Migrations\Configuration.cs:107
 msgid "Wait Confirm."
 msgstr ""

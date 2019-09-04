@@ -898,8 +898,11 @@ namespace myfoodapp.Hub.Controllers
             bool isOpen = false;
 
             if (currentEventType.name.Contains("Issue"))
+            {
                 isOpen = true;
-
+                MailManager.PioneerUnitIssueMessage(currentProductionUnit, ae.Note, ae.Details);
+            }
+                
             var newEvent = new Event() { productionUnit = currentProductionUnit,
                                          eventType = currentEventType,
                                          isOpen = isOpen,
