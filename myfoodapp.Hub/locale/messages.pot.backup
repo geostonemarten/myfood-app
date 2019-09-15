@@ -1,13 +1,13 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2019-09-04 11:18+02:00\n"
+"POT-Creation-Date: 2019-09-15 14:22+02:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "X-Generator: i18n.POTGenerator\n"
 
-#: Views\ProductionUnits\Update.cshtml:263
+#: Views\ProductionUnits\Update.cshtml:259
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\Update.cshtml:263
 msgid "${array[i].name}"
 msgstr ""
@@ -671,10 +671,10 @@ msgstr ""
 #: Views\Home\Index.cshtml:232
 #: Views\Home\Index.cshtml:249
 #: Views\Home\Index.cshtml:254
-#: Views\InteractiveMap\Index.cshtml:365
-#: Views\InteractiveMap\Index.cshtml:370
-#: Views\InteractiveMap\Index.cshtml:389
-#: Views\InteractiveMap\Index.cshtml:394
+#: Views\InteractiveMap\Index.cshtml:364
+#: Views\InteractiveMap\Index.cshtml:369
+#: Views\InteractiveMap\Index.cshtml:388
+#: Views\InteractiveMap\Index.cshtml:393
 #: Views\ProductionUnits\Details.cshtml:874
 #: Views\ProductionUnits\Details.cshtml:879
 #: Views\ProductionUnits\Details.cshtml:901
@@ -701,10 +701,10 @@ msgstr ""
 #: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:232
 #: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:249
 #: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:254
-#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:365
-#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:370
-#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:389
-#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:394
+#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:364
+#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:369
+#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:388
+#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:393
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:874
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:879
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:901
@@ -1076,8 +1076,8 @@ msgstr ""
 #: Views\Home\Index.cshtml:200
 #: Views\Home\Index.cshtml:222
 #: Views\Home\Index.cshtml:244
-#: Views\InteractiveMap\Index.cshtml:360
-#: Views\InteractiveMap\Index.cshtml:384
+#: Views\InteractiveMap\Index.cshtml:359
+#: Views\InteractiveMap\Index.cshtml:383
 #: Views\ProductionUnits\Details.cshtml:869
 #: Views\ProductionUnits\Details.cshtml:896
 #: Views\ProductionUnits\Details.cshtml:924
@@ -1091,8 +1091,8 @@ msgstr ""
 #: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:200
 #: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:222
 #: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:244
-#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:360
-#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:384
+#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:359
+#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:383
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:869
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:896
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:924
@@ -3021,12 +3021,12 @@ msgstr ""
 
 #: Views\Home\Index.cshtml:23
 #: Views\Home\Index.cshtml:300
-#: Views\InteractiveMap\Index.cshtml:343
-#: Views\InteractiveMap\Index.cshtml:405
+#: Views\InteractiveMap\Index.cshtml:342
+#: Views\InteractiveMap\Index.cshtml:404
 #: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:23
 #: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:300
-#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:343
-#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:405
+#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:342
+#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:404
 msgid "Network Info"
 msgstr ""
 
@@ -3286,8 +3286,8 @@ msgstr ""
 #: Views\Home\Index.cshtml:207
 #: Views\Home\Index.cshtml:229
 #: Views\Home\Index.cshtml:251
-#: Views\InteractiveMap\Index.cshtml:367
-#: Views\InteractiveMap\Index.cshtml:391
+#: Views\InteractiveMap\Index.cshtml:366
+#: Views\InteractiveMap\Index.cshtml:390
 #: Views\ProductionUnits\Details.cshtml:876
 #: Views\ProductionUnits\Details.cshtml:903
 #: Views\ProductionUnits\Details.cshtml:931
@@ -3299,8 +3299,8 @@ msgstr ""
 #: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:207
 #: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:229
 #: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:251
-#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:367
-#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:391
+#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:366
+#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:390
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:876
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:903
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:931
@@ -3478,8 +3478,8 @@ msgstr ""
 msgid "PER MONTH"
 msgstr ""
 
-#: Views\InteractiveMap\Index.cshtml:190
-#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:190
+#: Views\InteractiveMap\Index.cshtml:189
+#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:189
 msgid "Percentage"
 msgstr ""
 
@@ -4116,10 +4116,10 @@ msgstr ""
 msgid "Pest"
 msgstr ""
 
-#: Views\InteractiveMap\Index.cshtml:356
+#: Views\InteractiveMap\Index.cshtml:355
 #: Views\ProductionUnits\Details.cshtml:865
 #: Views\ProductionUnits\UserUnit.cshtml:773
-#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:356
+#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:355
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:865
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:773
 msgid "pH"
@@ -4132,8 +4132,8 @@ msgstr ""
 msgid "Phone:"
 msgstr ""
 
-#: Views\InteractiveMap\Index.cshtml:336
-#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:336
+#: Views\InteractiveMap\Index.cshtml:335
+#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:335
 msgid "Pioneer Citizen Map"
 msgstr ""
 
@@ -4197,7 +4197,7 @@ msgstr ""
 msgid "Production lost"
 msgstr ""
 
-#: Controllers\ProductionUnitsController.cs:289
+#: Controllers\ProductionUnitsController.cs:290
 msgid "Production Unit already in use"
 msgstr ""
 
@@ -5612,20 +5612,20 @@ msgstr ""
 msgid "Total pH Deviation"
 msgstr ""
 
-#: Views\InteractiveMap\Index.cshtml:416
-#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:416
+#: Views\InteractiveMap\Index.cshtml:415
+#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:415
 msgid "TOTAL<br />CO2 SAVED<br />PER MONTH"
 msgstr ""
 
 #: Views\Home\Index.cshtml:303
-#: Views\InteractiveMap\Index.cshtml:408
+#: Views\InteractiveMap\Index.cshtml:407
 #: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:303
-#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:408
+#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:407
 msgid "TOTAL<br />CONNECTED <br />PROD. UNITS"
 msgstr ""
 
-#: Views\InteractiveMap\Index.cshtml:412
-#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:412
+#: Views\InteractiveMap\Index.cshtml:411
+#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:411
 msgid "TOTAL<br />EST. PROD. <br />PER MONTH"
 msgstr ""
 
@@ -5769,11 +5769,11 @@ msgid "Water Temp"
 msgstr ""
 
 #: Views\Home\Index.cshtml:196
-#: Views\InteractiveMap\Index.cshtml:380
+#: Views\InteractiveMap\Index.cshtml:379
 #: Views\ProductionUnits\Details.cshtml:892
 #: Views\ProductionUnits\UserUnit.cshtml:800
 #: obj\Release\Package\PackageTmp\Views\Home\Index.cshtml:196
-#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:380
+#: obj\Release\Package\PackageTmp\Views\InteractiveMap\Index.cshtml:379
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\Details.cshtml:892
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:800
 msgid "Water Temperature (°C)"

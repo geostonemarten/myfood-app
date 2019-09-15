@@ -1,16 +1,11 @@
-﻿using System;
+﻿using Kendo.Mvc.Extensions;
+using Kendo.Mvc.UI;
+using myfoodapp.Hub.Models;
+using myfoodapp.Hub.Services;
 using System.Collections.Generic;
 using System.Data;
-using System.Data.Entity;
 using System.Linq;
-using System.Threading.Tasks;
-using System.Net;
-using System.Web;
 using System.Web.Mvc;
-using myfoodapp.Hub.Models;
-using Kendo.Mvc.UI;
-using Kendo.Mvc.Extensions;
-using myfoodapp.Hub.Services;
 
 namespace myfoodapp.Hub.Controllers
 {

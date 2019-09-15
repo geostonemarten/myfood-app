@@ -182,7 +182,7 @@ namespace myfoodapp.Hub.Common
                 }
 
                 var msg = MailHelper.CreateSingleEmailToMultipleRecipients(from, tos, subject, "", htmlContent, false);
-                //msg.AddCc("support@myfood.eu");
+                msg.AddCc("agro@myfood.eu");
                 var response = client.SendEmailAsync(msg);
             }
             catch (Exception ex)
