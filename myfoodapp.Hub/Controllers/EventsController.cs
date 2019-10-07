@@ -53,7 +53,8 @@ namespace myfoodapp.Hub.Controllers
             var isAdmin = this.UserManager.IsInRole(userId, "Admin");
 
             var currentProductionUnits = db.ProductionUnits.Include(p => p.owner.user)
-                                                           .Where(p => p.owner.user.UserName == currentUser).ToList();
+                                                           .Where(p => p.owner.user.UserName == currentUser 
+                                                                    && p.Id == id).ToList();
 
             var currentProductionUnit = currentProductionUnits.FirstOrDefault();
 
@@ -168,7 +169,6 @@ namespace myfoodapp.Hub.Controllers
             var currentUser = this.User.Identity.GetUserName();
 
 			var currentEvent = eventService.One(p => p.Id == Convert.ToInt64(id));
-
 
 			var userId = UserManager.FindByName(currentUser).Id;
             var isAdmin = this.UserManager.IsInRole(userId, "Admin");

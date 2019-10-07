@@ -5,6 +5,7 @@ using myfoodapp.Hub.Services.OpenData;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
+using WebApi.OutputCache.V2;
 
 namespace myfoodapp.Hub.Controllers.Api
 {
@@ -12,6 +13,7 @@ namespace myfoodapp.Hub.Controllers.Api
     {
         [HttpGet]
         [Route("opendata/productionunits/")]
+        [CacheOutput(ClientTimeSpan = 43200, ServerTimeSpan = 100)]
         public List<OpenProductionUnitViewModel> GetAll()
         {
             var db = new ApplicationDbContext();
@@ -24,6 +26,7 @@ namespace myfoodapp.Hub.Controllers.Api
 
         [HttpGet]
         [Route("opendata/productionunits/{Id:int}")]
+        [CacheOutput(ClientTimeSpan = 43200, ServerTimeSpan = 100)]
         public List<OpenProductionUnitViewModel> GetById(int Id)
         {
             var db = new ApplicationDbContext();
@@ -36,6 +39,7 @@ namespace myfoodapp.Hub.Controllers.Api
 
         [HttpGet]
         [Route("opendata/productionunits/{Id:int}/measures")]
+        [CacheOutput(ClientTimeSpan = 43200, ServerTimeSpan = 100)]
         public List<OpenMeasureViewModel> GetMeasures(int Id)
         {
             var db = new ApplicationDbContext();
@@ -48,6 +52,7 @@ namespace myfoodapp.Hub.Controllers.Api
 
         [HttpGet]
         [Route("opendata/productionunits/stats")]
+        [CacheOutput(ClientTimeSpan = 43200, ServerTimeSpan = 100)]
         public OpenProductionUnitsStatsViewModel GetProductionUnitStats()
         {
             var db = new ApplicationDbContext();

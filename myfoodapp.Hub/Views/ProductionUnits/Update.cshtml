@@ -5,7 +5,7 @@
 
     function onBackClick() {
         var productionUnitId = $('#routeDataId').val();
-        window.location = window.location.origin + "/ProductionUnits/Details/" + productionUnitId;
+        window.location = window.location.origin + "/PioneerProductionSite/" + productionUnitId;
     }
 
 	function onAdd(currentOptionId) {
@@ -138,8 +138,6 @@
 		return isOk;
 	});
 
-	
-
 
 	function srcNoLoad() {
 		$("#unit-image").attr("src", "/Content/Pictures/Sites/NoImage.png")
@@ -217,8 +215,6 @@
 		e.preventDefault();
 
 		form.submit();
-
-
 
 	});
 

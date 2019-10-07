@@ -89,12 +89,16 @@ namespace myfoodapp.Hub.Controllers
         {
             ViewBag.DisplayManagementBtn = "None";
             ViewBag.DisplayProdUnitSelector = "None";
+            ViewBag.Title = "Production Unit Detail Page";
 
             var currentUser = this.User.Identity.GetUserName();
             var userId = UserManager.FindByName(currentUser).Id;
             var isAdmin = this.UserManager.IsInRole(userId, "Admin");
             if (isAdmin)
+            {
                 ViewBag.DisplayManagementBtn = "All";
+                return RedirectToAction("Details", "ProductionUnits", new { Id = id });
+            }       
             else
             {
                 ApplicationDbContext db = new ApplicationDbContext();
@@ -135,8 +139,6 @@ namespace myfoodapp.Hub.Controllers
                     ViewBag.DisplayManagementBtn = "All";
                 }
             }
-
-            ViewBag.Title = "Production Unit Detail Page";
 
             return View();
         }
@@ -205,13 +207,14 @@ namespace myfoodapp.Hub.Controllers
             var productionUnitService = new ProductionUnitService(db);
 
             var currentProductionUnits = db.ProductionUnits.Include(p => p.owner.user)
-                                                           .Where(p => p.owner.user.UserName == currentUser).ToList();
+                                                           .Where(p => p.owner.user.UserName == currentUser
+                                                                    && p.Id == id).ToList();
 
             var currentProductionUnit = currentProductionUnits.FirstOrDefault();
 
             if (currentProductionUnit != null && isAdmin == false && currentProductionUnit.Id != id)
             {
-                return Redirect("/ProductionUnits/Details/" + currentProductionUnit.Id);
+                return Redirect("/PioneerProductionSite/" + currentProductionUnit.Id);
             }
 
             var currentProductionUnitViewModel = productionUnitService.One(id);
@@ -233,7 +236,7 @@ namespace myfoodapp.Hub.Controllers
                 productionUnitService.Update(model);
             //}
 
-            return Redirect("/ProductionUnits/Details/" + model.Id);
+            return Redirect("/PioneerProductionSite/" + model.Id);
         }
 
         [Authorize]
@@ -899,8 +902,11 @@ namespace myfoodapp.Hub.Controllers
             bool isOpen = false;
 
             if (currentEventType.name.Contains("Issue"))
+            {
                 isOpen = true;
-
+                MailManager.PioneerUnitIssueMessage(currentProductionUnit, ae.Note, ae.Details);
+            }
+                
             var newEvent = new Event() { productionUnit = currentProductionUnit,
                                          eventType = currentEventType,
                                          isOpen = isOpen,

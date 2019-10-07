@@ -206,21 +206,21 @@ namespace myfoodapp.Hub.Migrations
             var harvestEventTypes = context.EventTypes.Where(g => g.Id == 11).FirstOrDefault();
 
             context.EventTypeItems.Add(new EventTypeItem() { Id = 0, order = 0, eventType = issueEventTypes, isRestrictedForAdmin = false, name = "[[[Dead fish]]]" });
-            context.EventTypeItems.Add(new EventTypeItem() { Id = 1, order = 1, eventType = issueEventTypes, isRestrictedForAdmin = false, name = "[[[Too much algeas]]]" });
-            context.EventTypeItems.Add(new EventTypeItem() { Id = 2, order = 2, eventType = issueEventTypes, isRestrictedForAdmin = false, name = "[[[Bad looking vegetables]]]" });
+            context.EventTypeItems.Add(new EventTypeItem() { Id = 1, order = 1, eventType = issueEventTypes, isRestrictedForAdmin = false, name = "[[[Production lost]]]" });
+          //context.EventTypeItems.Add(new EventTypeItem() { Id = 2, order = 2, eventType = issueEventTypes, isRestrictedForAdmin = false, name = "[[[Bad looking vegetables]]]" });
             context.EventTypeItems.Add(new EventTypeItem() { Id = 3, order = 3, eventType = issueEventTypes, isRestrictedForAdmin = false, name = "[[[Insect pest]]]" });
-            context.EventTypeItems.Add(new EventTypeItem() { Id = 4, order = 4, eventType = issueEventTypes, isRestrictedForAdmin = false, name = "[[[No/Bad data received]]]" });
-            context.EventTypeItems.Add(new EventTypeItem() { Id = 5, order = 5, eventType = issueEventTypes, isRestrictedForAdmin = false, name = "[[[Damaged sensor]]]" });            
-            context.EventTypeItems.Add(new EventTypeItem() { Id = 6, order = 7, eventType = issueEventTypes, isRestrictedForAdmin = false, name = "[[[Cracked tank]]]" });
-            context.EventTypeItems.Add(new EventTypeItem() { Id = 7, order = 8, eventType = issueEventTypes, isRestrictedForAdmin = false, name = "[[[Clogged sprinkler]]]" });
-            context.EventTypeItems.Add(new EventTypeItem() { Id = 9, order = 9, eventType = issueEventTypes, isRestrictedForAdmin = false, name = "[[[Clogged tubes]]]" });
+          //context.EventTypeItems.Add(new EventTypeItem() { Id = 4, order = 4, eventType = issueEventTypes, isRestrictedForAdmin = false, name = "[[[No/Bad data received]]]" });
+          //context.EventTypeItems.Add(new EventTypeItem() { Id = 5, order = 5, eventType = issueEventTypes, isRestrictedForAdmin = false, name = "[[[Damaged sensor]]]" });            
+          //context.EventTypeItems.Add(new EventTypeItem() { Id = 6, order = 7, eventType = issueEventTypes, isRestrictedForAdmin = false, name = "[[[Cracked tank]]]" });
+          //context.EventTypeItems.Add(new EventTypeItem() { Id = 7, order = 8, eventType = issueEventTypes, isRestrictedForAdmin = false, name = "[[[Clogged sprinkler]]]" });
+          //context.EventTypeItems.Add(new EventTypeItem() { Id = 9, order = 9, eventType = issueEventTypes, isRestrictedForAdmin = false, name = "[[[Clogged tubes]]]" });
             context.EventTypeItems.Add(new EventTypeItem() { Id = 10, order = 10, eventType = issueEventTypes, isRestrictedForAdmin = false, name = "[[[Broken pump]]]" });
-            context.EventTypeItems.Add(new EventTypeItem() { Id = 11, order = 11, eventType = issueEventTypes, isRestrictedForAdmin = false, name = "[[[Noisy pump]]]" });
+          //context.EventTypeItems.Add(new EventTypeItem() { Id = 11, order = 11, eventType = issueEventTypes, isRestrictedForAdmin = false, name = "[[[Noisy pump]]]" });
             context.EventTypeItems.Add(new EventTypeItem() { Id = 12, order = 12, eventType = issueEventTypes, isRestrictedForAdmin = false, name = "[[[Water loss]]]" });
-            context.EventTypeItems.Add(new EventTypeItem() { Id = 13, order = 13, eventType = issueEventTypes, isRestrictedForAdmin = false, name = "[[[Ice into towers]]]" });
-            context.EventTypeItems.Add(new EventTypeItem() { Id = 14, order = 14, eventType = issueEventTypes, isRestrictedForAdmin = false, name = "[[[Moisissure]]]" });
-            context.EventTypeItems.Add(new EventTypeItem() { Id = 15, order = 15, eventType = issueEventTypes, isRestrictedForAdmin = false, name = "[[[Filter issue]]]" });
-            context.EventTypeItems.Add(new EventTypeItem() { Id = 16, order = 16, eventType = issueEventTypes, isRestrictedForAdmin = false, name = "[[[Glass broken]]]" });
+          //context.EventTypeItems.Add(new EventTypeItem() { Id = 13, order = 13, eventType = issueEventTypes, isRestrictedForAdmin = false, name = "[[[Ice into towers]]]" });
+          //context.EventTypeItems.Add(new EventTypeItem() { Id = 14, order = 14, eventType = issueEventTypes, isRestrictedForAdmin = false, name = "[[[Moisissure]]]" });
+          //context.EventTypeItems.Add(new EventTypeItem() { Id = 15, order = 15, eventType = issueEventTypes, isRestrictedForAdmin = false, name = "[[[Filter issue]]]" });
+          //context.EventTypeItems.Add(new EventTypeItem() { Id = 16, order = 16, eventType = issueEventTypes, isRestrictedForAdmin = false, name = "[[[Glass broken]]]" });
 
             context.EventTypeItems.Add(new EventTypeItem() { Id = 17, order = 0, eventType = maintenanceEventTypes, isRestrictedForAdmin = false, name = "[[[Filter cleaning]]]" });
             context.EventTypeItems.Add(new EventTypeItem() { Id = 18, order = 1, eventType = maintenanceEventTypes, isRestrictedForAdmin = false, name = "[[[Sprinkler cleaning]]]" });

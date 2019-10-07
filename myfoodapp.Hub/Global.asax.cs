@@ -88,8 +88,8 @@ namespace myfoodapp.Hub
                 upRunningProductionUnits.ForEach(p =>
                 {
                     if (p.lastMeasureReceived == null 
-                        || (p.lastSignalStrenghtReceived == "Limit" && currentDate - p.lastMeasureReceived > TimeSpan.FromMinutes(360))
-                        || (p.lastSignalStrenghtReceived != "Limit" && currentDate - p.lastMeasureReceived > TimeSpan.FromMinutes(120)))
+                        || ((p.lastSignalStrenghtReceived == "Limit" || p.lastSignalStrenghtReceived == "Average") && currentDate - p.lastMeasureReceived > TimeSpan.FromMinutes(360))
+                        || ((p.lastSignalStrenghtReceived == "Excellent" || p.lastSignalStrenghtReceived == "Good") && currentDate - p.lastMeasureReceived > TimeSpan.FromMinutes(120)))
                     {
                         p.productionUnitStatus = offlineStatus;
 

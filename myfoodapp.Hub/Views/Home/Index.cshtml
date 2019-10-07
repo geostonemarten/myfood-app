@@ -5,13 +5,13 @@
     window.onload = function onLoad(e) {
 
         $.ajax({
-            url: "@Url.Action("GetNetworkStats", "Home")",
+            url: "@Url.Action("GetNetworkStatsAndIncidents", "Home")",
             dataType: "json",
         type: "POST",
         success: function (response) {
             $("#ProductionUnitNumber").text(response.ProductionUnitNumber);
-            $("#TotalMonthlyProduction").text(response.TotalMonthlyProduction + 'kg');
-            $("#TotalMonthlySparedCO2").text(response.TotalMonthlySparedCO2 + 'kg');
+            $("#TotalMonthlyIncident").text(response.TotalMonthlyIncident);
+            $("#TotalAnnuallyIncident").text(response.TotalAnnuallyIncident);
         }
         });
 
@@ -304,12 +304,12 @@
                         <h1 id="ProductionUnitNumber" style="text-align: center;"></h1>
                     </div>
                     <div class="column-center" style="border-left:1px solid #e2e2e2;">
-                        <h2 class="widget-text" style="text-align: center;">[[[TOTAL<br />EST. PROD. <br />PER MONTH]]]</h2>
-                        <h1 id="TotalMonthlyProduction" style="text-align: center;"></h1>
+                        <h2 class="widget-text" style="text-align: center;">[[[TOTAL<br />INCIDENT(S) <br />LAST MONTH]]]</h2>
+                        <h1 id="TotalMonthlyIncident" style="text-align: center;"></h1>
                     </div>
                     <div class="column-right" style="border-left:1px solid #e2e2e2;">
-                        <h2 class="widget-text" style="text-align: center;">[[[TOTAL<br />CO2 SAVED<br />PER MONTH]]]</h2>
-                        <h1 id="TotalMonthlySparedCO2" style="text-align: center;"></h1>
+                        <h2 class="widget-text" style="text-align: center;">[[[TOTAL<br />INCIDENT(S) <br />LAST YEAR]]]</h2>
+                        <h1 id="TotalAnnuallyIncident" style="text-align: center;"></h1>
                     </div>
                 </div>
             </div>

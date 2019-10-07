@@ -34,5 +34,8 @@ namespace myfoodapp.Hub.Models.OpenData
         public int productionUnitNumber { get; set; }
         public int totalMonthlyProduction { get; set; }
         public double totalMonthlySparedCO2 { get; set; }
+        public int totalMonthlyIncident { get; set; }
+        public int totalAnnuallyIncident { get; set; }
+
     }
 }

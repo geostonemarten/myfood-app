@@ -50,13 +50,39 @@ namespace myfoodapp.Hub.Business
 
             var totalMonthlySparedCO2 = Math.Round(totalMonthlyProduction * CO2SparedPerKilogramLocallyProduced);
 
-            productionUnitNumber = productionUnits.Where(p => p.productionUnitStatus.Id != 5).Count();
+            productionUnitNumber = productionUnits.Count();
 
             return new OpenProductionUnitsStatsViewModel()
             {
                 productionUnitNumber = productionUnitNumber,
                 totalMonthlyProduction = totalMonthlyProduction,
                 totalMonthlySparedCO2 = totalMonthlySparedCO2
+            };
+        }
+
+        public static OpenProductionUnitsStatsViewModel GetNetworkStatisticsAndIncidents(ApplicationDbContext db)
+        {
+            MeasureService measureService = new MeasureService(db);
+
+            var productionUnits = db.ProductionUnits;
+
+            var productionUnitNumber = 0;
+            var totalMonthlyIncident = 0;
+            var totalAnnuallyIncident = 0;
+
+            productionUnitNumber = productionUnits.Where(p => p.productionUnitStatus.Id != 5).Count();
+
+            var lastMonth = DateTime.Now.AddMonths(-1);
+            var lastYear = DateTime.Now.AddMonths(-1);
+
+            totalMonthlyIncident = db.Events.Where(e => e.eventType.Id == 2 && e.date > lastMonth).Count();
+            totalAnnuallyIncident = db.Events.Where(e => e.eventType.Id == 2 && e.date > lastYear).Count();
+
+            return new OpenProductionUnitsStatsViewModel()
+            {
+                productionUnitNumber = productionUnitNumber,
+                totalMonthlyIncident = totalMonthlyIncident,
+                totalAnnuallyIncident = totalAnnuallyIncident            
             };
         }
 

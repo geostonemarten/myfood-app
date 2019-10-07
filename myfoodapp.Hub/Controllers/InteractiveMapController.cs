@@ -38,8 +38,9 @@ namespace myfoodapp.Hub.Controllers
             ViewBag.Title = "Interactive Map Page";
 
             return View();
-        }       
+        }
 
+        [OutputCache(Duration = 43200)]
         public ActionResult GetProductionUnitIndex(string SelectedProductionUnitCoord)
         {
             var db = new ApplicationDbContext();
@@ -72,6 +73,7 @@ namespace myfoodapp.Hub.Controllers
                 return null;
         }
 
+        [OutputCache(Duration = 43200)]
         public ActionResult GetProductionUnitDetail(string SelectedProductionUnitCoord)
         {
             var db = new ApplicationDbContext();
@@ -135,6 +137,7 @@ namespace myfoodapp.Hub.Controllers
             return Json(lst);
         }
 
+        [OutputCache(Duration = 43200)]
         public ActionResult GetProductionUnitDetailListSlider()
         {
             var db = new ApplicationDbContext();
@@ -210,6 +213,7 @@ namespace myfoodapp.Hub.Controllers
             return Json(lst, JsonRequestBehavior.AllowGet);
         }
 
+        [OutputCache(Duration = 43200)]
         public ActionResult GetNetworkStats()
         {
             ApplicationDbContext db = new ApplicationDbContext();
@@ -234,8 +238,6 @@ namespace myfoodapp.Hub.Controllers
             var setupPlannedCount = rslt.Where(p => p.productionUnitStatus.Id == 2).Count();
             var upRunningCount = rslt.Where(p => p.productionUnitStatus.Id == 3).Count();
             var onMaintenanceCount = rslt.Where(p => p.productionUnitStatus.Id == 4).Count();
-            var stoppedCount = rslt.Where(p => p.productionUnitStatus.Id == 5).Count();
-            var offineCount = rslt.Where(p => p.productionUnitStatus.Id == 6).Count();
 
             var statusList = new List<NewPieModel>();
 
@@ -243,8 +245,6 @@ namespace myfoodapp.Hub.Controllers
             statusList.Add(new NewPieModel() { name = "[[[Setup Planned]]]", y = setupPlannedCount });
             statusList.Add(new NewPieModel() { name = "[[[Up & Running]]]", y = upRunningCount });
             statusList.Add(new NewPieModel() { name = "[[[On Maintenance]]]", y = onMaintenanceCount });
-            //statusList.Add(new NewPieModel() { name = "[[[Stopped]]]", y = stoppedCount });
-            //statusList.Add(new NewPieModel() { name = "[[[Offline]]]", y = offineCount });
             return Json(statusList);
         }
     }

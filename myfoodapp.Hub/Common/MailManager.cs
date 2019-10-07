@@ -62,7 +62,7 @@ namespace myfoodapp.Hub.Common
                 }
 
                 var msg = MailHelper.CreateSingleEmailToMultipleRecipients(from, tos, subject, "", htmlContent, false);
-                msg.AddCc("agro@myfood.eu");
+                //msg.AddCc("agro@myfood.eu");
                 var response = client.SendEmailAsync(msg);
             }
             catch (Exception ex)
@@ -119,6 +119,66 @@ namespace myfoodapp.Hub.Common
                                                 "Your smart greenhouse #{1} is currently connected to our infrastructure.</br>" +
                                                 "Your data is synchronized on the HUB application.</br></br>" +
                                                 "Have a nice day,", currentProductionUnit.owner.pioneerCitizenName, currentProductionUnit.owner.pioneerCitizenNumber);
+                }
+
+                var msg = MailHelper.CreateSingleEmailToMultipleRecipients(from, tos, subject, "", htmlContent, false);
+                //msg.AddCc("agro@myfood.eu");
+                var response = client.SendEmailAsync(msg);
+            }
+            catch (Exception ex)
+            {
+                dbLog.Logs.Add(Log.CreateErrorLog(String.Format("Error with Mail Notification"), ex));
+                dbLog.SaveChanges();
+            }
+
+        }
+
+        public static void PioneerUnitIssueMessage(ProductionUnit currentProductionUnit, string note, string details)
+        {
+            var dbLog = new ApplicationDbContext();
+
+            try
+            {
+                var client = new SendGridClient(MailSendGridAPIKey);
+                var from = new EmailAddress("hub@myfood.eu", "Myfood Hub Bot");
+
+                var pioneerName = string.Format("{0} #{1}", currentProductionUnit.owner.pioneerCitizenName, currentProductionUnit.owner.pioneerCitizenNumber);
+
+                List<EmailAddress> tos = new List<EmailAddress>
+            {
+                  new EmailAddress("support@myfood.eu", pioneerName)
+            };
+
+                var subject = string.Empty;
+                var htmlContent = string.Empty;
+
+                if (currentProductionUnit.owner != null && currentProductionUnit.owner.language != null)
+                {
+                    switch (currentProductionUnit.owner.language.description)
+                    {
+                        case "fr":
+                            subject = string.Format("[myfood] Incident enregistré chez {0} #{1}", currentProductionUnit.owner.pioneerCitizenName, currentProductionUnit.owner.pioneerCitizenNumber);
+                            htmlContent = string.Format("Bonjour, </br></br>" +
+                                                        "La serre {0} #{1} vient d'enregistrer un incident critique.</br>" +
+                                                        "Detail : {2} {3}</br></br>" +
+                                                        "Bien à vous,", currentProductionUnit.owner.pioneerCitizenName, currentProductionUnit.owner.pioneerCitizenNumber, note, details);
+                            break;
+                        default:
+                            subject = string.Format("[myfood] Issue recorded at {0} #{1}", currentProductionUnit.owner.pioneerCitizenName, currentProductionUnit.owner.pioneerCitizenNumber);
+                            htmlContent = string.Format("Hi {0}, </br></br>" +
+                                                        "The greenhouse {0} #{1} has met a critical issue.</br>" +
+                                                        "Detail : {2} {3}</br></br>" +
+                                                        "Have a nice day,", currentProductionUnit.owner.pioneerCitizenName, currentProductionUnit.owner.pioneerCitizenNumber, note, details);
+                            break;
+                    }
+                }
+                else
+                {
+                    subject = string.Format("[myfood] Issue recorded at {0} #{1}", currentProductionUnit.owner.pioneerCitizenName, currentProductionUnit.owner.pioneerCitizenNumber);
+                    htmlContent = string.Format("Hi {0}, </br></br>" +
+                                                "The greenhouse {0} #{1} has met a critical issue.</br>" +
+                                                "Detail : {2} {3}</br></br>" +
+                                                "Have a nice day,", currentProductionUnit.owner.pioneerCitizenName, currentProductionUnit.owner.pioneerCitizenNumber, note, details);
                 }
 
                 var msg = MailHelper.CreateSingleEmailToMultipleRecipients(from, tos, subject, "", htmlContent, false);
