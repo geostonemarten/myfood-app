@@ -192,5 +192,16 @@ namespace myfoodapp.Hub.Common
             }
 
         }
+
+        public static void ResetPasswordMessage(string to, string callbackUrl)
+        {
+            var client = new SendGridClient(MailSendGridAPIKey);
+            string subject = "MyFood password recovery";
+            string plainText = "";
+            string htmlText = string.Format("To reset your password follow the <a href=\"{0}\">link</a>", callbackUrl);
+            var msg = MailHelper.CreateSingleEmail(new EmailAddress("support@myfood.eu", "Myfood Hub Support"), new EmailAddress(to), subject,
+                plainText, htmlText);
+            var response = client.SendEmailAsync(msg);
+        }
     }
 }

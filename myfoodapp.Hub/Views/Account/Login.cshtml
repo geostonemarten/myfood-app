@@ -559,85 +559,88 @@
 			<p>[[[Connect with your Smart Greenhouse]]]</p>
 		</div>
 	</div>
-	<div class="col-right">
-		<div class="top-nav">
-			<div class="email-contact">
+    <div class="col-right">
+        <div class="top-nav">
+            <div class="email-contact">
                 [[[myfoodhub is licensed under a GPLv3]]] &nbsp;
-				<a href="https://github.com/MickaelGandecki/myfood/">Get the code</a>
-			</div>
-			<div class="message-contact">
-				<img src="/Content/images/message-alt.svg" alt="">
-			</div>
-		</div>
+                <a href="https://github.com/MickaelGandecki/myfood/">Get the code</a>
+            </div>
+            <div class="message-contact">
+                <img src="/Content/images/message-alt.svg" alt="">
+            </div>
+        </div>
 
-		<sidebar id="main-sidebar" class="sidebar">
-			<div class="overlay"></div>
-			<div class="sidebar__open-zone"></div>
-			<div class="sidebar__mention">
-				<p>[[[Need Support?]]]</p>
-			</div>
+        <sidebar id="main-sidebar" class="sidebar">
+            <div class="overlay"></div>
+            <div class="sidebar__open-zone"></div>
+            <div class="sidebar__mention">
+                <p>[[[Need Support?]]]</p>
+            </div>
 
-			<div class="sidebar__bottom sidebar__button">
-				<i class="fa fa-comment-o sidebar__bottom__icon icon-contact white-text"></i>
-				<i class="fa fa-times sidebar__bottom__icon icon-cross white-text"></i>
-			</div>
+            <div class="sidebar__bottom sidebar__button">
+                <i class="fa fa-comment-o sidebar__bottom__icon icon-contact white-text"></i>
+                <i class="fa fa-times sidebar__bottom__icon icon-cross white-text"></i>
+            </div>
 
-			<div class="sidebar__content">
-				<div class="sidebar__vam">
-					<a class="sidebar__content__push" href="mailto:support@myfood.eu">
-						<i class="fa fa-comment-o sidebar__content__push__icon icon-contact"></i>
-						<div class="sidebar__content__push__title title--xl">
-							[[[Contact Us]]]
-						</div>
-						<small class="sidebar__content__push__mention mention">
-							[[[For any informations or suggestions]]]
-						</small>
-					</a>
-				</div>
+            <div class="sidebar__content">
+                <div class="sidebar__vam">
+                    <a class="sidebar__content__push" href="mailto:support@myfood.eu">
+                        <i class="fa fa-comment-o sidebar__content__push__icon icon-contact"></i>
+                        <div class="sidebar__content__push__title title--xl">
+                            [[[Contact Us]]]
+                        </div>
+                        <small class="sidebar__content__push__mention mention">
+                            [[[For any informations or suggestions]]]
+                        </small>
+                    </a>
+                </div>
 
-			</div>
+            </div>
 
-			<div class="sidebar__red-mask"></div>
-		</sidebar>
+            <div class="sidebar__red-mask"></div>
+        </sidebar>
 
-		<div class="login-form-container">
-			<div class="login-form">
-				@using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { role = "form" }))
-				{
-					@Html.AntiForgeryToken()
-					@Html.ValidationSummary(true, "", new { @class = "text-danger" })
-					<div class="form-group">
-						<label class="sr-only" for="email">Email</label>
-						<div class="input-group mb-2">
-							<div class="input-group-prepend">
-								<div class="input-group-text">
-									<img src="/Content/images/email.svg" alt="" class="input-img">
-								</div>
-							</div>
-							<input type="email" name="Email" class="form-control" id="email" placeholder="Email">
-						</div>
-					</div>
-					<div class="form-group form-password">
-						<label class="sr-only" for="email">Password</label>
-						<div class="show-password">
-							<img class="eye" src="~/Content/images/eye.svg" alt="">
-						</div>
-						<div class="input-group mb-2">
-							<div class="input-group-prepend">
-								<div class="input-group-text">
-									<img src="/Content/images/password.svg" alt="" class="input-img">
-								</div>
-							</div>
-							<input type="password" name="Password" class="form-control" id="password" placeholder="Password">
-						</div>
-					</div>
-					<div class="form-buttons">
-						<button type="submit" class="btn btn-primary">Login</button>
-					</div>
-				}
-			</div>
-		</div>
-	</div>
+        <div class="login-form-container">
+            <div class="login-form">
+                @using (Html.BeginForm("Login", "Account", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post, new { role = "form" }))
+                {
+                    @Html.AntiForgeryToken()
+                    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                    <div class="form-group">
+                        <label class="sr-only" for="email">Email</label>
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <img src="/Content/images/email.svg" alt="" class="input-img">
+                                </div>
+                            </div>
+                            <input type="email" name="Email" class="form-control" id="email" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group form-password">
+                        <label class="sr-only" for="email">Password</label>
+                        <div class="show-password">
+                            <img class="eye" src="~/Content/images/eye.svg" alt="">
+                        </div>
+                        <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <img src="/Content/images/password.svg" alt="" class="input-img">
+                                </div>
+                            </div>
+                            <input type="password" name="Password" class="form-control" id="password" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="form-buttons">
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+
+    @Html.ActionLink("Forgot password?", "ForgotPassword")
+
 </div>
 
 <script>
