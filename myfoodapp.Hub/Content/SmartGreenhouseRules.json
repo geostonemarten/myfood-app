@@ -60,14 +60,14 @@
     "bindingPropertyValue": "lastDayMinWaterTempvalue"
   },
   {
-    "ruleEvaluator": "(hydroponicTypeName = 'Aquaponics - Carp') && ((lastDayMaxWaterTempvalue >= 30)",
+    "ruleEvaluator": "(hydroponicTypeName = 'Aquaponics - Carp') && (lastDayMaxWaterTempvalue >= 30)",
     "warningContent": "Water Temperature value is out of range for Carps: max {0}°C",
     "warningContentFR": "La température de l'eau est trop élevée pour les Carpes : max {0}°C",
     "bindingPropertyValue": "lastDayMaxWaterTempvalue"
   },
   {
     "ruleEvaluator": "(hydroponicTypeName = 'Aquaponics - Tilapia') && (lastDayMinWaterTempvalue <= 14)",
-    "warningContent": "Water Temperature value is out of range for Tilapias:  min {0}°C}",
+    "warningContent": "Water Temperature value is out of range for Tilapias:  min {0}°C",
     "warningContentFR": "La température de l'eau est trop basse pour les Tilapias : min {0}°C",
     "bindingPropertyValue": "lastDayMinWaterTempvalue"
   },
