@@ -174,7 +174,7 @@ namespace myfoodapp.Hub.Controllers
         // GET: /Account/ResetPassword
         [HttpGet]
         [AllowAnonymous]
-        public ActionResult ResetPassword(string code = null)
+        public ActionResult ResetPassword(string userId = null, string code = null)
         {
             return code == null ? View("Error") : View();
         }
@@ -190,7 +190,8 @@ namespace myfoodapp.Hub.Controllers
             {
                 return View(model);
             }
-            var user = await UserManager.FindByEmailAsync(model.Email);
+            var user = await UserManager.FindByIdAsync(model.UserId);
+            //var user2 = await UserManager.
             if (user == null)
             {
                 // Don't reveal that the user does not exist

@@ -72,6 +72,10 @@
 		top: 0;
 	}
 
+    .row-flex .col-right {
+        padding: 40px 140px 40px 40px;
+    }
+
 		.row-flex .col-right .top-nav .email-contact {
 			display: flex;
 			align-items: center;
@@ -104,8 +108,9 @@
 			}
 
 	.row-flex .col-right .login-form-container {
-		width: 89%;
+		width: 100%;
 		margin-top: 150px;
+        text-align: center;
 	}
 
 		.row-flex .col-right .login-form-container .input-group-text {
@@ -198,8 +203,12 @@
 		color: #6C7A73;
 		opacity: 0.4;
 		display: block;
-		margin-top: 10px;
+		margin-top: 20px;
 	}
+
+    .row-flex .col-right .login-form-container .forgot-password .forgot-password-link {
+        color: #6C7A73;
+    }
 
 	@@-webkit-keyframes infinite-rotate {
 		from {
@@ -213,12 +222,12 @@
 	/* media queries */
 	@@media(max-width: 1024px){
 		.row-flex .col-right .login-form-container{
-			width: 80%;
+			/*width: 80%;*/
 		}
 	}
 	@@media(max-width: 768px) {
 		.row-flex .col-right .login-form-container {
-			width: 75%;
+			/*width: 75%;*/
 		}
 	}
 	@@media (max-width: 575.98px) {
@@ -546,6 +555,30 @@
 	.sidebar .sidebar__content__push__icon {
 		color: #000;
 	}
+
+    @@media (max-width: 988px) and (min-width:575px) {
+        .row-flex {
+            flex-wrap: nowrap;
+        }
+        .row-flex .col-left {
+            width: auto;
+        }
+        .row-flex .col-right {
+            width: 100%;
+        }
+    }
+
+    @@media (max-width: 751px) and (min-width: 575px) {
+        .row-flex .col-left {
+            display: none;
+        }
+    }
+
+    @@media (max-width: 575px) {
+        .row-flex .col-right {
+            padding: 40px;
+        }
+    }
 </style>
 <div class="row-flex">
 	<div class="col-left">
@@ -636,10 +669,11 @@
                     </div>
                 }
             </div>
+            <div class="forgot-password">
+                @Html.ActionLink("Forgot password?", "ForgotPassword", null, new { @class = "forgot-password-link" })
+            </div>
         </div>
     </div>
-
-    @Html.ActionLink("Forgot password?", "ForgotPassword")
 
 </div>
 
