@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2019-10-07 14:40+02:00\n"
-"PO-Revision-Date: 2019-10-07 14:40+02:00\n"
+"POT-Creation-Date: 2019-10-10 15:52+02:00\n"
+"PO-Revision-Date: 2019-10-10 15:52+02:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -742,6 +742,11 @@ msgstr "Incroyable"
 msgid "Back to Details"
 msgstr "Retour aux Détails"
 
+#: Views\Account\ForgotPassword.cshtml:655
+#: Views\Account\ResetPassword.cshtml:679
+msgid "Back to Login"
+msgstr ""
+
 #: Views\Admin\Index.cshtml:41
 #: obj\Release\Package\PackageTmp\Views\Admin\Index.cshtml:41
 msgid "Back to Production Units"
@@ -966,7 +971,7 @@ msgstr "Bettes"
 msgid "Chinese Cabbage"
 msgstr "Chou Chinois"
 
-#: Views\MyInfo\Update.cshtml:126
+#: Views\MyInfo\Update.cshtml:125
 #: obj\Release\Package\PackageTmp\Views\MyInfo\Update.cshtml:126
 msgid "Choose the application default language"
 msgstr "Choisissez la langue par défaut"
@@ -994,12 +999,24 @@ msgstr "Tuyau bouché"
 msgid "CO2 SAVED"
 msgstr "CO2 ECO."
 
-#: Views\Account\Login.cshtml:559
+#: Views\Account\ResetPassword.cshtml:667
+msgid "Confirm Password"
+msgstr "Confirmez Mot de Passe"
+
+#: Views\Account\ForgotPassword.cshtml:587
+#: Views\Account\ForgotPasswordConfirmation.cshtml:598
+#: Views\Account\Login.cshtml:592
+#: Views\Account\ResetPassword.cshtml:590
+#: Views\Account\ResetPasswordConfirmation.cshtml:617
 #: obj\Release\Package\PackageTmp\Views\Account\Login.cshtml:559
 msgid "Connect with your Smart Greenhouse"
 msgstr "Connectez-vous à votre Serre"
 
-#: Views\Account\Login.cshtml:590
+#: Views\Account\ForgotPassword.cshtml:618
+#: Views\Account\ForgotPasswordConfirmation.cshtml:629
+#: Views\Account\Login.cshtml:623
+#: Views\Account\ResetPassword.cshtml:621
+#: Views\Account\ResetPasswordConfirmation.cshtml:648
 #: obj\Release\Package\PackageTmp\Views\Account\Login.cshtml:590
 msgid "Contact Us"
 msgstr "Nous Contacter"
@@ -1609,10 +1626,18 @@ msgstr "Bassin"
 msgid "Follow Messages sent by Sigfox from Production Units"
 msgstr "Suivez les Messages Sigfox envoyés par les Unités de Production"
 
-#: Views\Account\Login.cshtml:593
+#: Views\Account\ForgotPassword.cshtml:621
+#: Views\Account\ForgotPasswordConfirmation.cshtml:632
+#: Views\Account\Login.cshtml:626
+#: Views\Account\ResetPassword.cshtml:624
+#: Views\Account\ResetPasswordConfirmation.cshtml:651
 #: obj\Release\Package\PackageTmp\Views\Account\Login.cshtml:593
 msgid "For any informations or suggestions"
 msgstr "Pour plus d'informations ou suggestions"
+
+#: Views\Account\Login.cshtml:673
+msgid "Forgot password?"
+msgstr "Mot de Passe Oublié ?"
 
 #: Migrations\Configuration.cs:232
 msgid "Gather vegetables"
@@ -2572,7 +2597,7 @@ msgstr "Lumière"
 msgid "Location:"
 msgstr "Location:"
 
-#: Views\Account\Login.cshtml:695
+#: Views\Account\Login.cshtml:732
 #: obj\Release\Package\PackageTmp\Views\Account\Login.cshtml:695
 msgid "Log in"
 msgstr "Se Connecter"
@@ -2592,6 +2617,8 @@ msgid "Log your Actions / Events here"
 msgstr "Saisir vos Actions / Evénements ici"
 
 #: Viewmodels\AccountViewModels.cs:32
+#: Views\Account\Login.cshtml:668
+#: Views\Account\ResetPasswordConfirmation.cshtml:665
 #: Views\Shared\_Layout.cshtml:245
 #: Views\Shared\_RedesignLayout.cshtml:249
 #: obj\Release\Package\PackageTmp\Views\Shared\_Layout.cshtml:245
@@ -3002,7 +3029,11 @@ msgstr "Matin"
 msgid "My Information"
 msgstr "Mes Informations"
 
-#: Views\Account\Login.cshtml:565
+#: Views\Account\ForgotPassword.cshtml:593
+#: Views\Account\ForgotPasswordConfirmation.cshtml:604
+#: Views\Account\Login.cshtml:598
+#: Views\Account\ResetPassword.cshtml:596
+#: Views\Account\ResetPasswordConfirmation.cshtml:623
 #: obj\Release\Package\PackageTmp\Views\Account\Login.cshtml:565
 msgid "myfoodhub is licensed under a GPLv3"
 msgstr "myfoodhub est publié sous une licence GPLv3"
@@ -3015,7 +3046,11 @@ msgstr "Nom"
 msgid "Need support"
 msgstr "Besoin d'aide"
 
-#: Views\Account\Login.cshtml:577
+#: Views\Account\ForgotPassword.cshtml:605
+#: Views\Account\ForgotPasswordConfirmation.cshtml:616
+#: Views\Account\Login.cshtml:610
+#: Views\Account\ResetPassword.cshtml:608
+#: Views\Account\ResetPasswordConfirmation.cshtml:635
 #: obj\Release\Package\PackageTmp\Views\Account\Login.cshtml:577
 msgid "Need Support?"
 msgstr "Besoin d'aide ?"
@@ -3039,7 +3074,7 @@ msgid "Network Status"
 msgstr "Etat du Réseau"
 
 #: Viewmodels\AccountViewModels.cs:45
-#: Views\MyInfo\Update.cshtml:122
+#: Views\MyInfo\Update.cshtml:121
 #: obj\Release\Package\PackageTmp\Views\MyInfo\Update.cshtml:122
 msgid "New Password"
 msgstr "Nouveau Mot de Passe"
@@ -3199,7 +3234,7 @@ msgid "Note"
 msgstr "Note"
 
 #: Viewmodels\AccountViewModels.cs:36
-#: Views\MyInfo\Update.cshtml:114
+#: Views\MyInfo\Update.cshtml:113
 #: obj\Release\Package\PackageTmp\Views\MyInfo\Update.cshtml:114
 msgid "Notification Email"
 msgstr "Email de Notification"
@@ -3231,7 +3266,7 @@ msgid "OK"
 msgstr "OK"
 
 #: Viewmodels\AccountViewModels.cs:41
-#: Views\MyInfo\Update.cshtml:118
+#: Views\MyInfo\Update.cshtml:117
 #: obj\Release\Package\PackageTmp\Views\MyInfo\Update.cshtml:118
 msgid "Old Password"
 msgstr "Ancien Mot de Passe"
@@ -3280,6 +3315,9 @@ msgid "Parsnip"
 msgstr "Panais"
 
 #: Viewmodels\AccountViewModels.cs:14
+#: Views\Account\Login.cshtml:654
+#: Views\Account\ResetPassword.cshtml:641
+#: Views\Account\ResetPassword.cshtml:657
 msgid "Password"
 msgstr "Mot de Passe"
 
@@ -4155,6 +4193,10 @@ msgstr "Planter les semis"
 msgid "Plants"
 msgstr "Plantes"
 
+#: Views\Account\ForgotPasswordConfirmation.cshtml:644
+msgid "Please check your email to reset your password."
+msgstr "Vérifiez votre boite mail pour changer votre mot de passe."
+
 #: Views\ProductionUnits\UserUnit.cshtml:967
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\UserUnit.cshtml:967
 msgid "Please select more detailed option"
@@ -4165,7 +4207,7 @@ msgstr "Choisir une Option"
 msgid "Please select More detailed Option"
 msgstr "Choisir une Option"
 
-#: Views\Account\Login.cshtml:679
+#: Views\Account\Login.cshtml:716
 #: obj\Release\Package\PackageTmp\Views\Account\Login.cshtml:679
 msgid "Please Sign In"
 msgstr "Connectez-vous"
@@ -4198,7 +4240,7 @@ msgstr "unité de prod."
 msgid "Production lost"
 msgstr "Perte de production"
 
-#: Controllers\ProductionUnitsController.cs:292
+#: Controllers\ProductionUnitsController.cs:293
 msgid "Production Unit already in use"
 msgstr "Unité de Prod. déjà en cours d'utilisation"
 
@@ -4401,7 +4443,7 @@ msgstr "Légumes racines - plus de 200gr"
 msgid "Satify"
 msgstr "Satisfait"
 
-#: Views\MyInfo\Update.cshtml:130
+#: Views\MyInfo\Update.cshtml:129
 #: obj\Release\Package\PackageTmp\Views\MyInfo\Update.cshtml:130
 msgid "Save"
 msgstr "Enregistrer"
@@ -4513,6 +4555,10 @@ msgstr "Sauver et Fermer"
 msgid "Seed"
 msgstr "Semis"
 
+#: Views\Account\ForgotPassword.cshtml:650
+msgid "Send confirmation email"
+msgstr "Envoyez mail de confirmation"
+
 #: Views\ProductionUnits\Index.cshtml:73
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\Index.cshtml:73
 msgid "Send Feeling Request"
@@ -4543,7 +4589,7 @@ msgstr "Instal. Planifiée"
 #: Views\Shared\_Layout.cshtml:180
 #: obj\Release\Package\PackageTmp\Views\Shared\_Layout.cshtml:180
 msgid "Shop"
-msgstr ""
+msgstr "Boutique"
 
 #: Views\Shared\_Layout.cshtml:174
 #: obj\Release\Package\PackageTmp\Views\Shared\_Layout.cshtml:174
@@ -5696,6 +5742,12 @@ msgstr "Utiliser filtre UV"
 msgid "user"
 msgstr "utilisateur"
 
+#: Views\Account\ForgotPassword.cshtml:638
+#: Views\Account\ForgotPassword.cshtml:645
+#: Views\Account\Login.cshtml:643
+msgid "User Name"
+msgstr "Nom d'Utilisateur"
+
 #: Views\Admin\Index.cshtml:18
 #: obj\Release\Package\PackageTmp\Views\Admin\Index.cshtml:18
 msgid "Users List"
@@ -5832,6 +5884,10 @@ msgstr "Hiver"
 #: obj\Release\Package\PackageTmp\Views\Events\Manage.cshtml:62
 msgid "Yes"
 msgstr "Oui"
+
+#: Views\Account\ResetPasswordConfirmation.cshtml:663
+msgid "Your password has been reset. Please click here to log in."
+msgstr "Votre mot de passe a été changé. Vous pouvez vous identifier de nouveau."
 
 #: Business\GrowingModel.cs:183
 #: Business\GrowingModel.cs:189

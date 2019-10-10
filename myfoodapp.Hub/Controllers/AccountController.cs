@@ -136,28 +136,24 @@ namespace myfoodapp.Hub.Controllers
         {
             if (ModelState.IsValid)
             {
-                var user = await UserManager.FindByEmailAsync(model.Email);
-                //if (user == null || !(await UserManager.IsEmailConfirmedAsync(user.Id)))
+                var user = await UserManager.FindByNameAsync(model.Email);
+
                 if (user == null)
                 {
                     // Don't reveal that the user does not exist or is not confirmed
                     return View("ForgotPasswordConfirmation");
                 }
 
-                // For more information on how to enable account confirmation and password reset please visit http://go.microsoft.com/fwlink/?LinkID=532713
-                // Send an email with this link
                 var code = await UserManager.GeneratePasswordResetTokenAsync(user.Id);
                 var callbackUrl = this.Request.Url.IsDefaultPort
                     ?
                     this.Request.Url.Scheme + "://" + this.Request.Url.Host + Url.Action("ResetPassword", "Account", new { userId = user.Id, code = code })
                     : this.Request.Url.Scheme + "://" + this.Request.Url.Host + ":" + this.Request.Url.Port + Url.Action("ResetPassword", "Account", new { userId = user.Id, code = code });
-                MailManager.ResetPasswordMessage(model.Email, callbackUrl);
-                //await _emailSender.SendEmailAsync(model.Email, "Reset Password",
-                //   "Please reset your password by clicking here: <a href=\"" + callbackUrl + "\">link</a>");
+                MailManager.ResetPasswordMessage(user.Email, callbackUrl);
+
                 return View("ForgotPasswordConfirmation");
             }
 
-            // If we got this far, something failed, redisplay form
             return View(model);
         }
 

@@ -47,7 +47,7 @@ namespace myfoodapp.Hub.Controllers
         public ActionResult Update()
         {
             var currentUser = this.User.Identity.GetUserName();
-            var applicationUser = UserManager.FindByEmail(currentUser);
+            var applicationUser = UserManager.FindByName(currentUser);
 
             var db = new ApplicationDbContext();
 
@@ -58,7 +58,7 @@ namespace myfoodapp.Hub.Controllers
               currentLanguageId = currentProductOwner.language.Id;
             return View(new UserViewModel()
             {
-                Login = applicationUser.Email,
+                Login = applicationUser.UserName,
                 NotificationEmail = currentProductOwner.contactMail,
                 IsMailNotificationActivated = currentProductOwner.isMailNotificationActivated,
                 Language = currentLanguageId
@@ -74,7 +74,7 @@ namespace myfoodapp.Hub.Controllers
             var currentUser = this.User.Identity.GetUserName();
 
             var currentProductionUnitOwner = db.ProductionUnitOwners.Include(p => p.language)
-                                                 .Include(p => p.user).FirstOrDefault(p => p.user.UserName == currentUser);
+                                               .Include(p => p.user).FirstOrDefault(p => p.user.UserName == currentUser);
 
             currentProductionUnitOwner.language = db.Languages.FirstOrDefault(l => l.Id == model.Language);
             currentProductionUnitOwner.isMailNotificationActivated = model.IsMailNotificationActivated;
@@ -84,19 +84,17 @@ namespace myfoodapp.Hub.Controllers
             {
                 db.SaveChanges();
             }
-            catch (Exception ex )
+            catch (Exception)
             {
-                var tto = ex;
             }
             
-
             if (ModelState.IsValid)
             {
-                var applicationUser = UserManager.FindByEmail(currentUser);
+                var applicationUser = UserManager.FindByName(currentUser);
 
-				if (model.Login != applicationUser.Email)
+				if (model.NotificationEmail != applicationUser.Email)
 				{
-					applicationUser.Email = model.Login;
+					applicationUser.Email = model.NotificationEmail;
 					applicationUser.UserName = model.Login;
 					var resultMailChanged = await UserManager.UpdateAsync(applicationUser);
 					if (!resultMailChanged.Succeeded)

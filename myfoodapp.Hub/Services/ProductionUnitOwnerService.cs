@@ -93,6 +93,9 @@ namespace myfoodapp.Hub.Services
             {
                 var user = entities.Users.Where(p => p.Id == currentProductionUnitOwnerViewModel.userId).FirstOrDefault();
                 entity.user = user;
+
+                if (user != null)
+                    user.Email = currentProductionUnitOwnerViewModel.contactMail;
             }
 
             if (entity.language == null)
@@ -130,6 +133,9 @@ namespace myfoodapp.Hub.Services
 
                 ApplicationUser currentApplicationUser = new ApplicationUser();
                 currentApplicationUser = entities.Users.Where(p => p.Id == currentProductionUnitOwnerViewModel.userId).FirstOrDefault();
+
+                if(currentApplicationUser != null)
+                currentApplicationUser.Email = currentProductionUnitOwnerViewModel.contactMail;
 
                 Language currentLanguagee = new Language();
                 currentLanguagee = entities.Languages.Where(p => p.Id == currentProductionUnitOwnerViewModel.languageId).FirstOrDefault();
