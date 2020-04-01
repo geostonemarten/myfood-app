@@ -808,16 +808,43 @@ namespace myfoodapp.Hub.Controllers
         {
             var db = new ApplicationDbContext();
 
-            var upRunningStatus = db.ProductionUnitStatus.Where(s => s.Id == 3).FirstOrDefault();
-            var upRunningProductionUnits = db.ProductionUnits.Include(p => p.owner.language).Where(p => p.productionUnitStatus.Id == upRunningStatus.Id).ToList();
+            var currentProductionUnit = db.ProductionUnits.Include(p => p.owner.user)
+                                                              .Include(p => p.owner.language)
+                                                              .Include(p => p.hydroponicType)
+                                                              .Include(p => p.productionUnitStatus)
+                                                              .Include(p => p.productionUnitType)
+                                                              .Where(p => p.reference == "C087EF" || p.reference == "74711").FirstOrDefault();
 
-            upRunningProductionUnits.ForEach(p =>
-            {
-                if (p.owner.notificationPushKey != null)
+            //if (currentProductionUnit.owner.contactMail != null && currentProductionUnit.owner.isMailNotificationActivated == true)
+            //{
+                //MailManager.PioneerUnitOnlineMessage(currentProductionUnit);
+                //MailManager.PioneerUnitOfflineMessage(currentProductionUnit);
+                MailManager.PioneerUnitWeeklyMessage(currentProductionUnit);
+
+                var currentMeasures = AquaponicsRulesManager.MeasuresProcessor(currentProductionUnit.Id);
+
+                try
                 {
-                    NotificationPushManager.PioneerUnitOwnerFeelingMessage(p);
+                    AquaponicsRulesManager.ValidateRules(currentMeasures, currentProductionUnit.Id);
                 }
-            });
+                catch (Exception ex)
+                {
+                    db.Logs.Add(Log.CreateErrorLog(String.Format("Error with Rule Manager Evaluator"), ex));
+                    db.SaveChanges();
+                }
+
+           // }
+
+            //var upRunningStatus = db.ProductionUnitStatus.Where(s => s.Id == 3).FirstOrDefault();
+            //var upRunningProductionUnits = db.ProductionUnits.Include(p => p.owner.language).Where(p => p.productionUnitStatus.Id == upRunningStatus.Id).ToList();
+
+            //upRunningProductionUnits.ForEach(p =>
+            //{
+            //    if (p.owner.notificationPushKey != null)
+            //    {
+            //        NotificationPushManager.PioneerUnitOwnerFeelingMessage(p);
+            //    }
+            //});
 
             return new HttpStatusCodeResult(HttpStatusCode.OK);
         }

@@ -103,6 +103,8 @@ namespace myfoodapp.Hub.Migrations
             context.HydroponicTypes.Add(new HydroponicType() { Id = 6, name = "[[[Aquaponics - Crayfish]]]" });
             context.HydroponicTypes.Add(new HydroponicType() { Id = 7, name = "[[[Aquaponics - Oth. Cold Fish]]]" });
             context.HydroponicTypes.Add(new HydroponicType() { Id = 8, name = "[[[Aquaponics - Oth. Warm Fish]]]" });
+            context.HydroponicTypes.Add(new HydroponicType() { Id = 9, name = "[[[Aquaponics - Red Fish]]]" });
+            context.HydroponicTypes.Add(new HydroponicType() { Id = 10, name = "[[[Aquaponics - Perch]]]" });
 
             context.ProductionUnitStatus.Add(new ProductionUnitStatus() { Id = 1, name = "[[[Wait Confirm.]]]" });
             context.ProductionUnitStatus.Add(new ProductionUnitStatus() { Id = 2, name = "[[[Setup Planned]]]" });
@@ -2181,7 +2183,7 @@ namespace myfoodapp.Hub.Migrations
                     {
                         Random rnd = new Random();
                         var currentDate = DateTime.Now;
-                        currentDate = currentDate.AddTicks(-(currentDate.Ticks % TimeSpan.TicksPerSecond)).AddMinutes(-10 * i);
+                        currentDate = currentDate.AddTicks(-(currentDate.Ticks % TimeSpan.TicksPerSecond)).AddMinutes(-60 * i);
 
                         context.Messages.Add(new Message() { date = currentDate, content = "007002190082248902680400", device = productionUnit.reference, messageType = messMeasure });
                         context.Messages.Add(new Message() { date = currentDate, content = "006802340082248902680400", device = productionUnit.reference, messageType = messMeasure });

@@ -2,7 +2,6 @@
 using Kendo.Mvc.UI;
 using myfoodapp.Hub.Business;
 using myfoodapp.Hub.Models;
-using myfoodapp.Hub.Services;
 using myfoodapp.Hub.Viewmodels;
 using System;
 using System.Collections.Generic;
@@ -59,7 +58,7 @@ namespace myfoodapp.Hub.Controllers
 
             if (double.TryParse(strLat, style, culture, out latitude) && double.TryParse(strLong, style, culture, out longitude))
             {
-                var currentProductionUnit = db.ProductionUnits.Where(p => p.lastMeasureReceived != null).ToList();
+                var currentProductionUnit = db.ProductionUnits.Where(p => p.productionUnitStatus.Id == 3).ToList();
 
                 var currentProductionUnitIndex = currentProductionUnit.FindIndex(p => p.locationLatitude == latitude &&
                                                                                  p.locationLongitude == longitude);
@@ -142,12 +141,12 @@ namespace myfoodapp.Hub.Controllers
         {
             var db = new ApplicationDbContext();
 
-			var prodUnitListCount = db.ProductionUnits.Where(p => p.lastMeasureReceived != null).Count();
+			var prodUnitListCount = db.ProductionUnits.Where(p => p.productionUnitStatus.Id == 3).Count();
 
             if (prodUnitListCount == 0)
                 return null;
 
-            var currentProductionUnitList = db.ProductionUnits.Where(p => p.picturePath!= null && p.lastMeasureReceived != null)
+            var currentProductionUnitList = db.ProductionUnits.Where(p => p.picturePath != null && p.productionUnitStatus.Id == 3)
                                          .Include(p => p.owner.preferedMoment)
                                          .Include(p => p.productionUnitType)
                                          .Include(p => p.productionUnitStatus).ToList();

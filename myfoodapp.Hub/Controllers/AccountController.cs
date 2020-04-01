@@ -7,6 +7,9 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Security;
 using myfoodapp.Hub.Common;
+using System.Linq;
+using System.Data;
+using System.Data.Entity;
 
 namespace myfoodapp.Hub.Controllers
 {
@@ -144,12 +147,23 @@ namespace myfoodapp.Hub.Controllers
                     return View("ForgotPasswordConfirmation");
                 }
 
+                var db = new ApplicationDbContext();
+
+                var currentProductionUnitsOwner = db.ProductionUnitOwners.Include(p => p.user).Include(p => p.language)
+                                               .Where(p => p.user.UserName == user.UserName).FirstOrDefault();
+                
+                if (currentProductionUnitsOwner == null)
+                {
+                    // Don't reveal that the user does not exist or is not confirmed
+                    return View("ForgotPasswordConfirmation");
+                }
+
                 var code = await UserManager.GeneratePasswordResetTokenAsync(user.Id);
                 var callbackUrl = this.Request.Url.IsDefaultPort
                     ?
                     this.Request.Url.Scheme + "://" + this.Request.Url.Host + Url.Action("ResetPassword", "Account", new { userId = user.Id, code = code })
                     : this.Request.Url.Scheme + "://" + this.Request.Url.Host + ":" + this.Request.Url.Port + Url.Action("ResetPassword", "Account", new { userId = user.Id, code = code });
-                MailManager.ResetPasswordMessage(user.Email, callbackUrl);
+                MailManager.ResetPasswordMessage(currentProductionUnitsOwner, user.Email, callbackUrl);
 
                 return View("ForgotPasswordConfirmation");
             }

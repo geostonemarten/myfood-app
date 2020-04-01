@@ -89,7 +89,7 @@ namespace myfoodapp.Hub
                 {
                     if (p.lastMeasureReceived == null 
                         || ((p.lastSignalStrenghtReceived == "Limit" || p.lastSignalStrenghtReceived == "Average") && currentDate - p.lastMeasureReceived > TimeSpan.FromMinutes(360))
-                        || ((p.lastSignalStrenghtReceived == "Excellent" || p.lastSignalStrenghtReceived == "Good") && currentDate - p.lastMeasureReceived > TimeSpan.FromMinutes(120)))
+                        || ((p.lastSignalStrenghtReceived == "Excellent" || p.lastSignalStrenghtReceived == "Good") && currentDate - p.lastMeasureReceived > TimeSpan.FromMinutes(180)))
                     {
                         p.productionUnitStatus = offlineStatus;
 

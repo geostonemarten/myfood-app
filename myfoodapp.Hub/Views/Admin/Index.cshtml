@@ -72,22 +72,25 @@
 
             @foreach (var item in Model)
             {
-                <tr>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.Email)
-                    </td>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.LockoutEndDateUtc)
-                    </td>
-                    <td>
-                        @Html.ActionLink("Edit", "EditUser", new { UserName = item.UserName }, new { @class = "EditUser" }) |
-                        @if ((item.UserName.ToLower() != this.User.Identity.Name.ToLower()))
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LockoutEndDateUtc)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "EditUser", new { UserName = item.UserName }, new { @class = "EditUser" }) |
+                @if ((item.UserName.ToLower() != this.User.Identity.Name.ToLower()))
                 {
-                            @Html.ActionLink("Delete", "DeleteUser", new { UserName = item.UserName },
-                    new { @class = "EditUser", onclick = "return confirm('Are you sure you wish to delete this user?');" })
-                        }
-                    </td>
-                </tr>
+                    @Html.ActionLink("Delete", "DeleteUser", new { UserName = item.UserName },
+            new { @class = "EditUser", onclick = "return confirm('Are you sure you wish to delete this user?');" })
+                }
+            </td>
+        </tr>
             }
 
 

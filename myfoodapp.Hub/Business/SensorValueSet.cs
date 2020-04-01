@@ -53,6 +53,16 @@ namespace myfoodapp.Hub.Business
 
             averageDayValue = Math.Round(averageDayValueRslt.Average(m => m.value), 1);
 
+            if(Math.Abs((lastDay - DateTime.Now).TotalDays) > 3)
+              return new SensorValueSet()
+              {
+                  CurrentValue = currentValue,
+                  CurrentCaptureTime = "-",
+                  AverageHourValue = averageHourValue,
+                  AverageDayValue = averageDayValue,
+                  LastDayCaptureTime = "-"
+              };
+
             return new SensorValueSet()
             {
                 CurrentValue = currentValue,

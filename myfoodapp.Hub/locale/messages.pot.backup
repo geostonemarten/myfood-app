@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2019-10-10 15:39+02:00\n"
+"POT-Creation-Date: 2020-04-01 15:30+02:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -12,19 +12,19 @@ msgstr ""
 msgid "${array[i].name}"
 msgstr ""
 
-#: Migrations\Configuration.cs:138
+#: Migrations\Configuration.cs:140
 msgid "11 towers"
 msgstr ""
 
-#: Migrations\Configuration.cs:139
+#: Migrations\Configuration.cs:141
 msgid "18 towers"
 msgstr ""
 
-#: Migrations\Configuration.cs:140
+#: Migrations\Configuration.cs:142
 msgid "24 towers"
 msgstr ""
 
-#: Migrations\Configuration.cs:141
+#: Migrations\Configuration.cs:143
 msgid "36 towers"
 msgstr ""
 
@@ -37,11 +37,11 @@ msgstr ""
 msgid "About"
 msgstr ""
 
-#: Migrations\Configuration.cs:117
+#: Migrations\Configuration.cs:119
 msgid "Action"
 msgstr ""
 
-#: Migrations\Configuration.cs:240
+#: Migrations\Configuration.cs:242
 msgid "Add ammonium sulphate"
 msgstr ""
 
@@ -56,31 +56,31 @@ msgstr ""
 msgid "Add Event"
 msgstr ""
 
-#: Migrations\Configuration.cs:236
+#: Migrations\Configuration.cs:238
 msgid "Add iron"
 msgstr ""
 
-#: Migrations\Configuration.cs:237
+#: Migrations\Configuration.cs:239
 msgid "Add magnesium"
 msgstr ""
 
-#: Migrations\Configuration.cs:238
+#: Migrations\Configuration.cs:240
 msgid "Add potassium"
 msgstr ""
 
-#: Migrations\Configuration.cs:234
+#: Migrations\Configuration.cs:236
 msgid "Add rain water"
 msgstr ""
 
-#: Migrations\Configuration.cs:235
+#: Migrations\Configuration.cs:237
 msgid "Add tape water"
 msgstr ""
 
-#: Migrations\Configuration.cs:146
+#: Migrations\Configuration.cs:148
 msgid "Advanced monitoring"
 msgstr ""
 
-#: Migrations\Configuration.cs:122
+#: Migrations\Configuration.cs:124
 msgid "Advices"
 msgstr ""
 
@@ -520,7 +520,7 @@ msgstr ""
 msgid "Aerospring"
 msgstr ""
 
-#: Migrations\Configuration.cs:169
+#: Migrations\Configuration.cs:171
 msgid "Afternoon"
 msgstr ""
 
@@ -538,7 +538,7 @@ msgstr ""
 msgid "Air Temperature (°C)"
 msgstr ""
 
-#: Migrations\Configuration.cs:160
+#: Migrations\Configuration.cs:162
 #: Views\Events\Index.cshtml:33
 #: Views\Measures\Index.cshtml:92
 #: Views\Messages\Index.cshtml:96
@@ -548,7 +548,7 @@ msgstr ""
 msgid "All"
 msgstr ""
 
-#: Migrations\Configuration.cs:266
+#: Migrations\Configuration.cs:268
 msgid "Anxious"
 msgstr ""
 
@@ -559,7 +559,7 @@ msgstr ""
 
 #: Business\GrowingModel.cs:20
 #: Content\GrowingModelv1.json:2171
-#: Migrations\Configuration.cs:184
+#: Migrations\Configuration.cs:186
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:2171
 msgid "April"
 msgstr ""
@@ -619,6 +619,14 @@ msgstr ""
 msgid "Aquaponics - Oth. Warm Fish"
 msgstr ""
 
+#: Migrations\Configuration.cs:107
+msgid "Aquaponics - Perch"
+msgstr ""
+
+#: Migrations\Configuration.cs:106
+msgid "Aquaponics - Red Fish"
+msgstr ""
+
 #: Migrations\Configuration.cs:101
 msgid "Aquaponics - Tilapia"
 msgstr ""
@@ -648,18 +656,18 @@ msgstr ""
 
 #: Business\GrowingModel.cs:24
 #: Content\GrowingModelv1.json:5055
-#: Migrations\Configuration.cs:188
+#: Migrations\Configuration.cs:190
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:5055
 msgid "August"
 msgstr ""
 
-#: Migrations\Configuration.cs:155
+#: Migrations\Configuration.cs:157
 msgid "Autumn"
 msgstr ""
 
-#: Migrations\Configuration.cs:127
-#: Migrations\Configuration.cs:257
-#: Migrations\Configuration.cs:261
+#: Migrations\Configuration.cs:129
+#: Migrations\Configuration.cs:259
+#: Migrations\Configuration.cs:263
 msgid "Average"
 msgstr ""
 
@@ -726,7 +734,7 @@ msgstr ""
 msgid "AVERAGE"
 msgstr ""
 
-#: Migrations\Configuration.cs:135
+#: Migrations\Configuration.cs:137
 msgid "Awesome"
 msgstr ""
 
@@ -743,6 +751,8 @@ msgstr ""
 
 #: Views\Account\ForgotPassword.cshtml:655
 #: Views\Account\ResetPassword.cshtml:679
+#: obj\Release\Package\PackageTmp\Views\Account\ForgotPassword.cshtml:655
+#: obj\Release\Package\PackageTmp\Views\Account\ResetPassword.cshtml:679
 msgid "Back to Login"
 msgstr ""
 
@@ -760,12 +770,12 @@ msgstr ""
 msgid "Back to User List"
 msgstr ""
 
-#: Migrations\Configuration.cs:258
-#: Migrations\Configuration.cs:262
+#: Migrations\Configuration.cs:260
+#: Migrations\Configuration.cs:264
 msgid "Bad"
 msgstr ""
 
-#: Migrations\Configuration.cs:210
+#: Migrations\Configuration.cs:212
 msgid "Bad looking vegetables"
 msgstr ""
 
@@ -816,7 +826,7 @@ msgstr ""
 msgid "Broad Bean"
 msgstr ""
 
-#: Migrations\Configuration.cs:217
+#: Migrations\Configuration.cs:219
 msgid "Broken pump"
 msgstr ""
 
@@ -879,7 +889,7 @@ msgstr ""
 msgid "Calendar"
 msgstr ""
 
-#: Migrations\Configuration.cs:245
+#: Migrations\Configuration.cs:247
 msgid "Call Pioneer"
 msgstr ""
 
@@ -971,7 +981,7 @@ msgid "Chinese Cabbage"
 msgstr ""
 
 #: Views\MyInfo\Update.cshtml:125
-#: obj\Release\Package\PackageTmp\Views\MyInfo\Update.cshtml:126
+#: obj\Release\Package\PackageTmp\Views\MyInfo\Update.cshtml:125
 msgid "Choose the application default language"
 msgstr ""
 
@@ -983,11 +993,11 @@ msgstr ""
 msgid "City - Signature"
 msgstr ""
 
-#: Migrations\Configuration.cs:215
+#: Migrations\Configuration.cs:217
 msgid "Clogged sprinkler"
 msgstr ""
 
-#: Migrations\Configuration.cs:216
+#: Migrations\Configuration.cs:218
 msgid "Clogged tubes"
 msgstr ""
 
@@ -999,6 +1009,7 @@ msgid "CO2 SAVED"
 msgstr ""
 
 #: Views\Account\ResetPassword.cshtml:667
+#: obj\Release\Package\PackageTmp\Views\Account\ResetPassword.cshtml:667
 msgid "Confirm Password"
 msgstr ""
 
@@ -1007,7 +1018,11 @@ msgstr ""
 #: Views\Account\Login.cshtml:592
 #: Views\Account\ResetPassword.cshtml:590
 #: Views\Account\ResetPasswordConfirmation.cshtml:617
-#: obj\Release\Package\PackageTmp\Views\Account\Login.cshtml:559
+#: obj\Release\Package\PackageTmp\Views\Account\ForgotPassword.cshtml:587
+#: obj\Release\Package\PackageTmp\Views\Account\ForgotPasswordConfirmation.cshtml:598
+#: obj\Release\Package\PackageTmp\Views\Account\Login.cshtml:592
+#: obj\Release\Package\PackageTmp\Views\Account\ResetPassword.cshtml:590
+#: obj\Release\Package\PackageTmp\Views\Account\ResetPasswordConfirmation.cshtml:617
 msgid "Connect with your Smart Greenhouse"
 msgstr ""
 
@@ -1016,7 +1031,11 @@ msgstr ""
 #: Views\Account\Login.cshtml:623
 #: Views\Account\ResetPassword.cshtml:621
 #: Views\Account\ResetPasswordConfirmation.cshtml:648
-#: obj\Release\Package\PackageTmp\Views\Account\Login.cshtml:590
+#: obj\Release\Package\PackageTmp\Views\Account\ForgotPassword.cshtml:618
+#: obj\Release\Package\PackageTmp\Views\Account\ForgotPasswordConfirmation.cshtml:629
+#: obj\Release\Package\PackageTmp\Views\Account\Login.cshtml:623
+#: obj\Release\Package\PackageTmp\Views\Account\ResetPassword.cshtml:621
+#: obj\Release\Package\PackageTmp\Views\Account\ResetPasswordConfirmation.cshtml:648
 msgid "Contact Us"
 msgstr ""
 
@@ -1025,7 +1044,7 @@ msgstr ""
 msgid "content from Sigfox backend"
 msgstr ""
 
-#: Migrations\Configuration.cs:214
+#: Migrations\Configuration.cs:216
 msgid "Cracked tank"
 msgstr ""
 
@@ -1131,7 +1150,7 @@ msgstr ""
 msgid "daily production"
 msgstr ""
 
-#: Migrations\Configuration.cs:213
+#: Migrations\Configuration.cs:215
 msgid "Damaged sensor"
 msgstr ""
 
@@ -1147,13 +1166,13 @@ msgstr ""
 msgid "Date"
 msgstr ""
 
-#: Migrations\Configuration.cs:208
+#: Migrations\Configuration.cs:210
 msgid "Dead fish"
 msgstr ""
 
 #: Business\GrowingModel.cs:28
 #: Content\GrowingModelv1.json:7939
-#: Migrations\Configuration.cs:192
+#: Migrations\Configuration.cs:194
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:7939
 msgid "December"
 msgstr ""
@@ -1168,7 +1187,7 @@ msgstr ""
 msgid "Description"
 msgstr ""
 
-#: Views\ProductionUnits\Index.cshtml:91
+#: Views\ProductionUnits\Index.cshtml:90
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\Index.cshtml:91
 msgid "Details"
 msgstr ""
@@ -1491,7 +1510,7 @@ msgstr ""
 msgid "Enable Notification Email"
 msgstr ""
 
-#: Migrations\Configuration.cs:279
+#: Migrations\Configuration.cs:281
 msgid "Equipment"
 msgstr ""
 
@@ -1559,16 +1578,16 @@ msgstr ""
 
 #: Business\GrowingModel.cs:18
 #: Content\GrowingModelv1.json:729
-#: Migrations\Configuration.cs:182
+#: Migrations\Configuration.cs:184
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:729
 msgid "February"
 msgstr ""
 
-#: Migrations\Configuration.cs:231
+#: Migrations\Configuration.cs:233
 msgid "Feed fish"
 msgstr ""
 
-#: Migrations\Configuration.cs:120
+#: Migrations\Configuration.cs:122
 msgid "Feeling"
 msgstr ""
 
@@ -1600,23 +1619,23 @@ msgstr ""
 msgid "Fennel"
 msgstr ""
 
-#: Migrations\Configuration.cs:225
+#: Migrations\Configuration.cs:227
 msgid "Filter cleaning"
 msgstr ""
 
-#: Migrations\Configuration.cs:222
+#: Migrations\Configuration.cs:224
 msgid "Filter issue"
 msgstr ""
 
-#: Migrations\Configuration.cs:276
+#: Migrations\Configuration.cs:278
 msgid "Fish"
 msgstr ""
 
-#: Migrations\Configuration.cs:119
+#: Migrations\Configuration.cs:121
 msgid "Fish Health"
 msgstr ""
 
-#: Migrations\Configuration.cs:161
+#: Migrations\Configuration.cs:163
 msgid "Fish Tank"
 msgstr ""
 
@@ -1630,29 +1649,34 @@ msgstr ""
 #: Views\Account\Login.cshtml:626
 #: Views\Account\ResetPassword.cshtml:624
 #: Views\Account\ResetPasswordConfirmation.cshtml:651
-#: obj\Release\Package\PackageTmp\Views\Account\Login.cshtml:593
+#: obj\Release\Package\PackageTmp\Views\Account\ForgotPassword.cshtml:621
+#: obj\Release\Package\PackageTmp\Views\Account\ForgotPasswordConfirmation.cshtml:632
+#: obj\Release\Package\PackageTmp\Views\Account\Login.cshtml:626
+#: obj\Release\Package\PackageTmp\Views\Account\ResetPassword.cshtml:624
+#: obj\Release\Package\PackageTmp\Views\Account\ResetPasswordConfirmation.cshtml:651
 msgid "For any informations or suggestions"
 msgstr ""
 
 #: Views\Account\Login.cshtml:673
+#: obj\Release\Package\PackageTmp\Views\Account\Login.cshtml:673
 msgid "Forgot password?"
 msgstr ""
 
-#: Migrations\Configuration.cs:232
+#: Migrations\Configuration.cs:234
 msgid "Gather vegetables"
 msgstr ""
 
-#: Migrations\Configuration.cs:223
+#: Migrations\Configuration.cs:225
 msgid "Glass broken"
 msgstr ""
 
-#: Migrations\Configuration.cs:228
+#: Migrations\Configuration.cs:230
 msgid "Glass cleaning"
 msgstr ""
 
-#: Migrations\Configuration.cs:128
-#: Migrations\Configuration.cs:256
-#: Migrations\Configuration.cs:260
+#: Migrations\Configuration.cs:130
+#: Migrations\Configuration.cs:258
+#: Migrations\Configuration.cs:262
 msgid "Good"
 msgstr ""
 
@@ -1800,7 +1824,7 @@ msgstr ""
 msgid "Grow"
 msgstr ""
 
-#: Migrations\Configuration.cs:264
+#: Migrations\Configuration.cs:266
 msgid "Happy"
 msgstr ""
 
@@ -2026,7 +2050,7 @@ msgstr ""
 #: Content\GrowingModelv1.json:8601
 #: Content\GrowingModelv1.json:8622
 #: Content\GrowingModelv1.json:8643
-#: Migrations\Configuration.cs:124
+#: Migrations\Configuration.cs:126
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:30
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:51
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:72
@@ -2256,7 +2280,7 @@ msgstr ""
 msgid "health. lvl"
 msgstr ""
 
-#: Migrations\Configuration.cs:134
+#: Migrations\Configuration.cs:136
 msgid "High"
 msgstr ""
 
@@ -2285,15 +2309,15 @@ msgstr ""
 msgid "hydroponicType"
 msgstr ""
 
-#: Migrations\Configuration.cs:220
+#: Migrations\Configuration.cs:222
 msgid "Ice into towers"
 msgstr ""
 
-#: Migrations\Configuration.cs:123
+#: Migrations\Configuration.cs:125
 msgid "Improvement"
 msgstr ""
 
-#: Migrations\Configuration.cs:110
+#: Migrations\Configuration.cs:112
 msgid "In Maintenance"
 msgstr ""
 
@@ -2342,45 +2366,45 @@ msgstr ""
 msgid "info"
 msgstr ""
 
-#: Migrations\Configuration.cs:121
+#: Migrations\Configuration.cs:123
 #: Views\ProductionUnits\Update.cshtml:86
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\Update.cshtml:86
 msgid "Info"
 msgstr ""
 
-#: Migrations\Configuration.cs:211
+#: Migrations\Configuration.cs:213
 msgid "Insect pest"
 msgstr ""
 
-#: Migrations\Configuration.cs:253
+#: Migrations\Configuration.cs:255
 msgid "Install auto feeder"
 msgstr ""
 
-#: Migrations\Configuration.cs:249
+#: Migrations\Configuration.cs:251
 msgid "Install double door back"
 msgstr ""
 
-#: Migrations\Configuration.cs:248
+#: Migrations\Configuration.cs:250
 msgid "Install double door front"
 msgstr ""
 
-#: Migrations\Configuration.cs:252
+#: Migrations\Configuration.cs:254
 msgid "Install extra tanks"
 msgstr ""
 
-#: Migrations\Configuration.cs:247
+#: Migrations\Configuration.cs:249
 msgid "Install extra towers"
 msgstr ""
 
-#: Migrations\Configuration.cs:251
+#: Migrations\Configuration.cs:253
 msgid "Install shadow cloth"
 msgstr ""
 
-#: Migrations\Configuration.cs:254
+#: Migrations\Configuration.cs:256
 msgid "Install solar panels"
 msgstr ""
 
-#: Migrations\Configuration.cs:250
+#: Migrations\Configuration.cs:252
 msgid "Install UV filter"
 msgstr ""
 
@@ -2393,27 +2417,27 @@ msgstr ""
 msgid "isOpen"
 msgstr ""
 
-#: Migrations\Configuration.cs:115
+#: Migrations\Configuration.cs:117
 msgid "Issue"
 msgstr ""
 
 #: Business\GrowingModel.cs:17
 #: Content\GrowingModelv1.json:8
-#: Migrations\Configuration.cs:181
+#: Migrations\Configuration.cs:183
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:8
 msgid "January"
 msgstr ""
 
 #: Business\GrowingModel.cs:23
 #: Content\GrowingModelv1.json:4334
-#: Migrations\Configuration.cs:187
+#: Migrations\Configuration.cs:189
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:4334
 msgid "July"
 msgstr ""
 
 #: Business\GrowingModel.cs:22
 #: Content\GrowingModelv1.json:3613
-#: Migrations\Configuration.cs:186
+#: Migrations\Configuration.cs:188
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:3613
 msgid "June"
 msgstr ""
@@ -2463,7 +2487,7 @@ msgstr ""
 msgid "lang"
 msgstr ""
 
-#: Views\ProductionUnits\Index.cshtml:89
+#: Views\ProductionUnits\Index.cshtml:88
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\Index.cshtml:89
 msgid "last measure"
 msgstr ""
@@ -2497,11 +2521,11 @@ msgstr ""
 msgid "Last Week"
 msgstr ""
 
-#: Migrations\Configuration.cs:270
+#: Migrations\Configuration.cs:272
 msgid "Leaf vegetables - less than 200gr"
 msgstr ""
 
-#: Migrations\Configuration.cs:271
+#: Migrations\Configuration.cs:273
 msgid "Leaf vegetables - more than 200gr"
 msgstr ""
 
@@ -2585,7 +2609,7 @@ msgstr ""
 msgid "Lettuce"
 msgstr ""
 
-#: Migrations\Configuration.cs:163
+#: Migrations\Configuration.cs:165
 msgid "Light"
 msgstr ""
 
@@ -2597,7 +2621,7 @@ msgid "Location:"
 msgstr ""
 
 #: Views\Account\Login.cshtml:732
-#: obj\Release\Package\PackageTmp\Views\Account\Login.cshtml:695
+#: obj\Release\Package\PackageTmp\Views\Account\Login.cshtml:732
 msgid "Log in"
 msgstr ""
 
@@ -2620,6 +2644,8 @@ msgstr ""
 #: Views\Account\ResetPasswordConfirmation.cshtml:665
 #: Views\Shared\_Layout.cshtml:245
 #: Views\Shared\_RedesignLayout.cshtml:249
+#: obj\Release\Package\PackageTmp\Views\Account\Login.cshtml:668
+#: obj\Release\Package\PackageTmp\Views\Account\ResetPasswordConfirmation.cshtml:665
 #: obj\Release\Package\PackageTmp\Views\Shared\_Layout.cshtml:245
 #: obj\Release\Package\PackageTmp\Views\Shared\_RedesignLayout.cshtml:249
 msgid "Login"
@@ -2630,11 +2656,11 @@ msgstr ""
 msgid "Login Identification"
 msgstr ""
 
-#: Migrations\Configuration.cs:132
+#: Migrations\Configuration.cs:134
 msgid "Low"
 msgstr ""
 
-#: Migrations\Configuration.cs:116
+#: Migrations\Configuration.cs:118
 msgid "Maintenance"
 msgstr ""
 
@@ -2695,18 +2721,18 @@ msgstr ""
 
 #: Business\GrowingModel.cs:19
 #: Content\GrowingModelv1.json:1450
-#: Migrations\Configuration.cs:183
+#: Migrations\Configuration.cs:185
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:1450
 msgid "March"
 msgstr ""
 
-#: Migrations\Configuration.cs:166
+#: Migrations\Configuration.cs:168
 msgid "Maximum"
 msgstr ""
 
 #: Business\GrowingModel.cs:21
 #: Content\GrowingModelv1.json:2892
-#: Migrations\Configuration.cs:185
+#: Migrations\Configuration.cs:187
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:2892
 msgid "May"
 msgstr ""
@@ -2836,7 +2862,7 @@ msgstr ""
 #: Content\GrowingModelv1.json:8466
 #: Content\GrowingModelv1.json:8487
 #: Content\GrowingModelv1.json:8508
-#: Migrations\Configuration.cs:133
+#: Migrations\Configuration.cs:135
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:194
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:257
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:320
@@ -2999,23 +3025,23 @@ msgstr ""
 msgid "Messages Monitoring"
 msgstr ""
 
-#: Migrations\Configuration.cs:164
+#: Migrations\Configuration.cs:166
 msgid "Moderate"
 msgstr ""
 
-#: Migrations\Configuration.cs:221
+#: Migrations\Configuration.cs:223
 msgid "Moisissure"
 msgstr ""
 
-#: Migrations\Configuration.cs:144
+#: Migrations\Configuration.cs:146
 msgid "Monitoring kit v.1"
 msgstr ""
 
-#: Migrations\Configuration.cs:145
+#: Migrations\Configuration.cs:147
 msgid "Monitoring kit v.2"
 msgstr ""
 
-#: Migrations\Configuration.cs:168
+#: Migrations\Configuration.cs:170
 msgid "Morning"
 msgstr ""
 
@@ -3033,7 +3059,11 @@ msgstr ""
 #: Views\Account\Login.cshtml:598
 #: Views\Account\ResetPassword.cshtml:596
 #: Views\Account\ResetPasswordConfirmation.cshtml:623
-#: obj\Release\Package\PackageTmp\Views\Account\Login.cshtml:565
+#: obj\Release\Package\PackageTmp\Views\Account\ForgotPassword.cshtml:593
+#: obj\Release\Package\PackageTmp\Views\Account\ForgotPasswordConfirmation.cshtml:604
+#: obj\Release\Package\PackageTmp\Views\Account\Login.cshtml:598
+#: obj\Release\Package\PackageTmp\Views\Account\ResetPassword.cshtml:596
+#: obj\Release\Package\PackageTmp\Views\Account\ResetPasswordConfirmation.cshtml:623
 msgid "myfoodhub is licensed under a GPLv3"
 msgstr ""
 
@@ -3041,7 +3071,7 @@ msgstr ""
 msgid "Name"
 msgstr ""
 
-#: Migrations\Configuration.cs:268
+#: Migrations\Configuration.cs:270
 msgid "Need support"
 msgstr ""
 
@@ -3050,7 +3080,11 @@ msgstr ""
 #: Views\Account\Login.cshtml:610
 #: Views\Account\ResetPassword.cshtml:608
 #: Views\Account\ResetPasswordConfirmation.cshtml:635
-#: obj\Release\Package\PackageTmp\Views\Account\Login.cshtml:577
+#: obj\Release\Package\PackageTmp\Views\Account\ForgotPassword.cshtml:605
+#: obj\Release\Package\PackageTmp\Views\Account\ForgotPasswordConfirmation.cshtml:616
+#: obj\Release\Package\PackageTmp\Views\Account\Login.cshtml:610
+#: obj\Release\Package\PackageTmp\Views\Account\ResetPassword.cshtml:608
+#: obj\Release\Package\PackageTmp\Views\Account\ResetPasswordConfirmation.cshtml:635
 msgid "Need Support?"
 msgstr ""
 
@@ -3074,11 +3108,11 @@ msgstr ""
 
 #: Viewmodels\AccountViewModels.cs:45
 #: Views\MyInfo\Update.cshtml:121
-#: obj\Release\Package\PackageTmp\Views\MyInfo\Update.cshtml:122
+#: obj\Release\Package\PackageTmp\Views\MyInfo\Update.cshtml:121
 msgid "New Password"
 msgstr ""
 
-#: Migrations\Configuration.cs:170
+#: Migrations\Configuration.cs:172
 msgid "Night"
 msgstr ""
 
@@ -3087,15 +3121,15 @@ msgstr ""
 msgid "No"
 msgstr ""
 
-#: Migrations\Configuration.cs:212
+#: Migrations\Configuration.cs:214
 msgid "No/Bad data received"
 msgstr ""
 
-#: Migrations\Configuration.cs:218
+#: Migrations\Configuration.cs:220
 msgid "Noisy pump"
 msgstr ""
 
-#: Migrations\Configuration.cs:165
+#: Migrations\Configuration.cs:167
 msgid "Normal"
 msgstr ""
 
@@ -3234,26 +3268,26 @@ msgstr ""
 
 #: Viewmodels\AccountViewModels.cs:36
 #: Views\MyInfo\Update.cshtml:113
-#: obj\Release\Package\PackageTmp\Views\MyInfo\Update.cshtml:114
+#: obj\Release\Package\PackageTmp\Views\MyInfo\Update.cshtml:113
 msgid "Notification Email"
 msgstr ""
 
 #: Business\GrowingModel.cs:27
 #: Content\GrowingModelv1.json:7218
-#: Migrations\Configuration.cs:191
+#: Migrations\Configuration.cs:193
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:7218
 msgid "November"
 msgstr ""
 
 #: Business\GrowingModel.cs:26
 #: Content\GrowingModelv1.json:6497
-#: Migrations\Configuration.cs:190
+#: Migrations\Configuration.cs:192
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:6497
 msgid "October"
 msgstr ""
 
 #: Controllers\HomeController.cs:252
-#: Migrations\Configuration.cs:112
+#: Migrations\Configuration.cs:114
 msgid "Offline"
 msgstr ""
 
@@ -3266,20 +3300,20 @@ msgstr ""
 
 #: Viewmodels\AccountViewModels.cs:41
 #: Views\MyInfo\Update.cshtml:117
-#: obj\Release\Package\PackageTmp\Views\MyInfo\Update.cshtml:118
+#: obj\Release\Package\PackageTmp\Views\MyInfo\Update.cshtml:117
 msgid "Old Password"
 msgstr ""
 
 #: Controllers\HomeController.cs:250
-#: Controllers\InteractiveMapController.cs:247
+#: Controllers\InteractiveMapController.cs:246
 msgid "On Maintenance"
 msgstr ""
 
-#: Migrations\Configuration.cs:147
+#: Migrations\Configuration.cs:149
 msgid "Onboard touchscreen"
 msgstr ""
 
-#: Migrations\Configuration.cs:241
+#: Migrations\Configuration.cs:243
 msgid "Open doors"
 msgstr ""
 
@@ -3317,6 +3351,9 @@ msgstr ""
 #: Views\Account\Login.cshtml:654
 #: Views\Account\ResetPassword.cshtml:641
 #: Views\Account\ResetPassword.cshtml:657
+#: obj\Release\Package\PackageTmp\Views\Account\Login.cshtml:654
+#: obj\Release\Package\PackageTmp\Views\Account\ResetPassword.cshtml:641
+#: obj\Release\Package\PackageTmp\Views\Account\ResetPassword.cshtml:657
 msgid "Password"
 msgstr ""
 
@@ -3465,7 +3502,7 @@ msgstr ""
 msgid "Paused"
 msgstr ""
 
-#: Migrations\Configuration.cs:143
+#: Migrations\Configuration.cs:145
 msgid "Pellet stove"
 msgstr ""
 
@@ -3521,19 +3558,19 @@ msgstr ""
 msgid "Percentage"
 msgstr ""
 
-#: Migrations\Configuration.cs:129
+#: Migrations\Configuration.cs:131
 msgid "Perfect"
 msgstr ""
 
-#: Migrations\Configuration.cs:243
+#: Migrations\Configuration.cs:245
 msgid "Perform agro analysis"
 msgstr ""
 
-#: Migrations\Configuration.cs:242
+#: Migrations\Configuration.cs:244
 msgid "Perform pH calib."
 msgstr ""
 
-#: Migrations\Configuration.cs:277
+#: Migrations\Configuration.cs:279
 msgid "Performance"
 msgstr ""
 
@@ -4138,19 +4175,19 @@ msgstr ""
 msgid "Perma Beds"
 msgstr ""
 
-#: Migrations\Configuration.cs:157
+#: Migrations\Configuration.cs:159
 msgid "Permaculture Bed"
 msgstr ""
 
-#: Migrations\Configuration.cs:149
+#: Migrations\Configuration.cs:151
 msgid "Permaculture beds"
 msgstr ""
 
-#: Migrations\Configuration.cs:150
+#: Migrations\Configuration.cs:152
 msgid "Permaculture beds and biochar"
 msgstr ""
 
-#: Migrations\Configuration.cs:278
+#: Migrations\Configuration.cs:280
 msgid "Pest"
 msgstr ""
 
@@ -4180,19 +4217,20 @@ msgstr ""
 msgid "Pioneer Citizen Network"
 msgstr ""
 
-#: Migrations\Configuration.cs:118
+#: Migrations\Configuration.cs:120
 msgid "Plant Health"
 msgstr ""
 
-#: Migrations\Configuration.cs:233
+#: Migrations\Configuration.cs:235
 msgid "Plant seedlings"
 msgstr ""
 
-#: Migrations\Configuration.cs:275
+#: Migrations\Configuration.cs:277
 msgid "Plants"
 msgstr ""
 
 #: Views\Account\ForgotPasswordConfirmation.cshtml:644
+#: obj\Release\Package\PackageTmp\Views\Account\ForgotPasswordConfirmation.cshtml:644
 msgid "Please check your email to reset your password."
 msgstr ""
 
@@ -4207,11 +4245,11 @@ msgid "Please select More detailed Option"
 msgstr ""
 
 #: Views\Account\Login.cshtml:716
-#: obj\Release\Package\PackageTmp\Views\Account\Login.cshtml:679
+#: obj\Release\Package\PackageTmp\Views\Account\Login.cshtml:716
 msgid "Please Sign In"
 msgstr ""
 
-#: Migrations\Configuration.cs:126
+#: Migrations\Configuration.cs:128
 msgid "Poor"
 msgstr ""
 
@@ -4225,7 +4263,7 @@ msgstr ""
 msgid "prod. lvl"
 msgstr ""
 
-#: Views\ProductionUnits\Index.cshtml:86
+#: Views\ProductionUnits\Index.cshtml:85
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\Index.cshtml:86
 msgid "prod. type"
 msgstr ""
@@ -4235,7 +4273,7 @@ msgstr ""
 msgid "prod. unit"
 msgstr ""
 
-#: Migrations\Configuration.cs:209
+#: Migrations\Configuration.cs:211
 msgid "Production lost"
 msgstr ""
 
@@ -4430,20 +4468,20 @@ msgstr ""
 msgid "Remember me?"
 msgstr ""
 
-#: Migrations\Configuration.cs:272
+#: Migrations\Configuration.cs:274
 msgid "Root vegetables - less than 200gr"
 msgstr ""
 
-#: Migrations\Configuration.cs:273
+#: Migrations\Configuration.cs:275
 msgid "Root vegetables - more than 200gr"
 msgstr ""
 
-#: Migrations\Configuration.cs:265
+#: Migrations\Configuration.cs:267
 msgid "Satify"
 msgstr ""
 
 #: Views\MyInfo\Update.cshtml:129
-#: obj\Release\Package\PackageTmp\Views\MyInfo\Update.cshtml:130
+#: obj\Release\Package\PackageTmp\Views\MyInfo\Update.cshtml:129
 msgid "Save"
 msgstr ""
 
@@ -4555,6 +4593,7 @@ msgid "Seed"
 msgstr ""
 
 #: Views\Account\ForgotPassword.cshtml:650
+#: obj\Release\Package\PackageTmp\Views\Account\ForgotPassword.cshtml:650
 msgid "Send confirmation email"
 msgstr ""
 
@@ -4563,7 +4602,7 @@ msgstr ""
 msgid "Send Feeling Request"
 msgstr ""
 
-#: Migrations\Configuration.cs:244
+#: Migrations\Configuration.cs:246
 msgid "Send Mail"
 msgstr ""
 
@@ -4574,14 +4613,14 @@ msgstr ""
 
 #: Business\GrowingModel.cs:25
 #: Content\GrowingModelv1.json:5776
-#: Migrations\Configuration.cs:189
+#: Migrations\Configuration.cs:191
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:5776
 msgid "September"
 msgstr ""
 
 #: Controllers\HomeController.cs:248
-#: Controllers\InteractiveMapController.cs:245
-#: Migrations\Configuration.cs:108
+#: Controllers\InteractiveMapController.cs:244
+#: Migrations\Configuration.cs:110
 msgid "Setup Planned"
 msgstr ""
 
@@ -4595,7 +4634,7 @@ msgstr ""
 msgid "SHOP URL"
 msgstr ""
 
-#: Migrations\Configuration.cs:148
+#: Migrations\Configuration.cs:150
 msgid "Sigfox connectivity kit"
 msgstr ""
 
@@ -5149,7 +5188,7 @@ msgstr ""
 msgid "Slot"
 msgstr ""
 
-#: Migrations\Configuration.cs:142
+#: Migrations\Configuration.cs:144
 msgid "Solar panels"
 msgstr ""
 
@@ -5237,21 +5276,21 @@ msgstr ""
 msgid "Spinach"
 msgstr ""
 
-#: Migrations\Configuration.cs:153
+#: Migrations\Configuration.cs:155
 msgid "Spring"
 msgstr ""
 
-#: Migrations\Configuration.cs:226
+#: Migrations\Configuration.cs:228
 msgid "Sprinkler cleaning"
 msgstr ""
 
-#: Views\ProductionUnits\Index.cshtml:87
+#: Views\ProductionUnits\Index.cshtml:86
 #: obj\Release\Package\PackageTmp\Views\ProductionUnits\Index.cshtml:87
 msgid "status"
 msgstr ""
 
 #: Controllers\HomeController.cs:251
-#: Migrations\Configuration.cs:111
+#: Migrations\Configuration.cs:113
 msgid "Stopped"
 msgstr ""
 
@@ -5287,7 +5326,7 @@ msgstr ""
 msgid "Strawberry"
 msgstr ""
 
-#: Migrations\Configuration.cs:154
+#: Migrations\Configuration.cs:156
 msgid "Summer"
 msgstr ""
 
@@ -5685,7 +5724,7 @@ msgstr ""
 msgid "TOTAL<br />INCIDENT(S) <br />LAST YEAR"
 msgstr ""
 
-#: Migrations\Configuration.cs:159
+#: Migrations\Configuration.cs:161
 msgid "Tower Garden"
 msgstr ""
 
@@ -5713,17 +5752,17 @@ msgstr ""
 msgid "Type"
 msgstr ""
 
-#: Migrations\Configuration.cs:130
-#: Migrations\Configuration.cs:136
+#: Migrations\Configuration.cs:132
+#: Migrations\Configuration.cs:138
 msgid "Unknown"
 msgstr ""
 
-#: Controllers\InteractiveMapController.cs:246
+#: Controllers\InteractiveMapController.cs:245
 msgid "Up & Running"
 msgstr ""
 
 #: Controllers\HomeController.cs:249
-#: Migrations\Configuration.cs:109
+#: Migrations\Configuration.cs:111
 msgid "Up and Running"
 msgstr ""
 
@@ -5732,7 +5771,7 @@ msgstr ""
 msgid "Update"
 msgstr ""
 
-#: Migrations\Configuration.cs:239
+#: Migrations\Configuration.cs:241
 msgid "Use UV filter"
 msgstr ""
 
@@ -5744,6 +5783,9 @@ msgstr ""
 #: Views\Account\ForgotPassword.cshtml:638
 #: Views\Account\ForgotPassword.cshtml:645
 #: Views\Account\Login.cshtml:643
+#: obj\Release\Package\PackageTmp\Views\Account\ForgotPassword.cshtml:638
+#: obj\Release\Package\PackageTmp\Views\Account\ForgotPassword.cshtml:645
+#: obj\Release\Package\PackageTmp\Views\Account\Login.cshtml:643
 msgid "User Name"
 msgstr ""
 
@@ -5752,7 +5794,7 @@ msgstr ""
 msgid "Users List"
 msgstr ""
 
-#: Migrations\Configuration.cs:229
+#: Migrations\Configuration.cs:231
 msgid "Vegetable management"
 msgstr ""
 
@@ -5776,20 +5818,20 @@ msgid "View Logs"
 msgstr ""
 
 #: Controllers\HomeController.cs:247
-#: Controllers\InteractiveMapController.cs:244
-#: Migrations\Configuration.cs:107
+#: Controllers\InteractiveMapController.cs:243
+#: Migrations\Configuration.cs:109
 msgid "Wait Confirm."
 msgstr ""
 
-#: Migrations\Configuration.cs:267
+#: Migrations\Configuration.cs:269
 msgid "Want more"
 msgstr ""
 
-#: Migrations\Configuration.cs:114
+#: Migrations\Configuration.cs:116
 msgid "Warning"
 msgstr ""
 
-#: Migrations\Configuration.cs:219
+#: Migrations\Configuration.cs:221
 msgid "Water loss"
 msgstr ""
 
@@ -5809,7 +5851,7 @@ msgstr ""
 msgid "Water Melon"
 msgstr ""
 
-#: Migrations\Configuration.cs:227
+#: Migrations\Configuration.cs:229
 msgid "Water purge"
 msgstr ""
 
@@ -5831,7 +5873,7 @@ msgstr ""
 msgid "Water Temperature (°C)"
 msgstr ""
 
-#: Migrations\Configuration.cs:171
+#: Migrations\Configuration.cs:173
 msgid "Weekend"
 msgstr ""
 
@@ -5875,7 +5917,7 @@ msgstr ""
 msgid "Wiki"
 msgstr ""
 
-#: Migrations\Configuration.cs:152
+#: Migrations\Configuration.cs:154
 msgid "Winter"
 msgstr ""
 
@@ -5885,6 +5927,7 @@ msgid "Yes"
 msgstr ""
 
 #: Views\Account\ResetPasswordConfirmation.cshtml:663
+#: obj\Release\Package\PackageTmp\Views\Account\ResetPasswordConfirmation.cshtml:663
 msgid "Your password has been reset. Please click here to log in."
 msgstr ""
 
@@ -6056,7 +6099,7 @@ msgstr ""
 #: Content\GrowingModelv1.json:8034
 #: Content\GrowingModelv1.json:8055
 #: Content\GrowingModelv1.json:8076
-#: Migrations\Configuration.cs:158
+#: Migrations\Configuration.cs:160
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:19
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:40
 #: obj\Release\Package\PackageTmp\Content\GrowingModelv1.json:61

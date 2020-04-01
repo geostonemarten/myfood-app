@@ -35,7 +35,7 @@ namespace myfoodapp.Business.Sensor
         private DataWriter dataWriteObject;
         private DataReader dataReaderObject;
 
-        private string sendMessageAcCommand = "AT$SF={0},2,1\r";
+        private string sendMessageAcCommand = "AT$SF={0},1\r";
 
         private SigfoxInterfaceManager()
         {         

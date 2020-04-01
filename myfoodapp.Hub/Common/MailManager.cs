@@ -1,4 +1,5 @@
 ﻿using myfoodapp.Hub.Models;
+using Newtonsoft.Json;
 using SendGrid;
 using SendGrid.Helpers.Mail;
 using System;
@@ -11,6 +12,22 @@ namespace myfoodapp.Hub.Common
     {
         private static string MailSendGridAPIKey = WebConfigurationManager.AppSettings["mailSendGridAPIKey"];
 
+        private static string TemplateGreehouseOnlineFR = WebConfigurationManager.AppSettings["templateGreehouseOnlineFR"];
+        private static string TemplateGreehouseOnlineEN = WebConfigurationManager.AppSettings["templateGreehouseOnlineEN"];
+        private static string TemplateGreehouseOnlineDE = WebConfigurationManager.AppSettings["templateGreehouseOnlineDE"];
+
+        private static string TemplateGreehouseOfflineFR = WebConfigurationManager.AppSettings["templateGreehouseOfflineFR"];
+        private static string TemplateGreehouseOfflineEN = WebConfigurationManager.AppSettings["templateGreehouseOfflineEN"];
+        private static string TemplateGreehouseOfflineDE = WebConfigurationManager.AppSettings["templateGreehouseOfflineDE"];
+
+        private static string TemplatePasswordRecoveryFR = WebConfigurationManager.AppSettings["templatePasswordRecoveryFR"];
+        private static string TemplatePasswordRecoveryEN = WebConfigurationManager.AppSettings["templatePasswordRecoveryEN"];
+        private static string TemplatePasswordRecoveryDE = WebConfigurationManager.AppSettings["templatePasswordRecoveryDE"];
+
+        private static string TemplateWeeklyMessageFR = WebConfigurationManager.AppSettings["templateWeeklyMessageFR"];
+        private static string TemplateWeeklyMessageEN = WebConfigurationManager.AppSettings["templateWeeklyMessageEN"];
+        private static string TemplateWeeklyMessageDE = WebConfigurationManager.AppSettings["templateWeeklyMessageDE"];
+
         public static void PioneerUnitOfflineMessage(ProductionUnit currentProductionUnit)
         {
             var dbLog = new ApplicationDbContext();
@@ -20,12 +37,18 @@ namespace myfoodapp.Hub.Common
                 var client = new SendGridClient(MailSendGridAPIKey);
                 var from = new EmailAddress("hub@myfood.eu", "Myfood Hub Bot");
 
+                MailTemplateObject obj = new MailTemplateObject();
+                var currentTemplate = string.Empty;
+
                 var pioneerName = string.Format("{0} #{1}", currentProductionUnit.owner.pioneerCitizenName, currentProductionUnit.owner.pioneerCitizenNumber);
 
+                obj.firstName = currentProductionUnit.owner.pioneerCitizenName;
+                obj.pioneerNumber = currentProductionUnit.owner.pioneerCitizenNumber.ToString();
+
                 List<EmailAddress> tos = new List<EmailAddress>
-            {
+                {
                   new EmailAddress(currentProductionUnit.owner.contactMail, pioneerName)
-            };
+                };
 
                 var subject = string.Empty;
                 var htmlContent = string.Empty;
@@ -35,33 +58,25 @@ namespace myfoodapp.Hub.Common
                     switch (currentProductionUnit.owner.language.description)
                     {
                         case "fr":
-                            subject = "[myfood] Votre serre est déconnectée";
-                            htmlContent = string.Format("Bonjour {0}, </br></br>" +
-                                                        "Nous avons détecté que votre serre #{1} n'émet plus de signal depuis quelques heures.</br>" +
-                                                        "Vérifiez l'état de fonctionnement électrique de votre installation.</br>" +
-                                                        @"N'hésitez pas à consulter la rubrique de dépannage sur le <a href=""https://wiki.myfood.eu/docs/boitier-puissance"">WIKI</a>.</br></br>" +
-                                                        "Bien à vous,", currentProductionUnit.owner.pioneerCitizenName, currentProductionUnit.owner.pioneerCitizenNumber);
+                            currentTemplate = TemplateGreehouseOfflineFR;
+                            break;
+                        case "en":
+                            currentTemplate = TemplateGreehouseOfflineEN;
+                            break;
+                        case "de":
+                            currentTemplate = TemplateGreehouseOfflineDE;
                             break;
                         default:
-                            subject = "[myfood] Your greenhouse is disconnected";
-                            htmlContent = string.Format("Hi {0}, </br></br>" +
-                                                        "We have detected that your greenhouse #{1} is no longer signaling since few hours.</br>" +
-                                                        "Check the electrical operating status of your installation.</br>" +
-                                                         @"Do not hesitate to consult the troubleshooting page on the <a href=""https://wiki.myfood.eu/docs/boitier-puissance"">WIKI</a>.</br></br>" +
-                                                        "Have a nice day,", currentProductionUnit.owner.pioneerCitizenName, currentProductionUnit.owner.pioneerCitizenNumber);
+                            currentTemplate = TemplateGreehouseOfflineEN;
                             break;
                     }
-                }else
+                }
+                else
                 {
-                    subject = "[myfood] Your greenhouse is disconnected";
-                    htmlContent = string.Format("Hi {0}, </br></br>" +
-                                                "We have detected that your greenhouse #{1} is no longer signaling since few hours.</br>" +
-                                                "Check the electrical operating status of your installation.</br>" +
-                                                 @"Do not hesitate to consult the troubleshooting page on the <a href=""https://wiki.myfood.eu/docs/boitier-puissance"">WIKI</a>.</br></br>" +
-                                                "Have a nice day,", currentProductionUnit.owner.pioneerCitizenName, currentProductionUnit.owner.pioneerCitizenNumber);
+                    currentTemplate = TemplateGreehouseOfflineEN;
                 }
 
-                var msg = MailHelper.CreateSingleEmailToMultipleRecipients(from, tos, subject, "", htmlContent, false);
+                var msg = MailHelper.CreateSingleTemplateEmailToMultipleRecipients(from, tos, currentTemplate, obj);
                 //msg.AddCc("agro@myfood.eu");
                 var response = client.SendEmailAsync(msg);
             }
@@ -70,7 +85,7 @@ namespace myfoodapp.Hub.Common
                 dbLog.Logs.Add(Log.CreateErrorLog(String.Format("Error with Mail Notification"), ex));
                 dbLog.SaveChanges();
             }
-                        
+
         }
 
         public static void PioneerUnitOnlineMessage(ProductionUnit currentProductionUnit)
@@ -82,46 +97,43 @@ namespace myfoodapp.Hub.Common
                 var client = new SendGridClient(MailSendGridAPIKey);
                 var from = new EmailAddress("hub@myfood.eu", "Myfood Hub Bot");
 
+                MailTemplateObject obj = new MailTemplateObject();
+                var currentTemplate = string.Empty;
+
                 var pioneerName = string.Format("{0} #{1}", currentProductionUnit.owner.pioneerCitizenName, currentProductionUnit.owner.pioneerCitizenNumber);
 
-                List<EmailAddress> tos = new List<EmailAddress>
-            {
-                  new EmailAddress(currentProductionUnit.owner.contactMail, pioneerName)
-            };
+                obj.firstName = currentProductionUnit.owner.pioneerCitizenName;
+                obj.pioneerNumber = currentProductionUnit.owner.pioneerCitizenNumber.ToString();
 
-                var subject = string.Empty;
-                var htmlContent = string.Empty;
+                List<EmailAddress> tos = new List<EmailAddress>
+                {
+                  new EmailAddress(currentProductionUnit.owner.contactMail, pioneerName)
+                };
 
                 if (currentProductionUnit.owner != null && currentProductionUnit.owner.language != null)
                 {
                     switch (currentProductionUnit.owner.language.description)
                     {
                         case "fr":
-                            subject = "[myfood] Votre serre est connectée";
-                            htmlContent = string.Format("Bonjour {0}, </br></br>" +
-                                                        "Votre serre #{1} est actuellement connectée à notre infrastructure.</br>" +
-                                                        "Vos données sont synchronisées sur l'application HUB.</br></br>" +
-                                                        "Bien à vous,", currentProductionUnit.owner.pioneerCitizenName, currentProductionUnit.owner.pioneerCitizenNumber);
+                            currentTemplate = TemplateGreehouseOnlineFR;
+                            break;
+                        case "en":
+                            currentTemplate = TemplateGreehouseOfflineEN;
+                            break;
+                        case "de":
+                            currentTemplate = TemplateGreehouseOfflineDE;
                             break;
                         default:
-                            subject = "[myfood] Your greenhouse is connected";
-                            htmlContent = string.Format("Hi {0}, </br></br>" +
-                                                        "Your smart greenhouse #{1} is currently connected to our infrastructure.</br>" +
-                                                        "Your data is synchronized on the HUB application.</br></br>" +
-                                                        "Have a nice day,", currentProductionUnit.owner.pioneerCitizenName, currentProductionUnit.owner.pioneerCitizenNumber);
+                            currentTemplate = TemplateGreehouseOnlineEN;
                             break;
                     }
                 }
                 else
                 {
-                    subject = "[myfood] Your greenhouse is connected";
-                    htmlContent = string.Format("Hi {0}, </br></br>" +
-                                                "Your smart greenhouse #{1} is currently connected to our infrastructure.</br>" +
-                                                "Your data is synchronized on the HUB application.</br></br>" +
-                                                "Have a nice day,", currentProductionUnit.owner.pioneerCitizenName, currentProductionUnit.owner.pioneerCitizenNumber);
+                    currentTemplate = TemplateGreehouseOnlineEN;
                 }
 
-                var msg = MailHelper.CreateSingleEmailToMultipleRecipients(from, tos, subject, "", htmlContent, false);
+                var msg = MailHelper.CreateSingleTemplateEmailToMultipleRecipients(from, tos, currentTemplate, obj);
                 //msg.AddCc("agro@myfood.eu");
                 var response = client.SendEmailAsync(msg);
             }
@@ -130,7 +142,6 @@ namespace myfoodapp.Hub.Common
                 dbLog.Logs.Add(Log.CreateErrorLog(String.Format("Error with Mail Notification"), ex));
                 dbLog.SaveChanges();
             }
-
         }
 
         public static void PioneerUnitIssueMessage(ProductionUnit currentProductionUnit, string note, string details)
@@ -145,9 +156,9 @@ namespace myfoodapp.Hub.Common
                 var pioneerName = string.Format("{0} #{1}", currentProductionUnit.owner.pioneerCitizenName, currentProductionUnit.owner.pioneerCitizenNumber);
 
                 List<EmailAddress> tos = new List<EmailAddress>
-            {
-                  new EmailAddress("support@myfood.eu", pioneerName)
-            };
+                {
+                      new EmailAddress("agro@myfood.eu", pioneerName)
+                };
 
                 var subject = string.Empty;
                 var htmlContent = string.Empty;
@@ -183,6 +194,7 @@ namespace myfoodapp.Hub.Common
 
                 var msg = MailHelper.CreateSingleEmailToMultipleRecipients(from, tos, subject, "", htmlContent, false);
                 msg.AddCc("agro@myfood.eu");
+
                 var response = client.SendEmailAsync(msg);
             }
             catch (Exception ex)
@@ -193,15 +205,146 @@ namespace myfoodapp.Hub.Common
 
         }
 
-        public static void ResetPasswordMessage(string to, string callbackUrl)
+        public static void PioneerUnitWeeklyMessage(ProductionUnit currentProductionUnit)
+        {
+            var dbLog = new ApplicationDbContext();
+
+            try
+            {
+                var client = new SendGridClient(MailSendGridAPIKey);
+                var from = new EmailAddress("hub@myfood.eu", "Myfood Hub Bot");
+
+                MailTemplateObject obj = new MailTemplateObject();
+                var currentTemplate = string.Empty;
+
+                var pioneerName = string.Format("{0} #{1}", currentProductionUnit.owner.pioneerCitizenName, currentProductionUnit.owner.pioneerCitizenNumber);
+
+                obj.firstName = currentProductionUnit.owner.pioneerCitizenName;
+                obj.pioneerNumber = currentProductionUnit.owner.pioneerCitizenNumber.ToString();
+
+                var reco = new List<RecommandationTemplaceObject>();
+                reco.Add(new RecommandationTemplaceObject() { title = "Température très élevée", description = "Nous avons détecté bla...", url = "https://wiki.myfood.eu/docs/serre-et-equipements" });
+                reco.Add(new RecommandationTemplaceObject() { title = "PH trop bas", description = "Nous avons détecté bla...", url = "https://wiki.myfood.eu/docs/serre-et-equipements" });
+
+                obj.recommandations = reco;
+
+                List<EmailAddress> tos = new List<EmailAddress>
+                {
+                  new EmailAddress(currentProductionUnit.owner.contactMail, pioneerName)
+                };
+
+                var subject = string.Empty;
+                var htmlContent = string.Empty;
+
+                if (currentProductionUnit.owner != null && currentProductionUnit.owner.language != null)
+                {
+                    switch (currentProductionUnit.owner.language.description)
+                    {
+                        case "fr":
+                            currentTemplate = TemplateWeeklyMessageFR;
+                            break;
+                        case "en":
+                            currentTemplate = TemplateWeeklyMessageEN;
+                            break;
+                        case "de":
+                            currentTemplate = TemplateWeeklyMessageDE;
+                            break;
+                        default:
+                            currentTemplate = TemplateWeeklyMessageEN;
+                            break;
+                    }
+                }
+                else
+                {
+                    currentTemplate = TemplateGreehouseOfflineEN;
+                }
+
+                var msg = MailHelper.CreateSingleTemplateEmailToMultipleRecipients(from, tos, currentTemplate, obj);
+                msg.AddCc("agro@myfood.eu");
+                var response = client.SendEmailAsync(msg);
+            }
+            catch (Exception ex)
+            {
+                dbLog.Logs.Add(Log.CreateErrorLog(String.Format("Error with Mail Notification"), ex));
+                dbLog.SaveChanges();
+            }
+
+        }
+
+        public static void ResetPasswordMessage(ProductionUnitOwner currentProductionUnitOwner, string to, string callbackUrl)
         {
             var client = new SendGridClient(MailSendGridAPIKey);
-            string subject = "MyFood password recovery";
-            string plainText = "";
-            string htmlText = string.Format("To reset your password follow the <a href=\"{0}\">link</a>", callbackUrl);
-            var msg = MailHelper.CreateSingleEmail(new EmailAddress("support@myfood.eu", "Myfood Hub Support"), new EmailAddress(to), subject,
-                plainText, htmlText);
+            var from = new EmailAddress("hub@myfood.eu", "Myfood Hub Bot");
+
+            MailTemplateObject obj = new MailTemplateObject();
+            var currentTemplate = string.Empty;
+
+            var pioneerName = string.Format("{0} #{1}", currentProductionUnitOwner.pioneerCitizenName, currentProductionUnitOwner.pioneerCitizenNumber);
+
+            obj.firstName = currentProductionUnitOwner.pioneerCitizenName;
+            obj.pioneerNumber = currentProductionUnitOwner.pioneerCitizenNumber.ToString();
+            obj.callbackurl = callbackUrl;
+
+            List<EmailAddress> tos = new List<EmailAddress>
+                {
+                  new EmailAddress(currentProductionUnitOwner.contactMail, pioneerName)
+                };
+
+            if (currentProductionUnitOwner != null && currentProductionUnitOwner.language != null)
+            {
+                switch (currentProductionUnitOwner.language.description)
+                {
+                    case "fr":
+                        currentTemplate = TemplatePasswordRecoveryFR;
+                        break;
+                    case "en":
+                        currentTemplate = TemplatePasswordRecoveryEN;
+                        break;
+                    case "de":
+                        currentTemplate = TemplatePasswordRecoveryDE;
+                        break;
+                    default:
+                        currentTemplate = TemplatePasswordRecoveryEN;
+                        break;
+                }
+            }
+            else
+            {
+                currentTemplate = TemplatePasswordRecoveryEN;
+            }
+
+            var msg = MailHelper.CreateSingleTemplateEmailToMultipleRecipients(from, tos, currentTemplate, obj);
+            //msg.AddCc("agro@myfood.eu");
             var response = client.SendEmailAsync(msg);
         }
     }
+
+    public class MailTemplateObject
+    {
+        [JsonProperty("firstName")]
+        public string firstName { get; set; }
+
+        [JsonProperty("pioneerNumber")]
+        public string pioneerNumber;
+
+        [JsonProperty("callbackurl")]
+        public string callbackurl;
+
+        [JsonProperty("recommandations")]
+        public List<RecommandationTemplaceObject> recommandations;
+
+    }
+
+    public class RecommandationTemplaceObject
+    {
+        [JsonProperty("title")]
+        public string title { get; set; }
+
+        [JsonProperty("description")]
+        public string description;
+
+        [JsonProperty("url")]
+        public string url;
+    }
+
 }

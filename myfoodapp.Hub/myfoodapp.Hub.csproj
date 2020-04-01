@@ -513,6 +513,8 @@
     <Content Include="Content\Datepicker\datepicker.min.js" />
     <Content Include="Content\images\arrow.svg" />
     <Content Include="Content\images\close-white.svg" />
+    <Content Include="Content\images\email-check.svg" />
+    <Content Include="Content\images\password-reseted.svg" />
     <Content Include="Content\images\recipes_test_image.png" />
     <Content Include="Content\Pictures\Recipes\argula-salad.jpg" />
     <Content Include="Content\Pictures\Recipes\beetroot.jpg" />
