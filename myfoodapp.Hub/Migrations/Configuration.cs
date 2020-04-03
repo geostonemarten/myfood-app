@@ -22,7 +22,7 @@ namespace myfoodapp.Hub.Migrations
 			//UpgradeDatabase.DoWork(context);
 
 			//UpgradeDatabase.EventTypesIcons(context);
-			return;
+			//return;
 
             //if (System.Diagnostics.Debugger.IsAttached == false)
             //    System.Diagnostics.Debugger.Launch();
@@ -2177,6 +2177,8 @@ namespace myfoodapp.Hub.Migrations
 
                 var productionUnitList = context.ProductionUnits;
 
+                var warningEventType = context.EventTypes.Where(p => p.Id == 1).FirstOrDefault();
+
                 foreach (ProductionUnit productionUnit in productionUnitList)
                 {
                     for (int i = 0; i < 6 * 2; i++)
@@ -2188,6 +2190,8 @@ namespace myfoodapp.Hub.Migrations
                         context.Messages.Add(new Message() { date = currentDate, content = "007002190082248902680400", device = productionUnit.reference, messageType = messMeasure });
                         context.Messages.Add(new Message() { date = currentDate, content = "006802340082248902680400", device = productionUnit.reference, messageType = messMeasure });
                         context.Messages.Add(new Message() { date = currentDate, content = "006702540082248902680400", device = productionUnit.reference, messageType = messMeasure });
+
+                        context.Events.Add((new Event() { date = DateTime.Now, description = "Serre Déconnectée", isOpen = false, productionUnit = productionUnit, eventType = warningEventType, createdBy = "MyFood Bot" }));
 
                         decimal phValue = Convert.ToDecimal(Math.Round(7 + Math.Sin(0.5 * i) + 0.1 * rnd.Next(-1, 1), 3));
                         context.Measures.Add(new Measure() { captureDate = currentDate, value = phValue, sensor = phSensor, productionUnit = productionUnit });

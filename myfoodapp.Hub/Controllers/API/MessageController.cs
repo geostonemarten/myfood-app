@@ -77,6 +77,9 @@ namespace myfoodapp.Hub.Controllers.Api
                             case "fr":
                                 db.Events.Add(new Event() { date = DateTime.Now, description = "Serre Connectée", isOpen = false, productionUnit = currentProductionUnit, eventType = infoEventType, createdBy = "MyFood Bot" });
                                 break;
+                            case "de":
+                                db.Events.Add(new Event() { date = DateTime.Now, description = "Gewächshaus Online", isOpen = false, productionUnit = currentProductionUnit, eventType = infoEventType, createdBy = "MyFood Bot" });
+                                break;
                             default:
                                 db.Events.Add(new Event() { date = DateTime.Now, description = "Smart Greenhouse Online", isOpen = false, productionUnit = currentProductionUnit, eventType = infoEventType, createdBy = "MyFood Bot" });
                                 break;

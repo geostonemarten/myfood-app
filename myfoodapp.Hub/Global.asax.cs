@@ -100,6 +100,9 @@ namespace myfoodapp.Hub
                                 case "fr":
                                     db.Events.Add(new Event() { date = DateTime.Now, description = "Serre Déconnectée", isOpen = false, productionUnit = p, eventType = warningEventType, createdBy = "MyFood Bot" });
                                     break;
+                                case "de":
+                                    db.Events.Add(new Event() { date = DateTime.Now, description = "Gewächshaus Offline", isOpen = false, productionUnit = p, eventType = warningEventType, createdBy = "MyFood Bot" });
+                                    break;
                                 default:
                                     db.Events.Add(new Event() { date = DateTime.Now, description = "Smart Greenhouse Offline", isOpen = false, productionUnit = p, eventType = warningEventType, createdBy = "MyFood Bot" });
                                     break;

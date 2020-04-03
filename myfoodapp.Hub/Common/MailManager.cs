@@ -118,10 +118,10 @@ namespace myfoodapp.Hub.Common
                             currentTemplate = TemplateGreehouseOnlineFR;
                             break;
                         case "en":
-                            currentTemplate = TemplateGreehouseOfflineEN;
+                            currentTemplate = TemplateGreehouseOnlineEN;
                             break;
                         case "de":
-                            currentTemplate = TemplateGreehouseOfflineDE;
+                            currentTemplate = TemplateGreehouseOnlineDE;
                             break;
                         default:
                             currentTemplate = TemplateGreehouseOnlineEN;
