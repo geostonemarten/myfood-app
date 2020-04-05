@@ -30,7 +30,7 @@ namespace myfoodapp.Hub.Business
 
             foreach (var rule in rulesList)
             {
-                var warningContent = String.Empty;
+                var title = String.Empty;
                 bool rslt = false;
 
                 try
@@ -38,7 +38,7 @@ namespace myfoodapp.Hub.Business
                     try
                     {
                         rslt = evaluator.Evaluate(rule.ruleEvaluator, currentMeasures);
-                        warningContent = rule.warningContent;
+                        title = rule.title;
                     }
                     catch (Exception ex)
                     {
@@ -51,19 +51,23 @@ namespace myfoodapp.Hub.Business
                         switch (currentProductionUnitOwner.language.description)
                         {
                             case "fr":
-                                warningContent = rule.warningContentFR;
+                                title = rule.titleFR;
+                                break;
+                            case "de":
+                                title = rule.titleDE;
                                 break;
                             default:
+                                title = rule.title;
                                 break;
                         }
                     }
 
-                    var bindingValue = currentMeasures.GetType().GetProperty(rule.bindingPropertyValue).GetValue(currentMeasures, null);
-                    var message = String.Format(warningContent, bindingValue);
-
                     if (rslt)
                     {
-                            if (currentProductionUnit != null)
+                        var bindingValue = currentMeasures.GetType().GetProperty(rule.bindingPropertyValue).GetValue(currentMeasures, null);
+                        var message = String.Format(title, bindingValue);
+
+                        if (currentProductionUnit != null)
                             {
                                 db.Events.Add(new Event() { date = DateTime.Now, description = message, isOpen = false, productionUnit = currentProductionUnit, eventType = warningEventType, createdBy = "MyFood Bot" });
                                 db.SaveChanges();
@@ -118,17 +122,17 @@ namespace myfoodapp.Hub.Business
 
             try
             {
-                var currentLastDayMaxPHValue = db.Measures.Where(m => m.captureDate > lastDay &&
+                var currentLastDayMaxPHValue = ((decimal?)db.Measures.Where(m => m.captureDate > lastDay &&
                                              m.productionUnit.Id == currentProductionUnit.Id &&
-                                             m.sensor.Id == phSensor.Id).OrderBy(m => m.Id).Max(t => t.value);
+                                             m.sensor.Id == phSensor.Id).OrderBy(m => m.Id).Max(t => (decimal?)t.value)).GetValueOrDefault();
 
-                var currentLastDayMinPHValue = db.Measures.Where(m => m.captureDate > lastDay &&
+                var currentLastDayMinPHValue = ((decimal?)db.Measures.Where(m => m.captureDate > lastDay &&
                                    m.productionUnit.Id == currentProductionUnit.Id &&
-                                   m.sensor.Id == phSensor.Id).OrderBy(m => m.Id).Min(t => t.value);
+                                   m.sensor.Id == phSensor.Id).OrderBy(m => m.Id).Min(t => (decimal?)t.value)).GetValueOrDefault();
 
-                var currentTwoDaysMaxPHValue = db.Measures.Where(m => m.captureDate > twoDaysAgo && m.captureDate < lastDay &&
+                var currentTwoDaysMaxPHValue = ((decimal?)db.Measures.Where(m => m.captureDate > twoDaysAgo && m.captureDate < lastDay &&
                                    m.productionUnit.Id == currentProductionUnit.Id &&
-                                   m.sensor.Id == phSensor.Id).OrderBy(m => m.Id).Max(t => t.value);
+                                   m.sensor.Id == phSensor.Id).OrderBy(m => m.Id).Max(t => (decimal?)t.value)).GetValueOrDefault();
 
                 var currentTwoDaysMinPHValue = ((decimal?)db.Measures.Where(m => m.captureDate > twoDaysAgo && m.captureDate < lastDay &&
                                    m.productionUnit.Id == currentProductionUnit.Id &&
@@ -142,22 +146,24 @@ namespace myfoodapp.Hub.Business
                                    m.productionUnit.Id == currentProductionUnit.Id &&
                                    m.sensor.Id == phSensor.Id).OrderBy(m => m.Id).Min(t => (decimal?)t.value)).GetValueOrDefault();
 
-                var currentLastWeekMaxPH = db.Measures.Where(m => m.captureDate > aWeekAgo &&
-                             m.productionUnit.Id == currentProductionUnit.Id &&
-                             m.sensor.Id == phSensor.Id).OrderBy(m => m.Id).Max();
+                var currentLastWeekMaxPHValue = ((decimal?)db.Measures.Where(m => m.captureDate > aWeekAgo &&
+                                   m.productionUnit.Id == currentProductionUnit.Id &&
+                                   m.sensor.Id == phSensor.Id).OrderBy(m => m.Id).Max(t => (decimal?)t.value)).GetValueOrDefault();
 
-                var currentLastWeekMinPH = db.Measures.Where(m => m.captureDate > aWeekAgo &&
-                                             m.productionUnit.Id == currentProductionUnit.Id &&
-                                             m.sensor.Id == phSensor.Id).OrderBy(m => m.Id).Min();
-                
+                var currentLastWeekMinPHValue = ((decimal?)db.Measures.Where(m => m.captureDate > aWeekAgo &&
+                                   m.productionUnit.Id == currentProductionUnit.Id &&
+                                   m.sensor.Id == phSensor.Id).OrderBy(m => m.Id).Min(t => (decimal?)t.value)).GetValueOrDefault();
+
+                var currentLastWeekMaxPHDate = ((DateTime?)db.Measures.Where(m => m.captureDate > aWeekAgo &&
+                                   m.productionUnit.Id == currentProductionUnit.Id &&
+                                   m.sensor.Id == phSensor.Id).OrderBy(m => m.Id).Max(t => (DateTime?)t.captureDate)).GetValueOrDefault();
+
+                var currentLastWeekMinPHDate = ((DateTime?)db.Measures.Where(m => m.captureDate > aWeekAgo &&
+                                   m.productionUnit.Id == currentProductionUnit.Id &&
+                                   m.sensor.Id == phSensor.Id).OrderBy(m => m.Id).Min(t => (DateTime?)t.captureDate)).GetValueOrDefault();
+
                 currentMeasures.lastWeekMaxPHValue = currentLastDayMaxPHValue;
                 currentMeasures.lastWeekMinPHValue = currentLastDayMinPHValue;
-
-                var currentLastWeekMaxPHValue = currentLastWeekMaxPH.value;
-                var currentLastWeekMinPHValue = currentLastWeekMinPH.value;
-
-                var currentLastWeekMaxPHDate = currentLastWeekMaxPH.captureDate;
-                var currentLastWeekMinPHDate = currentLastWeekMinPH.captureDate;
 
                 if (currentLastWeekMinPHDate < currentLastWeekMaxPHDate)
                     currentMeasures.lastWeekPHRise = true;
@@ -169,9 +175,9 @@ namespace myfoodapp.Hub.Business
                 else
                     currentMeasures.lastWeekPHRise = false;
 
-                var currentLastWeekAveragePHValue = db.Measures.Where(m => m.captureDate > aWeekAgo &&
+                var currentLastWeekAveragePHValue = ((decimal?)db.Measures.Where(m => m.captureDate > aWeekAgo &&
                                              m.productionUnit.Id == currentProductionUnit.Id &&
-                                             m.sensor.Id == phSensor.Id).OrderBy(m => m.Id).Average(t => t.value);
+                                             m.sensor.Id == phSensor.Id).OrderBy(m => m.Id).Average(t => t.value)).GetValueOrDefault();
 
                 currentMeasures.lastWeekPHVariation = Math.Round(Math.Abs(currentLastWeekMaxPHValue - currentLastWeekMinPHValue), 1);
                 currentMeasures.threeLastDayPHVariation = Math.Round((Math.Abs(currentLastDayMaxPHValue - currentLastDayMinPHValue) + Math.Abs(currentTwoDaysMaxPHValue - currentTwoDaysMinPHValue) + Math.Abs(currentThreeDaysMaxPHValue - currentThreeDaysMinPHValue)) / 3, 1);
@@ -236,6 +242,14 @@ namespace myfoodapp.Hub.Business
     public class GroupedMeasure
     {
         public Int64 Id { get; set; }
+
+        public decimal? pHvalue { get; set; } = 0;
+        public decimal? airTempvalue { get; set; } = 0;
+        public decimal? waterTempvalue { get; set; } = 0;
+        public decimal? humidityvalue { get; set; } = 0;      
+        public decimal? DOvalue { get; set; } = 0;
+        public decimal? ORPvalue { get; set; } = 0;
+
         public decimal? lastWeekMinPHValue { get; set; } = 0;
         public decimal? lastWeekMaxPHValue { get; set; } = 0;
         public decimal? lastWeekPHVariation { get; set; } = 0;

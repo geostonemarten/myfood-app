@@ -41,8 +41,14 @@ namespace myfoodapp.Hub.Models
     public class Rule
     {
         public string ruleEvaluator { get; set; }
-        public string warningContent { get; set; }
-        public string warningContentFR { get; set; }
+        public int impactLevel { get; set; }
+        public string title { get; set; }
+        public string titleFR { get; set; }
+        public string titleDE { get; set; }
+        public string description { get; set; }
+        public string descriptionFR { get; set; }
+        public string descriptionDE { get; set; }
+        public string url { get; set; }
         public string bindingPropertyValue { get; set; }
     }
 }

@@ -22,7 +22,7 @@ namespace myfoodapp.Hub.Migrations
 			//UpgradeDatabase.DoWork(context);
 
 			//UpgradeDatabase.EventTypesIcons(context);
-			//return;
+			return;
 
             //if (System.Diagnostics.Debugger.IsAttached == false)
             //    System.Diagnostics.Debugger.Launch();
