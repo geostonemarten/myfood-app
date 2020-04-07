@@ -63,7 +63,7 @@
     "ruleEvaluator": "(lastWeekAveragePHValue != 0) && (lastWeekAveragePHValue >= 7.5)",
     "impactLevel": 1,
     "title": "High water acidity. Performance can be improved (av. {0})",
-    "titleFR": "Acidité de l'eau très élevée. Les performances peuvent être améliorées (moy. {0})",
+    "titleFR": "Acidité de l'eau élevée. Les performances peuvent être améliorées (moy. {0})",
     "titleDE": "Hoher Säuregehalt des Wassers. Leistung kann verbessert werden (av. {0})",
     "description": "To reduce the pH, rainwater or osmosis water should be added to the tanks.",
     "descriptionFR": "Pour réduire le pH, il faut ajouter de l'eau de pluie ou de l'eau osmosée aux bassins.",

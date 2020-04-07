@@ -5,6 +5,7 @@ using SendGrid.Helpers.Mail;
 using System;
 using System.Collections.Generic;
 using System.Web.Configuration;
+using System.Linq;
 
 namespace myfoodapp.Hub.Common
 {
@@ -205,7 +206,7 @@ namespace myfoodapp.Hub.Common
 
         }
 
-        public static void PioneerUnitWeeklyMessage(ProductionUnit currentProductionUnit)
+        public static void PioneerUnitWeeklyMessage(ProductionUnit currentProductionUnit, List<RecommandationTemplaceObject> reco)
         {
             var dbLog = new ApplicationDbContext();
 
@@ -222,11 +223,7 @@ namespace myfoodapp.Hub.Common
                 obj.firstName = currentProductionUnit.owner.pioneerCitizenName;
                 obj.pioneerNumber = currentProductionUnit.owner.pioneerCitizenNumber.ToString();
 
-                var reco = new List<RecommandationTemplaceObject>();
-                reco.Add(new RecommandationTemplaceObject() { title = "Température très élevée", description = "Nous avons détecté bla...", url = "https://wiki.myfood.eu/docs/serre-et-equipements" });
-                reco.Add(new RecommandationTemplaceObject() { title = "PH trop bas", description = "Nous avons détecté bla...", url = "https://wiki.myfood.eu/docs/serre-et-equipements" });
-
-                obj.recommandations = reco;
+                obj.recommandations = reco.OrderBy(r => r.order).ToList();
 
                 List<EmailAddress> tos = new List<EmailAddress>
                 {
@@ -345,6 +342,8 @@ namespace myfoodapp.Hub.Common
 
         [JsonProperty("url")]
         public string url;
+
+        public int order;
     }
 
 }

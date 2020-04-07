@@ -819,13 +819,15 @@ namespace myfoodapp.Hub.Controllers
             //{
                 //MailManager.PioneerUnitOnlineMessage(currentProductionUnit);
                 //MailManager.PioneerUnitOfflineMessage(currentProductionUnit);
-                MailManager.PioneerUnitWeeklyMessage(currentProductionUnit);
-
+                
                 var currentMeasures = AquaponicsRulesManager.MeasuresProcessor(currentProductionUnit.Id);
 
                 try
                 {
-                    AquaponicsRulesManager.ValidateRules(currentMeasures, currentProductionUnit.Id);
+                    var reco = AquaponicsRulesManager.ValidateRules(currentMeasures, currentProductionUnit.Id);
+                    
+                    if(reco.Count() > 0)
+                        MailManager.PioneerUnitWeeklyMessage(currentProductionUnit, reco);
                 }
                 catch (Exception ex)
                 {

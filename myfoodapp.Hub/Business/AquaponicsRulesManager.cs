@@ -1,4 +1,5 @@
-﻿using myfoodapp.Hub.Models;
+﻿using myfoodapp.Hub.Common;
+using myfoodapp.Hub.Models;
 using Newtonsoft.Json;
 using SimpleExpressionEvaluator;
 using System;
@@ -12,7 +13,7 @@ namespace myfoodapp.Hub.Business
 {
     public class AquaponicsRulesManager
     {
-        public static bool ValidateRules(GroupedMeasure currentMeasures, int productionUnitId)
+        public static List<RecommandationTemplaceObject> ValidateRules(GroupedMeasure currentMeasures, int productionUnitId)
         {
             Evaluator evaluator = new Evaluator();
             bool isValid = true;
@@ -24,13 +25,23 @@ namespace myfoodapp.Hub.Business
             var rulesList = JsonConvert.DeserializeObject<List<Rule>>(data);
 
             var currentProductionUnit = db.ProductionUnits.Include(p => p.owner.language).Where(p => p.Id == productionUnitId).FirstOrDefault();
+
+            var issueEventType = db.EventTypes.Where(p => p.Id == 2).FirstOrDefault();
             var warningEventType = db.EventTypes.Where(p => p.Id == 1).FirstOrDefault();
+            var infoEventType = db.EventTypes.Where(p => p.Id == 8).FirstOrDefault();
 
             var currentProductionUnitOwner = currentProductionUnit.owner;
 
+            List<RecommandationTemplaceObject> reco = new List<RecommandationTemplaceObject>();
+
             foreach (var rule in rulesList)
             {
-                var title = String.Empty;
+                var strTitle = String.Empty;
+                var strDescription = String.Empty;
+                var strUrl = String.Empty;
+
+                var eventType = new EventType();
+
                 bool rslt = false;
 
                 try
@@ -38,7 +49,26 @@ namespace myfoodapp.Hub.Business
                     try
                     {
                         rslt = evaluator.Evaluate(rule.ruleEvaluator, currentMeasures);
-                        title = rule.title;
+
+                        strTitle = rule.title;
+                        strDescription = rule.description;
+                        strUrl = rule.url;
+
+                        switch (rule.impactLevel)
+                        {
+                            case 0:
+                                eventType = issueEventType;
+                                break;
+                            case 1:
+                                eventType = warningEventType;
+                                break;
+                            case 2:
+                                eventType = infoEventType;
+                                break;
+                            default:
+                                eventType = infoEventType;
+                                break;
+                        }
                     }
                     catch (Exception ex)
                     {
@@ -51,13 +81,18 @@ namespace myfoodapp.Hub.Business
                         switch (currentProductionUnitOwner.language.description)
                         {
                             case "fr":
-                                title = rule.titleFR;
+                                strTitle = rule.titleFR;
+                                strDescription = rule.descriptionFR;
                                 break;
                             case "de":
-                                title = rule.titleDE;
+                                strTitle = rule.titleDE;
+                                strDescription = rule.descriptionDE;
+                                strUrl = String.Format("{0}?ljs=de", rule.url);
                                 break;
                             default:
-                                title = rule.title;
+                                strTitle = rule.title;
+                                strDescription = rule.description;
+                                strUrl = String.Format("{0}?ljs=en", rule.url);
                                 break;
                         }
                     }
@@ -65,11 +100,15 @@ namespace myfoodapp.Hub.Business
                     if (rslt)
                     {
                         var bindingValue = currentMeasures.GetType().GetProperty(rule.bindingPropertyValue).GetValue(currentMeasures, null);
-                        var message = String.Format(title, bindingValue);
+                        var strFormatTitle = String.Format(strTitle, bindingValue);
 
                         if (currentProductionUnit != null)
                             {
-                                db.Events.Add(new Event() { date = DateTime.Now, description = message, isOpen = false, productionUnit = currentProductionUnit, eventType = warningEventType, createdBy = "MyFood Bot" });
+                                reco.Add(new RecommandationTemplaceObject() { title = strFormatTitle, description = strDescription, url = strUrl, order = rule.impactLevel }) ;
+
+                                var content = String.Format(@"<b>{0}</b> </br> {1} </br> <a style=""color:#515A5A;"" href=""{2}"">Link</a>", strFormatTitle, strDescription, strUrl);
+
+                                db.Events.Add(new Event() { date = DateTime.Now, description = content, isOpen = false, productionUnit = currentProductionUnit, eventType = eventType, createdBy = "MyFood Bot" });
                                 db.SaveChanges();
                             }
 
@@ -78,7 +117,7 @@ namespace myfoodapp.Hub.Business
                 }
                 catch (Exception ex)
                 {
-                    dbLog.Logs.Add(Log.CreateErrorLog(String.Format("Error with Rule Manager Evaluator - {0}",rule.ruleEvaluator), ex));
+                    dbLog.Logs.Add(Log.CreateErrorLog(String.Format("Error with Rule Manager Evaluator - {0}", rule.ruleEvaluator), ex));
                     dbLog.SaveChanges();
                 }
             }
@@ -93,7 +132,7 @@ namespace myfoodapp.Hub.Business
                 dbLog.SaveChanges();
             }
 
-            return isValid;
+            return reco;
         }
 
         public static GroupedMeasure MeasuresProcessor(int productionUnitId)
@@ -123,8 +162,8 @@ namespace myfoodapp.Hub.Business
             try
             {
                 var currentLastDayMaxPHValue = ((decimal?)db.Measures.Where(m => m.captureDate > lastDay &&
-                                             m.productionUnit.Id == currentProductionUnit.Id &&
-                                             m.sensor.Id == phSensor.Id).OrderBy(m => m.Id).Max(t => (decimal?)t.value)).GetValueOrDefault();
+                                   m.productionUnit.Id == currentProductionUnit.Id &&
+                                   m.sensor.Id == phSensor.Id).OrderBy(m => m.Id).Max(t => (decimal?)t.value)).GetValueOrDefault();
 
                 var currentLastDayMinPHValue = ((decimal?)db.Measures.Where(m => m.captureDate > lastDay &&
                                    m.productionUnit.Id == currentProductionUnit.Id &&
@@ -176,8 +215,8 @@ namespace myfoodapp.Hub.Business
                     currentMeasures.lastWeekPHRise = false;
 
                 var currentLastWeekAveragePHValue = ((decimal?)db.Measures.Where(m => m.captureDate > aWeekAgo &&
-                                             m.productionUnit.Id == currentProductionUnit.Id &&
-                                             m.sensor.Id == phSensor.Id).OrderBy(m => m.Id).Average(t => t.value)).GetValueOrDefault();
+                                   m.productionUnit.Id == currentProductionUnit.Id &&
+                                   m.sensor.Id == phSensor.Id).OrderBy(m => m.Id).Average(t => t.value)).GetValueOrDefault();
 
                 currentMeasures.lastWeekPHVariation = Math.Round(Math.Abs(currentLastWeekMaxPHValue - currentLastWeekMinPHValue), 1);
                 currentMeasures.threeLastDayPHVariation = Math.Round((Math.Abs(currentLastDayMaxPHValue - currentLastDayMinPHValue) + Math.Abs(currentTwoDaysMaxPHValue - currentTwoDaysMinPHValue) + Math.Abs(currentThreeDaysMaxPHValue - currentThreeDaysMinPHValue)) / 3, 1);
@@ -192,16 +231,16 @@ namespace myfoodapp.Hub.Business
                                    m.sensor.Id == airTemperatureSensor.Id).OrderBy(m => m.Id).Min(t => (decimal?)t.value)).GetValueOrDefault();
 
                 var currentLastWeekAverageAirTempValue = ((decimal?)db.Measures.Where(m => m.captureDate > aWeekAgo &&
-                   m.productionUnit.Id == currentProductionUnit.Id &&
-                   m.sensor.Id == airTemperatureSensor.Id).OrderBy(m => m.Id).Sum(t => (decimal?)t.value) / (6 * 24)).GetValueOrDefault();
+                                   m.productionUnit.Id == currentProductionUnit.Id &&
+                                   m.sensor.Id == airTemperatureSensor.Id).OrderBy(m => m.Id).Sum(t => (decimal?)t.value) / (6 * 24)).GetValueOrDefault();
 
                 currentMeasures.lastWeekMaxAirTempValue = Math.Round(currentLastWeekMaxAirTempValue, 1);
                 currentMeasures.lastWeekMinAirTempValue = Math.Round(currentLastWeekMinAirTempValue, 1);
                 currentMeasures.lastWeekAverageAirTempValue = Math.Round(currentLastWeekAverageAirTempValue, 1);
 
                 var currentLastWeekMaxWaterTempValue = ((decimal?)db.Measures.Where(m => m.captureDate > aWeekAgo &&
-                   m.productionUnit.Id == currentProductionUnit.Id &&
-                   m.sensor.Id == waterTemperatureSensor.Id).OrderBy(m => m.Id).Max(t => (decimal?)t.value)).GetValueOrDefault();
+                                   m.productionUnit.Id == currentProductionUnit.Id &&
+                                   m.sensor.Id == waterTemperatureSensor.Id).OrderBy(m => m.Id).Max(t => (decimal?)t.value)).GetValueOrDefault();
 
                 var currentLastWeekMinWaterTempValue = ((decimal?)db.Measures.Where(m => m.captureDate > aWeekAgo &&
                                    m.productionUnit.Id == currentProductionUnit.Id &&
